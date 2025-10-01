@@ -123,55 +123,61 @@ struct ModInfo {
 };
 
 // --- 辅助函数：从 Mod 文件名中提取干净的名称 ---
-// 排除版本号和方括号内的中文译名
+// 排除版本号和方括号内的中文译名 (再次修正版)
 std::string getCleanModName(const std::string& fullFileName) {
-    // 找到最后一个点, 分离文件名和扩展名 (例如 ".jar")
-    size_t lastDotPos = fullFileName.rfind('.');
-    std::string nameWithoutExt;
-    std::string extension;
+    std::string nameToClean;
+    std::string primaryExtension;
 
-    if (lastDotPos != std::string::npos) {
-        nameWithoutExt = fullFileName.substr(0, lastDotPos);
-        extension = fullFileName.substr(lastDotPos); // 包含点, 例如 ".jar"
+    // 优先查找 ".jar" 来确定主文件名和扩展名, 这可以正确处理 ".jar.disabled" 等情况
+    size_t jarPos = fullFileName.rfind(".jar");
+    if (jarPos != std::string::npos) {
+        nameToClean = fullFileName.substr(0, jarPos);
+        primaryExtension = ".jar";
     } else {
-        nameWithoutExt = fullFileName;
-        extension = "";
+        size_t lastDotPos = fullFileName.rfind('.');
+        if (lastDotPos != std::string::npos) {
+            nameToClean = fullFileName.substr(0, lastDotPos);
+            primaryExtension = fullFileName.substr(lastDotPos);
+        } else {
+            nameToClean = fullFileName;
+            primaryExtension = "";
+        }
     }
 
     // 1. 移除方括号内的内容
     std::regex bracket_regex("\\[[^\\]]*\\]");
-    nameWithoutExt = std::regex_replace(nameWithoutExt, bracket_regex, "");
+    nameToClean = std::regex_replace(nameToClean, bracket_regex, "");
 
     // 2a. 移除特定的非标准分隔符, 如 '·'
-    nameWithoutExt = std::regex_replace(nameWithoutExt, std::regex("\xC2\xB7"), "");
+    nameToClean = std::regex_replace(nameToClean, std::regex("\xC2\xB7"), "");
 
     // 2b. 处理混合语言前缀
     size_t last_non_ascii_pos = std::string::npos;
-    for (int i = nameWithoutExt.length() - 1; i >= 0; --i) {
-        if (static_cast<unsigned char>(nameWithoutExt[i]) > 127) {
+    for (int i = nameToClean.length() - 1; i >= 0; --i) {
+        if (static_cast<unsigned char>(nameToClean[i]) > 127) {
             last_non_ascii_pos = i;
             break;
         }
     }
 
-    if (last_non_ascii_pos != std::string::npos && last_non_ascii_pos + 1 < nameWithoutExt.length()) {
-        std::string suffix_part = nameWithoutExt.substr(last_non_ascii_pos + 1);
+    if (last_non_ascii_pos != std::string::npos && last_non_ascii_pos + 1 < nameToClean.length()) {
+        std::string suffix_part = nameToClean.substr(last_non_ascii_pos + 1);
         auto it = std::find_if(suffix_part.begin(), suffix_part.end(), [](char c){
             return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         });
 
         if (it != suffix_part.end()) {
-            nameWithoutExt = suffix_part;
+            nameToClean = suffix_part;
         }
     }
 
     // 3. 移除文件名开头的 Minecraft 版本号
     std::regex mc_version_prefix_regex("^[0-9]+\\.[0-9]+(?:\\.[0-9]+)*[-_]", std::regex_constants::icase);
-    nameWithoutExt = std::regex_replace(nameWithoutExt, mc_version_prefix_regex, "");
+    nameToClean = std::regex_replace(nameToClean, mc_version_prefix_regex, "");
 
-    // 4. 移除 "for [加载器名称]" 模式
-    std::regex for_loader_regex("\\s+for\\s+[a-zA-Z]+", std::regex_constants::icase);
-    nameWithoutExt = std::regex_replace(nameWithoutExt, for_loader_regex, "");
+    // 4. 移除 "for [加载器或版本号]" 模式
+    std::regex for_loader_regex("\\s+for\\s+[0-9a-zA-Z._-]+", std::regex_constants::icase);
+    nameToClean = std::regex_replace(nameToClean, for_loader_regex, "");
 
     // 5. 在加载器和数字之间插入空格, 以规范 "forge1.20.1" 这样的名称
     std::regex loader_digit_regex(
@@ -179,44 +185,44 @@ std::string getCleanModName(const std::string& fullFileName) {
             "([0-9])",
             std::regex_constants::icase
     );
-    nameWithoutExt = std::regex_replace(nameWithoutExt, loader_digit_regex, "$1 $2");
+    nameToClean = std::regex_replace(nameToClean, loader_digit_regex, "$1 $2");
 
     // 6. 迭代移除文件名末尾的版本号、加载器等后缀
     std::regex suffix_regex(
             "[-_+\\s.]+"
             "(?:"
-            "v?[0-9]+(?:[\\._\\-][0-9a-zA-Z_+-]+)*"
+            "[a-zA-Z]{0,4}[0-9]+(?:[\\._\\-][0-9a-zA-Z_+-]+)*"
             "|mc[0-9]+(?:\\.[0-9]+)*"
             "|forge|fabric|quilt|neoforge|rift|liteloader|nilloader"
-            "|snapshot|pre|rc|beta|alpha"
+            "|snapshot|pre|rc|beta|alpha|hotfix"
             "|universal|all|mc"
             ")"
             "\\s*$", std::regex_constants::icase
     );
 
-    std::string tempName = nameWithoutExt;
+    std::string tempName = nameToClean;
     std::string prevName;
     do {
         prevName = tempName;
         tempName = std::regex_replace(tempName, suffix_regex, "");
     } while (tempName != prevName);
-    nameWithoutExt = tempName;
+    nameToClean = tempName;
 
     // 7. 移除多余的空格, 并修剪首尾空格和分隔符
-    nameWithoutExt = std::regex_replace(nameWithoutExt, std::regex(" +"), " ");
-    size_t first = nameWithoutExt.find_first_not_of(" -_");
+    nameToClean = std::regex_replace(nameToClean, std::regex(" +"), " ");
+    size_t first = nameToClean.find_first_not_of(" -_");
     if (std::string::npos == first) {
-        nameWithoutExt = "";
+        nameToClean = "";
     } else {
-        size_t last = nameWithoutExt.find_last_not_of(" -_");
-        nameWithoutExt = nameWithoutExt.substr(first, (last - first + 1));
+        size_t last = nameToClean.find_last_not_of(" -_");
+        nameToClean = nameToClean.substr(first, (last - first + 1));
     }
 
     // 8. 将清理后的名称转换为小写
-    std::transform(nameWithoutExt.begin(), nameWithoutExt.end(), nameWithoutExt.begin(),
+    std::transform(nameToClean.begin(), nameToClean.end(), nameToClean.begin(),
                    [](unsigned char c){ return std::tolower(c); });
 
-    return nameWithoutExt + extension;
+    return nameToClean + primaryExtension;
 }
 
 // --- 2. JSON 读写 ---
