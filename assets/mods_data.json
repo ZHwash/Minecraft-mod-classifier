@@ -309,15 +309,15 @@
   },
   {
     "name": "bilingualname.jar",
-    "type": "client_optional_server_required"
+    "type": "client_only"
   },
   {
     "name": "loadingscreens.jar",
-    "type": "client_optional_server_required"
+    "type": "client_only"
   },
   {
     "name": "bnbgaminglib.jar",
-    "type": "client_optional_server_required"
+    "type": "client_only"
   },
   {
     "name": "chunky.jar",
