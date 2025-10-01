@@ -56,6 +56,10 @@
     "type": "client_required_server_optional"
   },
   {
+    "name": "loliasm.jar",
+    "type": "client_required_server_optional"
+  },
+  {
     "name": "iceberg.jar",
     "type": "client_required_server_optional"
   },
@@ -117,6 +121,18 @@
   },
   {
     "name": "!mixinbooter.jar",
+    "type": "client_optional_server_optional"
+  },
+  {
+    "name": "+fermiumbooter.jar",
+    "type": "client_optional_server_optional"
+  },
+  {
+    "name": "mixinbootstrap.jar",
+    "type": "client_optional_server_optional"
+  },
+  {
+    "name": "fantasticlib.jar",
     "type": "client_optional_server_optional"
   },
   {
@@ -280,6 +296,30 @@
     "type": "client_optional_server_required"
   },
   {
+    "name": "aireducer.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "rltweaker.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "born in a barn.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "bilingualname.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "loadingscreens.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "bnbgaminglib.jar",
+    "type": "client_optional_server_required"
+  },
+  {
     "name": "chunky.jar",
     "type": "client_optional_server_required"
   },
@@ -289,6 +329,66 @@
   },
   {
     "name": "rrls.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "celeritas.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "damagetilt.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "itlt.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "classicbar.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "armorsoundtweak.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "gamemodeswitcher1122.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "mobends.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "spartanhudbaubles.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "betterbiomeblend.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "torohealth.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "enablecheats-tow edition1.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "bettertradingmenu.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "betterquestpopup.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "bettertitlescreen.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "potiondescriptions.jar",
     "type": "client_only"
   },
   {
@@ -649,6 +749,466 @@
   },
   {
     "name": "ftbchunks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "forgelin-continuous.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "multimob.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "tumbleweed.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "walljump.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "foodexpansion1.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "sbm-bonetorch.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "skeletonhorsespawn.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mysticalworld.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "endreborn.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "raids-backport.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mysticallib.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "pogosticks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "zettaigrimoires.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "goldfish.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "camels.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "trinkets and baubles.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "athelas.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wild_netherwart.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "locks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "lovely_robot.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "setbonus.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "bountiful.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "backport.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "scalinghealth.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "naturallychargedcreepers.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "stg.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wings.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "xptome.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mutantbeasts.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "simplecorn1.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "grimoireofgaia3.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "disenchanter1.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "into the dungeons.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "specialmobs.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "the depths of madness.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "coralreef.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "surge.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "lavawaderbauble.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "into the end.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "endercrop.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "dragontweaks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "merchants.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "fasterdonkeys.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "bettergolem.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "torchslabmod.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "bgs.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "somanyenchantments.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "deathfinder.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "defiledlands.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "strayspawn.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "oceanicexpanse.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "deep below.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "villagercontracts.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "deeper-depths.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "cherry_on.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "movillages.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "extrabows.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "morefurnaces.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "cxlibrary.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "meldexun'scrystalicvoid.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "carianstyle.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mooshroomspawn.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mapmaker's gadgets.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spartanarmaments-v1hf1.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "enhancedarmaments.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "nether-api.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "forgelin.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "silentlib.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "ctoasmod.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spartanlightning.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spartanweaponry.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spartandefiled.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spartanshields.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "chesttransporter.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "harvestersnight.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mobrebirth.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "battletowers.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "dghn2.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wizardrynextgeneration.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "electroblobswizardry.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wizardryutils.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "huskspawn.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "sublime.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "eyeofdragons.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "qualitytools.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "llibrary.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "rlartifacts.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "useful_backpacks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "u_team_core.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "frozen-fiend.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "ice and fire.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "keletupackgears.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wither-config.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "potioncore.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "atlas-lib.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "boatdeletebegone.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "witherskeletontweaks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "nanfix-final-absorbtion.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "crafttweaker2.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "fish's undead rising.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "wizardrynecromancersdelight.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "ftbquests.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "ftblib.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "itemfilters.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "ftbmoney.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "herobrinemod.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "libraryex.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "mospells.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "minetweakerrecipemaker.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "beastslayer.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "netherex.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "bountiful baubles.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "flamelib.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "cloudboots.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "artificial thunder.jar",
     "type": "client_and_server_required"
   },
   {
