@@ -36,6 +36,10 @@
     "type": "client_required_server_optional"
   },
   {
+    "name": "enhancedvisuals.jar",
+    "type": "client_required_server_optional"
+  },
+  {
     "name": "prism.jar",
     "type": "client_required_server_optional"
   },
@@ -73,6 +77,22 @@
   },
   {
     "name": "distanthorizons.jar",
+    "type": "client_required_server_optional"
+  },
+  {
+    "name": "pretty rain.jar",
+    "type": "client_required_server_optional"
+  },
+  {
+    "name": "sound-physics-remastered.jar",
+    "type": "client_required_server_optional"
+  },
+  {
+    "name": "itemphysic.jar",
+    "type": "client_required_server_optional"
+  },
+  {
+    "name": "lexiconfig.jar",
     "type": "client_required_server_optional"
   },
   {
@@ -276,6 +296,10 @@
     "type": "client_optional_server_required"
   },
   {
+    "name": "better_campfires.jar",
+    "type": "client_optional_server_required"
+  },
+  {
     "name": "alternate_current.jar",
     "type": "client_optional_server_required"
   },
@@ -312,6 +336,10 @@
     "type": "client_only"
   },
   {
+    "name": "euphoriapatcher.jar",
+    "type": "client_only"
+  },
+  {
     "name": "loadingscreens.jar",
     "type": "client_only"
   },
@@ -321,6 +349,10 @@
   },
   {
     "name": "chunky.jar",
+    "type": "client_optional_server_required"
+  },
+  {
+    "name": "incontrol.jar",
     "type": "client_optional_server_required"
   },
   {
@@ -536,6 +568,10 @@
     "type": "client_only"
   },
   {
+    "name": "holdmyitems.jar",
+    "type": "client_only"
+  },
+  {
     "name": "3dskinlayers.jar",
     "type": "client_only"
   },
@@ -568,6 +604,10 @@
     "type": "client_only"
   },
   {
+    "name": "notreepunching.jar",
+    "type": "client_only"
+  },
+  {
     "name": "toadlib.jar",
     "type": "client_only"
   },
@@ -585,6 +625,10 @@
   },
   {
     "name": "entityculling.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "ok_zoomer.jar",
     "type": "client_only"
   },
   {
@@ -616,6 +660,10 @@
     "type": "client_only"
   },
   {
+    "name": "toastcontrol.jar",
+    "type": "client_only"
+  },
+  {
     "name": "caelum.jar",
     "type": "client_only"
   },
@@ -629,6 +677,14 @@
   },
   {
     "name": "bouncierbeds.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "extrasoundsnext.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "fallingleaves.jar",
     "type": "client_only"
   },
   {
@@ -660,6 +716,10 @@
     "type": "client_only"
   },
   {
+    "name": "cameraoverhaul.jar",
+    "type": "client_only"
+  },
+  {
     "name": "entity_model_features.jar",
     "type": "client_only"
   },
@@ -669,6 +729,10 @@
   },
   {
     "name": "immersiveui.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "presencefootsteps.jar",
     "type": "client_only"
   },
   {
@@ -737,6 +801,10 @@
   },
   {
     "name": "melody.jar",
+    "type": "client_only"
+  },
+  {
+    "name": "reforgedplaymod.jar",
     "type": "client_only"
   },
   {
@@ -813,6 +881,10 @@
   },
   {
     "name": "trinkets and baubles.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "benssharks.jar",
     "type": "client_and_server_required"
   },
   {
@@ -1064,6 +1136,34 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "creativecore.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "dyairdrop.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "engineersdecor.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "damagenumbers.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "immersive_weathering.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "diet.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "doomsday_decoration.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "wizardrynextgeneration.jar",
     "type": "client_and_server_required"
   },
@@ -1104,7 +1204,15 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "blueprint.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "u_team_core.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "rainbowreef.jar",
     "type": "client_and_server_required"
   },
   {
@@ -1220,6 +1328,10 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "obscure_api.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "!red-core-mc.jar",
     "type": "client_and_server_required"
   },
@@ -1256,11 +1368,23 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "spears.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "spoiled.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "dungeons-and-taverns-pillager-outpost-rework.jar",
     "type": "client_and_server_required"
   },
   {
     "name": "dungeons_enhanced.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "eureka.jar",
     "type": "client_and_server_required"
   },
   {
@@ -1288,7 +1412,43 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "carryon.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "worldedit-mod.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "aquamirae.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "valkyrienskies.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "playerrevive.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "weather2.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "irons_spellbooks.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "toughasnails.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "visualworkbench.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "upgrade_aquatic.jar",
     "type": "client_and_server_required"
   },
   {
@@ -1352,6 +1512,18 @@
     "type": "client_and_server_required"
   },
   {
+    "name": "simpledivinggear.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "simpleradio.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "sereneseasons.jar",
+    "type": "client_and_server_required"
+  },
+  {
     "name": "dreadsteel.jar",
     "type": "client_and_server_required"
   },
@@ -1401,6 +1573,18 @@
   },
   {
     "name": "zenith.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "fishermens_trap.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "glitchcore.jar",
+    "type": "client_and_server_required"
+  },
+  {
+    "name": "fishing upgrades more.jar",
     "type": "client_and_server_required"
   },
   {
