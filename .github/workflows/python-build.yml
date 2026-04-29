@@ -44,15 +44,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyinstaller
 
-      - name: Create config directory and default config
-        run: |
-          mkdir -p config
-          echo '[]' > config/mods_data.json
-        shell: bash
-
       - name: Build executable (Windows)
         if: matrix.os == 'windows'
         run: |
+          # Create config directory and default config
+          New-Item -ItemType Directory -Force -Path config | Out-Null
+          '[]' | Out-File -FilePath config/mods_data.json -Encoding UTF8
+          
           pyinstaller --clean `
             --name "Minecraft-mod-classifier" `
             --onedir `
@@ -71,6 +69,10 @@ jobs:
       - name: Build executable (Linux)
         if: matrix.os == 'linux'
         run: |
+          # Create config directory and default config
+          mkdir -p config
+          echo '[]' > config/mods_data.json
+          
           pyinstaller --clean \
             --name "Minecraft-mod-classifier" \
             --onedir \
