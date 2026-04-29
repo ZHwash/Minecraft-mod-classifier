@@ -1,0 +1,11 @@
+# Minecraft Mod Classifier - Python Dependencies
+# 
+# 运行时依赖（程序运行不需要）
+# 本程序仅使用Python标准库，无需第三方依赖
+
+# 打包工具（仅开发时需要）
+pyinstaller>=5.0
+
+# 未来可能添加的依赖：
+# toml>=0.10.2  # 用于更好地解析TOML格式的Forge配置文件
+# rich>=13.0.0  # 用于美化控制台输出
