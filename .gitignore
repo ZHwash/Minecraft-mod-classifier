@@ -11,9 +11,6 @@ __pycache__/
 *$py.class
 *.pyc
 
-# C extensions
-*.so
-
 # Distribution / packaging
 .Python
 build/
@@ -28,22 +25,13 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
 
 # PyInstaller
-# 通常这些文件不需要版本控制，但.spec文件可能需要保留以便重新构建
 *.manifest
-# *.spec (如果希望保留构建配置，请取消注释下一行)
-# *.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+*.spec
 
 # Unit test / coverage reports
 htmlcov/
@@ -59,106 +47,36 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-Pipfile.lock
-
-# PEP 582
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
 # Environments
 .env
 .venv
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
-.pyre/
-
 # --------------------------------------------
 # IDE 和编辑器
 # --------------------------------------------
-# Visual Studio Code
 .vscode/
 *.code-workspace
-
-# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 *.ipr
-
-# Eclipse
-.project
-.classpath
-.settings/
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
 
 # Vim
 *.swp
 *.swo
 *~
 
+# --------------------------------------------
+# 操作系统文件
+# --------------------------------------------
 # macOS
 .DS_Store
 .AppleDouble
@@ -177,18 +95,18 @@ $RECYCLE.BIN/
 *.log
 mod_classifier.log
 
-# 配置文件（包含用户数据或本地配置）
+# 配置文件（包含用户数据，不应版本控制）
 config/mods_data.json
+config/mods_data.json.backup
 config/settings.json
-test_config.json
 
 # 输入输出目录（用户数据）
 Input/
 Output/
 
-# 测试文件 (如果需要忽略特定的测试脚本)
-# test_*.py
-# *_test.py
+# 测试文件
+test_*.py
+*_test.py
 
 # 临时文件
 *.tmp
@@ -196,34 +114,27 @@ Output/
 *~
 
 # --------------------------------------------
-# 构建和发布
+# 构建和发布产物（不应版本控制）
 # --------------------------------------------
-# PyInstaller 构建输出 (已在 Python 部分包含 build/ dist/)
-# 这里特别指定 release 目录的清理规则
-release/*.zip
-release/*.tar.gz
-release/*.exe
-release/Minecraft-mod-classifier/
+# PyInstaller 构建输出
+build/
+dist/
+
+# 发布包（应该在release时生成，不提交到仓库）
+release/
 
 # --------------------------------------------
-# C++ 遗留文件 (如果还有)
+# C++ 遗留文件
 # --------------------------------------------
-# CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
-
-# C++ 编译产物
 *.o
 *.obj
 *.exe
 *.dll
+*.so
+*.dylib
 *.a
 *.lib
-*.dylib
-
-# --------------------------------------------
-# GitHub Actions
-# --------------------------------------------
-.github/workflows/build-artifacts/
