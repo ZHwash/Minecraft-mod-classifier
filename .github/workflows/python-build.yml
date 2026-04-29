@@ -54,9 +54,16 @@ jobs:
         run: |
           pyinstaller --clean `
             --name "Minecraft-mod-classifier" `
-            --onefile `
+            --onedir `
             --console `
-            --add-data "config/mods_data.json;." `
+            --paths "src/python" `
+            --add-data "config/mods_data.json;config" `
+            --hidden-import mod_classifier `
+            --hidden-import logger `
+            --hidden-import config_manager `
+            --hidden-import jar_parser `
+            --hidden-import file_utils `
+            --hidden-import i18n `
             src/python/main.py
         shell: pwsh
 
@@ -65,40 +72,44 @@ jobs:
         run: |
           pyinstaller --clean \
             --name "Minecraft-mod-classifier" \
-            --onefile \
+            --onedir \
             --console \
-            --add-data "config/mods_data.json:." \
+            --paths "src/python" \
+            --add-data "config/mods_data.json:config" \
+            --hidden-import mod_classifier \
+            --hidden-import logger \
+            --hidden-import config_manager \
+            --hidden-import jar_parser \
+            --hidden-import file_utils \
+            --hidden-import i18n \
             src/python/main.py
 
       - name: Prepare release package (Windows)
         if: matrix.os == 'windows'
         run: |
           mkdir -p release/Minecraft-mod-classifier
-          copy dist\Minecraft-mod-classifier.exe release\Minecraft-mod-classifier\
-          copy README.md release\Minecraft-mod-classifier\
-          copy docs\QUICKSTART.md release\Minecraft-mod-classifier\
-          copy LICENSE release\Minecraft-mod-classifier\
-          mkdir release\Minecraft-mod-classifier\Input
-          mkdir release\Minecraft-mod-classifier\Output
-          mkdir release\Minecraft-mod-classifier\Output\ClientOnly
-          mkdir release\Minecraft-mod-classifier\Output\ServerOnly
-          mkdir release\Minecraft-mod-classifier\Output\ClientRequiredServerOptional
-          mkdir release\Minecraft-mod-classifier\Output\ClientOptionalServerRequired
-          mkdir release\Minecraft-mod-classifier\Output\ClientAndServerRequired
-          mkdir release\Minecraft-mod-classifier\Output\ClientOptionalServerOptional
-          mkdir release\Minecraft-mod-classifier\Output\Unknown
+          Copy-Item "dist\Minecraft-mod-classifier\*" "release\Minecraft-mod-classifier\" -Recurse -Force
+          Copy-Item "README.md" "release\Minecraft-mod-classifier\"
+          Copy-Item "LICENSE" "release\Minecraft-mod-classifier\"
+          Copy-Item "docs\QUICKSTART.md" "release\Minecraft-mod-classifier\"
+          Copy-Item "docs\USAGE.md" "release\Minecraft-mod-classifier\"
+          Copy-Item "docs\BUILD_GUIDE.md" "release\Minecraft-mod-classifier\"
+          Remove-Item "release\Minecraft-mod-classifier\Input\*" -Recurse -ErrorAction SilentlyContinue
+          Remove-Item "release\Minecraft-mod-classifier\Output\*" -Recurse -ErrorAction SilentlyContinue
         shell: pwsh
 
       - name: Prepare release package (Linux)
         if: matrix.os == 'linux'
         run: |
           mkdir -p release/Minecraft-mod-classifier
-          cp dist/Minecraft-mod-classifier release/Minecraft-mod-classifier/
+          cp -r dist/Minecraft-mod-classifier/* release/Minecraft-mod-classifier/
           cp README.md release/Minecraft-mod-classifier/
-          cp docs/QUICKSTART.md release/Minecraft-mod-classifier/
           cp LICENSE release/Minecraft-mod-classifier/
-          mkdir -p release/Minecraft-mod-classifier/Input
-          mkdir -p release/Minecraft-mod-classifier/Output/{ClientOnly,ServerOnly,ClientRequiredServerOptional,ClientOptionalServerRequired,ClientAndServerRequired,ClientOptionalServerOptional,Unknown}
+          cp docs/QUICKSTART.md release/Minecraft-mod-classifier/
+          cp docs/USAGE.md release/Minecraft-mod-classifier/
+          cp docs/BUILD_GUIDE.md release/Minecraft-mod-classifier/
+          rm -rf release/Minecraft-mod-classifier/Input/*
+          rm -rf release/Minecraft-mod-classifier/Output/*
           chmod +x release/Minecraft-mod-classifier/Minecraft-mod-classifier
 
       - name: Create archive (Windows)
