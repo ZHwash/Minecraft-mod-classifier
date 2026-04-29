@@ -9,6 +9,8 @@
 #include <ctime>      // 用于获取当前时间作为日志时间戳
 #include <iomanip>    // 用于 std::put_time
 #include <cstdlib>    // 用于 system("pause")
+#include <cstring>    // 用于字符串操作
+#include <cstdint>    // 用于固定宽度整数类型
 #include "include/nlohmann/json.hpp"
 
 // 针对 Windows 平台的乱码问题, 引入 Windows.h

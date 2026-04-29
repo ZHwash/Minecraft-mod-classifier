@@ -1,0 +1,142 @@
+name: Python Build and Package
+
+on:
+  push:
+    branches: [ main, pr0 ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [published]
+
+jobs:
+  build:
+    name: Build ${{ matrix.os }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Windows builds
+          - os: windows
+            arch: x86_64
+            runner: windows-latest
+            executable_suffix: ".exe"
+            archive_ext: zip
+          # Linux builds
+          - os: linux
+            arch: x86_64
+            runner: ubuntu-latest
+            executable_suffix: ""
+            archive_ext: tar.gz
+          - os: linux
+            arch: aarch64
+            runner: ubuntu-latest
+            executable_suffix: ""
+            archive_ext: tar.gz
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          architecture: ${{ matrix.arch == 'aarch64' && 'arm64' || 'x64' }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+
+      - name: Build executable (Windows)
+        if: matrix.os == 'windows'
+        run: |
+          pyinstaller --clean `
+            --name "Minecraft-mod-classifier" `
+            --onefile `
+            --console `
+            --add-data "config/mods_data.json;." `
+            src/python/main.py
+        shell: pwsh
+
+      - name: Build executable (Linux)
+        if: matrix.os == 'linux'
+        run: |
+          pyinstaller --clean \
+            --name "Minecraft-mod-classifier" \
+            --onefile \
+            --console \
+            --add-data "config/mods_data.json:." \
+            src/python/main.py
+
+      - name: Prepare release package (Windows)
+        if: matrix.os == 'windows'
+        run: |
+          mkdir -p release/Minecraft-mod-classifier
+          copy dist\Minecraft-mod-classifier.exe release\Minecraft-mod-classifier\
+          copy README.md release\Minecraft-mod-classifier\
+          copy docs\QUICKSTART.md release\Minecraft-mod-classifier\
+          copy LICENSE release\Minecraft-mod-classifier\
+          mkdir release\Minecraft-mod-classifier\Input
+          mkdir release\Minecraft-mod-classifier\Output
+          mkdir release\Minecraft-mod-classifier\Output\ClientOnly
+          mkdir release\Minecraft-mod-classifier\Output\ServerOnly
+          mkdir release\Minecraft-mod-classifier\Output\ClientRequiredServerOptional
+          mkdir release\Minecraft-mod-classifier\Output\ClientOptionalServerRequired
+          mkdir release\Minecraft-mod-classifier\Output\ClientAndServerRequired
+          mkdir release\Minecraft-mod-classifier\Output\ClientOptionalServerOptional
+          mkdir release\Minecraft-mod-classifier\Output\Unknown
+        shell: pwsh
+
+      - name: Prepare release package (Linux)
+        if: matrix.os == 'linux'
+        run: |
+          mkdir -p release/Minecraft-mod-classifier
+          cp dist/Minecraft-mod-classifier release/Minecraft-mod-classifier/
+          cp README.md release/Minecraft-mod-classifier/
+          cp docs/QUICKSTART.md release/Minecraft-mod-classifier/
+          cp LICENSE release/Minecraft-mod-classifier/
+          mkdir -p release/Minecraft-mod-classifier/Input
+          mkdir -p release/Minecraft-mod-classifier/Output/{ClientOnly,ServerOnly,ClientRequiredServerOptional,ClientOptionalServerRequired,ClientAndServerRequired,ClientOptionalServerOptional,Unknown}
+          chmod +x release/Minecraft-mod-classifier/Minecraft-mod-classifier
+
+      - name: Create archive (Windows)
+        if: matrix.os == 'windows'
+        run: |
+          cd release
+          Compress-Archive -Path Minecraft-mod-classifier -DestinationPath "minecraft-mod-classifier-${{ matrix.os }}-${{ matrix.arch }}.${{ matrix.archive_ext }}"
+        shell: pwsh
+
+      - name: Create archive (Linux)
+        if: matrix.os == 'linux'
+        run: |
+          cd release
+          tar -czf "minecraft-mod-classifier-${{ matrix.os }}-${{ matrix.arch }}.${{ matrix.archive_ext }}" Minecraft-mod-classifier
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: minecraft-mod-classifier-${{ matrix.os }}-${{ matrix.arch }}
+          path: release/minecraft-mod-classifier-${{ matrix.os }}-${{ matrix.arch }}.${{ matrix.archive_ext }}
+          retention-days: 30
+
+  release:
+    if: github.event_name == 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-artifacts
+
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            release-artifacts/*/*.zip
+            release-artifacts/*/*.tar.gz
+          token: ${{ secrets.GITHUB_TOKEN }}
