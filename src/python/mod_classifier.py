@@ -11,7 +11,7 @@ from typing import Dict, Optional
 from logger import setup_logger
 from config_manager import ConfigManager
 from jar_parser import JarParser
-from file_utils import clean_mod_name, ensure_directory, get_jar_files
+from file_utils import ensure_directory, get_jar_files
 from i18n import i18n
 
 
@@ -118,44 +118,45 @@ class ModClassifier:
             jar_path: JAR文件路径
         """
         filename = jar_path.name
-        clean_name = clean_mod_name(filename)
         
         self.logger.info(f"\n处理: {filename}")
-        self.logger.debug(f"清理后的名称: {clean_name}")
         
-        # 1. 在配置中查找（暂不传版本和loader，后续可扩展）
-        mod_config = self.config_manager.find_mod(clean_name)
+        # 1. 解析JAR文件获取modId和类型（三层优先级判断）
+        mod_info = self.jar_parser.parse_jar(jar_path)
+        
+        if not mod_info:
+            self.logger.warning(f"无法解析 {filename}，跳过")
+            self.stats['failed'] += 1
+            return
+        
+        mod_id = mod_info.get('mod_id', '')
+        mod_type = mod_info.get('type', 'unknown')
+        
+        if not mod_id:
+            self.logger.warning(f"{filename} 中未找到modId，跳过")
+            self.stats['failed'] += 1
+            return
+        
+        self.logger.debug(f"Mod ID: {mod_id}, 推断类型: {mod_type}")
+        
+        # 2. 在配置中查找（仅基于mod_id）
+        mod_config = self.config_manager.find_mod(mod_id)
         
         if mod_config:
             # 配置中存在，直接使用
             mod_type = mod_config['type']
             self.logger.info(f"[OK] 在配置中找到: {mod_type}")
         else:
-            # 2. 配置中不存在，解析JAR文件
-            self.logger.info("配置中未找到，尝试解析JAR文件...")
-            mod_info = self.jar_parser.parse_jar(jar_path)
+            # 3. 配置中不存在，使用解析结果中的类型（来自三层优先级判断）
+            self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
             
-            if mod_info:
-                mod_type = mod_info['type']
-                version = mod_info.get('version', '')
-                loader = mod_info.get('loader', '')
-                
-                self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
-                if version:
-                    self.logger.debug(f"  版本: {version}")
-                if loader:
-                    self.logger.debug(f"  Mod端: {loader.upper()}")
-                
-                # 添加到配置中（包含版本和loader信息）
-                if self.config_manager.add_mod(clean_name, mod_type, version, loader):
-                    self.stats['auto_detected'] += 1
-            else:
-                # 3. 解析失败，标记为未知
-                self.logger.warning("[FAIL] 无法解析JAR文件，标记为未知类型")
-                mod_type = 'unknown'
+            # 添加到配置中（仅mod_id和type）
+            if self.config_manager.add_mod(mod_id, mod_type):
+                self.stats['auto_detected'] += 1
         
         # 4. 复制文件到对应目录
         self._copy_to_output(jar_path, mod_type)
+        self.stats['classified'] += 1
     
     def _copy_to_output(self, source_path: Path, mod_type: str):
         """
@@ -170,7 +171,7 @@ class ModClassifier:
         
         # 检查目标文件是否已存在
         if target_path.exists():
-            self.logger.info(f"⊘ 文件已存在（已分类）: {target_dir_name}")
+            self.logger.info(f"⊙ 文件已存在（已分类）: {target_dir_name}")
             self.stats['classified'] += 1  # 计入已分类，而不是跳过
             return
         

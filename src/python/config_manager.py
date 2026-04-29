@@ -4,10 +4,9 @@
 配置管理模块
 负责读取、保存和更新mods_data.json配置文件
 
-配置结构升级：
-- 支持多版本：通过version字段区分
-- 支持多Mod端：通过loader字段区分（forge/fabric/neoforge）
-- 唯一标识：name + version + loader
+配置结构简化：
+- 仅保留mod_id和type字段
+- 不再区分版本和加载器（运行位置通常不会改变）
 """
 
 import json
@@ -45,7 +44,16 @@ class ConfigManager:
         
         try:
             with open(self.config_path, 'r', encoding='utf-8') as f:
-                self.mods_data = json.load(f)
+                data = json.load(f)
+            
+            # 兼容旧版本配置，移除version和loader字段
+            self.mods_data = []
+            for mod in data:
+                simplified = {
+                    'mod_id': mod.get('mod_id', ''),
+                    'type': mod.get('type', 'unknown')
+                }
+                self.mods_data.append(simplified)
             
             self.logger.info(f"成功加载 {len(self.mods_data)} 条Mod配置")
             return True
@@ -92,121 +100,67 @@ class ConfigManager:
             self.logger.error(f"创建默认配置失败: {str(e)}")
             return False
     
-    def _generate_mod_key(self, name: str, version: str = "", loader: str = "") -> str:
+    def find_mod(self, mod_id: str) -> Optional[Dict[str, str]]:
         """
-        生成Mod的唯一标识键
+        查找Mod配置（仅基于mod_id）
         
         Args:
-            name: Mod名称
-            version: 版本号
-            loader: Mod加载器类型
-            
-        Returns:
-            唯一标识键
-        """
-        key_parts = [name.lower()]
-        if version:
-            key_parts.append(version.lower())
-        if loader:
-            key_parts.append(loader.lower())
-        return "|".join(key_parts)
-    
-    def find_mod(self, clean_name: str, version: str = "", loader: str = "") -> Optional[Dict[str, str]]:
-        """
-        查找Mod配置（支持版本和Mod端匹配）
-        
-        Args:
-            clean_name: 清理后的Mod文件名（小写）
-            version: 版本号（可选）
-            loader: Mod加载器类型（可选）
+            mod_id: Mod的唯一标识符(modId)
             
         Returns:
             Mod配置字典，如果未找到返回None
         """
-        target_key = self._generate_mod_key(clean_name, version, loader)
-        
-        # 首先尝试精确匹配（name + version + loader）
         for mod in self.mods_data:
-            mod_key = self._generate_mod_key(
-                mod.get('name', ''),
-                mod.get('version', ''),
-                mod.get('loader', '')
-            )
-            if mod_key == target_key:
+            if mod.get('mod_id', '').lower() == mod_id.lower():
                 return mod
-        
-        # 如果没有版本和loader信息，尝试仅按名称匹配
-        if not version and not loader:
-            for mod in self.mods_data:
-                if mod.get('name', '').lower() == clean_name.lower():
-                    # 检查是否有更精确的匹配（有版本或loader）
-                    # 如果有，优先使用无版本/无loader的记录
-                    if not mod.get('version') and not mod.get('loader'):
-                        return mod
         
         return None
     
-    def add_mod(self, name: str, mod_type: str, version: str = "", loader: str = "") -> bool:
+    def add_mod(self, mod_id: str, mod_type: str) -> bool:
         """
         添加新的Mod配置
         
         Args:
-            name: Mod名称
+            mod_id: Mod的唯一标识符(modId)
             mod_type: Mod类型
-            version: 版本号（可选）
-            loader: Mod加载器类型（可选）
             
         Returns:
             是否成功添加
         """
         # 检查是否已存在相同配置
-        existing = self.find_mod(name, version, loader)
+        existing = self.find_mod(mod_id)
         if existing:
-            self.logger.debug(f"Mod {name} (v{version}, {loader}) 已存在于配置中")
+            self.logger.debug(f"Mod {mod_id} 已存在于配置中")
             return False
         
         new_mod = {
-            'name': name,
+            'mod_id': mod_id,
             'type': mod_type
         }
         
-        # 只在有值时添加version和loader字段
-        if version:
-            new_mod['version'] = version
-        if loader:
-            new_mod['loader'] = loader
-        
         self.mods_data.append(new_mod)
-        
-        version_info = f" v{version}" if version else ""
-        loader_info = f" [{loader.upper()}]" if loader else ""
-        self.logger.info(f"添加新Mod配置: {name}{version_info}{loader_info} -> {mod_type}")
+        self.logger.info(f"添加新Mod配置: {mod_id} -> {mod_type}")
         return True
     
-    def update_mod(self, name: str, mod_type: str, version: str = "", loader: str = "") -> bool:
+    def update_mod(self, mod_id: str, mod_type: str) -> bool:
         """
         更新Mod配置
         
         Args:
-            name: Mod名称
+            mod_id: Mod的唯一标识符(modId)
             mod_type: 新的Mod类型
-            version: 版本号（可选）
-            loader: Mod加载器类型（可选）
             
         Returns:
             是否成功更新
         """
-        target = self.find_mod(name, version, loader)
+        target = self.find_mod(mod_id)
         if target:
             old_type = target['type']
             target['type'] = mod_type
-            
-            version_info = f" v{version}" if version else ""
-            loader_info = f" [{loader.upper()}]" if loader else ""
-            self.logger.info(f"更新Mod配置: {name}{version_info}{loader_info} ({old_type} -> {mod_type})")
+            self.logger.info(f"更新Mod配置: {mod_id} ({old_type} -> {mod_type})")
             return True
         
-        self.logger.warning(f"Mod {name} 不存在，无法更新")
+        self.logger.warning(f"Mod {mod_id} 不存在，无法更新")
         return False
     
     def get_mod_count(self) -> int:

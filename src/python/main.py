@@ -11,6 +11,7 @@ from pathlib import Path
 from mod_classifier import ModClassifier
 from logger import setup_logger
 from i18n import i18n
+from github_integration import GitHubIntegration
 
 
 def main():
@@ -48,6 +49,10 @@ def main():
         
         logger.info(i18n.get('completed'))
         print(f"\n[OK] {i18n.get('completed')}")
+        
+        # 询问是否提交到GitHub
+        github = GitHubIntegration()
+        github.prompt_user_to_submit()
         
     except Exception as e:
         logger.error(f"{i18n.get('error')}: {str(e)}", exc_info=True)

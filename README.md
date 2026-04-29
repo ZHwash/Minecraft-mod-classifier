@@ -84,6 +84,29 @@ python src/python/main.py
 
 首次运行时解析 JAR 并保存配置到 `config/mods_data.json`，后续运行直接查询，速度提升 **500倍**！
 
+### 🆕 GitHub 集成（新增）
+
+分类完成后，可选择将 `mods_data.json` 自动提交到 GitHub 仓库：
+
+```bash
+# 分类完成后会提示：
+📤 提交到GitHub
+是否将更新后的mods_data.json提交到GitHub仓库?
+这将帮助社区共享Mod分类数据。
+
+是否提交到GitHub? (y/n): y
+请输入提交信息 (Enter使用默认): 添加了50个新Mod的分类规则
+
+✅ 成功提交到GitHub!
+```
+
+**前提条件：**
+- 当前目录是 Git 仓库
+- 已配置远程仓库 (`git remote add origin <url>`)
+- 有推送权限
+
+详细说明请查看 [GITHUB_INTEGRATION.md](GITHUB_INTEGRATION.md)
+
 ---
 
 ## 🔗 与原项目的关系
