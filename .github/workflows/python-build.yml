@@ -2,7 +2,7 @@ name: Python Build and Package
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, pr0 ]
   pull_request:
     branches: [ main ]
   release:
