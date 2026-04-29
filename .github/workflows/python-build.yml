@@ -22,14 +22,9 @@ jobs:
             runner: windows-latest
             executable_suffix: ".exe"
             archive_ext: zip
-          # Linux builds
+          # Linux builds (x86_64 only)
           - os: linux
             arch: x86_64
-            runner: ubuntu-latest
-            executable_suffix: ""
-            archive_ext: tar.gz
-          - os: linux
-            arch: aarch64
             runner: ubuntu-latest
             executable_suffix: ""
             archive_ext: tar.gz
