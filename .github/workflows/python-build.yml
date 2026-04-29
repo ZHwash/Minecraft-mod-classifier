@@ -44,48 +44,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyinstaller
 
+      - name: Create config directory and default config
+        run: |
+          mkdir -p config
+          echo '[]' > config/mods_data.json
+        shell: bash
+
       - name: Build executable (Windows)
         if: matrix.os == 'windows'
         run: |
-          # Create config directory and default config
-          New-Item -ItemType Directory -Force -Path config | Out-Null
-          '[]' | Out-File -FilePath config/mods_data.json -Encoding UTF8
-          
-          pyinstaller --clean `
-            --name "Minecraft-mod-classifier" `
-            --onedir `
-            --console `
-            --paths "src/python" `
-            --add-data "config/mods_data.json;config" `
-            --hidden-import mod_classifier `
-            --hidden-import logger `
-            --hidden-import config_manager `
-            --hidden-import jar_parser `
-            --hidden-import file_utils `
-            --hidden-import i18n `
-            src/python/main.py
+          pyinstaller --clean Minecraft-mod-classifier.spec
         shell: pwsh
 
       - name: Build executable (Linux)
         if: matrix.os == 'linux'
         run: |
-          # Create config directory and default config
-          mkdir -p config
-          echo '[]' > config/mods_data.json
-          
-          pyinstaller --clean \
-            --name "Minecraft-mod-classifier" \
-            --onedir \
-            --console \
-            --paths "src/python" \
-            --add-data "config/mods_data.json:config" \
-            --hidden-import mod_classifier \
-            --hidden-import logger \
-            --hidden-import config_manager \
-            --hidden-import jar_parser \
-            --hidden-import file_utils \
-            --hidden-import i18n \
-            src/python/main.py
+          pyinstaller --clean Minecraft-mod-classifier.spec
 
       - name: Prepare release package (Windows)
         if: matrix.os == 'windows'
