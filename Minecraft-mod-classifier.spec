@@ -5,14 +5,30 @@ from pathlib import Path
 
 # 使用正斜杠确保跨平台兼容
 script_path = 'src/python/main.py'
-config_data = ('config/mods_data.json', 'config')
+config_datas = [
+    ('config/mods_data.json', 'config'),
+    ('config/mod_rules.json', 'config'),
+]
 
 a = Analysis(
     [script_path],
     pathex=['src/python'],
     binaries=[],
-    datas=[config_data],
-    hiddenimports=['mod_classifier', 'logger', 'config_manager', 'jar_parser', 'file_utils', 'i18n'],
+    datas=config_datas,
+    hiddenimports=[
+        'mod_classifier',
+        'logger',
+        'config_manager',
+        'jar_parser',
+        'file_utils',
+        'i18n',
+        'generate_patch',
+        'apply_patch',
+        'rule_manager',
+        'modrinth_api',
+        'github_integration',
+        'data_migration'
+    ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

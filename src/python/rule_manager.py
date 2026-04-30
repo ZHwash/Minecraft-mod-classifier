@@ -21,6 +21,7 @@ import re
 from pathlib import Path
 from typing import List, Dict, Optional
 from logger import setup_logger
+from file_utils import get_resource_path
 
 logger = setup_logger()
 
@@ -35,7 +36,8 @@ class RuleManager:
         Args:
             rules_path: 规则文件路径
         """
-        self.rules_path = Path(rules_path)
+        # 使用 get_resource_path 获取正确的文件路径
+        self.rules_path = get_resource_path(rules_path)
         self.rules: List[Dict] = []
         self.logger = logger
     

@@ -16,7 +16,7 @@ import json
 from pathlib import Path
 from typing import List, Dict, Optional
 from logger import setup_logger
-from file_utils import ensure_directory
+from file_utils import ensure_directory, get_resource_path
 
 logger = setup_logger()
 
@@ -31,7 +31,8 @@ class ConfigManager:
         Args:
             config_path: 配置文件路径
         """
-        self.config_path = Path(config_path)
+        # 使用 get_resource_path 获取正确的文件路径
+        self.config_path = get_resource_path(config_path)
         self.mods_data: List[Dict[str, str]] = []
         self.logger = logger
     

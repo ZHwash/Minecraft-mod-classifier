@@ -8,6 +8,7 @@
 import json
 from pathlib import Path
 from datetime import datetime
+from file_utils import get_resource_path
 
 
 def generate_incremental_patch(
@@ -26,19 +27,21 @@ def generate_incremental_patch(
     Returns:
         补丁文件路径
     """
-    # 加载源配置
-    config_path = Path(source_config)
+    # 使用 get_resource_path 获取正确的文件路径
+    config_path = get_resource_path(source_config)
     if not config_path.exists():
         print(f"错误: 配置文件 {source_config} 不存在")
+        print(f"   尝试路径: {config_path}")
         return None
     
     with open(config_path, 'r', encoding='utf-8') as f:
         config_data = json.load(f)
     
     # 加载目标规则
-    rules_path = Path(target_rules)
+    rules_path = get_resource_path(target_rules)
     if not rules_path.exists():
         print(f"错误: 规则文件 {target_rules} 不存在")
+        print(f"   尝试路径: {rules_path}")
         return None
     
     with open(rules_path, 'r', encoding='utf-8') as f:
@@ -72,8 +75,14 @@ def generate_incremental_patch(
                 'reason': ''  # reason字段留空，待后期填充
             })
         else:
-            # 检查是否需要更新
+            # 获取现有规则
             existing = rules_index[mod_id]
+            
+            # 检查是否为已确认配置，如果是则跳过
+            if existing.get('confirmed', False):
+                continue
+            
+            # 检查是否需要更新
             changes = {}
             
             # 检查mod_name

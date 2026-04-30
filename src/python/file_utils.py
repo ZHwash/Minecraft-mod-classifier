@@ -5,8 +5,9 @@
 提供文件和目录操作的实用函数
 """
 
+import sys
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 
 def ensure_directory(dir_path: Path) -> bool:
@@ -25,6 +26,29 @@ def ensure_directory(dir_path: Path) -> bool:
     except Exception as e:
         print(f"创建目录失败 {dir_path}: {str(e)}")
         return False
+
+
+def get_resource_path(relative_path: str) -> Path:
+    """
+    获取资源文件的绝对路径（兼容开发环境和PyInstaller打包环境）
+    
+    Args:
+        relative_path: 相对路径（相对于项目根目录）
+        
+    Returns:
+        资源的绝对路径
+    """
+    if getattr(sys, 'frozen', False):
+        # PyInstaller 打包后的环境
+        # 可执行文件在 dist/Minecraft-mod-classifier/
+        # 资源文件在 dist/Minecraft-mod-classifier/_internal/
+        base_path = Path(sys.executable).parent / '_internal'
+    else:
+        # 开发环境
+        # 从 src/python/ 向上两级到项目根目录
+        base_path = Path(__file__).parent.parent.parent
+    
+    return base_path / relative_path
 
 
 def get_jar_files(directory: Path) -> List[Path]:

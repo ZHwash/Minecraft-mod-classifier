@@ -80,9 +80,10 @@
     },
     {
       "mod_id": "spark",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "spark"
+      "type": "client_optional_server_optional",
+      "reason": "通过JAR配置自动识别: spark",
+      "mod_name": "spark",
+      "confirmed": true
     },
     {
       "mod_id": "krypton",
@@ -92,9 +93,10 @@
     },
     {
       "mod_id": "jei",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Just Enough Items"
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Just Enough Items",
+      "mod_name": "Just Enough Items",
+      "confirmed": true
     },
     {
       "mod_id": "cme_championhelper",
@@ -122,9 +124,10 @@
     },
     {
       "mod_id": "potionparticlepack",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Potion Particle Pack"
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Potion Particle Pack",
+      "mod_name": "Potion Particle Pack",
+      "confirmed": true
     },
     {
       "mod_id": "comics_bubbles_chat",
@@ -135,26 +138,30 @@
     {
       "mod_id": "xaerosworldmap",
       "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": ""
+      "reason": "通过JAR配置自动识别",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "xaeros_minimap",
       "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "Xaero's Minimap"
+      "reason": "通过JAR配置自动识别: Xaero's Minimap",
+      "mod_name": "Xaero's Minimap",
+      "confirmed": true
     },
     {
       "mod_id": "enhancedvisuals",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "EnhancedVisuals"
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: EnhancedVisuals",
+      "mod_name": "EnhancedVisuals",
+      "confirmed": true
     },
     {
       "mod_id": "prism",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Prism"
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Prism",
+      "mod_name": "Prism",
+      "confirmed": true
     },
     {
       "mod_id": "justenoughresources",
@@ -164,8 +171,8 @@
     },
     {
       "mod_id": "konkrete",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_required_server_optional",
       "mod_name": "Konkrete"
     },
     {
@@ -182,62 +189,65 @@
     },
     {
       "mod_id": "loliasm",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "LugiaSMP"
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: CensoredASM",
+      "mod_name": "CensoredASM",
+      "confirmed": true
     },
     {
       "mod_id": "iceberg",
       "type": "client_only",
-      "reason": "",
-      "mod_name": "Iceberg"
+      "reason": "通过JAR配置自动识别: Iceberg",
+      "mod_name": "Iceberg",
+      "confirmed": true
     },
     {
       "mod_id": "polylib",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_required_server_optional",
       "mod_name": "PolyLib"
     },
     {
       "mod_id": "astatine",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Create: Hex Casting"
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
+      "mod_name": ""
     },
     {
       "mod_id": "distanthorizons",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "Distant Horizons"
     },
     {
       "mod_id": "pretty_rain",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Pretty Rain"
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_required_server_optional",
+      "mod_name": "Pretty Rain",
+      "confirmed": true
     },
     {
       "mod_id": "sound_physics_remastered",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "Sound Physics Remastered"
     },
     {
       "mod_id": "itemphysic",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "ItemPhysic"
     },
     {
       "mod_id": "lexiconfig",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "Lexiconfig"
     },
     {
       "mod_id": "aquaacrobatics",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "Aqua Acrobatics Legacy (ragecraft version)"
     },
     {
@@ -248,8 +258,8 @@
     },
     {
       "mod_id": "cloth_config",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "Cloth Config v15 API"
     },
     {
@@ -260,8 +270,8 @@
     },
     {
       "mod_id": "configanytime",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "ConfigAnytime"
     },
     {
@@ -272,14 +282,14 @@
     },
     {
       "mod_id": "cristellib",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "Cristel Lib"
     },
     {
       "mod_id": "alfheim",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_optional",
       "mod_name": "Alfheim"
     },
     {
@@ -302,8 +312,8 @@
     },
     {
       "mod_id": "mixinbooter",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "MixinBooter"
     },
     {
@@ -344,8 +354,8 @@
     },
     {
       "mod_id": "openloader",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "Open Loader"
     },
     {
@@ -362,8 +372,8 @@
     },
     {
       "mod_id": "redirector",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_optional",
       "mod_name": "Redirector"
     },
     {
@@ -374,8 +384,8 @@
     },
     {
       "mod_id": "saturn",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_optional",
       "mod_name": "Saturn"
     },
     {
@@ -386,33 +396,36 @@
     },
     {
       "mod_id": "ksyxis",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Ksyxis"
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_optional",
+      "mod_name": "Ksyxis",
+      "confirmed": true
     },
     {
       "mod_id": "modernfix",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "ModernFix"
     },
     {
       "mod_id": "nochatreports",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "No Chat Reports"
     },
     {
       "mod_id": "memorysweep",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "MemorySweep"
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_optional_server_optional",
+      "mod_name": "MemorySweep",
+      "confirmed": true
     },
     {
       "mod_id": "radium",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Radium"
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_optional",
+      "mod_name": "Radium",
+      "confirmed": true
     },
     {
       "mod_id": "midnightlib",
@@ -422,15 +435,16 @@
     },
     {
       "mod_id": "ferritecore",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "FerriteCore"
     },
     {
       "mod_id": "modernui",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "ModernUI+"
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_optional_server_optional",
+      "mod_name": "ModernUI+",
+      "confirmed": true
     },
     {
       "mod_id": "smoothboot_reloaded",
@@ -446,8 +460,8 @@
     },
     {
       "mod_id": "smoothboot",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_optional",
       "mod_name": "Smooth Boot"
     },
     {
@@ -464,21 +478,21 @@
     },
     {
       "mod_id": "unidict",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
       "mod_name": "UniDict"
     },
     {
       "mod_id": "noisium",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
       "mod_name": "Noisium"
     },
     {
       "mod_id": "dimthread",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "Dimensional Threading"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "letmefeedyou",
@@ -488,9 +502,10 @@
     },
     {
       "mod_id": "mes",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "MES - Moog's End Structures"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_required",
+      "mod_name": "MES - Moog's End Structures",
+      "confirmed": true
     },
     {
       "mod_id": "healthnanfix",
@@ -500,15 +515,17 @@
     },
     {
       "mod_id": "yungsapi",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "YUNG's API"
+      "type": "client_optional_server_required",
+      "reason": "通过JAR配置自动识别: YUNG's API",
+      "mod_name": "YUNG's API",
+      "confirmed": true
     },
     {
       "mod_id": "yungsbridges",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "YUNG's Bridges"
+      "type": "client_optional_server_required",
+      "reason": "通过JAR配置自动识别: YUNG's Bridges",
+      "mod_name": "YUNG's Bridges",
+      "confirmed": true
     },
     {
       "mod_id": "towns_and_towers",
@@ -518,33 +535,36 @@
     },
     {
       "mod_id": "tpmaster",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Set Home"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "tact",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
       "mod_name": "[TACZ] LesRaisins Tactical Equipements"
     },
     {
       "mod_id": "fastfurnace",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "FastFurnace [FABRIC]"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_optional_server_required",
+      "mod_name": "FastFurnace [FABRIC]",
+      "confirmed": true
     },
     {
       "mod_id": "better_campfires",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_required",
       "mod_name": "Better Campfires"
     },
     {
       "mod_id": "alternate_current",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Alternate Current"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_required",
+      "mod_name": "Alternate Current",
+      "confirmed": true
     },
     {
       "mod_id": "ftbquestsoptimizer",
@@ -560,8 +580,8 @@
     },
     {
       "mod_id": "starlight",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_required",
       "mod_name": "Starlight (Fabric)"
     },
     {
@@ -572,15 +592,16 @@
     },
     {
       "mod_id": "aireducer",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "FPS Reducer"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_optional_server_required",
+      "mod_name": "FPS Reducer",
+      "confirmed": true
     },
     {
       "mod_id": "rltweaker",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "CraftTweaker"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "born_in_a_barn",
@@ -614,27 +635,29 @@
     },
     {
       "mod_id": "chunky",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_optional_server_required",
       "mod_name": "Chunky"
     },
     {
       "mod_id": "incontrol",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "InControlMob"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_required",
+      "mod_name": "InControlMob",
+      "confirmed": true
     },
     {
       "mod_id": "journeymap",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Journeymap"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Journeymap",
+      "confirmed": true
     },
     {
       "mod_id": "rrls",
       "type": "client_only",
       "reason": "",
-      "mod_name": "Remove Reloading Screen"
+      "mod_name": ""
     },
     {
       "mod_id": "celeritas",
@@ -646,19 +669,21 @@
       "mod_id": "damagetilt",
       "type": "client_only",
       "reason": "",
-      "mod_name": "DamageTint"
+      "mod_name": ""
     },
     {
       "mod_id": "itlt",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "Just Meloetta"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_required → client_only",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "classicbar",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "Classic Bad Omen"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_required → client_only",
+      "mod_name": "Classic Bad Omen",
+      "confirmed": true
     },
     {
       "mod_id": "armorsoundtweak",
@@ -728,9 +753,10 @@
     },
     {
       "mod_id": "advanced_xray",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "AdvancedPlayTime [1.21 - 1.21.10]"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "continuity",
@@ -752,15 +778,17 @@
     },
     {
       "mod_id": "notenoughanimations",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "NotEnoughAnimations"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "NotEnoughAnimations",
+      "confirmed": true
     },
     {
       "mod_id": "searchables",
       "type": "client_only",
-      "reason": "",
-      "mod_name": "Searchables"
+      "reason": "通过JAR配置自动识别: Searchables",
+      "mod_name": "Searchables",
+      "confirmed": true
     },
     {
       "mod_id": "colorfulhearts",
@@ -824,9 +852,10 @@
     },
     {
       "mod_id": "mafglib",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "MaFgLib"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: MaFgLib",
+      "mod_name": "MaFgLib",
+      "confirmed": true
     },
     {
       "mod_id": "unicodefix",
@@ -842,15 +871,17 @@
     },
     {
       "mod_id": "relauncher",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "relauncher"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → client_only",
+      "mod_name": "relauncher",
+      "confirmed": true
     },
     {
       "mod_id": "valkyrie",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Valkyrien Skies"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Valkyrien Skies",
+      "confirmed": true
     },
     {
       "mod_id": "renderlib",
@@ -860,9 +891,10 @@
     },
     {
       "mod_id": "smoothfont",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "SmoothBoat"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "screenshot_viewer",
@@ -872,15 +904,17 @@
     },
     {
       "mod_id": "resourceloader",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "ResourceLoader"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "ResourceLoader",
+      "confirmed": true
     },
     {
       "mod_id": "neonium",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Neorium"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "neverenoughanimations",
@@ -926,9 +960,10 @@
     },
     {
       "mod_id": "gnetum",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Gnetum"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Gnetum",
+      "mod_name": "Gnetum",
+      "confirmed": true
     },
     {
       "mod_id": "chatheadsyg",
@@ -938,9 +973,10 @@
     },
     {
       "mod_id": "farsight",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Farsighted Mobs"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Farsighted Mobs",
+      "mod_name": "Farsighted Mobs",
+      "confirmed": true
     },
     {
       "mod_id": "holdmyitems",
@@ -1004,15 +1040,17 @@
     },
     {
       "mod_id": "toadlib",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "ToadLib"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "ToadLib",
+      "confirmed": true
     },
     {
       "mod_id": "tweakerge",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Tweakerge"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Tweakerge",
+      "mod_name": "Tweakerge",
+      "confirmed": true
     },
     {
       "mod_id": "yeetusexperimentus",
@@ -1022,9 +1060,10 @@
     },
     {
       "mod_id": "skinlayers3d",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "3d-Skin-Layers"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "3d-Skin-Layers",
+      "confirmed": true
     },
     {
       "mod_id": "entityculling",
@@ -1064,9 +1103,10 @@
     },
     {
       "mod_id": "flerovium",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Flerovium"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Flerovium",
+      "mod_name": "Flerovium",
+      "confirmed": true
     },
     {
       "mod_id": "battlemusic",
@@ -1094,9 +1134,10 @@
     },
     {
       "mod_id": "beb",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Geophilic"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "bettertaskbar",
@@ -1106,9 +1147,10 @@
     },
     {
       "mod_id": "bouncierbeds",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Bouncier Beds"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "Bouncier Beds",
+      "confirmed": true
     },
     {
       "mod_id": "extrasoundsnext",
@@ -1142,15 +1184,17 @@
     },
     {
       "mod_id": "itemborders",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "ItemBorder"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "ItemBorder",
+      "confirmed": true
     },
     {
       "mod_id": "gpumemleakfix",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Gpu memory leak fix mod"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Gpu memory leak fix mod",
+      "confirmed": true
     },
     {
       "mod_id": "freecam",
@@ -1160,9 +1204,10 @@
     },
     {
       "mod_id": "fancymenu",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "FancyMenu"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_required_server_optional → client_only",
+      "mod_name": "FancyMenu",
+      "confirmed": true
     },
     {
       "mod_id": "cameraoverhaul",
@@ -1208,9 +1253,10 @@
     },
     {
       "mod_id": "palladium",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "Palladium"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_required_server_optional → client_only",
+      "mod_name": "Palladium",
+      "confirmed": true
     },
     {
       "mod_id": "sodiumdynamiclights",
@@ -1226,9 +1272,10 @@
     },
     {
       "mod_id": "travelerstitles",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Traveler's Titles"
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Traveler's Titles",
+      "mod_name": "Traveler's Titles",
+      "confirmed": true
     },
     {
       "mod_id": "visual_keybinder",
@@ -1274,9 +1321,10 @@
     },
     {
       "mod_id": "bh",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "BH Creative"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "BH Creative",
+      "confirmed": true
     },
     {
       "mod_id": "namepain",
@@ -1310,9 +1358,10 @@
     },
     {
       "mod_id": "sakura",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Sakura Mod"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Sakura Mod",
+      "confirmed": true
     },
     {
       "mod_id": "ftbchunks",
@@ -1328,9 +1377,10 @@
     },
     {
       "mod_id": "multimob",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "MultiMOTD"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "tumbleweed",
@@ -1366,13 +1416,13 @@
       "mod_id": "mysticalworld",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "MysticWorld"
+      "mod_name": ""
     },
     {
       "mod_id": "endreborn",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "EndRework"
+      "mod_name": ""
     },
     {
       "mod_id": "raids_backport",
@@ -1384,7 +1434,7 @@
       "mod_id": "mysticallib",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "MusicalLib"
+      "mod_name": ""
     },
     {
       "mod_id": "pogosticks",
@@ -1400,15 +1450,16 @@
     },
     {
       "mod_id": "goldfish",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "Fix Mob Ai Tweaks Tags!"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "camels",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "More Camels"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "More Camels",
+      "confirmed": true
     },
     {
       "mod_id": "trinkets_and_baubles",
@@ -1424,9 +1475,10 @@
     },
     {
       "mod_id": "athelas",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Athena"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "wild_netherwart",
@@ -1436,9 +1488,10 @@
     },
     {
       "mod_id": "locks",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Locks!"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Locks!",
+      "confirmed": true
     },
     {
       "mod_id": "lovely_robot",
@@ -1478,21 +1531,24 @@
     },
     {
       "mod_id": "stg",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Simple Transparent GUI [STG]"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Simple Transparent GUI [STG]",
+      "confirmed": true
     },
     {
       "mod_id": "wings",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)",
+      "confirmed": true
     },
     {
       "mod_id": "xptome",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Optomerized"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "mutantbeasts",
@@ -1504,7 +1560,7 @@
       "mod_id": "simplecorn1",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "SimpleCoreLib"
+      "mod_name": ""
     },
     {
       "mod_id": "grimoireofgaia3",
@@ -1538,9 +1594,10 @@
     },
     {
       "mod_id": "coralreef",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "coralreef"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "coralreef",
+      "confirmed": true
     },
     {
       "mod_id": "surge",
@@ -1562,9 +1619,10 @@
     },
     {
       "mod_id": "endercrop",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Endercon"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "dragontweaks",
@@ -1574,9 +1632,10 @@
     },
     {
       "mod_id": "merchants",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Wandering Merchants"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Wandering Merchants",
+      "confirmed": true
     },
     {
       "mod_id": "fasterdonkeys",
@@ -1588,7 +1647,7 @@
       "mod_id": "bettergolem",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Buttergolem"
+      "mod_name": ""
     },
     {
       "mod_id": "torchslabmod",
@@ -1598,9 +1657,10 @@
     },
     {
       "mod_id": "bgs",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Midnighttigger's Better Grass"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Midnighttigger's Better Grass",
+      "confirmed": true
     },
     {
       "mod_id": "somanyenchantments",
@@ -1610,9 +1670,10 @@
     },
     {
       "mod_id": "deathfinder",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "DeathFinder"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "DeathFinder",
+      "confirmed": true
     },
     {
       "mod_id": "defiledlands",
@@ -1622,9 +1683,10 @@
     },
     {
       "mod_id": "strayspawn",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Stray Spawn"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Stray Spawn",
+      "confirmed": true
     },
     {
       "mod_id": "oceanicexpanse",
@@ -1666,19 +1728,21 @@
       "mod_id": "extrabows",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Extrabotany"
+      "mod_name": ""
     },
     {
       "mod_id": "morefurnaces",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "More Furnaces (Polymer)"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "More Furnaces (Polymer)",
+      "confirmed": true
     },
     {
       "mod_id": "cxlibrary",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Formations (Structure Library)"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Formations (Structure Library)",
+      "confirmed": true
     },
     {
       "mod_id": "meldexun_scrystalicvoid",
@@ -1694,9 +1758,10 @@
     },
     {
       "mod_id": "mooshroomspawn",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Mooshroom Spawn"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Mooshroom Spawn",
+      "confirmed": true
     },
     {
       "mod_id": "mapmaker_s_gadgets",
@@ -1712,15 +1777,16 @@
     },
     {
       "mod_id": "enhancedarmaments",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Enhanced Armaments Reload Beams"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Enhanced Armaments Reload Beams",
+      "confirmed": true
     },
     {
       "mod_id": "nether_api",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Netheritium"
+      "mod_name": ""
     },
     {
       "mod_id": "forgelin",
@@ -1730,15 +1796,16 @@
     },
     {
       "mod_id": "silentlib",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "SilentLightningFix"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "ctoasmod",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "TASmod"
+      "mod_name": ""
     },
     {
       "mod_id": "spartanlightning",
@@ -1748,9 +1815,10 @@
     },
     {
       "mod_id": "spartanweaponry",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "STONEBORN - Spartan Weaponry"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "STONEBORN - Spartan Weaponry",
+      "confirmed": true
     },
     {
       "mod_id": "spartandefiled",
@@ -1778,14 +1846,15 @@
     },
     {
       "mod_id": "mobrebirth",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Mob Rebirth"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Mob Rebirth",
+      "confirmed": true
     },
     {
       "mod_id": "battletowers",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "Eternal Battletowers"
     },
     {
@@ -1796,15 +1865,15 @@
     },
     {
       "mod_id": "creativecore",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_and_server_required",
       "mod_name": "CreativeCore"
     },
     {
       "mod_id": "dyairdrop",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "ReAirdrop Supply"
+      "mod_name": ""
     },
     {
       "mod_id": "engineersdecor",
@@ -1814,9 +1883,10 @@
     },
     {
       "mod_id": "damagenumbers",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Damage Numbers"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Damage Numbers",
+      "confirmed": true
     },
     {
       "mod_id": "immersive_weathering",
@@ -1856,15 +1926,17 @@
     },
     {
       "mod_id": "huskspawn",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Just Spawn Me There"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Just Spawn Me There",
+      "confirmed": true
     },
     {
       "mod_id": "sublime",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Superflat World No Slimes"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "eyeofdragons",
@@ -1874,15 +1946,17 @@
     },
     {
       "mod_id": "qualitytools",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "STONEBORN - Quality Tools"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "STONEBORN - Quality Tools",
+      "confirmed": true
     },
     {
       "mod_id": "llibrary",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Formations (Structure Library)"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Formations (Structure Library)",
+      "confirmed": true
     },
     {
       "mod_id": "rlartifacts",
@@ -1918,7 +1992,7 @@
       "mod_id": "frozen_fiend",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Cruelty-Free Fixes"
+      "mod_name": ""
     },
     {
       "mod_id": "ice_and_fire",
@@ -1934,9 +2008,10 @@
     },
     {
       "mod_id": "wither_config",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Wither Config"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Wither Config",
+      "confirmed": true
     },
     {
       "mod_id": "potioncore",
@@ -1946,15 +2021,17 @@
     },
     {
       "mod_id": "atlas_lib",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "AtlasLang"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "boatdeletebegone",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "BoatDeleteBegone"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "BoatDeleteBegone",
+      "confirmed": true
     },
     {
       "mod_id": "witherskeletontweaks",
@@ -2000,27 +2077,31 @@
     },
     {
       "mod_id": "itemfilters",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "LT-ItemFilter"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "LT-ItemFilter",
+      "confirmed": true
     },
     {
       "mod_id": "ftbmoney",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "MobMoney"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "herobrinemod",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Herobrine Mobs"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Herobrine Mobs",
+      "confirmed": true
     },
     {
       "mod_id": "libraryex",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Formations (Structure Library)"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Formations (Structure Library)",
+      "confirmed": true
     },
     {
       "mod_id": "mospells",
@@ -2054,15 +2135,16 @@
     },
     {
       "mod_id": "flamelib",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Faelib APIs"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "cloudboots",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Sleek"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "artificial_thunder",
@@ -2092,7 +2174,7 @@
       "mod_id": "red_core_mc",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "RedliteMC"
+      "mod_name": ""
     },
     {
       "mod_id": "fugue",
@@ -2102,9 +2184,9 @@
     },
     {
       "mod_id": "add_potion",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Carpet TIS Addition"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "caelus",
@@ -2162,8 +2244,8 @@
     },
     {
       "mod_id": "dungeons_enhanced",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "Dungeons Enhanced"
     },
     {
@@ -2186,20 +2268,21 @@
     },
     {
       "mod_id": "lootjs",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "LootJS: KubeJS Addon"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "LootJS: KubeJS Addon",
+      "confirmed": true
     },
     {
       "mod_id": "legendarymonsters",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Legendary Monsters"
     },
     {
       "mod_id": "kubejs",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "KubeJS"
     },
     {
@@ -2210,15 +2293,16 @@
     },
     {
       "mod_id": "carryon",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Carryon"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Carryon",
+      "confirmed": true
     },
     {
       "mod_id": "worldedit_mod",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Axis WorldEditor"
+      "mod_name": ""
     },
     {
       "mod_id": "aquamirae",
@@ -2252,8 +2336,8 @@
     },
     {
       "mod_id": "toughasnails",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "MTInventoryWeight Compat ToughAsNails"
     },
     {
@@ -2270,9 +2354,10 @@
     },
     {
       "mod_id": "itemblacklist",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Item Blacklist"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Item Blacklist",
+      "confirmed": true
     },
     {
       "mod_id": "incineratorstryhard",
@@ -2288,9 +2373,10 @@
     },
     {
       "mod_id": "invtweaks",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "InvTweaks"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "InvTweaks",
+      "confirmed": true
     },
     {
       "mod_id": "ice_and_fire_delight",
@@ -2318,15 +2404,16 @@
     },
     {
       "mod_id": "framework",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Surveyor Map Framework"
     },
     {
       "mod_id": "hotbath",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Immersive Hotbar"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "icarus",
@@ -2336,9 +2423,10 @@
     },
     {
       "mod_id": "iaf_patcher",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "IFPatcher"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "goetyrevelation",
@@ -2368,19 +2456,19 @@
       "mod_id": "simpleradio",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Simpleriding"
+      "mod_name": ""
     },
     {
       "mod_id": "sereneseasons",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "Croptopia SereneSeasons Compat"
     },
     {
       "mod_id": "dreadsteel",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Redsteel Armory"
+      "mod_name": ""
     },
     {
       "mod_id": "gamediscs",
@@ -2396,9 +2484,10 @@
     },
     {
       "mod_id": "pathfinder",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "PathFinder API"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "PathFinder API",
+      "confirmed": true
     },
     {
       "mod_id": "exporbrecall",
@@ -2420,9 +2509,9 @@
     },
     {
       "mod_id": "rarcompat",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "RandomPatches"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "ironchests",
@@ -2474,15 +2563,16 @@
     },
     {
       "mod_id": "farmingforblockheads",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "[Moonsu] Better GUI for FarmingForBlockheads"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "[Moonsu] Better GUI for FarmingForBlockheads",
+      "confirmed": true
     },
     {
       "mod_id": "extrameat",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "ExtraHearts"
+      "mod_name": ""
     },
     {
       "mod_id": "hamsters",
@@ -2498,9 +2588,10 @@
     },
     {
       "mod_id": "wukong",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Block Myth Wukong"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Block Myth Wukong",
+      "confirmed": true
     },
     {
       "mod_id": "zunpetforge",
@@ -2528,21 +2619,23 @@
     },
     {
       "mod_id": "wab",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Wabi-Sabi Structures"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Wabi-Sabi Structures",
+      "confirmed": true
     },
     {
       "mod_id": "tips",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Tips"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Tips",
+      "confirmed": true
     },
     {
       "mod_id": "totw_modded",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Towers of the Wild Modded"
+      "mod_name": ""
     },
     {
       "mod_id": "touhoulittlemaid",
@@ -2594,27 +2687,28 @@
     },
     {
       "mod_id": "subtleeffects",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_and_server_required",
       "mod_name": "Subtle Effects"
     },
     {
       "mod_id": "structure_gel",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "StructureHelper"
+      "mod_name": ""
     },
     {
       "mod_id": "splash_milk",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "MilkSplash"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "MilkSplash",
+      "confirmed": true
     },
     {
       "mod_id": "spawnermod",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Create: SpawnerBoxer"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "solcarrot",
@@ -2636,15 +2730,17 @@
     },
     {
       "mod_id": "simpletomb",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "SimpleTombstone"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "SimpleTombstone",
+      "confirmed": true
     },
     {
       "mod_id": "skyarena",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Figura"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "shetiphiancore",
@@ -2690,8 +2786,8 @@
     },
     {
       "mod_id": "puzzleslib",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Puzzles Lib"
     },
     {
@@ -2708,9 +2804,9 @@
     },
     {
       "mod_id": "ramcompat",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "RandomPatches"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "propertymodifier",
@@ -2720,9 +2816,10 @@
     },
     {
       "mod_id": "projectile_damage",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "NoProjectileDamage"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "NoProjectileDamage",
+      "confirmed": true
     },
     {
       "mod_id": "prefab",
@@ -2740,7 +2837,7 @@
       "mod_id": "portablehole",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "PortableHomes"
+      "mod_name": ""
     },
     {
       "mod_id": "pickablepets",
@@ -2804,14 +2901,15 @@
     },
     {
       "mod_id": "refurbished_furniture",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Bare Bones x Refurbished Furniture"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Bare Bones x Refurbished Furniture",
+      "confirmed": true
     },
     {
       "mod_id": "mru",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "M.R.U"
     },
     {
@@ -2822,8 +2920,8 @@
     },
     {
       "mod_id": "multimine",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "Multimine"
     },
     {
@@ -2834,9 +2932,10 @@
     },
     {
       "mod_id": "mo_glass",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "No Glasses Happy Ghast"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "mine_treasure",
@@ -2936,9 +3035,10 @@
     },
     {
       "mod_id": "eeeabsmobs",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "EEEAB's Mobs: Custom Bossbars"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "EEEAB's Mobs: Custom Bossbars",
+      "confirmed": true
     },
     {
       "mod_id": "dummmmmmy",
@@ -2954,8 +3054,8 @@
     },
     {
       "mod_id": "dragonseeker",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Dragonseeker easy recipe"
     },
     {
@@ -2972,9 +3072,10 @@
     },
     {
       "mod_id": "cutthrough",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Cut Through"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Cut Through",
+      "confirmed": true
     },
     {
       "mod_id": "comforts",
@@ -2984,21 +3085,24 @@
     },
     {
       "mod_id": "constructionwand",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "ConstructionWand-Plugin"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "ConstructionWand-Plugin",
+      "confirmed": true
     },
     {
       "mod_id": "cosmeticarmorreworked",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "STONEBORN - Cosmetic Armor Reworked"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "STONEBORN - Cosmetic Armor Reworked",
+      "confirmed": true
     },
     {
       "mod_id": "clickadv",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Clickable Links"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "cluttered",
@@ -3034,7 +3138,7 @@
       "mod_id": "celestial_core",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Tori's Pack"
+      "mod_name": ""
     },
     {
       "mod_id": "broomsmodunofficial",
@@ -3050,9 +3154,10 @@
     },
     {
       "mod_id": "bettertridents",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "BetterTridentReturn"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "blackaures_paintings",
@@ -3062,9 +3167,10 @@
     },
     {
       "mod_id": "bomd",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Excalibur | Bosses of Mass Destruction (BOMD) Support"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Excalibur | Bosses of Mass Destruction (BOMD) Support",
+      "confirmed": true
     },
     {
       "mod_id": "attributefix",
@@ -3074,9 +3180,10 @@
     },
     {
       "mod_id": "badmobs",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "BGames Modpack"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "alcocraftplus",
@@ -3122,21 +3229,23 @@
     },
     {
       "mod_id": "ctm",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Connected Textures (CTM) Overhaul"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Connected Textures (CTM) Overhaul",
+      "confirmed": true
     },
     {
       "mod_id": "wrapup",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "WrapUp"
     },
     {
       "mod_id": "fixeroo",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "FireRoof"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "universaltweaks",
@@ -3164,21 +3273,23 @@
     },
     {
       "mod_id": "scalar",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "ScalableLux"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "stellarcore",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Stellar Homes - A Virtual Home Plugin"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Stellar Homes - A Virtual Home Plugin",
+      "confirmed": true
     },
     {
       "mod_id": "topextras",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Text Placeholder API Extras"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "Text Placeholder API Extras",
+      "confirmed": true
     },
     {
       "mod_id": "tesla",
@@ -3190,7 +3301,7 @@
       "mod_id": "jeivillagers",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "NeoVillagers-Lumberjack"
+      "mod_name": ""
     },
     {
       "mod_id": "lunatriuscore",
@@ -3200,9 +3311,10 @@
     },
     {
       "mod_id": "item_filters",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "LT-ItemFilter"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "LT-ItemFilter",
+      "confirmed": true
     },
     {
       "mod_id": "slashbladeresharped",
@@ -3230,9 +3342,10 @@
     },
     {
       "mod_id": "fastworkbench",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "FastWorkbench [FABRIC]"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "FastWorkbench [FABRIC]",
+      "confirmed": true
     },
     {
       "mod_id": "taxfreelevels",
@@ -3242,8 +3355,8 @@
     },
     {
       "mod_id": "connector",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Sinytra Connector"
     },
     {
@@ -3260,15 +3373,17 @@
     },
     {
       "mod_id": "ftb_teams",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "ftb_quests",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "FTB Quests Freeze Fix"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "FTB Quests Freeze Fix",
+      "confirmed": true
     },
     {
       "mod_id": "projecte",
@@ -3278,8 +3393,8 @@
     },
     {
       "mod_id": "teamprojecte",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "TeamProjectE"
     },
     {
@@ -3290,8 +3405,8 @@
     },
     {
       "mod_id": "clumps",
-      "type": "client_optional_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
       "mod_name": "Clumps"
     },
     {
@@ -3344,9 +3459,10 @@
     },
     {
       "mod_id": "ftb_library",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "cupboard",
@@ -3386,39 +3502,42 @@
     },
     {
       "mod_id": "appleskin",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "AppleSkin"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "AppleSkin",
+      "confirmed": true
     },
     {
       "mod_id": "voicechat",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
       "mod_name": "Simple Voice Chat"
     },
     {
       "mod_id": "carpet",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "Carpet"
+      "type": "server_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_required → server_only",
+      "mod_name": "Carpet",
+      "confirmed": true
     },
     {
       "mod_id": "the_vault",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "PolyLib"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_optional → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "tconstruct",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "FixTconstructPickaxe"
     },
     {
       "mod_id": "optifine",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "OptiFine for Fabric"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_required_server_optional → client_only",
+      "mod_name": "OptiFine for Fabric",
+      "confirmed": true
     },
     {
       "mod_id": "sodium",
@@ -3434,15 +3553,17 @@
     },
     {
       "mod_id": "lithium",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Lithium"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Lithium",
+      "confirmed": true
     },
     {
       "mod_id": "phosphor",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Phosphor"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → client_only",
+      "mod_name": "Phosphor",
+      "confirmed": true
     },
     {
       "mod_id": "roughlyenoughitems",
@@ -3452,27 +3573,30 @@
     },
     {
       "mod_id": "configuration",
-      "type": "client_and_server_required",
-      "reason": "",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
       "mod_name": "Configuration"
     },
     {
       "mod_id": "waila",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Waila Stages"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Waila Stages",
+      "confirmed": true
     },
     {
       "mod_id": "hwyla",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Hwyla"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → client_only",
+      "mod_name": "Hwyla",
+      "confirmed": true
     },
     {
       "mod_id": "jade",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Jade"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Jade",
+      "confirmed": true
     },
     {
       "mod_id": "worldedit",
@@ -3488,9 +3612,10 @@
     },
     {
       "mod_id": "essentials",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Inventory Essentials"
+      "type": "server_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → server_only",
+      "mod_name": "Inventory Essentials",
+      "confirmed": true
     },
     {
       "mod_id": "luckperms",
@@ -3518,9 +3643,10 @@
     },
     {
       "mod_id": "enderio",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "EnderIO - Refrubished!"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "EnderIO - Refrubished!",
+      "confirmed": true
     },
     {
       "mod_id": "ae2",
@@ -3554,9 +3680,10 @@
     },
     {
       "mod_id": "biomesoplenty",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Biomes'O'Plenty Redwood Re-Hue"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Biomes'O'Plenty Redwood Re-Hue",
+      "confirmed": true
     },
     {
       "mod_id": "twilightforest",
@@ -3584,8 +3711,8 @@
     },
     {
       "mod_id": "thaumcraft",
-      "type": "client_required_server_optional",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_and_server_required",
       "mod_name": "Thaumcraft 4 Tweaks"
     },
     {
@@ -3598,7 +3725,7 @@
       "mod_id": "astralsorcery",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Mechanical Trident"
+      "mod_name": ""
     },
     {
       "mod_id": "chisel",
@@ -3686,9 +3813,10 @@
     },
     {
       "mod_id": "redstoneflux",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "RedstoneFlux"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "RedstoneFlux",
+      "confirmed": true
     },
     {
       "mod_id": "baubles",
@@ -3705,14 +3833,16 @@
     {
       "mod_id": "jeiintegration",
       "type": "client_only",
-      "reason": "",
-      "mod_name": "JEI Integration"
+      "reason": "用户手动修改: client_required_server_optional → client_only",
+      "mod_name": "JEI Integration",
+      "confirmed": true
     },
     {
       "mod_id": "jeresources",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Just Enough Resources (JER)"
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_required_server_optional",
+      "mod_name": "Just Enough Resources (JER)",
+      "confirmed": true
     },
     {
       "mod_id": "crafttweaker",
@@ -3758,9 +3888,10 @@
     },
     {
       "mod_id": "topaddons",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "SMPAddons"
+      "type": "client_and_server_required",
+      "reason": "用户手动修改: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "inventorytweaks",
@@ -3794,9 +3925,10 @@
     },
     {
       "mod_id": "dynamiclights",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "DynamicLights"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_required → client_only",
+      "mod_name": "DynamicLights",
+      "confirmed": true
     },
     {
       "mod_id": "soundfilters",
@@ -3812,33 +3944,38 @@
     },
     {
       "mod_id": "minimap",
-      "type": "client_required_server_optional",
-      "reason": "",
-      "mod_name": "Xaero's Minimap"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_required_server_optional → client_only",
+      "mod_name": "Xaero's Minimap",
+      "confirmed": true
     },
     {
       "mod_id": "xaerominimap",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Xaero's Minimap"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Xaero's Minimap",
+      "confirmed": true
     },
     {
       "mod_id": "xaeroworldmap",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Xaero's World Map"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "Xaero's World Map",
+      "confirmed": true
     },
     {
       "mod_id": "antiqueatlas",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "AntiqueAtlas - RecurrentComplex Compatability"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "mod_name": "AntiqueAtlas - RecurrentComplex Compatability",
+      "confirmed": true
     },
     {
       "mod_id": "damageindicators",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Fancy DamageIndicator"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_only",
+      "mod_name": "Fancy DamageIndicator",
+      "confirmed": true
     },
     {
       "mod_id": "neat",
@@ -3860,9 +3997,10 @@
     },
     {
       "mod_id": "foamfix",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "FoamFix"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → client_only",
+      "mod_name": "FoamFix",
+      "confirmed": true
     },
     {
       "mod_id": "vanillafix",
@@ -3872,21 +4010,23 @@
     },
     {
       "mod_id": "textformatting",
-      "type": "client_optional_server_optional",
-      "reason": "",
-      "mod_name": "Text Formatting Everywhere"
+      "type": "client_only",
+      "reason": "根据网上资料修正（重大差异）: client_optional_server_optional → client_only",
+      "mod_name": "Text Formatting Everywhere",
+      "confirmed": true
     },
     {
       "mod_id": "chattweaks",
       "type": "client_only",
       "reason": "",
-      "mod_name": "ChaTweaks"
+      "mod_name": ""
     },
     {
       "mod_id": "simplevoicechat",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "SimpleVoiceChat Broadcast"
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_optional_server_required",
+      "mod_name": "SimpleVoiceChat Broadcast",
+      "confirmed": true
     },
     {
       "mod_id": "discordintegration",
@@ -3902,15 +4042,17 @@
     },
     {
       "mod_id": "morpheus",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Orpheus | Forge & Fabric"
+      "type": "server_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → server_only",
+      "mod_name": "Orpheus | Forge & Fabric",
+      "confirmed": true
     },
     {
       "mod_id": "sleepingoverhaul",
-      "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Sleeping Overhaul 2"
+      "type": "server_only",
+      "reason": "根据网上资料修正（重大差异）: client_and_server_required → server_only",
+      "mod_name": "Sleeping Overhaul 2",
+      "confirmed": true
     },
     {
       "mod_id": "corpse",
@@ -3932,9 +4074,10 @@
     },
     {
       "mod_id": "backpacks",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Sophisticated Backpacks"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Sophisticated Backpacks",
+      "confirmed": true
     },
     {
       "mod_id": "ironbackpacks",
@@ -3962,9 +4105,10 @@
     },
     {
       "mod_id": "journeymapwaypoints",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "More JourneyMap Waypoints"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "More JourneyMap Waypoints",
+      "confirmed": true
     },
     {
       "mod_id": "fastleafdecay",
@@ -3974,8 +4118,8 @@
     },
     {
       "mod_id": "treecapitator",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "TreeCapitator"
     },
     {
@@ -4022,9 +4166,10 @@
     },
     {
       "mod_id": "mcwfurniture",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "MyFurniture"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "mcwdoors",
@@ -4058,9 +4203,10 @@
     },
     {
       "mod_id": "computercraft",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "ComputerCraft Create"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "ComputerCraft Create",
+      "confirmed": true
     },
     {
       "mod_id": "opencomputers",
@@ -4088,14 +4234,15 @@
     },
     {
       "mod_id": "dimdoors",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "BigDoors"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "compactmachines",
-      "type": "client_optional_server_required",
-      "reason": "",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
       "mod_name": "yumo compactmachines por"
     },
     {
@@ -4106,27 +4253,31 @@
     },
     {
       "mod_id": "chiseledme",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "chiseledmilk's simple redo"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "chiseledmilk's simple redo",
+      "confirmed": true
     },
     {
       "mod_id": "animania",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Animalia"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "mod_name": "",
+      "confirmed": true
     },
     {
       "mod_id": "mocreatures",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Vanilla Style - Mo' Creatures"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Vanilla Style - Mo' Creatures",
+      "confirmed": true
     },
     {
       "mod_id": "alexsmobs",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Bare Bones X Alex's Mobs"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Bare Bones X Alex's Mobs",
+      "confirmed": true
     },
     {
       "mod_id": "iceandfire",
@@ -4136,9 +4287,10 @@
     },
     {
       "mod_id": "lycanitesmobs",
-      "type": "client_only",
-      "reason": "",
-      "mod_name": "Lycanites Mobs Retextured"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "mod_name": "Lycanites Mobs Retextured",
+      "confirmed": true
     },
     {
       "mod_id": "primitivemobs",
@@ -4148,9 +4300,9 @@
     },
     {
       "mod_id": "mowziesmobs",
-      "type": "client_optional_server_required",
-      "reason": "",
-      "mod_name": "Rebuilt of Mowziemobs structure"
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
+      "mod_name": ""
     },
     {
       "mod_id": "aquaculture",
@@ -4286,7 +4438,7 @@
     },
     {
       "mod_id": "aeronautics_bundled",
-      "mod_name": "Create Aeronautics",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4304,7 +4456,7 @@
     },
     {
       "mod_id": "create_sa",
-      "mod_name": "Create Stuff & Additions",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4328,7 +4480,7 @@
     },
     {
       "mod_id": "create_bic_bit",
-      "mod_name": "Create: Bitterballen",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4346,7 +4498,7 @@
     },
     {
       "mod_id": "create_ltab",
-      "mod_name": "Create Let The Adventure Begin",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4383,8 +4535,9 @@
     {
       "mod_id": "gpu_tape",
       "mod_name": "GPUTape",
-      "type": "client_and_server_required",
-      "reason": ""
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: GPUTape",
+      "confirmed": true
     },
     {
       "mod_id": "guideme",
@@ -4419,12 +4572,13 @@
     {
       "mod_id": "ixeris_dummy",
       "mod_name": "Ixeris",
-      "type": "client_and_server_required",
-      "reason": ""
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Ixeris",
+      "confirmed": true
     },
     {
       "mod_id": "mr_katters_structures",
-      "mod_name": "Katters Structures",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4526,7 +4680,7 @@
     },
     {
       "mod_id": "muhc",
-      "mod_name": "MaidUseHandCrank",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4658,7 +4812,7 @@
     },
     {
       "mod_id": "enchdesc",
-      "mod_name": "EnchantmentDescriptions",
+      "mod_name": "",
       "type": "client_only",
       "reason": ""
     },
@@ -4676,7 +4830,7 @@
     },
     {
       "mod_id": "lambdynlights",
-      "mod_name": "LambDynamicLights",
+      "mod_name": "",
       "type": "client_only",
       "reason": ""
     },
@@ -4898,7 +5052,7 @@
     },
     {
       "mod_id": "isxander-main-menu-credits",
-      "mod_name": "Main Menu Credits",
+      "mod_name": "",
       "type": "client_only",
       "reason": ""
     },
@@ -4922,7 +5076,7 @@
     },
     {
       "mod_id": "mvs",
-      "mod_name": "MoogsVoyagerStructures",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -4994,7 +5148,7 @@
     },
     {
       "mod_id": "yet_another_config_lib_v3",
-      "mod_name": "YetAnotherConfigLib",
+      "mod_name": "",
       "type": "client_and_server_required",
       "reason": ""
     },
@@ -5006,5 +5160,5 @@
     }
   ],
   "total": 834,
-  "last_updated": "2026-04-30 17:52:23.885945"
+  "last_updated": "2026-04-30 18:19:43.344712"
 }

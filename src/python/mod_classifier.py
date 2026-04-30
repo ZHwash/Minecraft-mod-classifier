@@ -211,16 +211,29 @@ class ModClassifier:
         """
         from generate_patch import generate_incremental_patch
         
+        print("\n" + "="*60)
+        print("🔄 正在生成规则更新补丁...")
+        print("="*60)
         self.logger.info("\n正在生成规则更新补丁...")
-        patch_file = generate_incremental_patch()
         
-        if patch_file:
-            self.logger.info(f"✓ 增量补丁文件已生成: {patch_file}")
-            self.logger.info(f"   提交方式：")
-            self.logger.info(f"   1. 通过GitHub Issue提交补丁内容")
-            self.logger.info(f"   2. 维护者使用 apply_patch.py 自动合并")
-        else:
-            self.logger.info("规则数据库已是最新，无需生成补丁")
+        try:
+            patch_file = generate_incremental_patch()
+            
+            if patch_file:
+                print(f"\n✅ 增量补丁文件已生成: {patch_file}")
+                print(f"   提交方式：")
+                print(f"   1. 通过GitHub Issue提交补丁内容")
+                print(f"   2. 维护者使用 apply_patch.py 自动合并")
+                self.logger.info(f"✓ 增量补丁文件已生成: {patch_file}")
+                self.logger.info(f"   提交方式：")
+                self.logger.info(f"   1. 通过GitHub Issue提交补丁内容")
+                self.logger.info(f"   2. 维护者使用 apply_patch.py 自动合并")
+            else:
+                print("\nℹ️  规则数据库已是最新，无需生成补丁")
+                self.logger.info("规则数据库已是最新，无需生成补丁")
+        except Exception as e:
+            print(f"\n⚠️  补丁生成失败: {str(e)}")
+            self.logger.error(f"补丁生成失败: {str(e)}", exc_info=True)
     
     def _sync_new_mods_to_rules(self):
         """
@@ -262,6 +275,13 @@ class ModClassifier:
                 synced_count += 1
                 self.logger.debug(f"  新增: {mod_id} ({mod_name}) -> {mod_type}")
             else:
+                # 检查是否为已确认配置，如果是则跳过更新
+                is_confirmed = existing_rule.get('confirmed', False)
+                
+                if is_confirmed:
+                    self.logger.debug(f"  跳过（已确认）: {mod_id}")
+                    continue
+                
                 # 更新现有规则的字段
                 old_type = existing_rule.get('type', '')
                 old_name = existing_rule.get('mod_name', '')
