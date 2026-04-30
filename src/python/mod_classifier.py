@@ -200,9 +200,8 @@ class ModClassifier:
                 if self.config_manager.add_mod(mod_id, mod_type, mod_name):
                     self.stats['auto_detected'] += 1
         
-        # 4. 复制文件到对应目录
+        # 5. 复制文件到对应目录
         self._copy_to_output(jar_path, mod_type)
-        self.stats['classified'] += 1
     
     def _copy_to_output(self, source_path: Path, mod_type: str):
         """
@@ -218,7 +217,7 @@ class ModClassifier:
         # 检查目标文件是否已存在
         if target_path.exists():
             self.logger.info(f"⊙ 文件已存在（已分类）: {target_dir_name}")
-            self.stats['classified'] += 1  # 计入已分类，而不是跳过
+            self.stats['classified'] += 1
             return
         
         try:
@@ -296,6 +295,11 @@ class ModClassifier:
             mod_type = mod_config.get('type', 'unknown')
             
             if not mod_id:
+                continue
+            
+            # 跳过unknown类型的mod，不将其同步到规则库
+            if mod_type == 'unknown':
+                self.logger.debug(f"  跳过（unknown类型）: {mod_id}")
                 continue
             
             # 检查规则数据库中是否已存在

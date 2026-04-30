@@ -17,6 +17,7 @@ C. Modrinth API检索 - 最低优先级
 """
 
 import json
+import shutil
 import re
 from pathlib import Path
 from typing import List, Dict, Optional
@@ -40,6 +41,19 @@ class RuleManager:
         self.rules_path = get_resource_path(rules_path)
         self.rules: List[Dict] = []
         self.logger = logger
+        
+        # 如果是打包环境且规则文件不存在，尝试从 _internal 复制初始规则
+        import sys
+        if getattr(sys, 'frozen', False) and not self.rules_path.exists():
+            internal_rules = Path(sys.executable).parent / '_internal' / rules_path
+            if internal_rules.exists():
+                try:
+                    from file_utils import ensure_directory
+                    ensure_directory(self.rules_path.parent)
+                    shutil.copy2(internal_rules, self.rules_path)
+                    self.logger.info(f"从 _internal 复制初始规则文件")
+                except Exception as e:
+                    self.logger.warning(f"复制初始规则文件失败: {str(e)}")
     
     def load_rules(self) -> bool:
         """
@@ -156,18 +170,12 @@ class RuleManager:
         rule = self.find_rule(mod_id)
         if rule:
             mod_type = rule.get('type')
-            reason = rule.get('reason', '')
+            is_confirmed = rule.get('confirmed', False)
             
-            # 检查reason来源：如果是从JAR配置读取的，则可信度高
-            is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
-            
-            if reason:
-                if is_from_jar_config:
-                    self.logger.debug(f"[规则匹配-JAR配置] {mod_id} -> {mod_type} (原因: {reason})")
-                else:
-                    self.logger.debug(f"[规则匹配-API/手动] {mod_id} -> {mod_type} (原因: {reason}) [需要验证]")
+            if is_confirmed:
+                self.logger.debug(f"[规则匹配-已确认] {mod_id} -> {mod_type}")
             else:
-                self.logger.debug(f"[规则匹配] {mod_id} -> {mod_type}")
+                self.logger.debug(f"[规则匹配-未确认] {mod_id} -> {mod_type} [需要验证]")
             
             return mod_type
         
@@ -177,18 +185,12 @@ class RuleManager:
             if rule:
                 mod_type = rule.get('type')
                 matched_id = rule.get('mod_id', '')
-                reason = rule.get('reason', '')
+                is_confirmed = rule.get('confirmed', False)
                 
-                # 检查reason来源
-                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
-                
-                if reason:
-                    if is_from_jar_config:
-                        self.logger.debug(f"[规则匹配-by-name-JAR配置] {mod_name} -> {mod_type} (匹配到: {matched_id}, 原因: {reason})")
-                    else:
-                        self.logger.debug(f"[规则匹配-by-name-API/手动] {mod_name} -> {mod_type} (匹配到: {matched_id}, 原因: {reason}) [需要验证]")
+                if is_confirmed:
+                    self.logger.debug(f"[规则匹配-by-name-已确认] {mod_name} -> {mod_type} (匹配到: {matched_id})")
                 else:
-                    self.logger.debug(f"[规则匹配-by-name] {mod_name} -> {mod_type} (匹配到: {matched_id})")
+                    self.logger.debug(f"[规则匹配-by-name-未确认] {mod_name} -> {mod_type} (匹配到: {matched_id}) [需要验证]")
                 
                 return mod_type
         

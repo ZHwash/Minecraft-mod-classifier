@@ -13,6 +13,7 @@
 """
 
 import json
+import shutil
 from pathlib import Path
 from typing import List, Dict, Optional
 from logger import setup_logger
@@ -35,6 +36,18 @@ class ConfigManager:
         self.config_path = get_resource_path(config_path)
         self.mods_data: List[Dict[str, str]] = []
         self.logger = logger
+        
+        # 如果是打包环境且配置文件不存在，尝试从 _internal 复制初始配置
+        import sys
+        if getattr(sys, 'frozen', False) and not self.config_path.exists():
+            internal_config = Path(sys.executable).parent / '_internal' / config_path
+            if internal_config.exists():
+                try:
+                    ensure_directory(self.config_path.parent)
+                    shutil.copy2(internal_config, self.config_path)
+                    self.logger.info(f"从 _internal 复制初始配置文件")
+                except Exception as e:
+                    self.logger.warning(f"复制初始配置文件失败: {str(e)}")
     
     def load_config(self) -> bool:
         """

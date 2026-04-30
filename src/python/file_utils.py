@@ -41,8 +41,8 @@ def get_resource_path(relative_path: str) -> Path:
     if getattr(sys, 'frozen', False):
         # PyInstaller 打包后的环境
         # 可执行文件在 dist/Minecraft-mod-classifier/
-        # 资源文件在 dist/Minecraft-mod-classifier/_internal/
-        base_path = Path(sys.executable).parent / '_internal'
+        # 用户数据应该保存在可执行文件同级目录，而不是 _internal
+        base_path = Path(sys.executable).parent
     else:
         # 开发环境
         # 从 src/python/ 向上两级到项目根目录

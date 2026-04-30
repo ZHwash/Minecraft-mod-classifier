@@ -264,8 +264,8 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
-           - 如果规则的reason来自JAR配置 → 直接使用
-           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级B）
+           - 如果规则已确认（confirmed=true）→ 直接使用
+           - 如果规则未确认 → 需要验证（降级到优先级B）
         2. 读取environment字段（优先级B）
         3. 使用Modrinth API检索（优先级C）
         4. 无法判断则返回unknown
@@ -277,17 +277,14 @@ class JarParser:
         if not self.skip_rules:
             rule = self.rule_manager.find_rule(mod_id)
             if rule:
-                reason = rule.get('reason', '')
-                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
-                
-                # 如果规则来自JAR配置，直接信任
-                if is_from_jar_config:
+                # 如果规则已确认，直接信任
+                if rule.get('confirmed', False):
                     mod_type = rule.get('type')
-                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    self.logger.debug(f"[优先级A-已确认规则] {mod_id} -> {mod_type}")
                     return mod_type
                 else:
-                    # 如果规则来自API/手动，需要验证（降级到优先级B）
-                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将重新解析JAR验证")
+                    # 未确认的规则，需要验证（降级到优先级B）
+                    self.logger.debug(f"[优先级A-未确认规则] {mod_id}，将重新解析JAR验证")
         
         # 优先级B: 读取environment字段
         env = data.get('environment', '').lower()
@@ -312,8 +309,8 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
-           - 如果规则的reason来自JAR配置 → 直接使用
-           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级B）
+           - 如果规则已确认（confirmed=true）→ 直接使用
+           - 如果规则未确认 → 需要验证（降级到优先级B）
         2. 检查核心依赖(minecraft/neoforge/forge/fabric)的side字段（优先级B-1）
            - 如果核心依赖中有任何一个是CLIENT → client_only
            - 如果核心依赖中有任何一个是SERVER → server_only
@@ -336,17 +333,14 @@ class JarParser:
         if not self.skip_rules:
             rule = self.rule_manager.find_rule(mod_id)
             if rule:
-                reason = rule.get('reason', '')
-                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
-                
-                # 如果规则来自JAR配置，直接信任
-                if is_from_jar_config:
+                # 如果规则已确认，直接信任
+                if rule.get('confirmed', False):
                     mod_type = rule.get('type')
-                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    self.logger.debug(f"[优先级A-已确认规则] {mod_id} -> {mod_type}")
                     return mod_type
                 else:
-                    # 如果规则来自API/手动，需要验证（降级到优先级B）
-                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将重新解析JAR验证")
+                    # 未确认的规则，需要验证（降级到优先级B）
+                    self.logger.debug(f"[优先级A-未确认规则] {mod_id}，将重新解析JAR验证")
         
         # 解析所有dependencies块
         # 注意: [[dependencies.XXX]]中的XXX是当前mod的ID，不是依赖的ID
@@ -413,8 +407,8 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
-           - 如果规则的reason来自JAR配置 → 直接使用
-           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级C）
+           - 如果规则已确认（confirmed=true）→ 直接使用
+           - 如果规则未确认 → 需要验证（降级到优先级C）
         2. 使用Modrinth API检索（优先级C）
         3. 无法判断则返回unknown
         """
@@ -422,17 +416,14 @@ class JarParser:
         if not self.skip_rules:
             rule = self.rule_manager.find_rule(mod_id)
             if rule:
-                reason = rule.get('reason', '')
-                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
-                
-                # 如果规则来自JAR配置，直接信任
-                if is_from_jar_config:
+                # 如果规则已确认，直接信任
+                if rule.get('confirmed', False):
                     mod_type = rule.get('type')
-                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    self.logger.debug(f"[优先级A-已确认规则] {mod_id} -> {mod_type}")
                     return mod_type
                 else:
-                    # 如果规则来自API/手动，需要验证（降级到优先级C）
-                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将使用API验证")
+                    # 未确认的规则，需要验证（降级到优先级C）
+                    self.logger.debug(f"[优先级A-未确认规则] {mod_id}，将使用API验证")
         
         # 优先级C: 使用Modrinth API检索
         api_type = self.modrinth_api.classify_mod_via_api('', mod_id)
