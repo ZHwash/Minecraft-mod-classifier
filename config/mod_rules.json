@@ -2,9 +2,10 @@
   "rules": [
     {
       "mod_id": "lithostitched",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "Lithostitched"
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Lithostitched",
+      "confirmed": true
     },
     {
       "mod_id": "tectonic",
@@ -87,9 +88,10 @@
     },
     {
       "mod_id": "krypton",
-      "type": "server_only",
-      "reason": "",
-      "mod_name": "KryptonFoxified"
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "KryptonFoxified",
+      "confirmed": true
     },
     {
       "mod_id": "jei",
