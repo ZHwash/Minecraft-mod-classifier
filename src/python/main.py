@@ -6,7 +6,6 @@ Minecraft Mod Classifier - Python Version
 """
 
 import sys
-import os
 from pathlib import Path
 from mod_classifier import ModClassifier
 from logger import setup_logger
@@ -50,9 +49,37 @@ def main():
         logger.info(i18n.get('completed'))
         print(f"\n[OK] {i18n.get('completed')}")
         
-        # 询问是否提交到GitHub
-        github = GitHubIntegration()
-        github.prompt_user_to_submit()
+        # 询问是否创建GitHub Issue（可选功能）
+        if classifier.stats['auto_detected'] > 0:
+            github = GitHubIntegration()
+            if github.repo_info:
+                print("\n" + "="*60)
+                print("📋 GitHub Issue 报告（可选）")
+                print("="*60)
+                print(f"本次分类新增了 {classifier.stats['auto_detected']} 个Mod")
+                print("可以创建一个GitHub Issue来记录这些新分类。")
+                print("注意：这需要GitHub账号和Personal Access Token\n")
+                
+                choice = input("是否创建GitHub Issue? (y/n): ").strip().lower()
+                if choice in ['y', 'yes', '是']:
+                    # 获取新分类的Mod列表
+                    new_mods = classifier.config_manager.mods_data[-classifier.stats['auto_detected']:]
+                    if new_mods:
+                        title, body = github.generate_issue_content(new_mods)
+                        success = github.create_github_issue(
+                            title, 
+                            body, 
+                            labels=['automation', 'mod-classification']
+                        )
+                        if not success:
+                            print("\n提示: 请设置GITHUB_TOKEN环境变量后重试")
+                            print("访问 https://github.com/settings/tokens 生成Token")
+                    else:
+                        print("\n没有新分类的Mod，无需创建Issue")
+                else:
+                    print("\n已跳过GitHub Issue创建")
+            else:
+                print("\n💡 提示: 如果配置了Git远程仓库，可以自动创建GitHub Issue报告新分类的Mod")
         
     except Exception as e:
         logger.error(f"{i18n.get('error')}: {str(e)}", exc_info=True)

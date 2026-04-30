@@ -2,171 +2,186 @@
 # -*- coding: utf-8 -*-
 """
 GitHub集成模块
-提供将mods_data.json提交到GitHub仓库的功能
+提供创建GitHub Issue的功能（可选）
+注意：此功能需要GitHub账号和Token，不是必需的
 """
 
-import subprocess
-import sys
+import json
 from pathlib import Path
+from typing import Optional, Dict, List
+from urllib.request import urlopen, Request
+from urllib.error import URLError, HTTPError
 from logger import setup_logger
-from i18n import i18n
 
 logger = setup_logger()
 
 
 class GitHubIntegration:
-    """GitHub集成管理器"""
+    """GitHub集成管理器（可选功能）"""
+    
+    GITHUB_API_URL = "https://api.github.com"
     
     def __init__(self):
         self.logger = logger
-        self.config_file = Path('config/mods_data.json')
-        
-    def is_git_repository(self) -> bool:
-        """检查当前目录是否是Git仓库"""
-        try:
-            result = subprocess.run(
-                ['git', 'rev-parse', '--git-dir'],
-                capture_output=True,
-                text=True,
-                cwd=Path.cwd()
-            )
-            return result.returncode == 0
-        except Exception:
-            return False
+        self.repo_info = self._get_repo_info()
     
-    def has_uncommitted_changes(self) -> bool:
-        """检查是否有未提交的更改"""
-        try:
-            result = subprocess.run(
-                ['git', 'status', '--porcelain', str(self.config_file)],
-                capture_output=True,
-                text=True,
-                cwd=Path.cwd()
-            )
-            return len(result.stdout.strip()) > 0
-        except Exception:
-            return False
-    
-    def commit_and_push_mods_data(self, message: str = None) -> bool:
+    def _get_repo_info(self) -> Optional[Dict[str, str]]:
         """
-        提交并推送mods_data.json到GitHub
+        从git remote获取仓库信息（如果可用）
+        
+        Returns:
+            包含owner和repo的字典，如果无法获取返回None
+        """
+        import subprocess
+        try:
+            result = subprocess.run(
+                ['git', 'remote', 'get-url', 'origin'],
+                capture_output=True,
+                text=True,
+                cwd=Path.cwd(),
+                timeout=5
+            )
+            if result.returncode != 0:
+                return None
+            
+            remote_url = result.stdout.strip()
+            
+            # 解析GitHub URL (支持https和ssh格式)
+            if 'github.com' in remote_url:
+                if remote_url.startswith('git@'):
+                    # SSH格式
+                    parts = remote_url.split(':')
+                    path = parts[1].replace('.git', '')
+                else:
+                    # HTTPS格式
+                    path = remote_url.split('github.com/')[1].replace('.git', '')
+                
+                parts = path.split('/')
+                if len(parts) >= 2:
+                    return {
+                        'owner': parts[0],
+                        'repo': parts[1]
+                    }
+            
+            return None
+            
+        except Exception:
+            # 如果没有git或获取失败，静默返回None
+            return None
+    
+    def create_github_issue(self, title: str, body: str, labels: List[str] = None) -> bool:
+        """
+        创建GitHub Issue
         
         Args:
-            message: 提交信息，默认为自动生成
+            title: Issue标题
+            body: Issue内容
+            labels: 标签列表
             
         Returns:
-            是否成功
+            是否成功创建
         """
-        if not message:
-            # 自动生成提交信息
-            import json
-            from datetime import datetime
-            
-            with open(self.config_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            mod_count = len(data)
-            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            message = f"Update mods_data.json ({mod_count} mods) - {timestamp}"
+        if not self.repo_info:
+            self.logger.warning("无法获取仓库信息，请确保已配置git remote origin")
+            return False
+        
+        # 需要GitHub Token
+        import os
+        token = os.environ.get('GITHUB_TOKEN')
+        if not token:
+            self.logger.warning("未设置GITHUB_TOKEN环境变量，无法创建Issue")
+            print("\n提示: 创建GitHub Issue需要设置GITHUB_TOKEN环境变量")
+            print("请访问 https://github.com/settings/tokens 生成Personal Access Token")
+            print("并设置环境变量: set GITHUB_TOKEN=your_token_here (Windows)")
+            print("或: export GITHUB_TOKEN=your_token_here (Linux/Mac)")
+            return False
         
         try:
-            # 1. 添加文件到暂存区
-            self.logger.info(i18n.get('github_adding_file').format(file=self.config_file.name))
-            result = subprocess.run(
-                ['git', 'add', str(self.config_file)],
-                capture_output=True,
-                text=True,
-                cwd=Path.cwd()
-            )
-            if result.returncode != 0:
-                self.logger.error(f"Git add failed: {result.stderr}")
-                return False
+            owner = self.repo_info['owner']
+            repo = self.repo_info['repo']
+            url = f"{self.GITHUB_API_URL}/repos/{owner}/{repo}/issues"
             
-            # 2. 提交更改
-            self.logger.info(i18n.get('github_committing'))
-            result = subprocess.run(
-                ['git', 'commit', '-m', message],
-                capture_output=True,
-                text=True,
-                cwd=Path.cwd()
-            )
-            if result.returncode != 0:
-                self.logger.error(f"Git commit failed: {result.stderr}")
-                return False
+            data = {
+                'title': title,
+                'body': body
+            }
             
-            # 3. 推送到远程仓库
-            self.logger.info(i18n.get('github_pushing'))
-            result = subprocess.run(
-                ['git', 'push'],
-                capture_output=True,
-                text=True,
-                cwd=Path.cwd()
-            )
-            if result.returncode != 0:
-                self.logger.error(f"Git push failed: {result.stderr}")
-                self.logger.warning(i18n.get('github_push_failed_manual'))
-                return False
+            if labels:
+                data['labels'] = labels
             
-            self.logger.info(i18n.get('github_success'))
-            return True
+            # 发送请求
+            req = Request(url)
+            req.add_header('Authorization', f'token {token}')
+            req.add_header('Content-Type', 'application/json')
+            req.add_header('User-Agent', 'Minecraft-Mod-Classifier/2.0.0')
+            req.data = json.dumps(data).encode('utf-8')
             
+            with urlopen(req, timeout=10) as response:
+                result = json.loads(response.read().decode('utf-8'))
+                issue_url = result.get('html_url', '')
+                issue_number = result.get('number', 0)
+                self.logger.info(f"成功创建GitHub Issue #{issue_number}: {issue_url}")
+                print(f"\n✅ 成功创建GitHub Issue #{issue_number}")
+                print(f"   {issue_url}")
+                return True
+                
+        except HTTPError as e:
+            if e.code == 401:
+                self.logger.error("GitHub Token无效或已过期")
+                print("\n❌ GitHub Token无效或已过期，请重新生成")
+            elif e.code == 404:
+                self.logger.error("仓库不存在或无权限")
+                print("\n❌ 仓库不存在或无权限")
+            else:
+                self.logger.error(f"HTTP错误 {e.code}: {str(e)}")
+            return False
+        except URLError as e:
+            self.logger.error(f"网络错误: {str(e)}")
+            return False
         except Exception as e:
-            self.logger.error(f"{i18n.get('error')}: {str(e)}")
+            self.logger.error(f"创建Issue失败: {str(e)}")
             return False
     
-    def prompt_user_to_submit(self) -> bool:
+    def generate_issue_content(self, new_mods: List[Dict]) -> tuple:
         """
-        提示用户是否提交mods_data.json到GitHub
+        生成Issue内容
         
+        Args:
+            new_mods: 新分类的Mod列表
+            
         Returns:
-            用户选择的结果
+            (title, body) 元组
         """
-        print("\n" + "="*60)
-        print(i18n.get('github_prompt_title'))
-        print("="*60)
-        print(i18n.get('github_prompt_description'))
-        print()
+        from datetime import datetime
         
-        # 检查是否是Git仓库
-        if not self.is_git_repository():
-            print(f"[WARN] {i18n.get('github_not_git_repo')}")
-            return False
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        title = f"自动分类报告 - {timestamp}"
         
-        # 检查是否有更改
-        if not self.has_uncommitted_changes():
-            print(f"[INFO] {i18n.get('github_no_changes')}")
-            return False
+        body = f"## 自动分类报告\n\n"
+        body += f"**生成时间**: {timestamp}\n\n"
+        body += f"**新增分类数量**: {len(new_mods)}\n\n"
+        body += f"---\n\n"
+        body += f"### 新增Mod分类\n\n"
+        body += f"| Mod ID | Mod Name | 类型 |\n"
+        body += f"|--------|----------|------|\n"
         
-        # 询问用户
-        while True:
-            choice = input(f"\n{i18n.get('github_ask_submit')} (y/n): ").strip().lower()
-            if choice in ['y', 'yes', i18n.get('yes'), '是']:
-                # 获取自定义提交信息
-                custom_message = input(f"{i18n.get('github_ask_message')} (Enter使用默认): ").strip()
-                
-                if custom_message:
-                    success = self.commit_and_push_mods_data(custom_message)
-                else:
-                    success = self.commit_and_push_mods_data()
-                
-                if success:
-                    print(f"\n[OK] {i18n.get('github_success')}")
-                else:
-                    print(f"\n[ERROR] {i18n.get('github_failed')}")
-                
-                return success
-                
-            elif choice in ['n', 'no', i18n.get('no'), '否']:
-                print(f"[INFO] {i18n.get('github_skipped')}")
-                return False
-            else:
-                print(f"[WARN] {i18n.get('invalid_choice')}")
+        for mod in new_mods:
+            mod_id = mod.get('mod_id', 'N/A')
+            mod_name = mod.get('mod_name', 'N/A')
+            mod_type = mod.get('type', 'unknown')
+            body += f"| {mod_id} | {mod_name} | {mod_type} |\n"
+        
+        body += f"\n---\n\n"
+        body += f"*此Issue由Minecraft Mod Classifier自动生成*\n"
+        
+        return title, body
 
 
 def main():
     """测试函数"""
     github = GitHubIntegration()
-    github.prompt_user_to_submit()
+    print("GitHubIntegration模块加载成功")
+    print(f"仓库信息: {github.repo_info}")
 
 
 if __name__ == "__main__":

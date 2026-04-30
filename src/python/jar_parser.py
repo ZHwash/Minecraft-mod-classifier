@@ -4,9 +4,10 @@
 JAR包配置文件解析器
 从JAR文件中提取Mod元数据并判断类型
 
-两层优先级判断：
-B. 规则数据库 (mod_rules.json) - 最高优先级
-A. JAR配置文件标识 (side/environment字段) - 中等优先级
+三层优先级判断：
+A. 规则数据库 (mod_rules.json) - 最高优先级
+B. JAR配置文件标识 (side/environment字段) - 中等优先级
+C. Modrinth API检索 - 最低优先级
 无法判断则归类为unknown，由用户手动确认
 """
 
@@ -17,6 +18,7 @@ from pathlib import Path
 from typing import Optional, Dict, Any
 from logger import setup_logger
 from rule_manager import RuleManager
+from modrinth_api import ModrinthAPI
 
 logger = setup_logger()
 
@@ -38,6 +40,7 @@ class JarParser:
         self.logger = logger
         self.rule_manager = RuleManager()
         self.rule_manager.load_rules()  # 加载规则数据库
+        self.modrinth_api = ModrinthAPI()  # 初始化Modrinth API客户端
     
     def parse_jar(self, jar_path: Path) -> Optional[Dict[str, Any]]:
         """
@@ -91,6 +94,7 @@ class JarParser:
                 data = json.loads(f.read().decode('utf-8'))
             
             mod_id = data.get('id', '')
+            mod_name = data.get('name', '')
             version = data.get('version', '')
             
             # 优先级A: 读取environment字段 (内部会先检查优先级B)
@@ -98,12 +102,13 @@ class JarParser:
             
             mod_info = {
                 'mod_id': mod_id,
+                'mod_name': mod_name,
                 'version': version,
                 'loader': 'fabric',
                 'type': mod_type
             }
             
-            self.logger.debug(f"解析Fabric Mod: {mod_id}")
+            self.logger.debug(f"解析Fabric Mod: {mod_id} ({mod_name})")
             return mod_info
             
         except Exception as e:
@@ -131,6 +136,9 @@ class JarParser:
             # 从[[mods]]块中提取主modId(而不是从dependencies块中)
             mod_id = self._extract_main_mod_id(content)
             
+            # 提取modName（displayName或modId）
+            mod_name = self._extract_mod_name(content)
+            
             # 提取版本号(从第一个version字段)
             version_match = re.search(r'version\s*=\s*"([^"]+)"', content)
             
@@ -142,12 +150,13 @@ class JarParser:
             
             mod_info = {
                 'mod_id': mod_id,
+                'mod_name': mod_name,
                 'version': version_match.group(1) if version_match else '',
                 'loader': loader,
                 'type': mod_type
             }
             
-            self.logger.debug(f"解析{loader.upper()} Mod: {mod_info['mod_id']}")
+            self.logger.debug(f"解析{loader.upper()} Mod: {mod_info['mod_id']} ({mod_info['mod_name']})")
             return mod_info
             
         except Exception as e:
@@ -178,6 +187,28 @@ class JarParser:
         mod_id_match = re.search(r'modId\s*=\s*"([^"]+)"', content)
         return mod_id_match.group(1) if mod_id_match else ''
     
+    def _extract_mod_name(self, content: str) -> str:
+        """
+        从TOML内容中提取mod名称
+        
+        Args:
+            content: TOML文件内容
+            
+        Returns:
+            mod名称，如果未找到则返回空字符串
+        """
+        # 优先使用displayName
+        display_name_match = re.search(r'displayName\s*=\s*"([^"]+)"', content)
+        if display_name_match:
+            return display_name_match.group(1)
+        
+        # 其次使用modId作为fallback
+        mod_id_match = re.search(r'modId\s*=\s*"([^"]+)"', content)
+        if mod_id_match:
+            return mod_id_match.group(1)
+        
+        return ''
+    
     def _parse_mcmod_info(self, zip_file: zipfile.ZipFile) -> Optional[Dict[str, Any]]:
         """
         解析旧版mcmod.info配置
@@ -197,6 +228,7 @@ class JarParser:
                 data = data[0] if data else {}
             
             mod_id = data.get('modid', '')
+            mod_name = data.get('name', '')
             version = data.get('version', '')
             
             # Legacy配置没有明确的类型标识，使用关键词匹配 (内部会先检查优先级B)
@@ -204,12 +236,13 @@ class JarParser:
             
             mod_info = {
                 'mod_id': mod_id,
+                'mod_name': mod_name,
                 'version': version,
                 'loader': 'forge',
                 'type': mod_type
             }
             
-            self.logger.debug(f"解析Legacy Mod: {mod_id}")
+            self.logger.debug(f"解析Legacy Mod: {mod_id} ({mod_name})")
             return mod_info
             
         except Exception as e:
@@ -218,21 +251,23 @@ class JarParser:
     
     def _infer_mod_type_from_fabric(self, data: Dict) -> str:
         """
-        从Fabric配置推断Mod类型（优先级A）
+        从Fabric配置推断Mod类型（三层优先级）
         
         判断逻辑：
-        1. 优先检查规则数据库（优先级B）
-        2. 读取environment字段（优先级A）
-        3. 无法判断则返回unknown
+        1. 优先检查规则数据库（优先级A）
+        2. 读取environment字段（优先级B）
+        3. 使用Modrinth API检索（优先级C）
+        4. 无法判断则返回unknown
         """
         mod_id = data.get('id', '')
+        mod_name = data.get('name', '')
         
-        # 优先级B: 检查规则数据库
-        rule_type = self.rule_manager.get_mod_type(mod_id)
+        # 优先级A: 检查规则数据库
+        rule_type = self.rule_manager.get_mod_type(mod_id, mod_name)
         if rule_type:
             return rule_type
         
-        # 优先级A: 读取environment字段
+        # 优先级B: 读取environment字段
         env = data.get('environment', '').lower()
         if env == 'client':
             return 'client_only'
@@ -241,21 +276,27 @@ class JarParser:
         elif env == '*':
             return 'client_and_server_required'
         
+        # 优先级C: 使用Modrinth API检索
+        api_type = self.modrinth_api.classify_mod_via_api(mod_name, mod_id)
+        if api_type:
+            return api_type
+        
         # 无法判断，返回unknown
         return 'unknown'
     
     def _infer_mod_type_from_forge(self, content: str) -> str:
         """
-        从Forge/NeoForge配置推断Mod类型（优先级A）
+        从Forge/NeoForge配置推断Mod类型（三层优先级）
         
         判断逻辑：
-        1. 优先检查规则数据库（优先级B）
-        2. 检查核心依赖(minecraft/neoforge/forge/fabric)的side字段（优先级A-1）
+        1. 优先检查规则数据库（优先级A）
+        2. 检查核心依赖(minecraft/neoforge/forge/fabric)的side字段（优先级B-1）
            - 如果核心依赖中有任何一个是CLIENT → client_only
            - 如果核心依赖中有任何一个是SERVER → server_only
            - 如果核心依赖全是BOTH → client_and_server_required
-        3. 如果核心依赖无法判断(如缺失),再检查其他业务依赖（优先级A-2）
-        4. 无法判断则返回unknown
+        3. 如果核心依赖无法判断(如缺失),再检查其他业务依赖（优先级B-2）
+        4. 使用Modrinth API检索（优先级C）
+        5. 无法判断则返回unknown
         """
         # 提取modId用于规则匹配
         mod_id_match = re.search(r'modId\s*=\s*"([^"]+)"', content)
@@ -264,8 +305,11 @@ class JarParser:
         
         mod_id = mod_id_match.group(1)
         
-        # 优先级B: 检查规则数据库
-        rule_type = self.rule_manager.get_mod_type(mod_id)
+        # 提取modName用于辅助匹配
+        mod_name = self._extract_mod_name(content)
+        
+        # 优先级A: 检查规则数据库
+        rule_type = self.rule_manager.get_mod_type(mod_id, mod_name)
         if rule_type:
             return rule_type
         
@@ -294,7 +338,7 @@ class JarParser:
                 else:
                     other_deps.append(side)
         
-        # 优先级A-1: 检查核心依赖的side字段
+        # 优先级B-1: 检查核心依赖的side字段
         if core_deps:
             # 如果核心依赖中有任何一个是CLIENT
             if any(side == 'CLIENT' for side in core_deps):
@@ -307,7 +351,7 @@ class JarParser:
                 return 'client_and_server_required'
             # 核心依赖混合情况(如既有BOTH又有其他)，继续检查其他依赖
         
-        # 优先级A-2: 检查其他业务依赖的side字段
+        # 优先级B-2: 检查其他业务依赖的side字段
         if other_deps:
             # 如果所有业务依赖都是CLIENT
             if all(side == 'CLIENT' for side in other_deps):
@@ -320,21 +364,32 @@ class JarParser:
                 return 'client_and_server_required'
             # 混合情况，无法判断
         
+        # 优先级C: 使用Modrinth API检索
+        api_type = self.modrinth_api.classify_mod_via_api(mod_name, mod_id)
+        if api_type:
+            return api_type
+        
         # 无法判断，返回unknown
         return 'unknown'
     
     def _infer_mod_type_from_legacy(self, mod_id: str) -> str:
         """
-        从Legacy配置推断Mod类型
+        从Legacy配置推断Mod类型（三层优先级）
         
         判断逻辑：
-        1. 优先检查规则数据库（优先级B）
-        2. 无法判断则返回unknown
+        1. 优先检查规则数据库（优先级A）
+        2. 使用Modrinth API检索（优先级C）
+        3. 无法判断则返回unknown
         """
-        # 优先级B: 检查规则数据库
+        # 优先级A: 检查规则数据库
         rule_type = self.rule_manager.get_mod_type(mod_id)
         if rule_type:
             return rule_type
+        
+        # 优先级C: 使用Modrinth API检索
+        api_type = self.modrinth_api.classify_mod_via_api('', mod_id)
+        if api_type:
+            return api_type
         
         # Legacy配置没有明确的类型标识，返回unknown
         return 'unknown'

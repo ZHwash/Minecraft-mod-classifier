@@ -4,8 +4,10 @@
 配置管理模块
 负责读取、保存和更新mods_data.json配置文件
 
-配置结构简化：
-- 仅保留mod_id和type字段
+配置结构：
+- mod_id: Mod的唯一标识符（必需）
+- mod_name: Mod名称（可选）
+- type: Mod类型（必需）
 - 不再区分版本和加载器（运行位置通常不会改变）
 """
 
@@ -46,11 +48,12 @@ class ConfigManager:
             with open(self.config_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             
-            # 兼容旧版本配置，移除version和loader字段
+            # 兼容旧版本配置，确保包含mod_name字段
             self.mods_data = []
             for mod in data:
                 simplified = {
                     'mod_id': mod.get('mod_id', ''),
+                    'mod_name': mod.get('mod_name', ''),  # 新增字段，默认为空
                     'type': mod.get('type', 'unknown')
                 }
                 self.mods_data.append(simplified)
@@ -116,13 +119,14 @@ class ConfigManager:
         
         return None
     
-    def add_mod(self, mod_id: str, mod_type: str) -> bool:
+    def add_mod(self, mod_id: str, mod_type: str, mod_name: str = '') -> bool:
         """
         添加新的Mod配置
         
         Args:
             mod_id: Mod的唯一标识符(modId)
             mod_type: Mod类型
+            mod_name: Mod名称（可选）
             
         Returns:
             是否成功添加
@@ -135,20 +139,22 @@ class ConfigManager:
         
         new_mod = {
             'mod_id': mod_id,
+            'mod_name': mod_name,
             'type': mod_type
         }
         
         self.mods_data.append(new_mod)
-        self.logger.info(f"添加新Mod配置: {mod_id} -> {mod_type}")
+        self.logger.info(f"添加新Mod配置: {mod_id} ({mod_name}) -> {mod_type}")
         return True
     
-    def update_mod(self, mod_id: str, mod_type: str) -> bool:
+    def update_mod(self, mod_id: str, mod_type: str, mod_name: str = '') -> bool:
         """
         更新Mod配置
         
         Args:
             mod_id: Mod的唯一标识符(modId)
             mod_type: 新的Mod类型
+            mod_name: 新的Mod名称（可选）
             
         Returns:
             是否成功更新
@@ -157,6 +163,8 @@ class ConfigManager:
         if target:
             old_type = target['type']
             target['type'] = mod_type
+            if mod_name:
+                target['mod_name'] = mod_name
             self.logger.info(f"更新Mod配置: {mod_id} ({old_type} -> {mod_type})")
             return True
         

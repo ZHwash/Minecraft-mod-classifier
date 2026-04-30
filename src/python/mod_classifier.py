@@ -130,6 +130,7 @@ class ModClassifier:
             return
         
         mod_id = mod_info.get('mod_id', '')
+        mod_name = mod_info.get('mod_name', '')
         mod_type = mod_info.get('type', 'unknown')
         
         if not mod_id:
@@ -137,7 +138,7 @@ class ModClassifier:
             self.stats['failed'] += 1
             return
         
-        self.logger.debug(f"Mod ID: {mod_id}, 推断类型: {mod_type}")
+        self.logger.debug(f"Mod ID: {mod_id}, Mod Name: {mod_name}, 推断类型: {mod_type}")
         
         # 2. 在配置中查找（仅基于mod_id）
         mod_config = self.config_manager.find_mod(mod_id)
@@ -150,8 +151,8 @@ class ModClassifier:
             # 3. 配置中不存在，使用解析结果中的类型（来自三层优先级判断）
             self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
             
-            # 添加到配置中（仅mod_id和type）
-            if self.config_manager.add_mod(mod_id, mod_type):
+            # 添加到配置中（包含mod_id、mod_name和type）
+            if self.config_manager.add_mod(mod_id, mod_type, mod_name):
                 self.stats['auto_detected'] += 1
         
         # 4. 复制文件到对应目录

@@ -64,13 +64,6 @@ python src/python/main.py
 | ClientOptionalServerOptional | 两端都可选 | 配置库、API库 |
 | Unknown | 无法自动识别 | 需手动确认 |
 
-### 智能文件名清洗
-
-自动清理干扰信息：
-```
-"[机械动力]create-1.21.1-6.0.10-neoforge.jar" → "create.jar"
-"jei-1.16.5-7.7.1.118.jar" → "jei.jar"
-```
 
 ### 自动 JAR 解析
 
