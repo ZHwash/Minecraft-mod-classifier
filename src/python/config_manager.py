@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 from typing import List, Dict, Optional
 from logger import setup_logger
+from file_utils import ensure_directory
 
 logger = setup_logger()
 
@@ -77,7 +78,7 @@ class ConfigManager:
         """
         try:
             # 确保目录存在
-            self.config_path.parent.mkdir(parents=True, exist_ok=True)
+            ensure_directory(self.config_path.parent)
             
             with open(self.config_path, 'w', encoding='utf-8') as f:
                 json.dump(self.mods_data, f, ensure_ascii=False, indent=2)

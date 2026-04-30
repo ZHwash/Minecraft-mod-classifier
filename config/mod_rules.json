@@ -4,99 +4,99 @@
   "rules": [
     {
       "mod_id": "lithostitched",
-      "type": "client_optional_server_required",
-      "reason": "世界生成库，提供世界生成配置工具，客户端可选安装，服务端必须安装",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Lithostitched",
+      "mod_name": "Lithostitched"
     },
     {
       "mod_id": "tectonic",
       "type": "client_optional_server_required",
       "reason": "地形生成模组，完全改变主世界生成，服务端决定生成规则，客户端可选同步渲染",
-      "mod_name": ""
+      "mod_name": "Tectonic"
     },
     {
       "mod_id": "jadeaddons",
-      "type": "client_optional_server_optional",
-      "reason": "Jade信息HUD扩展，客户端可选显示增强功能",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Carpet JankAddons",
+      "mod_name": "Carpet JankAddons"
     },
     {
       "mod_id": "smsn",
-      "type": "client_optional_server_optional",
-      "reason": "网络请求拦截，仅在客户端阻止模组网络请求，解决加载卡顿",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Smunnel",
+      "mod_name": "Smunnel"
     },
     {
       "mod_id": "dragonsurvival",
       "type": "client_and_server_required",
       "reason": "可玩龙类RPG模组，提供生物、物品、游戏机制，需双端同步",
-      "mod_name": ""
+      "mod_name": "Dragon survival enhanced"
     },
     {
       "mod_id": "integrated_api",
       "type": "client_and_server_required",
       "reason": "结构整合系列前置库，为Integrated系列提供共享工具，双端强制依赖",
-      "mod_name": ""
+      "mod_name": "Integrated API"
     },
     {
       "mod_id": "integrated_stronghold",
       "type": "client_and_server_required",
       "reason": "强化末地要塞结构，生成新结构与方块，需双端同步以保证视觉与逻辑一致",
-      "mod_name": ""
+      "mod_name": "Integrated Stronghold"
     },
     {
       "mod_id": "mechanicals",
       "type": "client_and_server_required",
       "reason": "机械动力相关库，机械动力附属前置，双端均需加载",
-      "mod_name": ""
+      "mod_name": "Mechanicals Lib"
     },
     {
       "mod_id": "sable",
       "type": "client_and_server_required",
       "reason": "世界生成/子维度API，提供子维度与世界生成功能，服务端核心，客户端需同步",
-      "mod_name": ""
+      "mod_name": "Sable"
     },
     {
       "mod_id": "idas",
       "type": "client_and_server_required",
       "reason": "地牢建筑统合，生成复杂地牢结构，双端需一致以避免区块加载错误",
-      "mod_name": ""
+      "mod_name": " Integrated Dungeons and Structures"
     },
     {
       "mod_id": "sophisticatedstorage",
-      "type": "client_and_server_required",
-      "reason": "存储系统，提供容器、物品与网络逻辑，双端强制同步",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Bluemap x SophisticatedStorage",
+      "mod_name": "Bluemap x SophisticatedStorage"
     },
     {
       "mod_id": "createbetterfps",
       "type": "client_only",
       "reason": "机械动力光影优化，仅优化客户端渲染性能，依赖Sodium/Iris光影库",
-      "mod_name": ""
+      "mod_name": "CreateBetterFps"
     },
     {
       "mod_id": "dynamiccrosshair",
       "type": "client_only",
       "reason": "动态准星，仅修改客户端准星显示，不影响游戏逻辑",
-      "mod_name": ""
+      "mod_name": "Dynamic Crosshair"
     },
     {
       "mod_id": "spark",
       "type": "client_optional_server_optional",
       "reason": "性能分析工具，两端均可选安装",
-      "mod_name": ""
+      "mod_name": "spark"
     },
     {
       "mod_id": "krypton",
-      "type": "client_optional_server_optional",
-      "reason": "网络优化mod，两端均可选安装",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Krypton",
+      "mod_name": "Krypton"
     },
     {
       "mod_id": "jei",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: jei.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Just Enough Items (JEI)",
+      "mod_name": "Just Enough Items (JEI)"
     },
     {
       "mod_id": "cme_championhelper",
@@ -124,9 +124,9 @@
     },
     {
       "mod_id": "potionparticlepack",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: potionparticlepack.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Potion Particle Pack",
+      "mod_name": "Potion Particle Pack"
     },
     {
       "mod_id": "comics_bubbles_chat",
@@ -144,19 +144,19 @@
       "mod_id": "xaeros_minimap",
       "type": "client_required_server_optional",
       "reason": "基于历史配置(原文件名: xaeros_minimap.jar)",
-      "mod_name": ""
+      "mod_name": "Xaero's Minimap"
     },
     {
       "mod_id": "enhancedvisuals",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: enhancedvisuals.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: EnhancedVisuals",
+      "mod_name": "EnhancedVisuals"
     },
     {
       "mod_id": "prism",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: prism.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Prism",
+      "mod_name": "Prism"
     },
     {
       "mod_id": "justenoughresources",
@@ -166,9 +166,9 @@
     },
     {
       "mod_id": "konkrete",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: konkrete.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Konkrete",
+      "mod_name": "Konkrete"
     },
     {
       "mod_id": "ingameinfoxml",
@@ -184,39 +184,39 @@
     },
     {
       "mod_id": "loliasm",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: loliasm.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: LugiaSMP",
+      "mod_name": "LugiaSMP"
     },
     {
       "mod_id": "iceberg",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: iceberg.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Iceberg",
+      "mod_name": "Iceberg"
     },
     {
       "mod_id": "polylib",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: polylib.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: PolyLib",
+      "mod_name": "PolyLib"
     },
     {
       "mod_id": "astatine",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: astatine.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Create: Hex Casting",
+      "mod_name": "Create: Hex Casting"
     },
     {
       "mod_id": "distanthorizons",
       "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: distanthorizons.jar)",
-      "mod_name": ""
+      "reason": "通过Modrinth API重新分类: Distant Horizons",
+      "mod_name": "Distant Horizons"
     },
     {
       "mod_id": "pretty_rain",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: pretty rain.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Pretty Rain",
+      "mod_name": "Pretty Rain"
     },
     {
       "mod_id": "sound_physics_remastered",
@@ -226,21 +226,21 @@
     },
     {
       "mod_id": "itemphysic",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: itemphysic.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: ItemPhysic",
+      "mod_name": "ItemPhysic"
     },
     {
       "mod_id": "lexiconfig",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: lexiconfig.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Lexiconfig",
+      "mod_name": "Lexiconfig"
     },
     {
       "mod_id": "aquaacrobatics",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: aquaacrobatics.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Aqua Acrobatics Legacy (ragecraft version)",
+      "mod_name": "Aqua Acrobatics Legacy (ragecraft version)"
     },
     {
       "mod_id": "player_animation_lib",
@@ -252,7 +252,7 @@
       "mod_id": "cloth_config",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: cloth-config.jar)",
-      "mod_name": ""
+      "mod_name": "Cloth Config API"
     },
     {
       "mod_id": "kryptonreforged",
@@ -262,33 +262,33 @@
     },
     {
       "mod_id": "configanytime",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: !configanytime.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: ConfigAnytime",
+      "mod_name": "ConfigAnytime"
     },
     {
       "mod_id": "vintagefix",
       "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: vintagefix.jar)",
-      "mod_name": ""
+      "reason": "通过Modrinth API重新分类: VintageFix",
+      "mod_name": "VintageFix"
     },
     {
       "mod_id": "cristellib",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: cristellib.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Cristallium",
+      "mod_name": "Cristallium"
     },
     {
       "mod_id": "alfheim",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: alfheim.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Alfheim",
+      "mod_name": "Alfheim"
     },
     {
       "mod_id": "flare",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: flare.jar)",
-      "mod_name": ""
+      "mod_name": "Flare (Spark for 1.12.2)"
     },
     {
       "mod_id": "common_networking",
@@ -300,25 +300,25 @@
       "mod_id": "connectorextras",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: connectorextras.jar)",
-      "mod_name": ""
+      "mod_name": "Connector Extras"
     },
     {
       "mod_id": "mixinbooter",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: !mixinbooter.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: MixinBooter",
+      "mod_name": "MixinBooter"
     },
     {
       "mod_id": "fermiumbooter",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: +fermiumbooter.jar)",
-      "mod_name": ""
+      "mod_name": "FermiumBooter"
     },
     {
       "mod_id": "mixinbootstrap",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: mixinbootstrap.jar)",
-      "mod_name": ""
+      "mod_name": "MixinBootstrap"
     },
     {
       "mod_id": "fantasticlib",
@@ -330,7 +330,7 @@
       "mod_id": "collective",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: collective.jar)",
-      "mod_name": ""
+      "mod_name": "Collective"
     },
     {
       "mod_id": "nightconfigfixes",
@@ -342,19 +342,19 @@
       "mod_id": "rhino",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: rhino.jar)",
-      "mod_name": ""
+      "mod_name": "Rhino"
     },
     {
       "mod_id": "openloader",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: openloader.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Open Loader",
+      "mod_name": "Open Loader"
     },
     {
       "mod_id": "fabric_api",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: fabric-api.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Project Red Fabrication",
+      "mod_name": "Project Red Fabrication"
     },
     {
       "mod_id": "recipeessentials",
@@ -364,9 +364,9 @@
     },
     {
       "mod_id": "redirector",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: redirector.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Redirector",
+      "mod_name": "Redirector"
     },
     {
       "mod_id": "redirectionor",
@@ -376,63 +376,63 @@
     },
     {
       "mod_id": "saturn",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: saturn.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Saturn",
+      "mod_name": "Saturn"
     },
     {
       "mod_id": "vanillaicecreamfix",
       "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: vanillaicecreamfix.jar)",
-      "mod_name": ""
+      "reason": "通过Modrinth API重新分类: VanillaIcecreamFix",
+      "mod_name": "VanillaIcecreamFix"
     },
     {
       "mod_id": "ksyxis",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: ksyxis.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Ksyxis",
+      "mod_name": "Ksyxis"
     },
     {
       "mod_id": "modernfix",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: modernfix.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: ModernFix",
+      "mod_name": "ModernFix"
     },
     {
       "mod_id": "nochatreports",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: nochatreports.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: NoChatReports (Spigot/Paper)",
+      "mod_name": "NoChatReports (Spigot/Paper)"
     },
     {
       "mod_id": "memorysweep",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: memorysweep.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: MemorySweep",
+      "mod_name": "MemorySweep"
     },
     {
       "mod_id": "radium",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: radium.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Radium",
+      "mod_name": "Radium"
     },
     {
       "mod_id": "midnightlib",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: midnightlib.jar)",
-      "mod_name": ""
+      "mod_name": "MidnightLib"
     },
     {
       "mod_id": "ferritecore",
       "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: ferritecore.jar)",
-      "mod_name": ""
+      "reason": "通过Modrinth API重新分类: FerriteCore",
+      "mod_name": "FerriteCore"
     },
     {
       "mod_id": "modernui",
-      "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: modernui.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: ModernUI+",
+      "mod_name": "ModernUI+"
     },
     {
       "mod_id": "smoothboot_reloaded",
@@ -444,13 +444,13 @@
       "mod_id": "craftingtweaks",
       "type": "client_optional_server_optional",
       "reason": "基于历史配置(原文件名: craftingtweaks.jar)",
-      "mod_name": ""
+      "mod_name": "Crafting Tweaks"
     },
     {
       "mod_id": "smoothboot",
       "type": "client_optional_server_optional",
-      "reason": "基于历史配置(原文件名: smoothboot.jar)",
-      "mod_name": ""
+      "reason": "通过Modrinth API重新分类: Smooth Boot (Fabric)",
+      "mod_name": "Smooth Boot (Fabric)"
     },
     {
       "mod_id": "achievementoptimizer",
@@ -462,25 +462,25 @@
       "mod_id": "hybridfix",
       "type": "client_optional_server_required",
       "reason": "基于历史配置(原文件名: hybridfix.jar)",
-      "mod_name": ""
+      "mod_name": "HybridFix"
     },
     {
       "mod_id": "unidict",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: unidict.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: UniDict",
+      "mod_name": "UniDict"
     },
     {
       "mod_id": "noisium",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: noisium.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Noisiumed",
+      "mod_name": "Noisiumed"
     },
     {
       "mod_id": "dimthread",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: dimthread.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Dimensional Threading",
+      "mod_name": "Dimensional Threading"
     },
     {
       "mod_id": "letmefeedyou",
@@ -490,9 +490,9 @@
     },
     {
       "mod_id": "mes",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: mes.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: MES - Moog's End Structures",
+      "mod_name": "MES - Moog's End Structures"
     },
     {
       "mod_id": "healthnanfix",
@@ -502,15 +502,15 @@
     },
     {
       "mod_id": "yungsapi",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: yungsapi.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: YUNG's API",
+      "mod_name": "YUNG's API"
     },
     {
       "mod_id": "yungsbridges",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: yungsbridges.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: YUNG's Bridges",
+      "mod_name": "YUNG's Bridges"
     },
     {
       "mod_id": "towns_and_towers",
@@ -520,33 +520,33 @@
     },
     {
       "mod_id": "tpmaster",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: tpmaster.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Set Home",
+      "mod_name": "Set Home"
     },
     {
       "mod_id": "tact",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: tact.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: [TACZ] LesRaisins Tactical Equipements",
+      "mod_name": "[TACZ] LesRaisins Tactical Equipements"
     },
     {
       "mod_id": "fastfurnace",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: fastfurnace.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FastFurnace [FABRIC]",
+      "mod_name": "FastFurnace [FABRIC]"
     },
     {
       "mod_id": "better_campfires",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: better_campfires.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Better Campfires",
+      "mod_name": "Better Campfires"
     },
     {
       "mod_id": "alternate_current",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: alternate_current.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Alternate Current",
+      "mod_name": "Alternate Current"
     },
     {
       "mod_id": "ftbquestsoptimizer",
@@ -562,9 +562,9 @@
     },
     {
       "mod_id": "starlight",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: starlight.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Starlight (Fabric)",
+      "mod_name": "Starlight (Fabric)"
     },
     {
       "mod_id": "ati_structuresvanilla",
@@ -574,15 +574,15 @@
     },
     {
       "mod_id": "aireducer",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: aireducer.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FPS Reducer",
+      "mod_name": "FPS Reducer"
     },
     {
       "mod_id": "rltweaker",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: rltweaker.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: CraftTweaker",
+      "mod_name": "CraftTweaker"
     },
     {
       "mod_id": "born_in_a_barn",
@@ -606,7 +606,7 @@
       "mod_id": "loadingscreens",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: loadingscreens.jar)",
-      "mod_name": ""
+      "mod_name": "Loading Screen Tips"
     },
     {
       "mod_id": "bnbgaminglib",
@@ -616,51 +616,51 @@
     },
     {
       "mod_id": "chunky",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: chunky.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Chunky",
+      "mod_name": "Chunky"
     },
     {
       "mod_id": "incontrol",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: incontrol.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: InControlMob",
+      "mod_name": "InControlMob"
     },
     {
       "mod_id": "journeymap",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: journeymap.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: JourneyMap",
+      "mod_name": "JourneyMap"
     },
     {
       "mod_id": "rrls",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: rrls.jar)",
-      "mod_name": ""
+      "mod_name": "Remove Reloading Screen"
     },
     {
       "mod_id": "celeritas",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: celeritas.jar)",
-      "mod_name": ""
+      "mod_name": "Celeritas Dynamic Lights"
     },
     {
       "mod_id": "damagetilt",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: damagetilt.jar)",
-      "mod_name": ""
+      "mod_name": "DamageTint"
     },
     {
       "mod_id": "itlt",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: itlt.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Just Meloetta",
+      "mod_name": "Just Meloetta"
     },
     {
       "mod_id": "classicbar",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: classicbar.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Classic Bad Omen",
+      "mod_name": "Classic Bad Omen"
     },
     {
       "mod_id": "armorsoundtweak",
@@ -678,7 +678,7 @@
       "mod_id": "mobends",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: mobends.jar)",
-      "mod_name": ""
+      "mod_name": "Mo' Bends"
     },
     {
       "mod_id": "spartanhudbaubles",
@@ -696,7 +696,7 @@
       "mod_id": "torohealth",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: torohealth.jar)",
-      "mod_name": ""
+      "mod_name": "ToroHealth Damage Indicators (Updated)"
     },
     {
       "mod_id": "enablecheats_tow_edition1",
@@ -720,103 +720,103 @@
       "mod_id": "bettertitlescreen",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: bettertitlescreen.jar)",
-      "mod_name": ""
+      "mod_name": "Better Title Screen"
     },
     {
       "mod_id": "potiondescriptions",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: potiondescriptions.jar)",
-      "mod_name": ""
+      "mod_name": "Potion Descriptions"
     },
     {
       "mod_id": "advanced_xray",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: advanced-xray.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: AdvancedPlayTime [1.21 - 1.21.10]",
+      "mod_name": "AdvancedPlayTime [1.21 - 1.21.10]"
     },
     {
       "mod_id": "continuity",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: continuity.jar)",
-      "mod_name": ""
+      "mod_name": "Continuity"
     },
     {
       "mod_id": "inventoryhud",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: inventoryhud.jar)",
-      "mod_name": ""
+      "mod_name": "InventoryHUD+"
     },
     {
       "mod_id": "cullleaves",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: cullleaves.jar)",
-      "mod_name": ""
+      "mod_name": "Cull Leaves"
     },
     {
       "mod_id": "notenoughanimations",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: notenoughanimations.jar)",
-      "mod_name": ""
+      "mod_name": "Translate the mod NotEnoughAnimations"
     },
     {
       "mod_id": "searchables",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: searchables.jar)",
-      "mod_name": ""
+      "mod_name": "Searchables"
     },
     {
       "mod_id": "colorfulhearts",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: colorfulhearts.jar)",
-      "mod_name": ""
+      "mod_name": "Colorful Hearts"
     },
     {
       "mod_id": "crosshairbobbing",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: crosshairbobbing.jar)",
-      "mod_name": ""
+      "mod_name": "Crosshair Bobbing"
     },
     {
       "mod_id": "asyncparticles",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: asyncparticles.jar)",
-      "mod_name": ""
+      "mod_name": "AsyncParticles"
     },
     {
       "mod_id": "lazurite",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: lazurite.jar)",
-      "mod_name": ""
+      "mod_name": "Lazurite"
     },
     {
       "mod_id": "oculus",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: oculus.jar)",
-      "mod_name": ""
+      "mod_name": "Oculus"
     },
     {
       "mod_id": "libipn",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: libipn.jar)",
-      "mod_name": ""
+      "mod_name": "libIPN"
     },
     {
       "mod_id": "chloride",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: chloride.jar)",
-      "mod_name": ""
+      "mod_name": "Chloride (Embeddium++/Sodium++)"
     },
     {
       "mod_id": "embeddium",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: embeddium.jar)",
-      "mod_name": ""
+      "mod_name": "Embeddium"
     },
     {
       "mod_id": "rubidium_extra",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: rubidium-extra.jar)",
-      "mod_name": ""
+      "mod_name": "Embeddium (Rubidium) Extra"
     },
     {
       "mod_id": "sodiumoptionsapi",
@@ -828,97 +828,97 @@
       "mod_id": "mafglib",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: mafglib.jar)",
-      "mod_name": ""
+      "mod_name": "MaFgLib"
     },
     {
       "mod_id": "unicodefix",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: unicodefix.jar)",
-      "mod_name": ""
+      "mod_name": "Unicode Fix"
     },
     {
       "mod_id": "zume",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: zume.jar)",
-      "mod_name": ""
+      "mod_name": "Zume"
     },
     {
       "mod_id": "relauncher",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: ++relauncher.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: relauncher",
+      "mod_name": "relauncher"
     },
     {
       "mod_id": "valkyrie",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: valkyrie.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Valkyrien Skies",
+      "mod_name": "Valkyrien Skies"
     },
     {
       "mod_id": "renderlib",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: renderlib.jar)",
-      "mod_name": ""
+      "mod_name": "RenderLib"
     },
     {
       "mod_id": "smoothfont",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: smoothfont.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: SmoothBoat",
+      "mod_name": "SmoothBoat"
     },
     {
       "mod_id": "screenshot_viewer",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: screenshot_viewer.jar)",
-      "mod_name": ""
+      "mod_name": "ScreenShotViewer"
     },
     {
       "mod_id": "resourceloader",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: resourceloader.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: ResourceLoader",
+      "mod_name": "ResourceLoader"
     },
     {
       "mod_id": "neonium",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: neonium.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Neorium",
+      "mod_name": "Neorium"
     },
     {
       "mod_id": "neverenoughanimations",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: neverenoughanimations.jar)",
-      "mod_name": ""
+      "mod_name": "NeverEnoughAnimation"
     },
     {
       "mod_id": "nonconflictkeys",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: nonconflictkeys.jar)",
-      "mod_name": ""
+      "mod_name": "NonConflictKeys"
     },
     {
       "mod_id": "particleculling",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: particleculling.jar)",
-      "mod_name": ""
+      "mod_name": "ParticleCulling 1.8.9 port"
     },
     {
       "mod_id": "modernsplash",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: modernsplash.jar)",
-      "mod_name": ""
+      "mod_name": "Modern Splash"
     },
     {
       "mod_id": "inputmethodblocker",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: inputmethodblocker.jar)",
-      "mod_name": ""
+      "mod_name": "InputMethodBlocker (Legacy)"
     },
     {
       "mod_id": "itemzoom",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: itemzoom.jar)",
-      "mod_name": ""
+      "mod_name": "Item Zoomer"
     },
     {
       "mod_id": "gogskybox",
@@ -930,19 +930,19 @@
       "mod_id": "gnetum",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: gnetum.jar)",
-      "mod_name": ""
+      "mod_name": "Gnetum"
     },
     {
       "mod_id": "chatheadsyg",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: chatheadsyg.jar)",
-      "mod_name": ""
+      "mod_name": "ChatHeads"
     },
     {
       "mod_id": "farsight",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: farsight.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Farsighted Mobs",
+      "mod_name": "Farsighted Mobs"
     },
     {
       "mod_id": "holdmyitems",
@@ -954,31 +954,31 @@
       "mod_id": "3dskinlayers",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: 3dskinlayers.jar)",
-      "mod_name": ""
+      "mod_name": "3D Skin Layers"
     },
     {
       "mod_id": "bedbugs",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: bedbugs.jar)",
-      "mod_name": ""
+      "mod_name": "Ceebug's Rounded Hotbar"
     },
     {
       "mod_id": "blur",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: blur.jar)",
-      "mod_name": ""
+      "mod_name": "Blur+"
     },
     {
       "mod_id": "celeritas",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: celeritas.jar)",
-      "mod_name": ""
+      "mod_name": "Celeritas Dynamic Lights"
     },
     {
       "mod_id": "rebind_narrator",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: rebind_narrator.jar)",
-      "mod_name": ""
+      "mod_name": "RebindNarrator"
     },
     {
       "mod_id": "inventoryprofilesnext",
@@ -1002,139 +1002,139 @@
       "mod_id": "notreepunching",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: notreepunching.jar)",
-      "mod_name": ""
+      "mod_name": "NoTreePunching Basalt Fix (ARCHIVED)"
     },
     {
       "mod_id": "toadlib",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: toadlib.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: ToadLib",
+      "mod_name": "ToadLib"
     },
     {
       "mod_id": "tweakerge",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: tweakerge.jar)",
-      "mod_name": ""
+      "mod_name": "Tweakerge"
     },
     {
       "mod_id": "yeetusexperimentus",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: yeetusexperimentus.jar)",
-      "mod_name": ""
+      "mod_name": "Yeetus Experimentus"
     },
     {
       "mod_id": "skinlayers3d",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: skinlayers3d.jar)",
-      "mod_name": ""
+      "mod_name": "SkinLayers3D-CustomSkinLoader-Bridge"
     },
     {
       "mod_id": "entityculling",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: entityculling.jar)",
-      "mod_name": ""
+      "mod_name": "EntityCulling 1.8.9 port"
     },
     {
       "mod_id": "ok_zoomer",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: ok_zoomer.jar)",
-      "mod_name": ""
+      "mod_name": "Ok Zoomer - It's Zoom!"
     },
     {
       "mod_id": "chat_heads",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: chat_heads.jar)",
-      "mod_name": ""
+      "mod_name": "ChatHeads"
     },
     {
       "mod_id": "i18nupdatemod",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: i18nupdatemod.jar)",
-      "mod_name": ""
+      "mod_name": "I18nUpdateMod"
     },
     {
       "mod_id": "imblocker",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: imblocker.jar)",
-      "mod_name": ""
+      "mod_name": "IMBlocker"
     },
     {
       "mod_id": "jecharacters",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: jecharacters.jar)",
-      "mod_name": ""
+      "mod_name": "Roughly Enough Characters [REC][RECH][JECH for fabric]"
     },
     {
       "mod_id": "flerovium",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: flerovium.jar)",
-      "mod_name": ""
+      "mod_name": "Flerovium"
     },
     {
       "mod_id": "battlemusic",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: battlemusic.jar)",
-      "mod_name": ""
+      "mod_name": "Battle Music"
     },
     {
       "mod_id": "biomemusic",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: biomemusic.jar)",
-      "mod_name": ""
+      "mod_name": "Biome Music"
     },
     {
       "mod_id": "toastcontrol",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: toastcontrol.jar)",
-      "mod_name": ""
+      "mod_name": "Toast Control [FABRIC]"
     },
     {
       "mod_id": "caelum",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: caelum.jar)",
-      "mod_name": ""
+      "mod_name": "Caelum - ArdaCraft Edition"
     },
     {
       "mod_id": "beb",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: beb.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Geophilic",
+      "mod_name": "Geophilic"
     },
     {
       "mod_id": "bettertaskbar",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: bettertaskbar.jar)",
-      "mod_name": ""
+      "mod_name": "Better Taskbar"
     },
     {
       "mod_id": "bouncierbeds",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: bouncierbeds.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Bouncier Beds",
+      "mod_name": "Bouncier Beds"
     },
     {
       "mod_id": "extrasoundsnext",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: extrasoundsnext.jar)",
-      "mod_name": ""
+      "mod_name": "ExtraSounds Next"
     },
     {
       "mod_id": "fallingleaves",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: fallingleaves.jar)",
-      "mod_name": ""
+      "mod_name": "Falling Leaves"
     },
     {
       "mod_id": "enchantmentdescriptions",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: enchantmentdescriptions.jar)",
-      "mod_name": ""
+      "mod_name": "Enchantment Descriptions"
     },
     {
       "mod_id": "legendarytooltips",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: legendarytooltips.jar)",
-      "mod_name": ""
+      "mod_name": "Legendary Tooltips"
     },
     {
       "mod_id": "lanserverproperties",
@@ -1144,9 +1144,9 @@
     },
     {
       "mod_id": "itemborders",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: itemborders.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: ItemBorder",
+      "mod_name": "ItemBorder"
     },
     {
       "mod_id": "gpumemleakfix",
@@ -1158,19 +1158,19 @@
       "mod_id": "freecam",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: freecam.jar)",
-      "mod_name": ""
+      "mod_name": "Freecam"
     },
     {
       "mod_id": "fancymenu",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: fancymenu.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: FancyMenu",
+      "mod_name": "FancyMenu"
     },
     {
       "mod_id": "cameraoverhaul",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: cameraoverhaul.jar)",
-      "mod_name": ""
+      "mod_name": "CameraOverhaul (Vintage)"
     },
     {
       "mod_id": "entity_model_features",
@@ -1182,19 +1182,19 @@
       "mod_id": "entity_texture_features",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: entity_texture_features.jar)",
-      "mod_name": ""
+      "mod_name": "[ETF] Entity Texture Features"
     },
     {
       "mod_id": "immersiveui",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: immersiveui.jar)",
-      "mod_name": ""
+      "mod_name": "Immersive First Person"
     },
     {
       "mod_id": "presencefootsteps",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: presencefootsteps.jar)",
-      "mod_name": ""
+      "mod_name": "PresenceFootsteps: Remastered Sounds Pack"
     },
     {
       "mod_id": "entity_sound_features",
@@ -1206,13 +1206,13 @@
       "mod_id": "ruok",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: ruok.jar)",
-      "mod_name": ""
+      "mod_name": "RuOK"
     },
     {
       "mod_id": "palladium",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: palladium.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Palladium",
+      "mod_name": "Palladium"
     },
     {
       "mod_id": "sodiumdynamiclights",
@@ -1230,7 +1230,7 @@
       "mod_id": "travelerstitles",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: travelerstitles.jar)",
-      "mod_name": ""
+      "mod_name": "Traveler's Titles"
     },
     {
       "mod_id": "visual_keybinder",
@@ -1248,19 +1248,19 @@
       "mod_id": "visuality",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: visuality.jar)",
-      "mod_name": ""
+      "mod_name": "Visuality"
     },
     {
       "mod_id": "sounds",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: sounds.jar)",
-      "mod_name": ""
+      "mod_name": "Sounds"
     },
     {
       "mod_id": "shouldersurfing",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: shouldersurfing.jar)",
-      "mod_name": ""
+      "mod_name": "Shoulder Surfing Reloaded"
     },
     {
       "mod_id": "overloadedarmorbar",
@@ -1272,19 +1272,19 @@
       "mod_id": "constantmusic",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: constantmusic.jar)",
-      "mod_name": ""
+      "mod_name": "Constant Music"
     },
     {
       "mod_id": "bh",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: bh.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: BH Creative",
+      "mod_name": "BH Creative"
     },
     {
       "mod_id": "namepain",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: namepain.jar)",
-      "mod_name": ""
+      "mod_name": "Name Pain"
     },
     {
       "mod_id": "enhanced_boss_bars",
@@ -1296,7 +1296,7 @@
       "mod_id": "melody",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: melody.jar)",
-      "mod_name": ""
+      "mod_name": "Melody"
     },
     {
       "mod_id": "reforgedplaymod",
@@ -1308,43 +1308,43 @@
       "mod_id": "satisfying_buttons",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: satisfying_buttons.jar)",
-      "mod_name": ""
+      "mod_name": "Satisfying Buttons"
     },
     {
       "mod_id": "sakura",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: sakura.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Sakura Mod",
+      "mod_name": "Sakura Mod"
     },
     {
       "mod_id": "ftbchunks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ftbchunks.jar)",
-      "mod_name": ""
+      "mod_name": "FTBChunks - Gristlayer Overlay"
     },
     {
       "mod_id": "forgelin_continuous",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: forgelin-continuous.jar)",
-      "mod_name": ""
+      "mod_name": "Forgelin-Continuous"
     },
     {
       "mod_id": "multimob",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: multimob.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: MultiMOTD",
+      "mod_name": "MultiMOTD"
     },
     {
       "mod_id": "tumbleweed",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tumbleweed.jar)",
-      "mod_name": ""
+      "mod_name": "Tumbleweed"
     },
     {
       "mod_id": "walljump",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: walljump.jar)",
-      "mod_name": ""
+      "mod_name": "WallJumpVS"
     },
     {
       "mod_id": "foodexpansion1",
@@ -1368,13 +1368,13 @@
       "mod_id": "mysticalworld",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mysticalworld.jar)",
-      "mod_name": ""
+      "mod_name": "MysticWorld"
     },
     {
       "mod_id": "endreborn",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: endreborn.jar)",
-      "mod_name": ""
+      "mod_name": "EndRework"
     },
     {
       "mod_id": "raids_backport",
@@ -1386,7 +1386,7 @@
       "mod_id": "mysticallib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mysticallib.jar)",
-      "mod_name": ""
+      "mod_name": "MusicalLib"
     },
     {
       "mod_id": "pogosticks",
@@ -1402,15 +1402,15 @@
     },
     {
       "mod_id": "goldfish",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: goldfish.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Fix Mob Ai Tweaks Tags!",
+      "mod_name": "Fix Mob Ai Tweaks Tags!"
     },
     {
       "mod_id": "camels",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: camels.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: More Camels",
+      "mod_name": "More Camels"
     },
     {
       "mod_id": "trinkets_and_baubles",
@@ -1422,13 +1422,13 @@
       "mod_id": "benssharks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: benssharks.jar)",
-      "mod_name": ""
+      "mod_name": "Ben's Sharks"
     },
     {
       "mod_id": "athelas",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: athelas.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Athena",
+      "mod_name": "Athena"
     },
     {
       "mod_id": "wild_netherwart",
@@ -1438,39 +1438,39 @@
     },
     {
       "mod_id": "locks",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: locks.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Locks!",
+      "mod_name": "Locks!"
     },
     {
       "mod_id": "lovely_robot",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: lovely_robot.jar)",
-      "mod_name": ""
+      "mod_name": "Reboot LovelyRobot"
     },
     {
       "mod_id": "setbonus",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: setbonus.jar)",
-      "mod_name": ""
+      "mod_name": "Armor Set Bonuses"
     },
     {
       "mod_id": "bountiful",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bountiful.jar)",
-      "mod_name": ""
+      "mod_name": "Bountiful"
     },
     {
       "mod_id": "backport",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: backport.jar)",
-      "mod_name": ""
+      "mod_name": "Vanilla Backport"
     },
     {
       "mod_id": "scalinghealth",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: scalinghealth.jar)",
-      "mod_name": ""
+      "mod_name": "Scaling Health"
     },
     {
       "mod_id": "naturallychargedcreepers",
@@ -1480,21 +1480,21 @@
     },
     {
       "mod_id": "stg",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: stg.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Simple Transparent GUI [STG]",
+      "mod_name": "Simple Transparent GUI [STG]"
     },
     {
       "mod_id": "wings",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: wings.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)",
+      "mod_name": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)"
     },
     {
       "mod_id": "xptome",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: xptome.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Optomerized",
+      "mod_name": "Optomerized"
     },
     {
       "mod_id": "mutantbeasts",
@@ -1506,7 +1506,7 @@
       "mod_id": "simplecorn1",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: simplecorn1.jar)",
-      "mod_name": ""
+      "mod_name": "SimpleCoreLib"
     },
     {
       "mod_id": "grimoireofgaia3",
@@ -1518,7 +1518,7 @@
       "mod_id": "disenchanter1",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: disenchanter1.jar)",
-      "mod_name": ""
+      "mod_name": "Disenchanter"
     },
     {
       "mod_id": "into_the_dungeons",
@@ -1530,7 +1530,7 @@
       "mod_id": "specialmobs",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: specialmobs.jar)",
-      "mod_name": ""
+      "mod_name": "Special Mobs"
     },
     {
       "mod_id": "the_depths_of_madness",
@@ -1540,15 +1540,15 @@
     },
     {
       "mod_id": "coralreef",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: coralreef.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: coralreef",
+      "mod_name": "coralreef"
     },
     {
       "mod_id": "surge",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: surge.jar)",
-      "mod_name": ""
+      "mod_name": "Surge"
     },
     {
       "mod_id": "lavawaderbauble",
@@ -1564,9 +1564,9 @@
     },
     {
       "mod_id": "endercrop",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: endercrop.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Endercon",
+      "mod_name": "Endercon"
     },
     {
       "mod_id": "dragontweaks",
@@ -1576,9 +1576,9 @@
     },
     {
       "mod_id": "merchants",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: merchants.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Wandering Merchants",
+      "mod_name": "Wandering Merchants"
     },
     {
       "mod_id": "fasterdonkeys",
@@ -1590,7 +1590,7 @@
       "mod_id": "bettergolem",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bettergolem.jar)",
-      "mod_name": ""
+      "mod_name": "Buttergolem"
     },
     {
       "mod_id": "torchslabmod",
@@ -1600,9 +1600,9 @@
     },
     {
       "mod_id": "bgs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: bgs.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Midnighttigger's Better Grass",
+      "mod_name": "Midnighttigger's Better Grass"
     },
     {
       "mod_id": "somanyenchantments",
@@ -1612,39 +1612,39 @@
     },
     {
       "mod_id": "deathfinder",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: deathfinder.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: DeathFinder",
+      "mod_name": "DeathFinder"
     },
     {
       "mod_id": "defiledlands",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: defiledlands.jar)",
-      "mod_name": ""
+      "mod_name": "Defiled Lands"
     },
     {
       "mod_id": "strayspawn",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: strayspawn.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Stray Spawn",
+      "mod_name": "Stray Spawn"
     },
     {
       "mod_id": "oceanicexpanse",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: oceanicexpanse.jar)",
-      "mod_name": ""
+      "mod_name": "Oceanic Expanse"
     },
     {
       "mod_id": "deep_below",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: deep below.jar)",
-      "mod_name": ""
+      "mod_name": "Deep Below"
     },
     {
       "mod_id": "villagercontracts",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: villagercontracts.jar)",
-      "mod_name": ""
+      "mod_name": "Villager Contracts"
     },
     {
       "mod_id": "deeper_depths",
@@ -1656,31 +1656,31 @@
       "mod_id": "cherry_on",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cherry_on.jar)",
-      "mod_name": ""
+      "mod_name": "Cherry_on_1.12.2"
     },
     {
       "mod_id": "movillages",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: movillages.jar)",
-      "mod_name": ""
+      "mod_name": "qrafty's Jungle Villages"
     },
     {
       "mod_id": "extrabows",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: extrabows.jar)",
-      "mod_name": ""
+      "mod_name": "Extrabotany"
     },
     {
       "mod_id": "morefurnaces",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: morefurnaces.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: More Furnaces (Polymer)",
+      "mod_name": "More Furnaces (Polymer)"
     },
     {
       "mod_id": "cxlibrary",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: cxlibrary.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Formations (Structure Library)",
+      "mod_name": "Formations (Structure Library)"
     },
     {
       "mod_id": "meldexun_scrystalicvoid",
@@ -1692,13 +1692,13 @@
       "mod_id": "carianstyle",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: carianstyle.jar)",
-      "mod_name": ""
+      "mod_name": "CarianStyle"
     },
     {
       "mod_id": "mooshroomspawn",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mooshroomspawn.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Mooshroom Spawn",
+      "mod_name": "Mooshroom Spawn"
     },
     {
       "mod_id": "mapmaker_s_gadgets",
@@ -1714,33 +1714,33 @@
     },
     {
       "mod_id": "enhancedarmaments",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: enhancedarmaments.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Enhanced Armaments Reload Beams",
+      "mod_name": "Enhanced Armaments Reload Beams"
     },
     {
       "mod_id": "nether_api",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: nether-api.jar)",
-      "mod_name": ""
+      "mod_name": "Netheritium"
     },
     {
       "mod_id": "forgelin",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: forgelin.jar)",
-      "mod_name": ""
+      "mod_name": "Forgelin-Continuous"
     },
     {
       "mod_id": "silentlib",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: silentlib.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: SilentLightningFix",
+      "mod_name": "SilentLightningFix"
     },
     {
       "mod_id": "ctoasmod",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ctoasmod.jar)",
-      "mod_name": ""
+      "mod_name": "TASmod"
     },
     {
       "mod_id": "spartanlightning",
@@ -1750,9 +1750,9 @@
     },
     {
       "mod_id": "spartanweaponry",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: spartanweaponry.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: STONEBORN - Spartan Weaponry",
+      "mod_name": "STONEBORN - Spartan Weaponry"
     },
     {
       "mod_id": "spartandefiled",
@@ -1764,7 +1764,7 @@
       "mod_id": "spartanshields",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: spartanshields.jar)",
-      "mod_name": ""
+      "mod_name": "Spartan Shields"
     },
     {
       "mod_id": "chesttransporter",
@@ -1776,19 +1776,19 @@
       "mod_id": "harvestersnight",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: harvestersnight.jar)",
-      "mod_name": ""
+      "mod_name": "Harvester's Night"
     },
     {
       "mod_id": "mobrebirth",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mobrebirth.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Mob Rebirth",
+      "mod_name": "Mob Rebirth"
     },
     {
       "mod_id": "battletowers",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: battletowers.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Eternal Battletowers",
+      "mod_name": "Eternal Battletowers"
     },
     {
       "mod_id": "dghn2",
@@ -1798,39 +1798,39 @@
     },
     {
       "mod_id": "creativecore",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: creativecore.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: CreativeCore",
+      "mod_name": "CreativeCore"
     },
     {
       "mod_id": "dyairdrop",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: dyairdrop.jar)",
-      "mod_name": ""
+      "mod_name": "ReAirdrop Supply"
     },
     {
       "mod_id": "engineersdecor",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: engineersdecor.jar)",
-      "mod_name": ""
+      "mod_name": "Engineer's Decor"
     },
     {
       "mod_id": "damagenumbers",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: damagenumbers.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Damage Numbers",
+      "mod_name": "Damage Numbers"
     },
     {
       "mod_id": "immersive_weathering",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: immersive_weathering.jar)",
-      "mod_name": ""
+      "mod_name": "Immersive Weathering"
     },
     {
       "mod_id": "diet",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: diet.jar)",
-      "mod_name": ""
+      "mod_name": "Diet"
     },
     {
       "mod_id": "doomsday_decoration",
@@ -1848,7 +1848,7 @@
       "mod_id": "electroblobswizardry",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: electroblobswizardry.jar)",
-      "mod_name": ""
+      "mod_name": "Electroblob's Wizardry Redux"
     },
     {
       "mod_id": "wizardryutils",
@@ -1858,15 +1858,15 @@
     },
     {
       "mod_id": "huskspawn",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: huskspawn.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Just Spawn Me There",
+      "mod_name": "Just Spawn Me There"
     },
     {
       "mod_id": "sublime",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: sublime.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Superflat World No Slimes",
+      "mod_name": "Superflat World No Slimes"
     },
     {
       "mod_id": "eyeofdragons",
@@ -1876,33 +1876,33 @@
     },
     {
       "mod_id": "qualitytools",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: qualitytools.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: STONEBORN - Quality Tools",
+      "mod_name": "STONEBORN - Quality Tools"
     },
     {
       "mod_id": "llibrary",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: llibrary.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Formations (Structure Library)",
+      "mod_name": "Formations (Structure Library)"
     },
     {
       "mod_id": "rlartifacts",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: rlartifacts.jar)",
-      "mod_name": ""
+      "mod_name": "RLArtifacts"
     },
     {
       "mod_id": "useful_backpacks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: useful_backpacks.jar)",
-      "mod_name": ""
+      "mod_name": "Useful Backpacks"
     },
     {
       "mod_id": "blueprint",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: blueprint.jar)",
-      "mod_name": ""
+      "mod_name": "Blueprint"
     },
     {
       "mod_id": "u_team_core",
@@ -1914,19 +1914,19 @@
       "mod_id": "rainbowreef",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: rainbowreef.jar)",
-      "mod_name": ""
+      "mod_name": "Rainbow Reef"
     },
     {
       "mod_id": "frozen_fiend",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: frozen-fiend.jar)",
-      "mod_name": ""
+      "mod_name": "Cruelty-Free Fixes"
     },
     {
       "mod_id": "ice_and_fire",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ice and fire.jar)",
-      "mod_name": ""
+      "mod_name": "IceAndFire Community Edition"
     },
     {
       "mod_id": "keletupackgears",
@@ -1936,27 +1936,27 @@
     },
     {
       "mod_id": "wither_config",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: wither-config.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Wither Config",
+      "mod_name": "Wither Config"
     },
     {
       "mod_id": "potioncore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: potioncore.jar)",
-      "mod_name": ""
+      "mod_name": "PotionCoreReloaded"
     },
     {
       "mod_id": "atlas_lib",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: atlas-lib.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: AtlasLang",
+      "mod_name": "AtlasLang"
     },
     {
       "mod_id": "boatdeletebegone",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: boatdeletebegone.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: BoatDeleteBegone",
+      "mod_name": "BoatDeleteBegone"
     },
     {
       "mod_id": "witherskeletontweaks",
@@ -1974,7 +1974,7 @@
       "mod_id": "crafttweaker2",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: crafttweaker2.jar)",
-      "mod_name": ""
+      "mod_name": "CraftTweaker"
     },
     {
       "mod_id": "fish_s_undead_rising",
@@ -1990,9 +1990,9 @@
     },
     {
       "mod_id": "ftbquests",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ftbquests.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FTB Quests Freeze Fix",
+      "mod_name": "FTB Quests Freeze Fix"
     },
     {
       "mod_id": "ftblib",
@@ -2002,33 +2002,33 @@
     },
     {
       "mod_id": "itemfilters",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: itemfilters.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: LT-ItemFilter",
+      "mod_name": "LT-ItemFilter"
     },
     {
       "mod_id": "ftbmoney",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ftbmoney.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: MobMoney",
+      "mod_name": "MobMoney"
     },
     {
       "mod_id": "herobrinemod",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: herobrinemod.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Herobrine Mobs",
+      "mod_name": "Herobrine Mobs"
     },
     {
       "mod_id": "libraryex",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: libraryex.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Formations (Structure Library)",
+      "mod_name": "Formations (Structure Library)"
     },
     {
       "mod_id": "mospells",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mospells.jar)",
-      "mod_name": ""
+      "mod_name": "Iron's Spells 'n Spellbooks"
     },
     {
       "mod_id": "minetweakerrecipemaker",
@@ -2046,25 +2046,25 @@
       "mod_id": "netherex",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: netherex.jar)",
-      "mod_name": ""
+      "mod_name": "NetherEx"
     },
     {
       "mod_id": "bountiful_baubles",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bountiful baubles.jar)",
-      "mod_name": ""
+      "mod_name": "BountifulBaubles:Reforked"
     },
     {
       "mod_id": "flamelib",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: flamelib.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Faelib APIs",
+      "mod_name": "Faelib APIs"
     },
     {
       "mod_id": "cloudboots",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: cloudboots.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Sleek",
+      "mod_name": "Sleek"
     },
     {
       "mod_id": "artificial_thunder",
@@ -2076,49 +2076,49 @@
       "mod_id": "coroutil",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: coroutil.jar)",
-      "mod_name": ""
+      "mod_name": "CoroUtil"
     },
     {
       "mod_id": "ftb_ultimine",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ftb-ultimine.jar)",
-      "mod_name": ""
+      "mod_name": "FTB Ultimine Cobblemon Compat"
     },
     {
       "mod_id": "obscure_api",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: obscure_api.jar)",
-      "mod_name": ""
+      "mod_name": "Obscure API"
     },
     {
       "mod_id": "red_core_mc",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: !red-core-mc.jar)",
-      "mod_name": ""
+      "mod_name": "RedliteMC"
     },
     {
       "mod_id": "fugue",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: +fugue.jar)",
-      "mod_name": ""
+      "mod_name": "Fugue"
     },
     {
       "mod_id": "add_potion",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: add_potion.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Carpet TIS Addition",
+      "mod_name": "Carpet TIS Addition"
     },
     {
       "mod_id": "caelus",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: caelus.jar)",
-      "mod_name": ""
+      "mod_name": "Caelus API"
     },
     {
       "mod_id": "cagedmobs",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cagedmobs.jar)",
-      "mod_name": ""
+      "mod_name": "Caged Mobs"
     },
     {
       "mod_id": "cialloblade",
@@ -2136,25 +2136,25 @@
       "mod_id": "combatnouveau",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: combatnouveau.jar)",
-      "mod_name": ""
+      "mod_name": "Combat Nouveau"
     },
     {
       "mod_id": "culinaryconstruct",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: culinaryconstruct.jar)",
-      "mod_name": ""
+      "mod_name": "Culinary Construct"
     },
     {
       "mod_id": "spears",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: spears.jar)",
-      "mod_name": ""
+      "mod_name": "Simple Spears"
     },
     {
       "mod_id": "spoiled",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: spoiled.jar)",
-      "mod_name": ""
+      "mod_name": "Spoiled"
     },
     {
       "mod_id": "dungeons_and_taverns_pillager_outpost_rework",
@@ -2164,15 +2164,15 @@
     },
     {
       "mod_id": "dungeons_enhanced",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: dungeons_enhanced.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Dungeons Enhanced",
+      "mod_name": "Dungeons Enhanced"
     },
     {
       "mod_id": "eureka",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: eureka.jar)",
-      "mod_name": ""
+      "mod_name": "Eureka! Ships! for Valkyrien Skies (Forge/Fabric)"
     },
     {
       "mod_id": "elainabroom",
@@ -2184,97 +2184,97 @@
       "mod_id": "lionfishapi",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: lionfishapi.jar)",
-      "mod_name": ""
+      "mod_name": "Lionfish-API"
     },
     {
       "mod_id": "lootjs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: lootjs.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: LootJS: KubeJS Addon",
+      "mod_name": "LootJS: KubeJS Addon"
     },
     {
       "mod_id": "legendarymonsters",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: legendarymonsters.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Legendary Monsters",
+      "mod_name": "Legendary Monsters"
     },
     {
       "mod_id": "kubejs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: kubejs.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: KubeJS",
+      "mod_name": "KubeJS"
     },
     {
       "mod_id": "immersive_aircraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: immersive_aircraft.jar)",
-      "mod_name": ""
+      "mod_name": "Immersive Aircraft"
     },
     {
       "mod_id": "carryon",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: carryon.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Carryon",
+      "mod_name": "Carryon"
     },
     {
       "mod_id": "worldedit_mod",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: worldedit-mod.jar)",
-      "mod_name": ""
+      "mod_name": "Axis WorldEditor"
     },
     {
       "mod_id": "aquamirae",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: aquamirae.jar)",
-      "mod_name": ""
+      "mod_name": "Aquamirae"
     },
     {
       "mod_id": "valkyrienskies",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: valkyrienskies.jar)",
-      "mod_name": ""
+      "mod_name": "Valkyrien_Skies-defense"
     },
     {
       "mod_id": "playerrevive",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: playerrevive.jar)",
-      "mod_name": ""
+      "mod_name": "PlayerRevive"
     },
     {
       "mod_id": "weather2",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: weather2.jar)",
-      "mod_name": ""
+      "mod_name": "Weather2 Additions"
     },
     {
       "mod_id": "irons_spellbooks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: irons_spellbooks.jar)",
-      "mod_name": ""
+      "mod_name": "iron's spellbooks arcane essence blocks"
     },
     {
       "mod_id": "toughasnails",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: toughasnails.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: MTInventoryWeight Compat ToughAsNails",
+      "mod_name": "MTInventoryWeight Compat ToughAsNails"
     },
     {
       "mod_id": "visualworkbench",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: visualworkbench.jar)",
-      "mod_name": ""
+      "mod_name": "Visual Workbench"
     },
     {
       "mod_id": "upgrade_aquatic",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: upgrade_aquatic.jar)",
-      "mod_name": ""
+      "mod_name": "Upgrade Aquatic"
     },
     {
       "mod_id": "itemblacklist",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: itemblacklist.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Item Blacklist",
+      "mod_name": "Item Blacklist"
     },
     {
       "mod_id": "incineratorstryhard",
@@ -2286,13 +2286,13 @@
       "mod_id": "ironfurnaces",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ironfurnaces.jar)",
-      "mod_name": ""
+      "mod_name": "Iron Furnaces"
     },
     {
       "mod_id": "invtweaks",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: invtweaks.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: InvTweaks",
+      "mod_name": "InvTweaks"
     },
     {
       "mod_id": "ice_and_fire_delight",
@@ -2316,49 +2316,49 @@
       "mod_id": "hitfeedback",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: hitfeedback.jar)",
-      "mod_name": ""
+      "mod_name": "Hit Feedback"
     },
     {
       "mod_id": "framework",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: framework.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Surveyor Map Framework",
+      "mod_name": "Surveyor Map Framework"
     },
     {
       "mod_id": "hotbath",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: hotbath.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Immersive Hotbar",
+      "mod_name": "Immersive Hotbar"
     },
     {
       "mod_id": "icarus",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: icarus.jar)",
-      "mod_name": ""
+      "mod_name": "Icarus"
     },
     {
       "mod_id": "iaf_patcher",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: iaf_patcher.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: IFPatcher",
+      "mod_name": "IFPatcher"
     },
     {
       "mod_id": "goetyrevelation",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: goetyrevelation.jar)",
-      "mod_name": ""
+      "mod_name": "Goety: Revelation"
     },
     {
       "mod_id": "flib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: flib.jar)",
-      "mod_name": ""
+      "mod_name": "FLIB"
     },
     {
       "mod_id": "lootr",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: lootr.jar)",
-      "mod_name": ""
+      "mod_name": "Lootr"
     },
     {
       "mod_id": "simpledivinggear",
@@ -2370,25 +2370,25 @@
       "mod_id": "simpleradio",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: simpleradio.jar)",
-      "mod_name": ""
+      "mod_name": "Simpleriding"
     },
     {
       "mod_id": "sereneseasons",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: sereneseasons.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Croptopia SereneSeasons Compat",
+      "mod_name": "Croptopia SereneSeasons Compat"
     },
     {
       "mod_id": "dreadsteel",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: dreadsteel.jar)",
-      "mod_name": ""
+      "mod_name": "Redsteel Armory"
     },
     {
       "mod_id": "gamediscs",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: gamediscs.jar)",
-      "mod_name": ""
+      "mod_name": "Game Discs"
     },
     {
       "mod_id": "minersglasses",
@@ -2398,15 +2398,15 @@
     },
     {
       "mod_id": "pathfinder",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: pathfinder.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: PathFinder API",
+      "mod_name": "PathFinder API"
     },
     {
       "mod_id": "exporbrecall",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: exporbrecall.jar)",
-      "mod_name": ""
+      "mod_name": "ExpOrbRecall"
     },
     {
       "mod_id": "no_trampling_on_farmland",
@@ -2422,15 +2422,15 @@
     },
     {
       "mod_id": "rarcompat",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: rarcompat.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: RandomPatches",
+      "mod_name": "RandomPatches"
     },
     {
       "mod_id": "ironchests",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ironchests.jar)",
-      "mod_name": ""
+      "mod_name": "Iron Chests: Restocked"
     },
     {
       "mod_id": "absolutelyunbreakable",
@@ -2448,25 +2448,25 @@
       "mod_id": "tarotcards",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tarotcards.jar)",
-      "mod_name": ""
+      "mod_name": "TarotCards: Remastered"
     },
     {
       "mod_id": "zenith",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: zenith.jar)",
-      "mod_name": ""
+      "mod_name": "Zenith"
     },
     {
       "mod_id": "fishermens_trap",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: fishermens_trap.jar)",
-      "mod_name": ""
+      "mod_name": "Fishermen's Trap [Neo/Fabric]"
     },
     {
       "mod_id": "glitchcore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: glitchcore.jar)",
-      "mod_name": ""
+      "mod_name": "GlitchCore"
     },
     {
       "mod_id": "fishing_upgrades_more",
@@ -2476,21 +2476,21 @@
     },
     {
       "mod_id": "farmingforblockheads",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: farmingforblockheads.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: [Moonsu] Better GUI for FarmingForBlockheads",
+      "mod_name": "[Moonsu] Better GUI for FarmingForBlockheads"
     },
     {
       "mod_id": "extrameat",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: extrameat.jar)",
-      "mod_name": ""
+      "mod_name": "ExtraHearts"
     },
     {
       "mod_id": "hamsters",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: hamsters.jar)",
-      "mod_name": ""
+      "mod_name": "Hamsters"
     },
     {
       "mod_id": "yakumoblade",
@@ -2500,9 +2500,9 @@
     },
     {
       "mod_id": "wukong",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: wukong.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Block Myth Wukong",
+      "mod_name": "Block Myth Wukong"
     },
     {
       "mod_id": "zunpetforge",
@@ -2514,13 +2514,13 @@
       "mod_id": "zetter",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: zetter.jar)",
-      "mod_name": ""
+      "mod_name": "Zetter — Painting Mod"
     },
     {
       "mod_id": "usefulspyglass",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: usefulspyglass.jar)",
-      "mod_name": ""
+      "mod_name": "Useful Spyglass"
     },
     {
       "mod_id": "yesstevemodel",
@@ -2530,33 +2530,33 @@
     },
     {
       "mod_id": "wab",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: wab.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Wabi-Sabi Structures",
+      "mod_name": "Wabi-Sabi Structures"
     },
     {
       "mod_id": "tips",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: tips.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Tips",
+      "mod_name": "Tips"
     },
     {
       "mod_id": "totw_modded",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: totw_modded.jar)",
-      "mod_name": ""
+      "mod_name": "Towers of the Wild Modded"
     },
     {
       "mod_id": "touhoulittlemaid",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: touhoulittlemaid.jar)",
-      "mod_name": ""
+      "mod_name": "Touhou Little Maid: Orihime"
     },
     {
       "mod_id": "toms_storage",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: toms_storage.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Create - Tom's Simple Storage Recipes",
+      "mod_name": "Create - Tom's Simple Storage Recipes"
     },
     {
       "mod_id": "tonsofenchants",
@@ -2580,43 +2580,43 @@
       "mod_id": "tacz",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tacz.jar)",
-      "mod_name": ""
+      "mod_name": "[TaCZ] Timeless and Classics Zero"
     },
     {
       "mod_id": "taczlabs",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: taczlabs.jar)",
-      "mod_name": ""
+      "mod_name": "[Tacz]Maxstuff"
     },
     {
       "mod_id": "taczaddon",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: taczaddon.jar)",
-      "mod_name": ""
+      "mod_name": "taczaddonsfix"
     },
     {
       "mod_id": "subtleeffects",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: subtleeffects.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Subtle Effects",
+      "mod_name": "Subtle Effects"
     },
     {
       "mod_id": "structure_gel",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: structure_gel.jar)",
-      "mod_name": ""
+      "mod_name": "StructureHelper"
     },
     {
       "mod_id": "splash_milk",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: splash_milk.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: MilkSplash",
+      "mod_name": "MilkSplash"
     },
     {
       "mod_id": "spawnermod",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: spawnermod.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Create: SpawnerBoxer",
+      "mod_name": "Create: SpawnerBoxer"
     },
     {
       "mod_id": "solcarrot",
@@ -2628,43 +2628,43 @@
       "mod_id": "soulslike_weaponry",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: soulslike-weaponry.jar)",
-      "mod_name": ""
+      "mod_name": "Marium's Soulslike Weaponry"
     },
     {
       "mod_id": "shutter",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: shutter.jar)",
-      "mod_name": ""
+      "mod_name": "Shutters"
     },
     {
       "mod_id": "simpletomb",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: simpletomb.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: SimpleTombstone",
+      "mod_name": "SimpleTombstone"
     },
     {
       "mod_id": "skyarena",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: skyarena.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Figura",
+      "mod_name": "Figura"
     },
     {
       "mod_id": "shetiphiancore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: shetiphiancore.jar)",
-      "mod_name": ""
+      "mod_name": "ShetiPhianCore"
     },
     {
       "mod_id": "shadowizardlib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: shadowizardlib.jar)",
-      "mod_name": ""
+      "mod_name": "ShadowizardLib"
     },
     {
       "mod_id": "sherdsapi",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: sherdsapi.jar)",
-      "mod_name": ""
+      "mod_name": "Sherds API"
     },
     {
       "mod_id": "rideeverything",
@@ -2676,25 +2676,25 @@
       "mod_id": "riding_partners",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: riding_partners.jar)",
-      "mod_name": ""
+      "mod_name": "Riding Partners"
     },
     {
       "mod_id": "resourcefulconfig",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: resourcefulconfig.jar)",
-      "mod_name": ""
+      "mod_name": "Resourceful Config"
     },
     {
       "mod_id": "relics",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: relics.jar)",
-      "mod_name": ""
+      "mod_name": "Relics"
     },
     {
       "mod_id": "puzzleslib",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: puzzleslib.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Puzzles Lib",
+      "mod_name": "Puzzles Lib"
     },
     {
       "mod_id": "quick_refine",
@@ -2710,9 +2710,9 @@
     },
     {
       "mod_id": "ramcompat",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ramcompat.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: RandomPatches",
+      "mod_name": "RandomPatches"
     },
     {
       "mod_id": "propertymodifier",
@@ -2722,57 +2722,57 @@
     },
     {
       "mod_id": "projectile_damage",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: projectile_damage.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: NoProjectileDamage",
+      "mod_name": "NoProjectileDamage"
     },
     {
       "mod_id": "prefab",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: prefab.jar)",
-      "mod_name": ""
+      "mod_name": "Prefab"
     },
     {
       "mod_id": "polymorph",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: polymorph.jar)",
-      "mod_name": ""
+      "mod_name": "Polymorph"
     },
     {
       "mod_id": "portablehole",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: portablehole.jar)",
-      "mod_name": ""
+      "mod_name": "PortableHomes"
     },
     {
       "mod_id": "pickablepets",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: pickablepets.jar)",
-      "mod_name": ""
+      "mod_name": "Pickable Pets"
     },
     {
       "mod_id": "pillagers_gun",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: pillagers gun.jar)",
-      "mod_name": ""
+      "mod_name": "Pillager’s Gun (Unofficial Port)"
     },
     {
       "mod_id": "patchouli",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: patchouli.jar)",
-      "mod_name": ""
+      "mod_name": "Patchouli"
     },
     {
       "mod_id": "parcool",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: parcool.jar)",
-      "mod_name": ""
+      "mod_name": "ParCool!"
     },
     {
       "mod_id": "paintings",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: paintings.jar)",
-      "mod_name": ""
+      "mod_name": "Fast Paintings"
     },
     {
       "mod_id": "nocreeperexplosion",
@@ -2784,49 +2784,49 @@
       "mod_id": "not_interested",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: not_interested.jar)",
-      "mod_name": ""
+      "mod_name": "Not interested!"
     },
     {
       "mod_id": "octolib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: octolib.jar)",
-      "mod_name": ""
+      "mod_name": "ShatterLib | OctoLib"
     },
     {
       "mod_id": "naturescompass",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: naturescompass.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Excalibur - Nature's Compass",
+      "mod_name": "Excalibur - Nature's Compass"
     },
     {
       "mod_id": "moonlight",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: moonlight.jar)",
-      "mod_name": ""
+      "mod_name": "Moonlight Lib"
     },
     {
       "mod_id": "refurbished_furniture",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: refurbished_furniture.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Bare Bones x Refurbished Furniture",
+      "mod_name": "Bare Bones x Refurbished Furniture"
     },
     {
       "mod_id": "mru",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mru.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: M.R.U",
+      "mod_name": "M.R.U"
     },
     {
       "mod_id": "multibeds",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: multibeds.jar)",
-      "mod_name": ""
+      "mod_name": "MultiBeds"
     },
     {
       "mod_id": "multimine",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: multimine.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Multimine",
+      "mod_name": "Multimine"
     },
     {
       "mod_id": "mugging_villagers_mod",
@@ -2836,21 +2836,21 @@
     },
     {
       "mod_id": "mo_glass",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mo-glass.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: No Glasses Happy Ghast",
+      "mod_name": "No Glasses Happy Ghast"
     },
     {
       "mod_id": "mine_treasure",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mine-treasure.jar)",
-      "mod_name": ""
+      "mod_name": "Mine Treasure"
     },
     {
       "mod_id": "mermod",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mermod.jar)",
-      "mod_name": ""
+      "mod_name": "Mermod"
     },
     {
       "mod_id": "meetyourfight",
@@ -2862,13 +2862,13 @@
       "mod_id": "l_enders_cataclysm",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: l_enders_cataclysm.jar)",
-      "mod_name": ""
+      "mod_name": "L_Ender's Cataclysm"
     },
     {
       "mod_id": "maidsoulkitchen",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: maidsoulkitchen.jar)",
-      "mod_name": ""
+      "mod_name": "Maidsoul Kitchen"
     },
     {
       "mod_id": "man_of_many_planes",
@@ -2880,7 +2880,7 @@
       "mod_id": "enchanted_arsenal",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: enchanted_arsenal.jar)",
-      "mod_name": ""
+      "mod_name": "[TACZ]Enchanted Arsenal"
     },
     {
       "mod_id": "explorerscompass_edited",
@@ -2892,13 +2892,13 @@
       "mod_id": "fumo",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: fumo.jar)",
-      "mod_name": ""
+      "mod_name": "Fumo"
     },
     {
       "mod_id": "fzzy_config",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: fzzy_config.jar)",
-      "mod_name": ""
+      "mod_name": "Fzzy Config"
     },
     {
       "mod_id": "glowingraidillagers",
@@ -2910,37 +2910,37 @@
       "mod_id": "goety",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: goety.jar)",
-      "mod_name": ""
+      "mod_name": "Goety - The Dark Arts"
     },
     {
       "mod_id": "goety_cataclysm",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: goety_cataclysm.jar)",
-      "mod_name": ""
+      "mod_name": "Goety Cataclysm"
     },
     {
       "mod_id": "exposure",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: exposure.jar)",
-      "mod_name": ""
+      "mod_name": "Exposure"
     },
     {
       "mod_id": "exposure_catalog",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: exposure_catalog.jar)",
-      "mod_name": ""
+      "mod_name": "Exposure Catalog"
     },
     {
       "mod_id": "eclipticseasons",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: eclipticseasons.jar)",
-      "mod_name": ""
+      "mod_name": "Ecliptic Seasons"
     },
     {
       "mod_id": "eeeabsmobs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: eeeabsmobs.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: EEEAB's Mobs: Custom Bossbars",
+      "mod_name": "EEEAB's Mobs: Custom Bossbars"
     },
     {
       "mod_id": "dummmmmmy",
@@ -2956,63 +2956,63 @@
     },
     {
       "mod_id": "dragonseeker",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: dragonseeker.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Dragonseeker easy recipe",
+      "mod_name": "Dragonseeker easy recipe"
     },
     {
       "mod_id": "dragonfinder",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: dragonfinder.jar)",
-      "mod_name": ""
+      "mod_name": "Ice and Fire: Dragon Finder"
     },
     {
       "mod_id": "disenchanting",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: disenchanting.jar)",
-      "mod_name": ""
+      "mod_name": "Easy Disenchanting"
     },
     {
       "mod_id": "cutthrough",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: cutthrough.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Cut Through",
+      "mod_name": "Cut Through"
     },
     {
       "mod_id": "comforts",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: comforts.jar)",
-      "mod_name": ""
+      "mod_name": "Comforts"
     },
     {
       "mod_id": "constructionwand",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: constructionwand.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: ConstructionWand-Plugin",
+      "mod_name": "ConstructionWand-Plugin"
     },
     {
       "mod_id": "cosmeticarmorreworked",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: cosmeticarmorreworked.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: STONEBORN - Cosmetic Armor Reworked",
+      "mod_name": "STONEBORN - Cosmetic Armor Reworked"
     },
     {
       "mod_id": "clickadv",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: clickadv.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Clickable Links",
+      "mod_name": "Clickable Links"
     },
     {
       "mod_id": "cluttered",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cluttered.jar)",
-      "mod_name": ""
+      "mod_name": "Cluttered"
     },
     {
       "mod_id": "champions",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: champions.jar)",
-      "mod_name": ""
+      "mod_name": "Champions"
     },
     {
       "mod_id": "call_of_drowner",
@@ -3030,13 +3030,13 @@
       "mod_id": "cerbonsapi",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cerbonsapi.jar)",
-      "mod_name": ""
+      "mod_name": "CERBON's API"
     },
     {
       "mod_id": "celestial_core",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: celestial_core.jar)",
-      "mod_name": ""
+      "mod_name": "Tori's Pack"
     },
     {
       "mod_id": "broomsmodunofficial",
@@ -3048,13 +3048,13 @@
       "mod_id": "butcher",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: butcher.jar)",
-      "mod_name": ""
+      "mod_name": "Butcher's Delight"
     },
     {
       "mod_id": "bettertridents",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: bettertridents.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: BetterTridentReturn",
+      "mod_name": "BetterTridentReturn"
     },
     {
       "mod_id": "blackaures_paintings",
@@ -3064,21 +3064,21 @@
     },
     {
       "mod_id": "bomd",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: bomd.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Excalibur | Bosses of Mass Destruction (BOMD) Support",
+      "mod_name": "Excalibur | Bosses of Mass Destruction (BOMD) Support"
     },
     {
       "mod_id": "attributefix",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: attributefix.jar)",
-      "mod_name": ""
+      "mod_name": "AttributeFix"
     },
     {
       "mod_id": "badmobs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: badmobs.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: BGames Modpack",
+      "mod_name": "BGames Modpack"
     },
     {
       "mod_id": "alcocraftplus",
@@ -3090,7 +3090,7 @@
       "mod_id": "alexscaves",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: alexscaves.jar)",
-      "mod_name": ""
+      "mod_name": "Alexs Caves: Stuff & Torpedoes"
     },
     {
       "mod_id": "alexsdelight",
@@ -3102,19 +3102,19 @@
       "mod_id": "alwayseat",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: alwayseat.jar)",
-      "mod_name": ""
+      "mod_name": "Always Eat"
     },
     {
       "mod_id": "artifacts",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: artifacts.jar)",
-      "mod_name": ""
+      "mod_name": "Artifacts"
     },
     {
       "mod_id": "astikorcarts",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: astikorcarts.jar)",
-      "mod_name": ""
+      "mod_name": "AstikorCarts"
     },
     {
       "mod_id": "censoredasm5",
@@ -3124,27 +3124,27 @@
     },
     {
       "mod_id": "ctm",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ctm.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Connected Textures (CTM) Overhaul",
+      "mod_name": "Connected Textures (CTM) Overhaul"
     },
     {
       "mod_id": "wrapup",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: wrapup.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: WrapUp",
+      "mod_name": "WrapUp"
     },
     {
       "mod_id": "fixeroo",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: fixeroo.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: FireRoof",
+      "mod_name": "FireRoof"
     },
     {
       "mod_id": "universaltweaks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: universaltweaks.jar)",
-      "mod_name": ""
+      "mod_name": "Universal Tweaks"
     },
     {
       "mod_id": "supermartijn642corelib",
@@ -3156,43 +3156,43 @@
       "mod_id": "wanionlib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: wanionlib.jar)",
-      "mod_name": ""
+      "mod_name": "WanionLib"
     },
     {
       "mod_id": "jaopca",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: jaopca.jar)",
-      "mod_name": ""
+      "mod_name": "JAOPCA"
     },
     {
       "mod_id": "scalar",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: scalar.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: ScalableLux",
+      "mod_name": "ScalableLux"
     },
     {
       "mod_id": "stellarcore",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: stellarcore.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Stellar Homes - A Virtual Home Plugin",
+      "mod_name": "Stellar Homes - A Virtual Home Plugin"
     },
     {
       "mod_id": "topextras",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: topextras.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Text Placeholder API Extras",
+      "mod_name": "Text Placeholder API Extras"
     },
     {
       "mod_id": "tesla",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tesla.jar)",
-      "mod_name": ""
+      "mod_name": "TESLA"
     },
     {
       "mod_id": "jeivillagers",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: jeivillagers.jar)",
-      "mod_name": ""
+      "mod_name": "NeoVillagers-Lumberjack"
     },
     {
       "mod_id": "lunatriuscore",
@@ -3202,15 +3202,15 @@
     },
     {
       "mod_id": "item_filters",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: item-filters.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: LT-ItemFilter",
+      "mod_name": "LT-ItemFilter"
     },
     {
       "mod_id": "slashbladeresharped",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: slashbladeresharped.jar)",
-      "mod_name": ""
+      "mod_name": "SlashBlade:Resharped"
     },
     {
       "mod_id": "sjap_resharpened",
@@ -3222,7 +3222,7 @@
       "mod_id": "ldip",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ldip.jar)",
-      "mod_name": ""
+      "mod_name": "Dip Dye"
     },
     {
       "mod_id": "mysterious_mountain_lib",
@@ -3232,9 +3232,9 @@
     },
     {
       "mod_id": "fastworkbench",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: fastworkbench.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FastWorkbench [FABRIC]",
+      "mod_name": "FastWorkbench [FABRIC]"
     },
     {
       "mod_id": "taxfreelevels",
@@ -3244,9 +3244,9 @@
     },
     {
       "mod_id": "connector",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: connector.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Sinytra Connector",
+      "mod_name": "Sinytra Connector"
     },
     {
       "mod_id": "justenoughadvancements",
@@ -3258,7 +3258,7 @@
       "mod_id": "witherstormmod",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: witherstormmod.jar)",
-      "mod_name": ""
+      "mod_name": "Netherite tools for Crackers witherstorm mod"
     },
     {
       "mod_id": "ftb_teams",
@@ -3268,57 +3268,57 @@
     },
     {
       "mod_id": "ftb_quests",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ftb-quests.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FTB Quests Freeze Fix",
+      "mod_name": "FTB Quests Freeze Fix"
     },
     {
       "mod_id": "projecte",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: projecte.jar)",
-      "mod_name": ""
+      "mod_name": "ProjectE Integration"
     },
     {
       "mod_id": "teamprojecte",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: teamprojecte.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: TeamProjectE",
+      "mod_name": "TeamProjectE"
     },
     {
       "mod_id": "sophisticatedcore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: sophisticatedcore.jar)",
-      "mod_name": ""
+      "mod_name": "Sophisticated Core"
     },
     {
       "mod_id": "clumps",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: clumps.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Clumps",
+      "mod_name": "Clumps"
     },
     {
       "mod_id": "watut",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: watut.jar)",
-      "mod_name": ""
+      "mod_name": "What Are They Up To (Watut)"
     },
     {
       "mod_id": "usefulslime",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: usefulslime.jar)",
-      "mod_name": ""
+      "mod_name": "Useful Slime"
     },
     {
       "mod_id": "ticex",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ticex.jar)",
-      "mod_name": ""
+      "mod_name": "TiCEX - Tinkers Construct EX"
     },
     {
       "mod_id": "projecte_integration",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: projecte_integration.jar)",
-      "mod_name": ""
+      "mod_name": "ProjectE Integration"
     },
     {
       "mod_id": "prinegorerouse",
@@ -3330,13 +3330,13 @@
       "mod_id": "libx",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: libx.jar)",
-      "mod_name": ""
+      "mod_name": "LibX"
     },
     {
       "mod_id": "packetfixer",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: packetfixer.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Packet Fixer",
+      "mod_name": "Packet Fixer"
     },
     {
       "mod_id": "slashblade_useful_addon",
@@ -3354,19 +3354,19 @@
       "mod_id": "cupboard",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cupboard.jar)",
-      "mod_name": ""
+      "mod_name": "BTA Cupboards"
     },
     {
       "mod_id": "balm",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: balm.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Balm",
+      "mod_name": "Balm"
     },
     {
       "mod_id": "addonapi",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: addonapi.jar)",
-      "mod_name": ""
+      "mod_name": "Moff's AddonAPI-DynLoad"
     },
     {
       "mod_id": "alltheleaks",
@@ -3382,69 +3382,69 @@
     },
     {
       "mod_id": "create",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: create.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Create",
+      "mod_name": "Create"
     },
     {
       "mod_id": "appleskin",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: appleskin.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: AppleSkin",
+      "mod_name": "AppleSkin"
     },
     {
       "mod_id": "voicechat",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: voicechat.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: BareBones VoiceChat",
+      "mod_name": "BareBones VoiceChat"
     },
     {
       "mod_id": "carpet",
-      "type": "server_only",
-      "reason": "基于历史配置(原文件名: carpet.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Carpet",
+      "mod_name": "Carpet"
     },
     {
       "mod_id": "the_vault",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: the_vault.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: PolyLib",
+      "mod_name": "PolyLib"
     },
     {
       "mod_id": "tconstruct",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: tconstruct.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: FixTconstructPickaxe",
+      "mod_name": "FixTconstructPickaxe"
     },
     {
       "mod_id": "optifine",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: optifine.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: OptiFine for Fabric",
+      "mod_name": "OptiFine for Fabric"
     },
     {
       "mod_id": "sodium",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: sodium.jar)",
-      "mod_name": ""
+      "mod_name": "Sodium"
     },
     {
       "mod_id": "iris",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: iris.jar)",
-      "mod_name": ""
+      "mod_name": "Iris Shaders"
     },
     {
       "mod_id": "lithium",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: lithium.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Lithium",
+      "mod_name": "Lithium"
     },
     {
       "mod_id": "phosphor",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: phosphor.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Phosphor",
+      "mod_name": "Phosphor"
     },
     {
       "mod_id": "roughlyenoughitems",
@@ -3454,159 +3454,159 @@
     },
     {
       "mod_id": "configuration",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: configuration.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Configuration",
+      "mod_name": "Configuration"
     },
     {
       "mod_id": "waila",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: waila.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Waila Stages",
+      "mod_name": "Waila Stages"
     },
     {
       "mod_id": "hwyla",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: hwyla.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Hwyla",
+      "mod_name": "Hwyla"
     },
     {
       "mod_id": "jade",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: jade.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Jade 🔍",
+      "mod_name": "Jade 🔍"
     },
     {
       "mod_id": "worldedit",
       "type": "server_only",
       "reason": "基于历史配置(原文件名: worldedit.jar)",
-      "mod_name": ""
+      "mod_name": "WorldEdit"
     },
     {
       "mod_id": "worldguard",
       "type": "server_only",
       "reason": "基于历史配置(原文件名: worldguard.jar)",
-      "mod_name": ""
+      "mod_name": "WorldGuard"
     },
     {
       "mod_id": "essentials",
-      "type": "server_only",
-      "reason": "基于历史配置(原文件名: essentials.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Inventory Essentials",
+      "mod_name": "Inventory Essentials"
     },
     {
       "mod_id": "luckperms",
       "type": "server_only",
       "reason": "基于历史配置(原文件名: luckperms.jar)",
-      "mod_name": ""
+      "mod_name": "LuckPerms"
     },
     {
       "mod_id": "thermalexpansion",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: thermalexpansion.jar)",
-      "mod_name": ""
+      "mod_name": "Thermal Expansion"
     },
     {
       "mod_id": "thermalfoundation",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: thermalfoundation.jar)",
-      "mod_name": ""
+      "mod_name": "Thermal Foundation"
     },
     {
       "mod_id": "mekanism",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mekanism.jar)",
-      "mod_name": ""
+      "mod_name": "Mekanism"
     },
     {
       "mod_id": "enderio",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: enderio.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: EnderIO - Refrubished!",
+      "mod_name": "EnderIO - Refrubished!"
     },
     {
       "mod_id": "ae2",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: ae2.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: AE2 EMI Crafting Integration",
+      "mod_name": "AE2 EMI Crafting Integration"
     },
     {
       "mod_id": "refinedstorage",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: refinedstorage.jar)",
-      "mod_name": ""
+      "mod_name": "Refined Storage"
     },
     {
       "mod_id": "ic2",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ic2.jar)",
-      "mod_name": ""
+      "mod_name": "IC2Classic"
     },
     {
       "mod_id": "buildcraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: buildcraft.jar)",
-      "mod_name": ""
+      "mod_name": "BuildCraft"
     },
     {
       "mod_id": "forestry",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: forestry.jar)",
-      "mod_name": ""
+      "mod_name": "Forestry: Community Edition"
     },
     {
       "mod_id": "biomesoplenty",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: biomesoplenty.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Biomes'O'Plenty Redwood Re-Hue",
+      "mod_name": "Biomes'O'Plenty Redwood Re-Hue"
     },
     {
       "mod_id": "twilightforest",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: twilightforest.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Bluemap x TwilightForest",
+      "mod_name": "Bluemap x TwilightForest"
     },
     {
       "mod_id": "aether",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: aether.jar)",
-      "mod_name": ""
+      "mod_name": "The Aether"
     },
     {
       "mod_id": "immersiveengineering",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: immersiveengineering.jar)",
-      "mod_name": ""
+      "mod_name": "Immersive Engineering"
     },
     {
       "mod_id": "botania",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: botania.jar)",
-      "mod_name": ""
+      "mod_name": "Botania"
     },
     {
       "mod_id": "thaumcraft",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: thaumcraft.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Thaumcraft 4 Tweaks",
+      "mod_name": "Thaumcraft 4 Tweaks"
     },
     {
       "mod_id": "bloodmagic",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bloodmagic.jar)",
-      "mod_name": ""
+      "mod_name": "BloodMagic: Teams"
     },
     {
       "mod_id": "astralsorcery",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: astralsorcery.jar)",
-      "mod_name": ""
+      "mod_name": "Mechanical Trident"
     },
     {
       "mod_id": "chisel",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: chisel.jar)",
-      "mod_name": ""
+      "mod_name": "Chiseled Bookshelf Visualizer"
     },
     {
       "mod_id": "chiselsandbits",
@@ -3618,25 +3618,25 @@
       "mod_id": "bibliocraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bibliocraft.jar)",
-      "mod_name": ""
+      "mod_name": "Bibliocraft Legacy"
     },
     {
       "mod_id": "decocraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: decocraft.jar)",
-      "mod_name": ""
+      "mod_name": "Decocraft"
     },
     {
       "mod_id": "ironchest",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: ironchest.jar)",
-      "mod_name": ""
+      "mod_name": "Iron Chests"
     },
     {
       "mod_id": "storagedrawers",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: storagedrawers.jar)",
-      "mod_name": ""
+      "mod_name": "Storage Drawers"
     },
     {
       "mod_id": "extrautilities2",
@@ -3648,13 +3648,13 @@
       "mod_id": "actuallyadditions",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: actuallyadditions.jar)",
-      "mod_name": ""
+      "mod_name": "Actually Additions"
     },
     {
       "mod_id": "harvestcraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: harvestcraft.jar)",
-      "mod_name": ""
+      "mod_name": "Pam's HarvestCraft 2: Food Core"
     },
     {
       "mod_id": "cookingforblockheads",
@@ -3666,67 +3666,67 @@
       "mod_id": "mysticalagriculture",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mysticalagriculture.jar)",
-      "mod_name": ""
+      "mod_name": "Mystical Agriculture"
     },
     {
       "mod_id": "tinkerscomplement",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tinkerscomplement.jar)",
-      "mod_name": ""
+      "mod_name": "Tinkers' Complement"
     },
     {
       "mod_id": "mantle",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mantle.jar)",
-      "mod_name": ""
+      "mod_name": "Mantle"
     },
     {
       "mod_id": "cofhcore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cofhcore.jar)",
-      "mod_name": ""
+      "mod_name": "FishyHard FHCore"
     },
     {
       "mod_id": "redstoneflux",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: redstoneflux.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: RedstoneFlux",
+      "mod_name": "RedstoneFlux"
     },
     {
       "mod_id": "baubles",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: baubles.jar)",
-      "mod_name": ""
+      "mod_name": "Trinkets and Baubles Reforked"
     },
     {
       "mod_id": "curios",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: curios.jar)",
-      "mod_name": ""
+      "mod_name": "Curios API"
     },
     {
       "mod_id": "jeiintegration",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: jeiintegration.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: JEI Integration",
+      "mod_name": "JEI Integration"
     },
     {
       "mod_id": "jeresources",
-      "type": "client_required_server_optional",
-      "reason": "基于历史配置(原文件名: jeresources.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Just Enough Resources (JER)",
+      "mod_name": "Just Enough Resources (JER)"
     },
     {
       "mod_id": "crafttweaker",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: crafttweaker.jar)",
-      "mod_name": ""
+      "mod_name": "CraftTweaker"
     },
     {
       "mod_id": "modtweaker",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: modtweaker.jar)",
-      "mod_name": ""
+      "mod_name": "ModTweaker"
     },
     {
       "mod_id": "forgemultipart",
@@ -3738,13 +3738,13 @@
       "mod_id": "mcjtylib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: mcjtylib.jar)",
-      "mod_name": ""
+      "mod_name": "McJtyLib"
     },
     {
       "mod_id": "rftools",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: rftools.jar)",
-      "mod_name": ""
+      "mod_name": "RFTools Base"
     },
     {
       "mod_id": "rftoolsdim",
@@ -3760,69 +3760,69 @@
     },
     {
       "mod_id": "topaddons",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: topaddons.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: SMPAddons",
+      "mod_name": "SMPAddons"
     },
     {
       "mod_id": "inventorytweaks",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: inventorytweaks.jar)",
-      "mod_name": ""
+      "mod_name": "InventoryTweaks StationAPI"
     },
     {
       "mod_id": "mousetweaks",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: mousetweaks.jar)",
-      "mod_name": ""
+      "mod_name": "MouseTweaks x Accessories Fix"
     },
     {
       "mod_id": "controlling",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: controlling.jar)",
-      "mod_name": ""
+      "mod_name": "Controlling"
     },
     {
       "mod_id": "defaultoptions",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: defaultoptions.jar)",
-      "mod_name": ""
+      "mod_name": "Default Options"
     },
     {
       "mod_id": "betterfoliage",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: betterfoliage.jar)",
-      "mod_name": ""
+      "mod_name": "Better Foliage Renewed"
     },
     {
       "mod_id": "dynamiclights",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: dynamiclights.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: DynamicLights",
+      "mod_name": "DynamicLights"
     },
     {
       "mod_id": "soundfilters",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: soundfilters.jar)",
-      "mod_name": ""
+      "mod_name": "Dynamic Sound Filters"
     },
     {
       "mod_id": "ambientsounds",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: ambientsounds.jar)",
-      "mod_name": ""
+      "mod_name": "AmbientSounds"
     },
     {
       "mod_id": "minimap",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: minimap.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Xaero's Minimap",
+      "mod_name": "Xaero's Minimap"
     },
     {
       "mod_id": "xaerominimap",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: xaerominimap.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Xaero's Minimap",
+      "mod_name": "Xaero's Minimap"
     },
     {
       "mod_id": "xaeroworldmap",
@@ -3832,69 +3832,69 @@
     },
     {
       "mod_id": "antiqueatlas",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: antiqueatlas.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: AntiqueAtlas - RecurrentComplex Compatability",
+      "mod_name": "AntiqueAtlas - RecurrentComplex Compatability"
     },
     {
       "mod_id": "damageindicators",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: damageindicators.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Fancy DamageIndicator",
+      "mod_name": "Fancy DamageIndicator"
     },
     {
       "mod_id": "neat",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: neat.jar)",
-      "mod_name": ""
+      "mod_name": "Neat"
     },
     {
       "mod_id": "betterfps",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: betterfps.jar)",
-      "mod_name": ""
+      "mod_name": "Better FPS (Modpack)"
     },
     {
       "mod_id": "fastcraft",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: fastcraft.jar)",
-      "mod_name": ""
+      "mod_name": "FastCraft"
     },
     {
       "mod_id": "foamfix",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: foamfix.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: FoamFix",
+      "mod_name": "FoamFix"
     },
     {
       "mod_id": "vanillafix",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: vanillafix.jar)",
-      "mod_name": ""
+      "mod_name": "VanillaFix"
     },
     {
       "mod_id": "textformatting",
-      "type": "client_only",
-      "reason": "基于历史配置(原文件名: textformatting.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Text Formatting Everywhere",
+      "mod_name": "Text Formatting Everywhere"
     },
     {
       "mod_id": "chattweaks",
       "type": "client_only",
       "reason": "基于历史配置(原文件名: chattweaks.jar)",
-      "mod_name": ""
+      "mod_name": "ChaTweaks"
     },
     {
       "mod_id": "simplevoicechat",
-      "type": "client_optional_server_required",
-      "reason": "基于历史配置(原文件名: simplevoicechat.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: SimpleVoiceChat Broadcast",
+      "mod_name": "SimpleVoiceChat Broadcast"
     },
     {
       "mod_id": "discordintegration",
       "type": "server_only",
       "reason": "基于历史配置(原文件名: discordintegration.jar)",
-      "mod_name": ""
+      "mod_name": "Discord_Integration"
     },
     {
       "mod_id": "servertabinfo",
@@ -3904,39 +3904,39 @@
     },
     {
       "mod_id": "morpheus",
-      "type": "server_only",
-      "reason": "基于历史配置(原文件名: morpheus.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Orpheus | Forge & Fabric",
+      "mod_name": "Orpheus | Forge & Fabric"
     },
     {
       "mod_id": "sleepingoverhaul",
-      "type": "server_only",
-      "reason": "基于历史配置(原文件名: sleepingoverhaul.jar)",
-      "mod_name": ""
+      "type": "client_and_server_required",
+      "reason": "通过Modrinth API重新分类: Sleeping Overhaul 2",
+      "mod_name": "Sleeping Overhaul 2"
     },
     {
       "mod_id": "corpse",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: corpse.jar)",
-      "mod_name": ""
+      "mod_name": "Corpse"
     },
     {
       "mod_id": "corpse",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: corpse.jar)",
-      "mod_name": ""
+      "mod_name": "Corpse"
     },
     {
       "mod_id": "gravestone",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: gravestone.jar)",
-      "mod_name": ""
+      "mod_name": "GraveStone Mod"
     },
     {
       "mod_id": "backpacks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: backpacks.jar)",
-      "mod_name": ""
+      "mod_name": "Sophisticated Backpacks"
     },
     {
       "mod_id": "ironbackpacks",
@@ -3946,87 +3946,87 @@
     },
     {
       "mod_id": "sophisticatedbackpacks",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: sophisticatedbackpacks.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Bluemap x SophisticatedBackpacks",
+      "mod_name": "Bluemap x SophisticatedBackpacks"
     },
     {
       "mod_id": "travelersbackpack",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: travelersbackpack.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Better GUI For TravelersBackpack",
+      "mod_name": "Better GUI For TravelersBackpack"
     },
     {
       "mod_id": "waystones",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: waystones.jar)",
-      "mod_name": ""
+      "mod_name": "Waystones"
     },
     {
       "mod_id": "journeymapwaypoints",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: journeymapwaypoints.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: More JourneyMap Waypoints",
+      "mod_name": "More JourneyMap Waypoints"
     },
     {
       "mod_id": "fastleafdecay",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: fastleafdecay.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: FastLeafDecay",
+      "mod_name": "FastLeafDecay"
     },
     {
       "mod_id": "treecapitator",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: treecapitator.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: TreeCapitator",
+      "mod_name": "TreeCapitator"
     },
     {
       "mod_id": "veinminer",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: veinminer.jar)",
-      "mod_name": ""
+      "mod_name": "Veinminer"
     },
     {
       "mod_id": "oreexcavation",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: oreexcavation.jar)",
-      "mod_name": ""
+      "mod_name": "Ore Excavation"
     },
     {
       "mod_id": "autoreglib",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: autoreglib.jar)",
-      "mod_name": ""
+      "mod_name": "AutoRegLib"
     },
     {
       "mod_id": "quark",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: quark.jar)",
-      "mod_name": ""
+      "mod_name": "Quark"
     },
     {
       "mod_id": "charm",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: charm.jar)",
-      "mod_name": ""
+      "mod_name": "Charm of Undying"
     },
     {
       "mod_id": "supplementaries",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: supplementaries.jar)",
-      "mod_name": ""
+      "mod_name": "Supplementaries"
     },
     {
       "mod_id": "decorativeblocks",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: decorativeblocks.jar)",
-      "mod_name": ""
+      "mod_name": "Decorative Blocks"
     },
     {
       "mod_id": "mcwfurniture",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mcwfurniture.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: MyFurniture",
+      "mod_name": "MyFurniture"
     },
     {
       "mod_id": "mcwdoors",
@@ -4042,15 +4042,15 @@
     },
     {
       "mod_id": "farmersdelight",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: farmersdelight.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Farmer's Delight x No Tree Punching Cooking Pot",
+      "mod_name": "Farmer's Delight x No Tree Punching Cooking Pot"
     },
     {
       "mod_id": "createaddition",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: createaddition.jar)",
-      "mod_name": ""
+      "mod_name": "Create Crafts & Additions"
     },
     {
       "mod_id": "createcraftsadditions",
@@ -4060,21 +4060,21 @@
     },
     {
       "mod_id": "computercraft",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: computercraft.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: ComputerCraft Create",
+      "mod_name": "ComputerCraft Create"
     },
     {
       "mod_id": "opencomputers",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: opencomputers.jar)",
-      "mod_name": ""
+      "mod_name": "OpenComputers"
     },
     {
       "mod_id": "securitycraft",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: securitycraft.jar)",
-      "mod_name": ""
+      "mod_name": "SecurityCraft"
     },
     {
       "mod_id": "malisiscore",
@@ -4086,79 +4086,79 @@
       "mod_id": "tardismod",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: tardismod.jar)",
-      "mod_name": ""
+      "mod_name": "TARDIF Mod"
     },
     {
       "mod_id": "dimdoors",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: dimdoors.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: BigDoors",
+      "mod_name": "BigDoors"
     },
     {
       "mod_id": "compactmachines",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: compactmachines.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: yumo compactmachines por",
+      "mod_name": "yumo compactmachines por"
     },
     {
       "mod_id": "littletiles",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: littletiles.jar)",
-      "mod_name": ""
+      "mod_name": "LittleTiles"
     },
     {
       "mod_id": "chiseledme",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: chiseledme.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: chiseledmilk's simple redo",
+      "mod_name": "chiseledmilk's simple redo"
     },
     {
       "mod_id": "animania",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: animania.jar)",
-      "mod_name": ""
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Animalia",
+      "mod_name": "Animalia"
     },
     {
       "mod_id": "mocreatures",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mocreatures.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Vanilla Style - Mo' Creatures",
+      "mod_name": "Vanilla Style - Mo' Creatures"
     },
     {
       "mod_id": "alexsmobs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: alexsmobs.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Bare Bones X Alex's Mobs",
+      "mod_name": "Bare Bones X Alex's Mobs"
     },
     {
       "mod_id": "iceandfire",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: iceandfire.jar)",
-      "mod_name": ""
+      "mod_name": "IceAndFire Community Edition"
     },
     {
       "mod_id": "lycanitesmobs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: lycanitesmobs.jar)",
-      "mod_name": ""
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Lycanites Mobs Retextured",
+      "mod_name": "Lycanites Mobs Retextured"
     },
     {
       "mod_id": "primitivemobs",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: primitivemobs.jar)",
-      "mod_name": ""
+      "mod_name": "PrimitiveMobsRevival"
     },
     {
       "mod_id": "mowziesmobs",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: mowziesmobs.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Rebuilt of Mowziemobs structure",
+      "mod_name": "Rebuilt of Mowziemobs structure"
     },
     {
       "mod_id": "aquaculture",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: aquaculture.jar)",
-      "mod_name": ""
+      "mod_name": "Aquaculture Delight"
     },
     {
       "mod_id": "betteranimalsplus",
@@ -4170,79 +4170,79 @@
       "mod_id": "natura",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: natura.jar)",
-      "mod_name": ""
+      "mod_name": "Naturalist"
     },
     {
       "mod_id": "integrateddynamics",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: integrateddynamics.jar)",
-      "mod_name": ""
+      "mod_name": "Integrated Dynamics"
     },
     {
       "mod_id": "integratedtunnels",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: integratedtunnels.jar)",
-      "mod_name": ""
+      "mod_name": "Integrated Tunnels"
     },
     {
       "mod_id": "integratedterminals",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: integratedterminals.jar)",
-      "mod_name": ""
+      "mod_name": "Integrated Terminals"
     },
     {
       "mod_id": "cyclopscore",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: cyclopscore.jar)",
-      "mod_name": ""
+      "mod_name": "Cyclops Core"
     },
     {
       "mod_id": "commoncapabilities",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: commoncapabilities.jar)",
-      "mod_name": ""
+      "mod_name": "Common Capabilities"
     },
     {
       "mod_id": "placebo",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: placebo.jar)",
-      "mod_name": ""
+      "mod_name": "Placebo"
     },
     {
       "mod_id": "bookshelf",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: bookshelf.jar)",
-      "mod_name": ""
+      "mod_name": "Bookshelf"
     },
     {
       "mod_id": "citadel",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: citadel.jar)",
-      "mod_name": ""
+      "mod_name": "Citadel"
     },
     {
       "mod_id": "geckolib",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: geckolib.jar)",
-      "mod_name": ""
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: Geckolib",
+      "mod_name": "Geckolib"
     },
     {
       "mod_id": "architectury",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: architectury.jar)",
-      "mod_name": ""
+      "mod_name": "Architectury API"
     },
     {
       "mod_id": "fabric_api",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: fabric_api.jar)",
-      "mod_name": ""
+      "mod_name": "Project Red Fabrication"
     },
     {
       "mod_id": "forge",
-      "type": "client_and_server_required",
-      "reason": "基于历史配置(原文件名: forge.jar)",
-      "mod_name": ""
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Forge Config API Port",
+      "mod_name": "Forge Config API Port"
     },
     {
       "mod_id": "kotlinforforge",
@@ -4254,7 +4254,427 @@
       "mod_id": "forgelin",
       "type": "client_and_server_required",
       "reason": "基于历史配置(原文件名: forgelin.jar)",
-      "mod_name": ""
+      "mod_name": "Forgelin-Continuous"
+    },
+    {
+      "mod_id": "amendments",
+      "mod_name": "Amendments",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Amendments)"
+    },
+    {
+      "mod_id": "badpackets",
+      "mod_name": "Bad Packets",
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Bad Packets"
+    },
+    {
+      "mod_id": "bits_n_bobs",
+      "mod_name": "Create Bits 'n' Bobs",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create Bits 'n' Bobs)"
+    },
+    {
+      "mod_id": "clientsort",
+      "mod_name": "ClientSort",
+      "type": "client_required_server_optional",
+      "reason": "通过Modrinth API重新分类: ClientSort"
+    },
+    {
+      "mod_id": "cmpackagecouriers",
+      "mod_name": "Create More: Package Couriers",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create More: Package Couriers)"
+    },
+    {
+      "mod_id": "aeronautics_bundled",
+      "mod_name": "Create Aeronautics",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create Aeronautics)"
+    },
+    {
+      "mod_id": "create_enchantment_industry",
+      "mod_name": "Create: Enchantment Industry",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Enchantment Industry)"
+    },
+    {
+      "mod_id": "createshufflefilter",
+      "mod_name": "Create Shuffle Filter",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create Shuffle Filter)"
+    },
+    {
+      "mod_id": "create_sa",
+      "mod_name": "Create Stuff & Additions",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create Stuff & Additions)"
+    },
+    {
+      "mod_id": "create_dragons_plus",
+      "mod_name": "Create: Dragons Plus",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Dragons Plus)"
+    },
+    {
+      "mod_id": "createliquidfuel",
+      "mod_name": "Create Liquid Fuel",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Create Liquid Fuel"
+    },
+    {
+      "mod_id": "createoreexcavation",
+      "mod_name": "Create Ore Excavation",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create Ore Excavation)"
+    },
+    {
+      "mod_id": "create_bic_bit",
+      "mod_name": "Create: Bitterballen",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Bitterballen)"
+    },
+    {
+      "mod_id": "create_connected",
+      "mod_name": "Create: Connected",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Connected)"
+    },
+    {
+      "mod_id": "create_easy_structures",
+      "mod_name": "Create: Easy Structures",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Easy Structures)"
+    },
+    {
+      "mod_id": "create_ltab",
+      "mod_name": "Create Let The Adventure Begin",
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Create Let The Adventure Begin"
+    },
+    {
+      "mod_id": "create_structures_arise",
+      "mod_name": "Create: Structures Arise",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Structures Arise)"
+    },
+    {
+      "mod_id": "creeperheal",
+      "mod_name": "CreeperHeal",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: CreeperHeal"
+    },
+    {
+      "mod_id": "exposure_polaroid",
+      "mod_name": "Exposure Polaroid",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Exposure Polaroid)"
+    },
+    {
+      "mod_id": "flatbedrock",
+      "mod_name": "Flat Bedrock",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Flat Bedrock)"
+    },
+    {
+      "mod_id": "ftblibrary",
+      "mod_name": "FTB Library",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FTB Library"
+    },
+    {
+      "mod_id": "gpu_tape",
+      "mod_name": "GPUTape",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: GPUTape"
+    },
+    {
+      "mod_id": "guideme",
+      "mod_name": "GuideME",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: GuideME)"
+    },
+    {
+      "mod_id": "immediatelyfast",
+      "mod_name": "ImmediatelyFast",
+      "type": "client_only",
+      "reason": "仅客户端需要，通常为界面优化、HUD、小地图等 (Mod: ImmediatelyFast)"
+    },
+    {
+      "mod_id": "industrial_platform",
+      "mod_name": "Industrial Platform",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Industrial Platform)"
+    },
+    {
+      "mod_id": "integrated_villages",
+      "mod_name": "Integrated Villages",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Integrated Villages"
+    },
+    {
+      "mod_id": "irisflw",
+      "mod_name": "Iris Flywheel Compat",
+      "type": "client_only",
+      "reason": "仅客户端需要，通常为界面优化、HUD、小地图等 (Mod: Iris Flywheel Compat)"
+    },
+    {
+      "mod_id": "ixeris_dummy",
+      "mod_name": "Ixeris",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Ixeris"
+    },
+    {
+      "mod_id": "mr_katters_structures",
+      "mod_name": "Katters Structures",
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Katters Structures"
+    },
+    {
+      "mod_id": "meme_mobs",
+      "mod_name": "Meme Mobs",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Meme Mobs)"
+    },
+    {
+      "mod_id": "owo",
+      "mod_name": "oωo",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: oωo)"
+    },
+    {
+      "mod_id": "pointblank",
+      "mod_name": "Point Blank",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Point Blank)"
+    },
+    {
+      "mod_id": "prickle",
+      "mod_name": "PrickleMC",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: PrickleMC)"
+    },
+    {
+      "mod_id": "rolling_gate",
+      "mod_name": "RollingGate",
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: RollingGate"
+    },
+    {
+      "mod_id": "silicone_dolls",
+      "mod_name": "SiliconeDolls",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: SiliconeDolls"
+    },
+    {
+      "mod_id": "someassemblyrequired",
+      "mod_name": "Some Assembly Required",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Some Assembly Required)"
+    },
+    {
+      "mod_id": "threadtweak",
+      "mod_name": "ThreadTweak",
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: ThreadTweak"
+    },
+    {
+      "mod_id": "wwoo",
+      "mod_name": "William Wythers' Overhauled Overworld",
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: William Wythers' Overhauled Overworld"
+    },
+    {
+      "mod_id": "zeta",
+      "mod_name": "Zeta",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Zeta)"
+    },
+    {
+      "mod_id": "ftbteams",
+      "mod_name": "FTB Teams",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: FTB Teams"
+    },
+    {
+      "mod_id": "betterendisland",
+      "mod_name": "YUNG's Better End Island",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: YUNG's Better End Island"
+    },
+    {
+      "mod_id": "frostfire_dragon",
+      "mod_name": "Frostfire Dragon",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Frostfire Dragon)"
+    },
+    {
+      "mod_id": "luncheonmeatsdelight",
+      "mod_name": "Luncheon Meat's Delight",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Luncheon Meat's Delight)"
+    },
+    {
+      "mod_id": "dungeons_arise",
+      "mod_name": "When Dungeons Arise",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: When Dungeons Arise"
+    },
+    {
+      "mod_id": "skyvillages",
+      "mod_name": "Sky Villages",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Sky Villages"
+    },
+    {
+      "mod_id": "muhc",
+      "mod_name": "MaidUseHandCrank",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: MaidUseHandCrank)"
+    },
+    {
+      "mod_id": "untitledduckmod",
+      "mod_name": "Untitled Duck Mod",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Untitled Duck Mod)"
+    },
+    {
+      "mod_id": "crystcursed_dragon",
+      "mod_name": "Crystcursed Dragon",
+      "type": "server_only",
+      "reason": "通过Modrinth API重新分类: Crystcursed Dragon"
+    },
+    {
+      "mod_id": "create_central_kitchen",
+      "mod_name": "Create: Central Kitchen",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Central Kitchen)"
+    },
+    {
+      "mod_id": "create_mechanical_spawner",
+      "mod_name": "Create: Mechanical spawner",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Mechanical spawner)"
+    },
+    {
+      "mod_id": "create_mobile_packages",
+      "mod_name": "Create: Mobile Packages",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Mobile Packages)"
+    },
+    {
+      "mod_id": "createfastschematiccannon",
+      "mod_name": "Create: Fast Schematic Cannon",
+      "type": "client_optional_server_optional",
+      "reason": "通过Modrinth API重新分类: Create: Fast Schematic Cannon"
+    },
+    {
+      "mod_id": "createfisheryindustry",
+      "mod_name": "Create: Fishery Industry",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Fishery Industry)"
+    },
+    {
+      "mod_id": "create_currency_shops",
+      "mod_name": "Create: Currency Shops",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Create: Currency Shops)"
+    },
+    {
+      "mod_id": "create_cyber_goggles",
+      "mod_name": "Create: Cyber Goggles",
+      "type": "client_only",
+      "reason": "仅客户端需要，通常为界面优化、HUD、小地图等 (Mod: Create: Cyber Goggles)"
+    },
+    {
+      "mod_id": "kaleidoscope_cookery",
+      "mod_name": "Kaleidoscope Cookery",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Kaleidoscope Cookery)"
+    },
+    {
+      "mod_id": "botanytrees",
+      "mod_name": "BotanyTrees",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: BotanyTrees)"
+    },
+    {
+      "mod_id": "botanypots",
+      "mod_name": "BotanyPots",
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: BotanyPots"
+    },
+    {
+      "mod_id": "cataclysm",
+      "mod_name": "L_Ender's Cataclysm 1.21.1",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: L_Ender's Cataclysm 1.21.1)"
+    },
+    {
+      "mod_id": "creeper_firework",
+      "mod_name": "Creeper Firework",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Creeper Firework)"
+    },
+    {
+      "mod_id": "grindenchantments",
+      "mod_name": "Grind Enchantments",
+      "type": "client_optional_server_required",
+      "reason": "通过Modrinth API重新分类: Grind Enchantments"
+    },
+    {
+      "mod_id": "netmusic",
+      "mod_name": "Net Music Mod",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Net Music Mod)"
+    },
+    {
+      "mod_id": "wing_kirin",
+      "mod_name": "Wing Kirin",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: Wing Kirin"
+    },
+    {
+      "mod_id": "touhou_little_maid",
+      "mod_name": "Touhou Little Maid",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Touhou Little Maid)"
+    },
+    {
+      "mod_id": "ftbultimine",
+      "mod_name": "FTB Ultimine",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: FTB Ultimine)"
+    },
+    {
+      "mod_id": "farmersdelight_extended",
+      "mod_name": "Farmer's Delight: Extended",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Farmer's Delight: Extended)"
+    },
+    {
+      "mod_id": "sodium_extra",
+      "mod_name": "Sodium Extra",
+      "type": "client_only",
+      "reason": "仅客户端需要，通常为界面优化、HUD、小地图等 (Mod: Sodium Extra)"
+    },
+    {
+      "mod_id": "enchdesc",
+      "mod_name": "EnchantmentDescriptions",
+      "type": "client_only",
+      "reason": "通过Modrinth API重新分类: EnchantmentDescriptions"
+    },
+    {
+      "mod_id": "automobility",
+      "mod_name": "Automobility",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Automobility)"
+    },
+    {
+      "mod_id": "brewinandchewin",
+      "mod_name": "Brewin' And Chewin'",
+      "type": "client_and_server_required",
+      "reason": "两端都必须安装，通常为内容Mod、生物、物品等 (Mod: Brewin' And Chewin')"
     }
   ],
   "notes": [

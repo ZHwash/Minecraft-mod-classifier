@@ -113,10 +113,9 @@ class ModrinthAPI:
         if not categories:
             return None
         
-        # 客户端专用标签
+        # 客户端专用标签（仅影响渲染/UI，不影响游戏逻辑）
         client_only_tags = [
-            'optimization', 'utility', 'library', 'fabric-api',
-            'adventure', 'cursed', 'storage', 'worldgen'
+            'optimization',  # 性能优化通常是客户端的（如Sodium）
         ]
         
         # 服务端专用标签
@@ -124,27 +123,41 @@ class ModrinthAPI:
             'server-utility', 'administration'
         ]
         
-        # 检查是否包含客户端专用标签
-        has_client_tags = any(tag in categories for tag in client_only_tags)
+        # 双端需要的标签（库、世界生成、内容添加等）
+        both_sides_tags = [
+            'library',      # 库文件通常双端都需要
+            'worldgen',     # 世界生成需要服务端决定，客户端同步
+            'adventure',    # 冒险内容需要双端同步
+            'storage',      # 存储系统需要双端同步
+            'technology',   # 科技类模组需要双端同步
+            'magic',        # 魔法类模组需要双端同步
+            'equipment',    # 装备类需要双端同步
+            'food',         # 食物类需要双端同步
+        ]
         
-        # 检查是否包含服务端专用标签
-        has_server_tags = any(tag in categories for tag in server_only_tags)
+        # 检查是否包含各类标签
+        has_client_only = any(tag in categories for tag in client_only_tags)
+        has_server_only = any(tag in categories for tag in server_only_tags)
+        has_both_sides = any(tag in categories for tag in both_sides_tags)
         
-        # 根据标签组合判断
-        if has_client_tags and not has_server_tags:
-            # 纯客户端优化/工具类
-            if 'optimization' in categories or 'utility' in categories:
-                return 'client_only'
+        # 优先判断：如果有明确的单端标签且没有双端标签
+        if has_client_only and not has_both_sides and not has_server_only:
+            return 'client_only'
         
-        if has_server_tags and not has_client_tags:
+        if has_server_only and not has_both_sides and not has_client_only:
             return 'server_only'
         
-        # 如果有library标签，通常是两端都需要
-        if 'library' in categories:
+        # 如果有双端需要的标签，优先返回双端必装
+        if has_both_sides:
             return 'client_and_server_required'
         
-        # 默认情况下，大多数内容mod需要双端同步
-        if has_client_tags or has_server_tags:
+        # 如果同时有客户端和服务端标签
+        if has_client_only and has_server_only:
+            return 'client_and_server_required'
+        
+        # 默认情况下，大多数功能性mod需要双端同步
+        # 除非明确标记为纯客户端优化
+        if not has_client_only:
             return 'client_and_server_required'
         
         return None
@@ -211,6 +224,11 @@ class ModrinthAPI:
         """
         通过Modrinth API分类Mod
         
+        优先级策略：
+        1. 直接使用API的client_side/server_side字段（最准确）
+        2. 如果API未返回side信息，使用categories推断
+        3. 最后从description关键词推断
+        
         Args:
             mod_name: Mod名称
             mod_id: Mod ID
@@ -225,7 +243,17 @@ class ModrinthAPI:
             self.logger.debug(f"[Modrinth API] 无法通过API分类: {mod_name or mod_id}")
             return None
         
-        # 从categories推断类型
+        # ===== 第一优先级：使用API的side字段 =====
+        client_side = project.get('client_side', '').lower()
+        server_side = project.get('server_side', '').lower()
+        
+        # 如果API提供了side信息，直接映射
+        if client_side and server_side:
+            self.logger.info(f"[Modrinth API] client_side={client_side}, server_side={server_side}")
+            return self._map_side_to_type(client_side, server_side, project)
+        
+        # ===== 第二优先级：从categories推断 =====
+        self.logger.warning(f"[Modrinth API] 未找到side信息，使用categories推断")
         categories = project.get('categories', [])
         inferred_type = self.infer_type_from_categories(categories)
         
@@ -233,16 +261,12 @@ class ModrinthAPI:
             self.logger.info(f"[Modrinth API] 基于分类推断类型: {inferred_type}")
             return inferred_type
         
-        # 如果没有明确的分类标签，尝试从项目描述中推断
+        # ===== 第三优先级：从description推断 =====
         description = project.get('description', '').lower()
         
-        # 客户端特征关键词
         client_keywords = ['client-side', 'client only', 'rendering', 'hud', 'minimap', 
                           'shader', 'optifine', 'sodium', 'iris', 'gui', 'ui']
-        
-        # 服务端特征关键词
-        server_keywords = ['server-side', 'server only', 'performance', 'optimization',
-                          'backup', 'admin', 'management']
+        server_keywords = ['server-side', 'server only', 'backup', 'admin', 'management']
         
         has_client = any(keyword in description for keyword in client_keywords)
         has_server = any(keyword in description for keyword in server_keywords)
@@ -256,3 +280,32 @@ class ModrinthAPI:
         
         self.logger.debug(f"[Modrinth API] 无法从API结果推断类型")
         return None
+    
+    def _map_side_to_type(self, client_side: str, server_side: str, project: dict) -> str:
+        """
+        将API的side字段映射为分类类型
+        
+        Args:
+            client_side: 客户端侧标识 (required/optional/unsupported)
+            server_side: 服务端侧标识 (required/optional/unsupported)
+            project: 完整的项目信息字典
+            
+        Returns:
+            分类类型
+        """
+        # 单端Mod：一端明确不支持
+        if client_side == 'unsupported':
+            return 'server_only'
+        
+        if server_side == 'unsupported':
+            return 'client_only'
+        
+        # 双端Mod：根据required/optional组合判断
+        side_map = {
+            ('required', 'required'): 'client_and_server_required',
+            ('required', 'optional'): 'client_required_server_optional',
+            ('optional', 'required'): 'client_optional_server_required',
+            ('optional', 'optional'): 'client_optional_server_optional',
+        }
+        
+        return side_map.get((client_side, server_side), 'client_optional_server_optional')

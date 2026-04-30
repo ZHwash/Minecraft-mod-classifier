@@ -8,6 +8,7 @@
 import json
 import os
 from pathlib import Path
+from file_utils import ensure_directory
 
 
 class I18nManager:
@@ -197,7 +198,7 @@ class I18nManager:
     def save_settings(self):
         """保存用户设置"""
         settings_file = Path('config/settings.json')
-        settings_file.parent.mkdir(parents=True, exist_ok=True)
+        ensure_directory(settings_file.parent)
         
         settings = {
             'language': self.current_language

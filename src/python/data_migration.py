@@ -16,6 +16,7 @@ from typing import List, Dict
 from logger import setup_logger
 from jar_parser import JarParser
 from i18n import i18n
+from file_utils import get_jar_files, ensure_directory
 
 logger = setup_logger()
 
@@ -97,7 +98,8 @@ class DataMigrationTool:
         if not self.input_dir.exists():
             return ''
         
-        for jar_file in self.input_dir.glob('*.jar'):
+        jar_files = get_jar_files(self.input_dir)
+        for jar_file in jar_files:
             try:
                 mod_info = self.jar_parser.parse_jar(jar_file)
                 if mod_info and mod_info.get('mod_id', '').lower() == mod_id.lower():
@@ -204,7 +206,7 @@ class DataMigrationTool:
         
         # 4. 保存规则文件
         try:
-            self.mod_rules_path.parent.mkdir(parents=True, exist_ok=True)
+            ensure_directory(self.mod_rules_path.parent)
             
             with open(self.mod_rules_path, 'w', encoding='utf-8') as f:
                 json.dump(mod_rules, f, ensure_ascii=False, indent=2)
