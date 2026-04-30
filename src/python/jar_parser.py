@@ -4,11 +4,18 @@
 JAR包配置文件解析器
 从JAR文件中提取Mod元数据并判断类型
 
-三层优先级判断：
-A. 规则数据库 (mod_rules.json) - 最高优先级
-B. JAR配置文件标识 (side/environment字段) - 中等优先级
+三层优先级判断（带验证机制）：
+A. JAR配置文件标识 (side/environment字段) - 最高优先级
+B. 规则数据库 (mod_rules.json) - 中等优先级
+   - 如果规则的reason来自JAR配置 → 直接使用
+   - 如果规则的reason来自API/手动 → 需要重新解析JAR验证（降级到优先级A）
 C. Modrinth API检索 - 最低优先级
 无法判断则归类为unknown，由用户手动确认
+
+补充设定：
+有些模组API返回的信息可能与实际不一致，因此添加保底措施：
+规则配置中"reason"非读取JAR配置文件得到的需要重新读取JAR进行验证。
+验证完毕后分类，最后同步信息修改至规则配置。
 """
 
 import zipfile
@@ -36,10 +43,12 @@ class JarParser:
     ]
     MC_MOD_INFO = "mcmod.info"
     
-    def __init__(self):
+    def __init__(self, skip_rules: bool = False):
         self.logger = logger
         self.rule_manager = RuleManager()
-        self.rule_manager.load_rules()  # 加载规则数据库
+        self.skip_rules = skip_rules  # 是否跳过规则数据库检查（用于强制重新分类）
+        if not skip_rules:
+            self.rule_manager.load_rules()  # 加载规则数据库
         self.modrinth_api = ModrinthAPI()  # 初始化Modrinth API客户端
     
     def parse_jar(self, jar_path: Path) -> Optional[Dict[str, Any]]:
@@ -255,6 +264,8 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
+           - 如果规则的reason来自JAR配置 → 直接使用
+           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级B）
         2. 读取environment字段（优先级B）
         3. 使用Modrinth API检索（优先级C）
         4. 无法判断则返回unknown
@@ -262,10 +273,21 @@ class JarParser:
         mod_id = data.get('id', '')
         mod_name = data.get('name', '')
         
-        # 优先级A: 检查规则数据库
-        rule_type = self.rule_manager.get_mod_type(mod_id, mod_name)
-        if rule_type:
-            return rule_type
+        # 优先级A: 检查规则数据库（如果启用）
+        if not self.skip_rules:
+            rule = self.rule_manager.find_rule(mod_id)
+            if rule:
+                reason = rule.get('reason', '')
+                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
+                
+                # 如果规则来自JAR配置，直接信任
+                if is_from_jar_config:
+                    mod_type = rule.get('type')
+                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    return mod_type
+                else:
+                    # 如果规则来自API/手动，需要验证（降级到优先级B）
+                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将重新解析JAR验证")
         
         # 优先级B: 读取environment字段
         env = data.get('environment', '').lower()
@@ -290,6 +312,8 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
+           - 如果规则的reason来自JAR配置 → 直接使用
+           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级B）
         2. 检查核心依赖(minecraft/neoforge/forge/fabric)的side字段（优先级B-1）
            - 如果核心依赖中有任何一个是CLIENT → client_only
            - 如果核心依赖中有任何一个是SERVER → server_only
@@ -308,10 +332,21 @@ class JarParser:
         # 提取modName用于辅助匹配
         mod_name = self._extract_mod_name(content)
         
-        # 优先级A: 检查规则数据库
-        rule_type = self.rule_manager.get_mod_type(mod_id, mod_name)
-        if rule_type:
-            return rule_type
+        # 优先级A: 检查规则数据库（如果启用）
+        if not self.skip_rules:
+            rule = self.rule_manager.find_rule(mod_id)
+            if rule:
+                reason = rule.get('reason', '')
+                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
+                
+                # 如果规则来自JAR配置，直接信任
+                if is_from_jar_config:
+                    mod_type = rule.get('type')
+                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    return mod_type
+                else:
+                    # 如果规则来自API/手动，需要验证（降级到优先级B）
+                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将重新解析JAR验证")
         
         # 解析所有dependencies块
         # 注意: [[dependencies.XXX]]中的XXX是当前mod的ID，不是依赖的ID
@@ -378,13 +413,26 @@ class JarParser:
         
         判断逻辑：
         1. 优先检查规则数据库（优先级A）
+           - 如果规则的reason来自JAR配置 → 直接使用
+           - 如果规则的reason来自API/手动 → 需要验证（降级到优先级C）
         2. 使用Modrinth API检索（优先级C）
         3. 无法判断则返回unknown
         """
-        # 优先级A: 检查规则数据库
-        rule_type = self.rule_manager.get_mod_type(mod_id)
-        if rule_type:
-            return rule_type
+        # 优先级A: 检查规则数据库（如果启用）
+        if not self.skip_rules:
+            rule = self.rule_manager.find_rule(mod_id)
+            if rule:
+                reason = rule.get('reason', '')
+                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
+                
+                # 如果规则来自JAR配置，直接信任
+                if is_from_jar_config:
+                    mod_type = rule.get('type')
+                    self.logger.debug(f"[优先级A-JAR配置] {mod_id} -> {mod_type}")
+                    return mod_type
+                else:
+                    # 如果规则来自API/手动，需要验证（降级到优先级C）
+                    self.logger.debug(f"[优先级A-API/手动-需要验证] {mod_id}，将使用API验证")
         
         # 优先级C: 使用Modrinth API检索
         api_type = self.modrinth_api.classify_mod_via_api('', mod_id)

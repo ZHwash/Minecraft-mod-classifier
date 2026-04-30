@@ -224,11 +224,6 @@ class ModrinthAPI:
         """
         通过Modrinth API分类Mod
         
-        优先级策略：
-        1. 直接使用API的client_side/server_side字段（最准确）
-        2. 如果API未返回side信息，使用categories推断
-        3. 最后从description关键词推断
-        
         Args:
             mod_name: Mod名称
             mod_id: Mod ID
@@ -243,16 +238,52 @@ class ModrinthAPI:
             self.logger.debug(f"[Modrinth API] 无法通过API分类: {mod_name or mod_id}")
             return None
         
-        # ===== 第一优先级：使用API的side字段 =====
+        # 直接使用API返回的client_side和server_side字段
+        # Modrinth side字段含义：
+        # - required: 必须安装
+        # - optional: 可选安装（建议安装）
+        # - unsupported: 不支持/不应该安装
         client_side = project.get('client_side', '').lower()
         server_side = project.get('server_side', '').lower()
         
-        # 如果API提供了side信息，直接映射
-        if client_side and server_side:
-            self.logger.info(f"[Modrinth API] client_side={client_side}, server_side={server_side}")
-            return self._map_side_to_type(client_side, server_side, project)
+        self.logger.info(f"[Modrinth API] client_side={client_side}, server_side={server_side}")
         
-        # ===== 第二优先级：从categories推断 =====
+        # 如果任一环境标记为unsupported，说明是单端Mod
+        if client_side == 'unsupported' and server_side in ['required', 'optional']:
+            return 'server_only'
+        elif server_side == 'unsupported' and client_side in ['required', 'optional']:
+            return 'client_only'
+        
+        # 双端都支持的情况
+        if client_side == 'required' and server_side == 'required':
+            return 'client_and_server_required'
+        elif client_side == 'required' and server_side == 'optional':
+            return 'client_required_server_optional'
+        elif client_side == 'optional' and server_side == 'required':
+            return 'client_optional_server_required'
+        elif client_side == 'optional' and server_side == 'optional':
+            # 两端都是optional，需要进一步判断
+            categories = project.get('categories', [])
+            description = project.get('description', '').lower()
+            title = project.get('title', '').lower()
+            
+            # 纯客户端渲染/着色器类（明确只影响客户端视觉效果）
+            shader_cats = ['shader', 'resource-pack']
+            if any(cat in categories for cat in shader_cats):
+                self.logger.info(f"[Modrinth API] 检测到着色器/资源包类别，归类为client_only")
+                return 'client_only'
+            
+            # 渲染优化类：有optimization类别且描述涉及渲染/视野/FPS等
+            render_keywords = ['render', 'fps', 'graphics', 'distance', 'view', 'farther', 
+                              'slide show', 'lag', 'performance', 'optimize']
+            if 'optimization' in categories and any(kw in description for kw in render_keywords):
+                self.logger.info(f"[Modrinth API] 检测到渲染优化，归类为client_required_server_optional")
+                return 'client_required_server_optional'
+            
+            # optional/optional表示两端都可选安装，非必需
+            return 'client_optional_server_optional'
+        
+        # 如果API没有返回明确的side信息，尝试从categories推断（后备方案）
         self.logger.warning(f"[Modrinth API] 未找到side信息，使用categories推断")
         categories = project.get('categories', [])
         inferred_type = self.infer_type_from_categories(categories)
@@ -261,12 +292,13 @@ class ModrinthAPI:
             self.logger.info(f"[Modrinth API] 基于分类推断类型: {inferred_type}")
             return inferred_type
         
-        # ===== 第三优先级：从description推断 =====
+        # 最后的后备：从描述中推断
         description = project.get('description', '').lower()
         
         client_keywords = ['client-side', 'client only', 'rendering', 'hud', 'minimap', 
                           'shader', 'optifine', 'sodium', 'iris', 'gui', 'ui']
-        server_keywords = ['server-side', 'server only', 'backup', 'admin', 'management']
+        server_keywords = ['server-side', 'server only', 'performance', 'optimization',
+                          'backup', 'admin', 'management']
         
         has_client = any(keyword in description for keyword in client_keywords)
         has_server = any(keyword in description for keyword in server_keywords)
@@ -280,32 +312,3 @@ class ModrinthAPI:
         
         self.logger.debug(f"[Modrinth API] 无法从API结果推断类型")
         return None
-    
-    def _map_side_to_type(self, client_side: str, server_side: str, project: dict) -> str:
-        """
-        将API的side字段映射为分类类型
-        
-        Args:
-            client_side: 客户端侧标识 (required/optional/unsupported)
-            server_side: 服务端侧标识 (required/optional/unsupported)
-            project: 完整的项目信息字典
-            
-        Returns:
-            分类类型
-        """
-        # 单端Mod：一端明确不支持
-        if client_side == 'unsupported':
-            return 'server_only'
-        
-        if server_side == 'unsupported':
-            return 'client_only'
-        
-        # 双端Mod：根据required/optional组合判断
-        side_map = {
-            ('required', 'required'): 'client_and_server_required',
-            ('required', 'optional'): 'client_required_server_optional',
-            ('optional', 'required'): 'client_optional_server_required',
-            ('optional', 'optional'): 'client_optional_server_optional',
-        }
-        
-        return side_map.get((client_side, server_side), 'client_optional_server_optional')

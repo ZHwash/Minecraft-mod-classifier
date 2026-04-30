@@ -4,7 +4,16 @@
 规则管理模块
 负责加载和管理mod_rules.json规则数据库
 
-优先级A: 规则数据库 > 配置文件标识 > Modrinth API检索
+优先级顺序（带验证机制）：
+A. JAR配置文件标识 (side/environment字段) - 最高优先级
+B. 规则数据库 (mod_rules.json) - 中等优先级
+   - 如果规则的reason来自JAR配置 → 直接使用
+   - 如果规则的reason来自API/手动 → 需要重新解析JAR验证（降级到优先级A）
+C. Modrinth API检索 - 最低优先级
+
+补充设定：
+有些模组API返回的信息可能与实际不一致，因此添加保底措施：
+规则配置中"reason"非读取JAR配置文件得到的需要重新读取JAR进行验证。
 """
 
 import json
@@ -146,10 +155,18 @@ class RuleManager:
         if rule:
             mod_type = rule.get('type')
             reason = rule.get('reason', '')
+            
+            # 检查reason来源：如果是从JAR配置读取的，则可信度高
+            is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
+            
             if reason:
-                self.logger.debug(f"[规则匹配] {mod_id} -> {mod_type} (原因: {reason})")
+                if is_from_jar_config:
+                    self.logger.debug(f"[规则匹配-JAR配置] {mod_id} -> {mod_type} (原因: {reason})")
+                else:
+                    self.logger.debug(f"[规则匹配-API/手动] {mod_id} -> {mod_type} (原因: {reason}) [需要验证]")
             else:
                 self.logger.debug(f"[规则匹配] {mod_id} -> {mod_type}")
+            
             return mod_type
         
         # 如果mod_id未找到，尝试使用mod_name模糊匹配
@@ -158,7 +175,46 @@ class RuleManager:
             if rule:
                 mod_type = rule.get('type')
                 matched_id = rule.get('mod_id', '')
-                self.logger.debug(f"[规则匹配-by-name] {mod_name} -> {mod_type} (匹配到: {matched_id})")
+                reason = rule.get('reason', '')
+                
+                # 检查reason来源
+                is_from_jar_config = 'JAR配置' in reason or 'jar config' in reason.lower()
+                
+                if reason:
+                    if is_from_jar_config:
+                        self.logger.debug(f"[规则匹配-by-name-JAR配置] {mod_name} -> {mod_type} (匹配到: {matched_id}, 原因: {reason})")
+                    else:
+                        self.logger.debug(f"[规则匹配-by-name-API/手动] {mod_name} -> {mod_type} (匹配到: {matched_id}, 原因: {reason}) [需要验证]")
+                else:
+                    self.logger.debug(f"[规则匹配-by-name] {mod_name} -> {mod_type} (匹配到: {matched_id})")
+                
                 return mod_type
         
         return None
+    
+    def save_rules(self) -> bool:
+        """
+        保存规则文件
+        
+        Returns:
+            是否成功保存
+        """
+        try:
+            # 确保目录存在
+            self.rules_path.parent.mkdir(parents=True, exist_ok=True)
+            
+            data = {
+                'rules': self.rules,
+                'total': len(self.rules),
+                'last_updated': str(__import__('datetime').datetime.now())
+            }
+            
+            with open(self.rules_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            
+            self.logger.info(f"成功保存 {len(self.rules)} 条Mod分类规则到 {self.rules_path}")
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"保存规则文件失败: {str(e)}")
+            return False
