@@ -106,9 +106,9 @@ class ModClassifier:
         if self.stats['auto_detected'] > 0:
             self.logger.info(f"检测到 {self.stats['auto_detected']} 个新Mod，保存配置...")
             self.config_manager.save_config()
-            
-            # 将新Mod转正至规则数据库
-            self._sync_new_mods_to_rules()
+        
+        # 将配置同步至规则数据库（总是执行，以更新reason字段）
+        self._sync_new_mods_to_rules()
         
         # 输出统计信息
         self._print_statistics()

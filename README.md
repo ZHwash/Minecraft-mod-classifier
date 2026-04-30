@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
-[![Version](https://img.shields.io/badge/Version-v0.1.7-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases/tag/v0.1.7)
+[![Version](https://img.shields.io/badge/Version-v2.0.0-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases)
 
 > **⚠️ 注意：** 这是 [DHJComical/Minecraft-mod-classifier](https://github.com/DHJComical/Minecraft-mod-classifier) 的 Python 重构版本。原项目使用 C++ 实现，本版本完全重写为 Python，提供更简洁的代码、更好的跨平台支持和更低的贡献门槛。
 
@@ -12,11 +12,12 @@
 一个智能的 Minecraft Mod 分类工具，自动识别和分类 Mod 文件的运行端属性（客户端/服务端）。
 
 **核心特性：**
-- ✅ **智能双层分类** - 配置库快速匹配 + JAR 解析自动学习
+- ✅ **三层优先级分类** - JAR配置 > 规则数据库 > Modrinth API
+- ✅ **自动学习机制** - 新Mod自动识别并同步至规则数据库
 - ✅ **多语言支持** - 中文/English 界面
 - ✅ **全面格式支持** - Fabric/Forge/NeoForge
 - ✅ **零依赖运行** - 仅需 Python 标准库
-- ✅ **开箱即用** - 可打包为独立可执行文件
+- ✅ **小白友好贡献** - 自动生成补丁文件，无需Git知识
 
 ---
 
@@ -75,28 +76,37 @@ python src/python/main.py
 
 ### 自动学习机制
 
-首次运行时解析 JAR 并保存配置到 `config/mods_data.json`，后续运行直接查询，速度提升 **500倍**！
+首次运行时解析 JAR 并保存配置到 `config/mods_data.json`，后续运行直接查询。每次运行后自动将新识别的Mod同步至 `config/mod_rules.json` 规则数据库。
 
 ### 🆕 GitHub 集成（新增）
 
-分类完成后，可选择将 `mods_data.json` 自动提交到 GitHub 仓库：
+分类完成后，可选择生成规则更新补丁文件：
 
 ```bash
 # 分类完成后会提示：
-📤 提交到GitHub
-是否将更新后的mods_data.json提交到GitHub仓库?
-这将帮助社区共享Mod分类数据。
+🔄 规则数据库更新（推荐）
+============================================================
+您可以帮助改进分类规则数据库！
+我们可以生成一个更新补丁文件，您只需将其提交到GitHub即可。
+无需任何技术知识，小白也能轻松贡献！
 
-是否提交到GitHub? (y/n): y
-请输入提交信息 (Enter使用默认): 添加了50个新Mod的分类规则
+是否生成规则更新补丁文件? (y/n): y
 
-✅ 成功提交到GitHub!
+✓ 成功生成更新补丁: rule_update_patch_20260430_172121.json
+  新增规则: 19 条
+  更新规则: 150 条
+  总计变更: 169 条
+
+📤 如何提交更新：
+  方法1（最简单）：
+    1. 打开 GitHub Issues: https://github.com/ZHwash/Minecraft-mod-classifier/issues
+    2. 点击 'New Issue'
+    3. 将此文件内容粘贴进去并提交
 ```
 
 **前提条件：**
-- 当前目录是 Git 仓库
-- 已配置远程仓库 (`git remote add origin <url>`)
-- 有推送权限
+- 无需任何Git或GitHub Token配置
+- 生成的JSON补丁文件包含详细的提交说明
 
 详细说明请查看 [GITHUB_INTEGRATION.md](GITHUB_INTEGRATION.md)
 
@@ -130,21 +140,25 @@ Minecraft-mod-classifier/
 │   ├── mod_classifier.py    # 核心分类逻辑
 │   ├── jar_parser.py        # JAR包解析器
 │   ├── config_manager.py    # 配置管理器
+│   ├── rule_manager.py      # 规则数据库管理
+│   ├── modrinth_api.py      # Modrinth API集成
 │   ├── file_utils.py        # 文件工具函数
 │   ├── logger.py            # 日志系统
 │   └── i18n.py              # 国际化支持
 ├── config/                  # 配置文件
 │   ├── mods_data.json       # Mod配置数据库（自动生成）
+│   ├── mod_rules.json       # 规则数据库（798条规则）
 │   └── settings.json        # 用户设置
 ├── Input/                   # 输入目录（放入待分类Mod）
 ├── Output/                  # 输出目录（分类结果）
-├── docs/                    # 文档
-│   ├── QUICKSTART.md        # 快速入门
-│   ├── USAGE.md             # 详细使用说明
-│   └── BUILD_GUIDE.md       # 打包构建指南
-└── scripts/                 # 实用脚本
-    ├── run.bat/sh           # 启动脚本
-    └── build.bat/sh         # 打包脚本
+│   ├── ClientOnly/          # 仅客户端
+│   ├── ServerOnly/          # 仅服务端
+│   ├── ClientAndServerRequired/  # 双端必需
+│   └── ...                  # 其他分类目录
+└── docs/                    # 文档
+    ├── QUICKSTART.md        # 快速入门
+    ├── USAGE.md             # 详细使用说明
+    └── BUILD_GUIDE.md       # 打包构建指南
 ```
 
 ---
@@ -172,11 +186,18 @@ Minecraft-mod-classifier/
 
 ### 可以贡献的内容
 
-- 📝 **添加新的Mod分类规则** - 扩充 `mods_data.json`
+- 📝 **添加新的Mod分类规则** - 通过生成补丁文件提交至GitHub Issues
 - 🐛 **修复Bug** - 提交Issue或直接PR
 - ✨ **添加新功能** - 如GUI界面、Web API等
 - 📖 **改进文档** - 让新手更容易上手
 - 🌍 **翻译支持** - 添加新语言
+
+**小白友好贡献流程：**
+1. 运行分类程序，自动识别新Mod
+2. 选择“是”生成规则更新补丁文件
+3. 打开生成的JSON文件，复制内容
+4. 到GitHub Issues页面粘贴并提交
+5. 完成！无需任何Git知识
 
 如果你想为**原 C++ 项目**贡献，请前往 [DHJComical/Minecraft-mod-classifier](https://github.com/DHJComical/Minecraft-mod-classifier)。
 

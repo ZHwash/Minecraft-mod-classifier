@@ -206,7 +206,7 @@
     },
     {
       "mod_id": "distanthorizons",
-      "type": "client_required_server_optional",
+      "type": "client_and_server_required",
       "reason": "",
       "mod_name": "Distant Horizons"
     },
@@ -352,7 +352,7 @@
       "mod_id": "fabric_api",
       "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Project Red Fabrication"
+      "mod_name": "Forgified Fabric API"
     },
     {
       "mod_id": "recipeessentials",
@@ -752,9 +752,9 @@
     },
     {
       "mod_id": "notenoughanimations",
-      "type": "client_only",
+      "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Translate the mod NotEnoughAnimations"
+      "mod_name": "NotEnoughAnimations"
     },
     {
       "mod_id": "searchables",
@@ -1022,9 +1022,9 @@
     },
     {
       "mod_id": "skinlayers3d",
-      "type": "client_only",
+      "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "SkinLayers3D-CustomSkinLoader-Bridge"
+      "mod_name": "3d-Skin-Layers"
     },
     {
       "mod_id": "entityculling",
@@ -1174,13 +1174,13 @@
       "mod_id": "entity_model_features",
       "type": "client_only",
       "reason": "",
-      "mod_name": ""
+      "mod_name": "Entity Model Features"
     },
     {
       "mod_id": "entity_texture_features",
       "type": "client_only",
       "reason": "",
-      "mod_name": "[ETF] Entity Texture Features"
+      "mod_name": "Entity Texture Features"
     },
     {
       "mod_id": "immersiveui",
@@ -2552,9 +2552,9 @@
     },
     {
       "mod_id": "toms_storage",
-      "type": "server_only",
+      "type": "client_and_server_required",
       "reason": "",
-      "mod_name": "Create - Tom's Simple Storage Recipes"
+      "mod_name": "Tom's Simple Storage Mod"
     },
     {
       "mod_id": "tonsofenchants",
@@ -3968,7 +3968,7 @@
     },
     {
       "mod_id": "fastleafdecay",
-      "type": "server_only",
+      "type": "client_and_server_required",
       "reason": "",
       "mod_name": "FastLeafDecay"
     },
@@ -4673,8 +4673,122 @@
       "mod_name": "Brewin' And Chewin'",
       "type": "client_and_server_required",
       "reason": ""
+    },
+    {
+      "mod_id": "lambdynlights",
+      "mod_name": "LambDynamicLights",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "another_furniture",
+      "mod_name": "Another Furniture",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "storagedelight",
+      "mod_name": "Storage Delight",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "placeholder-api",
+      "mod_name": "Placeholder API",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createadditionallogistics",
+      "mod_name": "Create: Additional Logistics",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createsifter",
+      "mod_name": "Create Sifter",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "modmenu",
+      "mod_name": "Mod Menu",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "immersive_melodies",
+      "mod_name": "Immersive Melodies",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "immersive_paintings",
+      "mod_name": "Immersive Paintings",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "sliceanddice",
+      "mod_name": "Create Slice & Dice",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "bbs",
+      "mod_name": "BBS CML Edition",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "colorwheel",
+      "mod_name": "Colorwheel",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "colorwheel_patcher",
+      "mod_name": "Colorwheel Patcher",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "flashback",
+      "mod_name": "Flashback",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "hold-my-items",
+      "mod_name": "Hold My Items",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "replaymod",
+      "mod_name": "Replay Mod",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "simplebackups",
+      "mod_name": "Simple Backups",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "watermedia",
+      "mod_name": "WaterMedia",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "displaydelight",
+      "mod_name": "Display Delight",
+      "type": "client_and_server_required",
+      "reason": ""
     }
   ],
-  "total": 779,
-  "last_updated": "2026-04-30 17:05:24.933107"
+  "total": 798,
+  "last_updated": "2026-04-30 17:22:59.953872"
 }
