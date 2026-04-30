@@ -155,12 +155,28 @@ class ModClassifier:
             mod_type = mod_config['type']
             self.logger.info(f"[OK] 在配置中找到: {mod_type}")
         else:
-            # 3. 配置中不存在，使用解析结果中的类型（来自三层优先级判断）
-            self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
-            
-            # 添加到配置中（包含mod_id、mod_name和type）
-            if self.config_manager.add_mod(mod_id, mod_type, mod_name):
-                self.stats['auto_detected'] += 1
+            # 3. 检查 mod_rules.json 中是否有已确认的规则
+            from rule_manager import RuleManager
+            rule_manager = RuleManager()
+            if rule_manager.load_rules():
+                confirmed_rule = rule_manager.find_rule(mod_id)
+                if confirmed_rule and confirmed_rule.get('confirmed', False):
+                    # 使用已确认的规则
+                    mod_type = confirmed_rule['type']
+                    self.logger.info(f"[OK] 使用已确认规则: {mod_type}")
+                    # 添加到 mods_data.json 以便后续快速查询
+                    self.config_manager.add_mod(mod_id, mod_type, mod_name)
+                else:
+                    # 4. 配置和规则中都不存在，使用解析结果中的类型
+                    self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
+                    # 添加到配置中（包含mod_id、mod_name和type）
+                    if self.config_manager.add_mod(mod_id, mod_type, mod_name):
+                        self.stats['auto_detected'] += 1
+            else:
+                # 无法加载规则数据库，使用解析结果
+                self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
+                if self.config_manager.add_mod(mod_id, mod_type, mod_name):
+                    self.stats['auto_detected'] += 1
         
         # 4. 复制文件到对应目录
         self._copy_to_output(jar_path, mod_type)
