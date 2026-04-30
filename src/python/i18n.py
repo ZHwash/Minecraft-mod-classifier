@@ -20,7 +20,7 @@ class I18nManager:
             'zh': {
                 # 程序信息
                 'app_name': 'Minecraft Mod 分类器',
-                'app_version': 'v2.0.0',
+                'app_version': 'v0.1.6',
                 'app_description': '自动分类 Minecraft Mod 文件的命令行工具',
                 
                 # 启动信息
@@ -101,7 +101,7 @@ class I18nManager:
             'en': {
                 # App info
                 'app_name': 'Minecraft Mod Classifier',
-                'app_version': 'v2.0.0',
+                'app_version': 'v0.1.6',
                 'app_description': 'Command-line tool for automatically classifying Minecraft Mod files',
                 
                 # Startup

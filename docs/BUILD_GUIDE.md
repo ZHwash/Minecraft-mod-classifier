@@ -293,7 +293,7 @@ rm -rf build dist *.spec
 
 在文件名中包含版本号：
 ```bash
-pyinstaller --name "Minecraft-mod-classifier-v2.0.0" main.py
+pyinstaller --name "Minecraft-mod-classifier-v0.1.6" main.py
 ```
 
 ### 4. 测试不同系统

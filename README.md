@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
-[![Version](https://img.shields.io/badge/Version-v2.1.0-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases)
+[![Version](https://img.shields.io/badge/Version-v0.1.6-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases)
 
 > **⚠️ 注意：** 这是 [DHJComical/Minecraft-mod-classifier](https://github.com/DHJComical/Minecraft-mod-classifier) 的 Python 重构版本。原项目使用 C++ 实现，本版本完全重写为 Python，提供更简洁的代码、更好的跨平台支持和更低的贡献门槛。
 
@@ -28,14 +28,14 @@
 ### 方式一：使用独立可执行文件（推荐）
 
 #### Windows
-1. 下载 [Releases](https://github.com/ZHwash/Minecraft-mod-classifier/releases) 中的 `minecraft-mod-classifier-v0.1.7-windows-x86_64.zip`
+1. 下载 [Releases](https://github.com/ZHwash/Minecraft-mod-classifier/releases) 中的 `minecraft-mod-classifier-v0.1.6-windows-x86_64.zip`
 2. 解压后双击 `Minecraft-mod-classifier.exe`
 3. 将 `.jar` Mod 文件放入 `Input` 目录
 4. 从 `Output` 目录获取分类结果
 
 #### Linux/macOS
 ```bash
-tar -xzf minecraft-mod-classifier-v0.1.7-linux-x86_64.tar.gz
+tar -xzf minecraft-mod-classifier-v0.1.6-linux-x86_64.tar.gz
 cd Minecraft-mod-classifier
 chmod +x Minecraft-mod-classifier
 ./Minecraft-mod-classifier
