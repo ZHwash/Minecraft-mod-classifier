@@ -106,6 +106,9 @@ class ModClassifier:
         if self.stats['auto_detected'] > 0:
             self.logger.info(f"检测到 {self.stats['auto_detected']} 个新Mod，保存配置...")
             self.config_manager.save_config()
+            
+            # 将新Mod转正至规则数据库
+            self._sync_new_mods_to_rules()
         
         # 输出统计信息
         self._print_statistics()
@@ -196,3 +199,72 @@ class ModClassifier:
         self.logger.info(f"自动检测新Mod: {self.stats['auto_detected']}")
         self.logger.info(f"{i18n.get('total_failed').format(self.stats['failed'])}")
         self.logger.info("=" * 60)
+    
+    def _sync_new_mods_to_rules(self):
+        """
+        将新识别的Mod从mods_data.json转正至mod_rules.json
+        如果规则已存在则更新字段，否则新增
+        """
+        from rule_manager import RuleManager
+        
+        # 加载规则数据库
+        rule_manager = RuleManager()
+        if not rule_manager.load_rules():
+            self.logger.warning("无法加载规则数据库，跳过转正")
+            return
+        
+        synced_count = 0
+        updated_count = 0
+        
+        # 遍历所有配置中的Mod
+        for mod_config in self.config_manager.mods_data:
+            mod_id = mod_config.get('mod_id', '')
+            mod_name = mod_config.get('mod_name', '')
+            mod_type = mod_config.get('type', 'unknown')
+            
+            if not mod_id:
+                continue
+            
+            # 检查规则数据库中是否已存在
+            existing_rule = rule_manager.find_rule(mod_id)
+            
+            if not existing_rule:
+                # 新增规则
+                new_rule = {
+                    'mod_id': mod_id,
+                    'mod_name': mod_name,
+                    'type': mod_type,
+                    'reason': f'通过JAR配置自动识别: {mod_name}'
+                }
+                rule_manager.rules.append(new_rule)
+                synced_count += 1
+                self.logger.debug(f"  新增: {mod_id} ({mod_name}) -> {mod_type}")
+            else:
+                # 更新现有规则的字段
+                old_type = existing_rule.get('type', '')
+                old_name = existing_rule.get('mod_name', '')
+                
+                # 更新mod_name（如果为空或不同）
+                if mod_name and (not old_name or old_name != mod_name):
+                    existing_rule['mod_name'] = mod_name
+                
+                # 更新type（如果不同）
+                if mod_type and old_type != mod_type:
+                    existing_rule['type'] = mod_type
+                    self.logger.debug(f"  更新类型: {mod_id} {old_type} -> {mod_type}")
+                
+                # 更新reason（如果为空）
+                if not existing_rule.get('reason'):
+                    existing_rule['reason'] = f'通过JAR配置自动识别: {mod_name}'
+                
+                updated_count += 1
+        
+        # 保存规则数据库
+        total_count = synced_count + updated_count
+        if total_count > 0:
+            if rule_manager.save_rules():
+                self.logger.info(f"✓ 成功同步 {total_count} 个Mod至规则数据库 (新增: {synced_count}, 更新: {updated_count})")
+            else:
+                self.logger.error("✗ 保存规则数据库失败")
+        else:
+            self.logger.info("没有需要同步的Mod")

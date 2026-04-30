@@ -72,14 +72,36 @@ def main():
                             labels=['automation', 'mod-classification']
                         )
                         if not success:
-                            print("\n提示: 请设置GITHUB_TOKEN环境变量后重试")
-                            print("访问 https://github.com/settings/tokens 生成Token")
+                            # 如果API提交失败，提供保存文件的选项
+                            print("\n💡 提示: 您可以选择将Issue内容保存为文件，然后手动提交")
+                            save_choice = input("是否保存Issue内容为Markdown文件? (y/n): ").strip().lower()
+                            if save_choice in ['y', 'yes', '是']:
+                                github.save_issue_to_file(title, body)
                     else:
                         print("\n没有新分类的Mod，无需创建Issue")
                 else:
                     print("\n已跳过GitHub Issue创建")
             else:
                 print("\n💡 提示: 如果配置了Git远程仓库，可以自动创建GitHub Issue报告新分类的Mod")
+        
+        # 提示生成规则更新补丁（更简单的贡献方式）
+        if classifier.stats['auto_detected'] > 0 or True:  # 总是提示，因为可能有更新
+            print("\n" + "="*60)
+            print("🔄 规则数据库更新（推荐）")
+            print("="*60)
+            print("您可以帮助改进分类规则数据库！")
+            print("我们可以生成一个更新补丁文件，您只需将其提交到GitHub即可。")
+            print("无需任何技术知识，小白也能轻松贡献！\n")
+            
+            patch_choice = input("是否生成规则更新补丁文件? (y/n): ").strip().lower()
+            if patch_choice in ['y', 'yes', '是']:
+                from generate_update_patch import generate_update_patch
+                patch_file = generate_update_patch()
+                if patch_file:
+                    print(f"\n✅ 补丁文件已生成: {patch_file}")
+                    print(f"   请打开此文件查看提交说明")
+            else:
+                print("\n已跳过补丁生成")
         
     except Exception as e:
         logger.error(f"{i18n.get('error')}: {str(e)}", exc_info=True)

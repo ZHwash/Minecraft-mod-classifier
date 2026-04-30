@@ -175,6 +175,39 @@ class GitHubIntegration:
         body += f"*此Issue由Minecraft Mod Classifier自动生成*\n"
         
         return title, body
+    
+    def save_issue_to_file(self, title: str, body: str, filename: str = None) -> str:
+        """
+        将Issue内容保存为Markdown文件，方便用户手动提交
+        
+        Args:
+            title: Issue标题
+            body: Issue内容
+            filename: 文件名（可选）
+            
+        Returns:
+            保存的文件路径
+        """
+        if filename is None:
+            from datetime import datetime
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            filename = f"github_issue_{timestamp}.md"
+        
+        filepath = Path(filename)
+        
+        try:
+            content = f"# {title}\n\n{body}"
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content)
+            
+            self.logger.info(f"Issue内容已保存到: {filepath}")
+            print(f"\n📄 Issue内容已保存到: {filepath}")
+            print(f"   您可以打开此文件，复制内容到GitHub创建Issue")
+            return str(filepath)
+            
+        except Exception as e:
+            self.logger.error(f"保存Issue文件失败: {str(e)}")
+            return ""
 
 
 def main():
