@@ -6,6 +6,7 @@ Minecraft Mod Classifier - Python Version
 """
 
 import sys
+import json
 from pathlib import Path
 from mod_classifier import ModClassifier
 from logger import setup_logger
@@ -62,33 +63,45 @@ def main():
                 
                 choice = input("是否创建GitHub Issue? (y/n): ").strip().lower()
                 if choice in ['y', 'yes', '是']:
-                    # 获取新分类的Mod列表，并过滤掉已在规则数据库中的
-                    from rule_manager import RuleManager
-                    rule_manager = RuleManager()
-                    rule_manager.load_rules()
+                    # 读取最近生成的增量补丁文件
+                    import glob
+                    patch_files = glob.glob('rule_update_patch_*.json')
                     
-                    new_mods = []
-                    for mod in classifier.config_manager.mods_data[-classifier.stats['auto_detected']:]:
-                        mod_id = mod.get('mod_id', '')
-                        # 只包含不在规则数据库中的Mod
-                        if not rule_manager.find_rule(mod_id):
-                            new_mods.append(mod)
-                    
-                    if new_mods:
-                        title, body = github.generate_issue_content(new_mods)
-                        success = github.create_github_issue(
-                            title, 
-                            body, 
-                            labels=['automation', 'mod-classification']
-                        )
-                        if not success:
-                            # 如果API提交失败，提供保存文件的选项
-                            print("\n💡 提示: 您可以选择将Issue内容保存为文件，然后手动提交")
-                            save_choice = input("是否保存Issue内容为Markdown文件? (y/n): ").strip().lower()
-                            if save_choice in ['y', 'yes', '是']:
+                    if patch_files:
+                        # 使用最新的补丁文件
+                        latest_patch = max(patch_files, key=lambda x: x)
+                        try:
+                            with open(latest_patch, 'r', encoding='utf-8') as f:
+                                patch_data = json.load(f)
+                            
+                            # 从补丁中提取新增的Mod
+                            new_mods_from_patch = patch_data.get('new_rules', [])
+                            
+                            if new_mods_from_patch:
+                                title, body = github.generate_issue_content(new_mods_from_patch)
+                                success = github.create_github_issue(
+                                    title, 
+                                    body, 
+                                    labels=['automation', 'mod-classification']
+                                )
+                                if not success:
+                                    # 如果API提交失败，提供保存文件的选项
+                                    print("\n💡 提示: 您可以选择将Issue内容保存为文件，然后手动提交")
+                                    save_choice = input("是否保存Issue内容为Markdown文件? (y/n): ").strip().lower()
+                                    if save_choice in ['y', 'yes', '是']:
+                                        github.save_issue_to_file(title, body)
+                            else:
+                                print("\n补丁中没有新增Mod，无需创建Issue")
+                        except Exception as e:
+                            print(f"\n⚠️ 读取补丁文件失败: {str(e)}")
+                            print("   将使用自动检测的Mod列表")
+                            # 降级方案：使用原来的方法
+                            new_mods = classifier.config_manager.mods_data[-classifier.stats['auto_detected']:]
+                            if new_mods:
+                                title, body = github.generate_issue_content(new_mods)
                                 github.save_issue_to_file(title, body)
                     else:
-                        print("\n所有新分类的Mod都已存在于规则数据库中，无需创建Issue")
+                        print("\n未找到增量补丁文件，无法生成Issue报告")
                 else:
                     print("\n已跳过GitHub Issue创建")
             else:
