@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
-[![Version](https://img.shields.io/badge/Version-v2.0.0-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases)
+[![Version](https://img.shields.io/badge/Version-v2.1.0-orange.svg)](https://github.com/ZHwash/Minecraft-mod-classifier/releases)
 
 > **⚠️ 注意：** 这是 [DHJComical/Minecraft-mod-classifier](https://github.com/DHJComical/Minecraft-mod-classifier) 的 Python 重构版本。原项目使用 C++ 实现，本版本完全重写为 Python，提供更简洁的代码、更好的跨平台支持和更低的贡献门槛。
 
@@ -14,6 +14,7 @@
 **核心特性：**
 - ✅ **三层优先级分类** - JAR配置 > 规则数据库 > Modrinth API
 - ✅ **自动学习机制** - 新Mod自动识别并同步至规则数据库
+- ✅ **智能规则更新** - 基于在线数据批量更新分类，支持差异分级处理
 - ✅ **增量补丁生成** - 自动生成规则更新补丁，便于审查和合并
 - ✅ **多语言支持** - 中文/English 界面
 - ✅ **全面格式支持** - Fabric/Forge/NeoForge
@@ -150,7 +151,7 @@ Minecraft-mod-classifier/
 │   └── i18n.py              # 国际化支持
 ├── config/                  # 配置文件
 │   ├── mods_data.json       # Mod配置数据库（自动生成）
-│   ├── mod_rules.json       # 规则数据库（798条规则）
+│   ├── mod_rules.json       # 规则数据库（830+条规则）
 │   └── settings.json        # 用户设置
 ├── Input/                   # 输入目录（放入待分类Mod）
 ├── Output/                  # 输出目录（分类结果）
