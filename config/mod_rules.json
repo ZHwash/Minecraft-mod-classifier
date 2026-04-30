@@ -1,0 +1,5186 @@
+{
+  "rules": [
+    {
+      "mod_id": "lithostitched",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "Lithostitched"
+    },
+    {
+      "mod_id": "tectonic",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Tectonic"
+    },
+    {
+      "mod_id": "jadeaddons",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Jade Addons"
+    },
+    {
+      "mod_id": "smsn",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Save My Shit Network"
+    },
+    {
+      "mod_id": "dragonsurvival",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Dragon Survival"
+    },
+    {
+      "mod_id": "integrated_api",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated API"
+    },
+    {
+      "mod_id": "integrated_stronghold",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated Stronghold"
+    },
+    {
+      "mod_id": "mechanicals",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mechanicals Lib"
+    },
+    {
+      "mod_id": "sable",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Sable"
+    },
+    {
+      "mod_id": "idas",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated Dungeons and Structures"
+    },
+    {
+      "mod_id": "sophisticatedstorage",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Sophisticated Storage"
+    },
+    {
+      "mod_id": "createbetterfps",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CreateBetterFps"
+    },
+    {
+      "mod_id": "dynamiccrosshair",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Dynamic Crosshair"
+    },
+    {
+      "mod_id": "spark",
+      "type": "client_optional_server_optional",
+      "reason": "通过JAR配置自动识别: spark",
+      "mod_name": "spark",
+      "confirmed": true
+    },
+    {
+      "mod_id": "krypton",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "KryptonFoxified"
+    },
+    {
+      "mod_id": "jei",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Just Enough Items",
+      "mod_name": "Just Enough Items",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cme_championhelper",
+      "type": "unknown",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "timeslowmod",
+      "type": "unknown",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "hadenoughitems",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "jeroreintegration",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "potionparticlepack",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Potion Particle Pack",
+      "mod_name": "Potion Particle Pack",
+      "confirmed": true
+    },
+    {
+      "mod_id": "comics_bubbles_chat",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "xaerosworldmap",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "xaeros_minimap",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Xaero's Minimap",
+      "mod_name": "Xaero's Minimap",
+      "confirmed": true
+    },
+    {
+      "mod_id": "enhancedvisuals",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: EnhancedVisuals",
+      "mod_name": "EnhancedVisuals",
+      "confirmed": true
+    },
+    {
+      "mod_id": "prism",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: Prism",
+      "mod_name": "Prism",
+      "confirmed": true
+    },
+    {
+      "mod_id": "justenoughresources",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "konkrete",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Konkrete",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ingameinfoxml",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "forgeconfigscreens",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "loliasm",
+      "type": "client_required_server_optional",
+      "reason": "通过JAR配置自动识别: CensoredASM",
+      "mod_name": "CensoredASM",
+      "confirmed": true
+    },
+    {
+      "mod_id": "iceberg",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Iceberg",
+      "mod_name": "Iceberg",
+      "confirmed": true
+    },
+    {
+      "mod_id": "polylib",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "PolyLib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "astatine",
+      "type": "client_required_server_optional",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_required_server_optional",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "distanthorizons",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Distant Horizons",
+      "confirmed": true
+    },
+    {
+      "mod_id": "pretty_rain",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Pretty Rain",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sound_physics_remastered",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Sound Physics Remastered",
+      "confirmed": true
+    },
+    {
+      "mod_id": "itemphysic",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "ItemPhysic",
+      "confirmed": true
+    },
+    {
+      "mod_id": "lexiconfig",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Lexiconfig",
+      "confirmed": true
+    },
+    {
+      "mod_id": "aquaacrobatics",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Aqua Acrobatics Legacy (ragecraft version)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "player_animation_lib",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "cloth_config",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Cloth Config v15 API",
+      "confirmed": true
+    },
+    {
+      "mod_id": "kryptonreforged",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "configanytime",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "ConfigAnytime",
+      "confirmed": true
+    },
+    {
+      "mod_id": "vintagefix",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "VintageFix"
+    },
+    {
+      "mod_id": "cristellib",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Cristel Lib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "alfheim",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Alfheim",
+      "confirmed": true
+    },
+    {
+      "mod_id": "flare",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Flare (Spark for 1.12.2)"
+    },
+    {
+      "mod_id": "common_networking",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "connectorextras",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Connector Extras"
+    },
+    {
+      "mod_id": "mixinbooter",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "MixinBooter",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fermiumbooter",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "FermiumBooter"
+    },
+    {
+      "mod_id": "mixinbootstrap",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "MixinBootstrap"
+    },
+    {
+      "mod_id": "fantasticlib",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "collective",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Collective"
+    },
+    {
+      "mod_id": "nightconfigfixes",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "rhino",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Rhino"
+    },
+    {
+      "mod_id": "openloader",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Open Loader",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fabric_api",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forgified Fabric API"
+    },
+    {
+      "mod_id": "recipeessentials",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "redirector",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Redirector",
+      "confirmed": true
+    },
+    {
+      "mod_id": "redirectionor",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "saturn",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Saturn",
+      "confirmed": true
+    },
+    {
+      "mod_id": "vanillaicecreamfix",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "VanillaIcecreamFix"
+    },
+    {
+      "mod_id": "ksyxis",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Ksyxis",
+      "confirmed": true
+    },
+    {
+      "mod_id": "modernfix",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "ModernFix",
+      "confirmed": true
+    },
+    {
+      "mod_id": "nochatreports",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "No Chat Reports",
+      "confirmed": true
+    },
+    {
+      "mod_id": "memorysweep",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "MemorySweep",
+      "confirmed": true
+    },
+    {
+      "mod_id": "radium",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Radium",
+      "confirmed": true
+    },
+    {
+      "mod_id": "midnightlib",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "MidnightLib"
+    },
+    {
+      "mod_id": "ferritecore",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "FerriteCore",
+      "confirmed": true
+    },
+    {
+      "mod_id": "modernui",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "ModernUI+",
+      "confirmed": true
+    },
+    {
+      "mod_id": "smoothboot_reloaded",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "craftingtweaks",
+      "type": "client_optional_server_optional",
+      "reason": "",
+      "mod_name": "Crafting Tweaks"
+    },
+    {
+      "mod_id": "smoothboot",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Smooth Boot",
+      "confirmed": true
+    },
+    {
+      "mod_id": "achievementoptimizer",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "hybridfix",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": "HybridFix"
+    },
+    {
+      "mod_id": "unidict",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "UniDict",
+      "confirmed": true
+    },
+    {
+      "mod_id": "noisium",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Noisium",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dimthread",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_optional_server_required",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "letmefeedyou",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mes",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "MES - Moog's End Structures",
+      "confirmed": true
+    },
+    {
+      "mod_id": "healthnanfix",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "yungsapi",
+      "type": "client_optional_server_required",
+      "reason": "通过JAR配置自动识别: YUNG's API",
+      "mod_name": "YUNG's API",
+      "confirmed": true
+    },
+    {
+      "mod_id": "yungsbridges",
+      "type": "client_optional_server_required",
+      "reason": "通过JAR配置自动识别: YUNG's Bridges",
+      "mod_name": "YUNG's Bridges",
+      "confirmed": true
+    },
+    {
+      "mod_id": "towns_and_towers",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "tpmaster",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tact",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "[TACZ] LesRaisins Tactical Equipements",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fastfurnace",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FastFurnace [FABRIC]",
+      "confirmed": true
+    },
+    {
+      "mod_id": "better_campfires",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Better Campfires",
+      "confirmed": true
+    },
+    {
+      "mod_id": "alternate_current",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Alternate Current",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ftbquestsoptimizer",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ftbbackups2",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "starlight",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Starlight (Fabric)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ati_structuresvanilla",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "aireducer",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FPS Reducer",
+      "confirmed": true
+    },
+    {
+      "mod_id": "rltweaker",
+      "type": "client_optional_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_and_server_required → client_optional_server_required",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "born_in_a_barn",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bilingualname",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "euphoriapatcher",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "loadingscreens",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Loading Screen Tips"
+    },
+    {
+      "mod_id": "bnbgaminglib",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "chunky",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Chunky",
+      "confirmed": true
+    },
+    {
+      "mod_id": "incontrol",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "InControlMob",
+      "confirmed": true
+    },
+    {
+      "mod_id": "journeymap",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Journeymap",
+      "confirmed": true
+    },
+    {
+      "mod_id": "rrls",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "celeritas",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Celeritas Dynamic Lights"
+    },
+    {
+      "mod_id": "damagetilt",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "itlt",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "classicbar",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Classic Bad Omen",
+      "confirmed": true
+    },
+    {
+      "mod_id": "armorsoundtweak",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "gamemodeswitcher1122",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mobends",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Mo' Bends"
+    },
+    {
+      "mod_id": "spartanhudbaubles",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "betterbiomeblend",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "torohealth",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "ToroHealth Damage Indicators (Updated)"
+    },
+    {
+      "mod_id": "enablecheats_tow_edition1",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bettertradingmenu",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "betterquestpopup",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bettertitlescreen",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Better Title Screen"
+    },
+    {
+      "mod_id": "potiondescriptions",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Potion Descriptions"
+    },
+    {
+      "mod_id": "advanced_xray",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "continuity",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Continuity"
+    },
+    {
+      "mod_id": "inventoryhud",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "InventoryHUD+"
+    },
+    {
+      "mod_id": "cullleaves",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Cull Leaves"
+    },
+    {
+      "mod_id": "notenoughanimations",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "NotEnoughAnimations",
+      "confirmed": true
+    },
+    {
+      "mod_id": "searchables",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Searchables",
+      "mod_name": "Searchables",
+      "confirmed": true
+    },
+    {
+      "mod_id": "colorfulhearts",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Colorful Hearts"
+    },
+    {
+      "mod_id": "crosshairbobbing",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Crosshair Bobbing"
+    },
+    {
+      "mod_id": "asyncparticles",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "AsyncParticles"
+    },
+    {
+      "mod_id": "lazurite",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Lazurite"
+    },
+    {
+      "mod_id": "oculus",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Oculus"
+    },
+    {
+      "mod_id": "libipn",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "libIPN"
+    },
+    {
+      "mod_id": "chloride",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Chloride (Embeddium++/Sodium++)"
+    },
+    {
+      "mod_id": "embeddium",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Embeddium"
+    },
+    {
+      "mod_id": "rubidium_extra",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Embeddium (Rubidium) Extra"
+    },
+    {
+      "mod_id": "sodiumoptionsapi",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mafglib",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: MaFgLib",
+      "mod_name": "MaFgLib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "unicodefix",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Unicode Fix"
+    },
+    {
+      "mod_id": "zume",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Zume"
+    },
+    {
+      "mod_id": "relauncher",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "relauncher",
+      "confirmed": true
+    },
+    {
+      "mod_id": "valkyrie",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Valkyrien Skies",
+      "confirmed": true
+    },
+    {
+      "mod_id": "renderlib",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "RenderLib"
+    },
+    {
+      "mod_id": "smoothfont",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "screenshot_viewer",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "ScreenShotViewer"
+    },
+    {
+      "mod_id": "resourceloader",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "ResourceLoader",
+      "confirmed": true
+    },
+    {
+      "mod_id": "neonium",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "neverenoughanimations",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "NeverEnoughAnimation"
+    },
+    {
+      "mod_id": "nonconflictkeys",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "NonConflictKeys"
+    },
+    {
+      "mod_id": "particleculling",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "ParticleCulling 1.8.9 port"
+    },
+    {
+      "mod_id": "modernsplash",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Modern Splash"
+    },
+    {
+      "mod_id": "inputmethodblocker",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "InputMethodBlocker (Legacy)"
+    },
+    {
+      "mod_id": "itemzoom",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Item Zoomer"
+    },
+    {
+      "mod_id": "gogskybox",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "gnetum",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Gnetum",
+      "mod_name": "Gnetum",
+      "confirmed": true
+    },
+    {
+      "mod_id": "chatheadsyg",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "ChatHeads"
+    },
+    {
+      "mod_id": "farsight",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Farsighted Mobs",
+      "mod_name": "Farsighted Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "holdmyitems",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "3dskinlayers",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "3D Skin Layers"
+    },
+    {
+      "mod_id": "bedbugs",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Ceebug's Rounded Hotbar"
+    },
+    {
+      "mod_id": "blur",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Blur+"
+    },
+    {
+      "mod_id": "celeritas",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Celeritas Dynamic Lights"
+    },
+    {
+      "mod_id": "rebind_narrator",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "RebindNarrator"
+    },
+    {
+      "mod_id": "inventoryprofilesnext",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "customskinloader_forgev2",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "customskinloader_forgev1",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "notreepunching",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "NoTreePunching Basalt Fix (ARCHIVED)"
+    },
+    {
+      "mod_id": "toadlib",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "ToadLib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tweakerge",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Tweakerge",
+      "mod_name": "Tweakerge",
+      "confirmed": true
+    },
+    {
+      "mod_id": "yeetusexperimentus",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Yeetus Experimentus"
+    },
+    {
+      "mod_id": "skinlayers3d",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "3d-Skin-Layers",
+      "confirmed": true
+    },
+    {
+      "mod_id": "entityculling",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "EntityCulling"
+    },
+    {
+      "mod_id": "ok_zoomer",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Ok Zoomer - It's Zoom!"
+    },
+    {
+      "mod_id": "chat_heads",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Chat Heads"
+    },
+    {
+      "mod_id": "i18nupdatemod",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "I18nUpdateMod"
+    },
+    {
+      "mod_id": "imblocker",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "IMBlocker"
+    },
+    {
+      "mod_id": "jecharacters",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Just Enough Characters"
+    },
+    {
+      "mod_id": "flerovium",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Flerovium",
+      "mod_name": "Flerovium",
+      "confirmed": true
+    },
+    {
+      "mod_id": "battlemusic",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Battle Music"
+    },
+    {
+      "mod_id": "biomemusic",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Biome Music"
+    },
+    {
+      "mod_id": "toastcontrol",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Toast Control [FABRIC]"
+    },
+    {
+      "mod_id": "caelum",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Caelum - ArdaCraft Edition"
+    },
+    {
+      "mod_id": "beb",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "bettertaskbar",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Better Taskbar"
+    },
+    {
+      "mod_id": "bouncierbeds",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Bouncier Beds",
+      "confirmed": true
+    },
+    {
+      "mod_id": "extrasoundsnext",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "ExtraSounds Next"
+    },
+    {
+      "mod_id": "fallingleaves",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Falling Leaves"
+    },
+    {
+      "mod_id": "enchantmentdescriptions",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Enchantment Descriptions"
+    },
+    {
+      "mod_id": "legendarytooltips",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Legendary Tooltips"
+    },
+    {
+      "mod_id": "lanserverproperties",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "itemborders",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "ItemBorder",
+      "confirmed": true
+    },
+    {
+      "mod_id": "gpumemleakfix",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Gpu memory leak fix mod",
+      "confirmed": true
+    },
+    {
+      "mod_id": "freecam",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Freecam"
+    },
+    {
+      "mod_id": "fancymenu",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "FancyMenu",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cameraoverhaul",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "CameraOverhaul (Vintage)"
+    },
+    {
+      "mod_id": "entity_model_features",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Entity Model Features"
+    },
+    {
+      "mod_id": "entity_texture_features",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Entity Texture Features"
+    },
+    {
+      "mod_id": "immersiveui",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Immersive First Person"
+    },
+    {
+      "mod_id": "presencefootsteps",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Presence Footsteps"
+    },
+    {
+      "mod_id": "entity_sound_features",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ruok",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "RuOK"
+    },
+    {
+      "mod_id": "palladium",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Palladium",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sodiumdynamiclights",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "searchonmcmod",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "travelerstitles",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Traveler's Titles",
+      "mod_name": "Traveler's Titles",
+      "confirmed": true
+    },
+    {
+      "mod_id": "visual_keybinder",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "datapackloaderrorfix",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "visuality",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Visuality"
+    },
+    {
+      "mod_id": "sounds",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Sounds"
+    },
+    {
+      "mod_id": "shouldersurfing",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Shoulder Surfing Reloaded"
+    },
+    {
+      "mod_id": "overloadedarmorbar",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "constantmusic",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Constant Music"
+    },
+    {
+      "mod_id": "bh",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "BH Creative",
+      "confirmed": true
+    },
+    {
+      "mod_id": "namepain",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Name Pain"
+    },
+    {
+      "mod_id": "enhanced_boss_bars",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "melody",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Melody"
+    },
+    {
+      "mod_id": "reforgedplaymod",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "satisfying_buttons",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Satisfying Buttons"
+    },
+    {
+      "mod_id": "sakura",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Sakura Mod",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ftbchunks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FTB Chunks"
+    },
+    {
+      "mod_id": "forgelin_continuous",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forgelin-Continuous"
+    },
+    {
+      "mod_id": "multimob",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tumbleweed",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Tumbleweed"
+    },
+    {
+      "mod_id": "walljump",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "WallJumpVS"
+    },
+    {
+      "mod_id": "foodexpansion1",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "sbm_bonetorch",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "skeletonhorsespawn",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mysticalworld",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "endreborn",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "raids_backport",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mysticallib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "pogosticks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "zettaigrimoires",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "goldfish",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_optional_server_required → client_and_server_required",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "camels",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "More Camels",
+      "confirmed": true
+    },
+    {
+      "mod_id": "trinkets_and_baubles",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "benssharks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Ben's Sharks"
+    },
+    {
+      "mod_id": "athelas",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "wild_netherwart",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "locks",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Locks!",
+      "confirmed": true
+    },
+    {
+      "mod_id": "lovely_robot",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Reboot LovelyRobot"
+    },
+    {
+      "mod_id": "setbonus",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Armor Set Bonuses"
+    },
+    {
+      "mod_id": "bountiful",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Bountiful"
+    },
+    {
+      "mod_id": "backport",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Vanilla Backport"
+    },
+    {
+      "mod_id": "scalinghealth",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Scaling Health"
+    },
+    {
+      "mod_id": "naturallychargedcreepers",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "stg",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Simple Transparent GUI [STG]",
+      "confirmed": true
+    },
+    {
+      "mod_id": "wings",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "xptome",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mutantbeasts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "simplecorn1",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "grimoireofgaia3",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "disenchanter1",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Disenchanter"
+    },
+    {
+      "mod_id": "into_the_dungeons",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "specialmobs",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Special Mobs"
+    },
+    {
+      "mod_id": "the_depths_of_madness",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "coralreef",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "coralreef",
+      "confirmed": true
+    },
+    {
+      "mod_id": "surge",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Surge"
+    },
+    {
+      "mod_id": "lavawaderbauble",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "into_the_end",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "endercrop",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dragontweaks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "merchants",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Wandering Merchants",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fasterdonkeys",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bettergolem",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "torchslabmod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bgs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Midnighttigger's Better Grass",
+      "confirmed": true
+    },
+    {
+      "mod_id": "somanyenchantments",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "deathfinder",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "DeathFinder",
+      "confirmed": true
+    },
+    {
+      "mod_id": "defiledlands",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Defiled Lands"
+    },
+    {
+      "mod_id": "strayspawn",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Stray Spawn",
+      "confirmed": true
+    },
+    {
+      "mod_id": "oceanicexpanse",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Oceanic Expanse"
+    },
+    {
+      "mod_id": "deep_below",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Deep Below"
+    },
+    {
+      "mod_id": "villagercontracts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Villager Contracts"
+    },
+    {
+      "mod_id": "deeper_depths",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "cherry_on",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Cherry_on_1.12.2"
+    },
+    {
+      "mod_id": "movillages",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "qrafty's Jungle Villages"
+    },
+    {
+      "mod_id": "extrabows",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "morefurnaces",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "More Furnaces (Polymer)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cxlibrary",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Formations (Structure Library)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "meldexun_scrystalicvoid",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "carianstyle",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CarianStyle"
+    },
+    {
+      "mod_id": "mooshroomspawn",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Mooshroom Spawn",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mapmaker_s_gadgets",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "spartanarmaments_v1hf1",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "enhancedarmaments",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Enhanced Armaments Reload Beams",
+      "confirmed": true
+    },
+    {
+      "mod_id": "nether_api",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "forgelin",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forgelin-Continuous"
+    },
+    {
+      "mod_id": "silentlib",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ctoasmod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "spartanlightning",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "spartanweaponry",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "STONEBORN - Spartan Weaponry",
+      "confirmed": true
+    },
+    {
+      "mod_id": "spartandefiled",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "spartanshields",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Spartan Shields"
+    },
+    {
+      "mod_id": "chesttransporter",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "harvestersnight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Harvester's Night"
+    },
+    {
+      "mod_id": "mobrebirth",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Mob Rebirth",
+      "confirmed": true
+    },
+    {
+      "mod_id": "keebszs_battle_towers",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Eternal Battletowers",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dghn2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "creativecore",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "CreativeCore",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dyairdrop",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "engineersdecor",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Engineer's Decor"
+    },
+    {
+      "mod_id": "damagenumbers",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Damage Numbers",
+      "confirmed": true
+    },
+    {
+      "mod_id": "immersive_weathering",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Immersive Weathering"
+    },
+    {
+      "mod_id": "diet",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Diet"
+    },
+    {
+      "mod_id": "doomsday_decoration",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wizardrynextgeneration",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "electroblobswizardry",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Electroblob's Wizardry Redux"
+    },
+    {
+      "mod_id": "wizardryutils",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "huskspawn",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Husk Spawn",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sublime",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Sublime",
+      "confirmed": true
+    },
+    {
+      "mod_id": "eyeofdragons",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "qualitytools",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "STONEBORN - Quality Tools",
+      "confirmed": true
+    },
+    {
+      "mod_id": "llibrary",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Formations (Structure Library)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "rlartifacts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "RLArtifacts"
+    },
+    {
+      "mod_id": "useful_backpacks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Useful Backpacks"
+    },
+    {
+      "mod_id": "blueprint",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Blueprint"
+    },
+    {
+      "mod_id": "u_team_core",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "rainbowreef",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Rainbow Reef"
+    },
+    {
+      "mod_id": "frozen_fiend",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ice_and_fire",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "IceAndFire Community Edition"
+    },
+    {
+      "mod_id": "keletupackgears",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wither_config",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Wither Config",
+      "confirmed": true
+    },
+    {
+      "mod_id": "potioncore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "PotionCoreReloaded"
+    },
+    {
+      "mod_id": "atlas_lib",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Atlas Lib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "boatdeletebegone",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "BoatDeleteBegone",
+      "confirmed": true
+    },
+    {
+      "mod_id": "witherskeletontweaks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "nanfix_final_absorbtion",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "crafttweaker2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CraftTweaker"
+    },
+    {
+      "mod_id": "fish_s_undead_rising",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wizardrynecromancersdelight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ftbquests",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FTB Quests"
+    },
+    {
+      "mod_id": "ftblib",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FTB Library",
+      "confirmed": true
+    },
+    {
+      "mod_id": "itemfilters",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Item Filters",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ftbmoney",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FTB Money",
+      "confirmed": true
+    },
+    {
+      "mod_id": "herobrinemod",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Herobrine Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "libraryex",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "LibraryEx",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mospells",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Iron's Spells 'n Spellbooks"
+    },
+    {
+      "mod_id": "minetweakerrecipemaker",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "beastslayer",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "netherex",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "NetherEx"
+    },
+    {
+      "mod_id": "bountiful_baubles",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "BountifulBaubles:Reforked"
+    },
+    {
+      "mod_id": "flamelib",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FlameLib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cloudboots",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Cloud Boots",
+      "confirmed": true
+    },
+    {
+      "mod_id": "artificial_thunder",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "coroutil",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CoroUtil"
+    },
+    {
+      "mod_id": "ftb_ultimine",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FTB Ultimine Cobblemon Compat"
+    },
+    {
+      "mod_id": "obscure_api",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Obscure API"
+    },
+    {
+      "mod_id": "red_core_mc",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "fugue",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Fugue"
+    },
+    {
+      "mod_id": "add_potion",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Add Potion into Your Food",
+      "confirmed": true
+    },
+    {
+      "mod_id": "caelus",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Caelus API"
+    },
+    {
+      "mod_id": "cagedmobs",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Caged Mobs"
+    },
+    {
+      "mod_id": "cialloblade",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "citadel_fix",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "combatnouveau",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Combat Nouveau"
+    },
+    {
+      "mod_id": "culinaryconstruct",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Culinary Construct"
+    },
+    {
+      "mod_id": "spears",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Simple Spears"
+    },
+    {
+      "mod_id": "spoiled",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Spoiled"
+    },
+    {
+      "mod_id": "dungeons_and_taverns_pillager_outpost_rework",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "dungeons_enhanced",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Dungeons Enhanced",
+      "confirmed": true
+    },
+    {
+      "mod_id": "eureka",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Eureka! Ships! for Valkyrien Skies (Forge/Fabric)"
+    },
+    {
+      "mod_id": "elainabroom",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "lionfishapi",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "lionfishapi"
+    },
+    {
+      "mod_id": "lootjs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "LootJS: KubeJS Addon",
+      "confirmed": true
+    },
+    {
+      "mod_id": "legendarymonsters",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Legendary Monsters",
+      "confirmed": true
+    },
+    {
+      "mod_id": "kubejs",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "KubeJS",
+      "confirmed": true
+    },
+    {
+      "mod_id": "immersive_aircraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Immersive Aircraft"
+    },
+    {
+      "mod_id": "carryon",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Carryon",
+      "confirmed": true
+    },
+    {
+      "mod_id": "worldedit_mod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "aquamirae",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Aquamirae"
+    },
+    {
+      "mod_id": "valkyrienskies",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Valkyrien_Skies-defense"
+    },
+    {
+      "mod_id": "playerrevive",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "PlayerRevive"
+    },
+    {
+      "mod_id": "weather2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Weather2 Additions"
+    },
+    {
+      "mod_id": "irons_spellbooks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "iron's spellbooks arcane essence blocks"
+    },
+    {
+      "mod_id": "toughasnails",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "ToughAsNails",
+      "confirmed": true
+    },
+    {
+      "mod_id": "visualworkbench",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Visual Workbench"
+    },
+    {
+      "mod_id": "upgrade_aquatic",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Upgrade Aquatic"
+    },
+    {
+      "mod_id": "itemblacklist",
+      "type": "server_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Item Blacklist",
+      "confirmed": true
+    },
+    {
+      "mod_id": "incineratorstryhard",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ironfurnaces",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Iron Furnaces"
+    },
+    {
+      "mod_id": "invtweaks",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "InvTweaks",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ice_and_fire_delight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ice_and_fire_spellbooks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "horsecombatcontrols",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "hitfeedback",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Hit Feedback"
+    },
+    {
+      "mod_id": "framework",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Framework",
+      "confirmed": true
+    },
+    {
+      "mod_id": "hotbath",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Hot Bath",
+      "confirmed": true
+    },
+    {
+      "mod_id": "icarus",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Icarus"
+    },
+    {
+      "mod_id": "iaf_patcher",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Ice And Fire Patcher",
+      "confirmed": true
+    },
+    {
+      "mod_id": "goetyrevelation",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Goety: Revelation"
+    },
+    {
+      "mod_id": "flib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FLIB"
+    },
+    {
+      "mod_id": "lootr",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Lootr"
+    },
+    {
+      "mod_id": "simpledivinggear",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "simpleradio",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "sereneseasons",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Serene Seasons",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dreadsteel",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "gamediscs",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Game Discs"
+    },
+    {
+      "mod_id": "minersglasses",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "pathfinderapi",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "PathFinder API",
+      "confirmed": true
+    },
+    {
+      "mod_id": "exporbrecall",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ExpOrbRecall"
+    },
+    {
+      "mod_id": "no_trampling_on_farmland",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ringsofascension",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ironchests",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Iron Chests: Restocked"
+    },
+    {
+      "mod_id": "absolutelyunbreakable",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "commandsceptre",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "tarotcards",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "TarotCards: Remastered"
+    },
+    {
+      "mod_id": "zenith",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Zenith"
+    },
+    {
+      "mod_id": "fishermens_trap",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Fishermen's Trap [Neo/Fabric]"
+    },
+    {
+      "mod_id": "glitchcore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "GlitchCore"
+    },
+    {
+      "mod_id": "fishing_upgrades_more",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "farmingforblockheads",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Farming for Blockheads",
+      "confirmed": true
+    },
+    {
+      "mod_id": "extrameat",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "hamsters",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Hamsters"
+    },
+    {
+      "mod_id": "yakumoblade",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wukong",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Epic Fight - Wukong Moveset",
+      "confirmed": true
+    },
+    {
+      "mod_id": "zunpetforge",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "zetter",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Zetter — Painting Mod"
+    },
+    {
+      "mod_id": "usefulspyglass",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Useful Spyglass"
+    },
+    {
+      "mod_id": "yesstevemodel",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wab",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Wan's Ancient Beasts",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tips",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Tips",
+      "confirmed": true
+    },
+    {
+      "mod_id": "totw_modded",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "touhoulittlemaid",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Touhou Little Maid: Orihime"
+    },
+    {
+      "mod_id": "toms_storage",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Tom's Simple Storage Mod"
+    },
+    {
+      "mod_id": "tonsofenchants",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "takesapillage",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "tacz_fire_control_extension",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "tacz",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "[TaCZ] Timeless and Classics Zero"
+    },
+    {
+      "mod_id": "taczlabs",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "[Tacz]Maxstuff"
+    },
+    {
+      "mod_id": "taczaddon",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "taczaddonsfix"
+    },
+    {
+      "mod_id": "subtleeffects",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Subtle Effects",
+      "confirmed": true
+    },
+    {
+      "mod_id": "structure_gel",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "splash_milk",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Splash Milk",
+      "confirmed": true
+    },
+    {
+      "mod_id": "spawnermod",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Enhanced Mob Spawners",
+      "confirmed": true
+    },
+    {
+      "mod_id": "solcarrot",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Spice of Life: Carrot Edition"
+    },
+    {
+      "mod_id": "soulslike_weaponry",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Marium's Soulslike Weaponry"
+    },
+    {
+      "mod_id": "shutter",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Shutters"
+    },
+    {
+      "mod_id": "simpletomb",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Simple Tomb",
+      "confirmed": true
+    },
+    {
+      "mod_id": "skyarena",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Demi's Sky Arena",
+      "confirmed": true
+    },
+    {
+      "mod_id": "shetiphiancore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ShetiPhianCore"
+    },
+    {
+      "mod_id": "shadowizardlib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ShadowizardLib"
+    },
+    {
+      "mod_id": "sherdsapi",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Sherds API"
+    },
+    {
+      "mod_id": "rideeverything",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "riding_partners",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Riding Partners"
+    },
+    {
+      "mod_id": "resourcefulconfig",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Resourceful Config"
+    },
+    {
+      "mod_id": "relics",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Relics"
+    },
+    {
+      "mod_id": "puzzleslib",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Puzzles Lib",
+      "confirmed": true
+    },
+    {
+      "mod_id": "quick_refine",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "realmrpg_pots_and_mimics",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "propertymodifier",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "projectile_damage",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Projectile Damage Attribute",
+      "confirmed": true
+    },
+    {
+      "mod_id": "prefab",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Prefab"
+    },
+    {
+      "mod_id": "polymorph",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Polymorph"
+    },
+    {
+      "mod_id": "portablehole",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "pickablepets",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Pickable Pets"
+    },
+    {
+      "mod_id": "pillagers_gun",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Pillager’s Gun (Unofficial Port)"
+    },
+    {
+      "mod_id": "patchouli",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Patchouli"
+    },
+    {
+      "mod_id": "parcool",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ParCool!"
+    },
+    {
+      "mod_id": "paintings",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Fast Paintings"
+    },
+    {
+      "mod_id": "nocreeperexplosion",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "not_interested",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Not interested!"
+    },
+    {
+      "mod_id": "octolib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ShatterLib | OctoLib"
+    },
+    {
+      "mod_id": "naturescompass",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Nature's Compass"
+    },
+    {
+      "mod_id": "moonlight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Moonlight Lib"
+    },
+    {
+      "mod_id": "refurbished_furniture",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "MrCrayfish's Furniture Mod: Refurbished",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mru",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "M.R.U",
+      "confirmed": true
+    },
+    {
+      "mod_id": "multibeds",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "MultiBeds"
+    },
+    {
+      "mod_id": "multimine",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Multimine",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mugging_villagers_mod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mo_glass",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Mo Glass",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mine_treasure",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mine Treasure"
+    },
+    {
+      "mod_id": "mermod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mermod"
+    },
+    {
+      "mod_id": "meetyourfight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "l_enders_cataclysm",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "L_Ender's Cataclysm"
+    },
+    {
+      "mod_id": "maidsoulkitchen",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Maidsoul Kitchen"
+    },
+    {
+      "mod_id": "man_of_many_planes",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "enchanted_arsenal",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "[TACZ]Enchanted Arsenal"
+    },
+    {
+      "mod_id": "explorerscompass_edited",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "fumo",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Fumo"
+    },
+    {
+      "mod_id": "fzzy_config",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Fzzy Config"
+    },
+    {
+      "mod_id": "glowingraidillagers",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "goety",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Goety - The Dark Arts"
+    },
+    {
+      "mod_id": "goety_cataclysm",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Goety Cataclysm"
+    },
+    {
+      "mod_id": "exposure",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Exposure"
+    },
+    {
+      "mod_id": "exposure_catalog",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Exposure Catalog"
+    },
+    {
+      "mod_id": "eclipticseasons",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Ecliptic Seasons"
+    },
+    {
+      "mod_id": "eeeabsmobs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "EEEAB's Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dummmmmmy",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "customstartinggear",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "dragonseeker",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Dragonseeker",
+      "confirmed": true
+    },
+    {
+      "mod_id": "dragonfinder",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Ice and Fire: Dragon Finder"
+    },
+    {
+      "mod_id": "disenchanting",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Easy Disenchanting"
+    },
+    {
+      "mod_id": "cutthrough",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Cut Through",
+      "confirmed": true
+    },
+    {
+      "mod_id": "comforts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Comforts"
+    },
+    {
+      "mod_id": "constructionwand",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Construction Wand",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cosmeticarmorreworked",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Cosmetic Armor Reworked",
+      "confirmed": true
+    },
+    {
+      "mod_id": "clickadv",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Clickable Advancements",
+      "confirmed": true
+    },
+    {
+      "mod_id": "cluttered",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Cluttered"
+    },
+    {
+      "mod_id": "champions",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Champions"
+    },
+    {
+      "mod_id": "call_of_drowner",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "celestial_artifacts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "cerbonsapi",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CERBON's API"
+    },
+    {
+      "mod_id": "celestial_core",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "broomsmodunofficial",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "butcher",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Butcher's Delight"
+    },
+    {
+      "mod_id": "bettertridents",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Better Tridents",
+      "confirmed": true
+    },
+    {
+      "mod_id": "blackaures_paintings",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bomd",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Bosses of Mass Destruction",
+      "confirmed": true
+    },
+    {
+      "mod_id": "attributefix",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "AttributeFix"
+    },
+    {
+      "mod_id": "badmobs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Bad Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "alcocraftplus",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "alexscaves",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Alexs Caves: Stuff & Torpedoes"
+    },
+    {
+      "mod_id": "alexsdelight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "alwayseat",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Always Eat"
+    },
+    {
+      "mod_id": "artifacts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Artifacts"
+    },
+    {
+      "mod_id": "astikorcarts",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "AstikorCarts"
+    },
+    {
+      "mod_id": "censoredasm5",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ctm",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "ConnectedTexturesMod",
+      "confirmed": true
+    },
+    {
+      "mod_id": "wrapup",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "WrapUp",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fixeroo",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Fixeroo",
+      "confirmed": true
+    },
+    {
+      "mod_id": "universaltweaks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Universal Tweaks"
+    },
+    {
+      "mod_id": "supermartijn642corelib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "wanionlib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "WanionLib"
+    },
+    {
+      "mod_id": "jaopca",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "JAOPCA"
+    },
+    {
+      "mod_id": "scalar",
+      "type": "client_and_server_required",
+      "reason": "根据网上资料修正（轻微差异）: client_required_server_optional → client_and_server_required",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "stellarcore",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "StellarCore",
+      "confirmed": true
+    },
+    {
+      "mod_id": "topextras",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "TOP Extras",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tesla",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "TESLA"
+    },
+    {
+      "mod_id": "jeivillagers",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "lunatriuscore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "item_filters",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Item Filters",
+      "confirmed": true
+    },
+    {
+      "mod_id": "slashbladeresharped",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "SlashBlade:Resharped"
+    },
+    {
+      "mod_id": "sjap_resharpened",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "ldip",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Dip Dye"
+    },
+    {
+      "mod_id": "mysterious_mountain_lib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "fastworkbench",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FastWorkbench",
+      "confirmed": true
+    },
+    {
+      "mod_id": "taxfreelevels",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "connector",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Sinytra Connector",
+      "confirmed": true
+    },
+    {
+      "mod_id": "justenoughadvancements",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "witherstormmod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Netherite tools for Crackers witherstorm mod"
+    },
+    {
+      "mod_id": "ftb_teams",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FTB Teams",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ftb_quests",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "FTB Quests",
+      "confirmed": true
+    },
+    {
+      "mod_id": "projecte",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ProjectE Integration"
+    },
+    {
+      "mod_id": "teamprojecte",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "TeamProjectE",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sophisticatedcore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Sophisticated Core"
+    },
+    {
+      "mod_id": "clumps",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Clumps",
+      "confirmed": true
+    },
+    {
+      "mod_id": "watut",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "What Are They Up To (Watut)"
+    },
+    {
+      "mod_id": "usefulslime",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Useful Slime"
+    },
+    {
+      "mod_id": "ticex",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "TiCEX - Tinkers Construct EX"
+    },
+    {
+      "mod_id": "projecte_integration",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ProjectE Integration"
+    },
+    {
+      "mod_id": "prinegorerouse",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "libx",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "LibX"
+    },
+    {
+      "mod_id": "packetfixer",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Packet Fixer"
+    },
+    {
+      "mod_id": "slashblade_useful_addon",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "cupboard",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "cupboard"
+    },
+    {
+      "mod_id": "balm",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Balm"
+    },
+    {
+      "mod_id": "addonapi",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Moff's AddonAPI-DynLoad"
+    },
+    {
+      "mod_id": "alltheleaks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "cwsm_v_sides",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "create",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Create"
+    },
+    {
+      "mod_id": "appleskin",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "AppleSkin",
+      "confirmed": true
+    },
+    {
+      "mod_id": "voicechat",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Simple Voice Chat",
+      "confirmed": true
+    },
+    {
+      "mod_id": "carpet",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Carpet",
+      "confirmed": true
+    },
+    {
+      "mod_id": "the_vault",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "The Vault",
+      "confirmed": true
+    },
+    {
+      "mod_id": "tconstruct",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Tinkers' Construct",
+      "confirmed": true
+    },
+    {
+      "mod_id": "optifine",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "OptiFine",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sodium",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Sodium"
+    },
+    {
+      "mod_id": "iris",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Iris"
+    },
+    {
+      "mod_id": "lithium",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Lithium",
+      "confirmed": true
+    },
+    {
+      "mod_id": "phosphor",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Phosphor",
+      "confirmed": true
+    },
+    {
+      "mod_id": "roughlyenoughitems",
+      "type": "client_required_server_optional",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "configuration",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Configuration",
+      "confirmed": true
+    },
+    {
+      "mod_id": "waila",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "What am I looking at",
+      "confirmed": true
+    },
+    {
+      "mod_id": "hwyla",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Hwyla",
+      "confirmed": true
+    },
+    {
+      "mod_id": "jade",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Jade",
+      "confirmed": true
+    },
+    {
+      "mod_id": "worldedit",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "WorldEdit"
+    },
+    {
+      "mod_id": "worldguard",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "WorldGuard"
+    },
+    {
+      "mod_id": "essentials",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Essentials",
+      "confirmed": true
+    },
+    {
+      "mod_id": "luckperms",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "LuckPerms"
+    },
+    {
+      "mod_id": "thermalexpansion",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Thermal Expansion"
+    },
+    {
+      "mod_id": "thermalfoundation",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Thermal Foundation"
+    },
+    {
+      "mod_id": "mekanism",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mekanism"
+    },
+    {
+      "mod_id": "enderio",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Ender IO",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ae2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Applied Energistics 2"
+    },
+    {
+      "mod_id": "refinedstorage",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Refined Storage"
+    },
+    {
+      "mod_id": "ic2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "IC2Classic"
+    },
+    {
+      "mod_id": "buildcraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "BuildCraft"
+    },
+    {
+      "mod_id": "forestry",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forestry: Community Edition"
+    },
+    {
+      "mod_id": "biomesoplenty",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Biomes O' Plenty",
+      "confirmed": true
+    },
+    {
+      "mod_id": "twilightforest",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "The Twilight Forest"
+    },
+    {
+      "mod_id": "aether",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "The Aether"
+    },
+    {
+      "mod_id": "immersiveengineering",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Immersive Engineering"
+    },
+    {
+      "mod_id": "botania",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Botania"
+    },
+    {
+      "mod_id": "thaumcraft",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Thaumcraft",
+      "confirmed": true
+    },
+    {
+      "mod_id": "bloodmagic",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "BloodMagic: Teams"
+    },
+    {
+      "mod_id": "astralsorcery",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "chisel",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Chiseled Bookshelf Visualizer"
+    },
+    {
+      "mod_id": "chiselsandbits",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "bibliocraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Bibliocraft Legacy"
+    },
+    {
+      "mod_id": "decocraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Decocraft"
+    },
+    {
+      "mod_id": "ironchest",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Iron Chests"
+    },
+    {
+      "mod_id": "storagedrawers",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Storage Drawers"
+    },
+    {
+      "mod_id": "extrautilities2",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "actuallyadditions",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Actually Additions"
+    },
+    {
+      "mod_id": "harvestcraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Pam's HarvestCraft 2: Food Core"
+    },
+    {
+      "mod_id": "cookingforblockheads",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mysticalagriculture",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mystical Agriculture"
+    },
+    {
+      "mod_id": "tinkerscomplement",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Tinkers' Complement"
+    },
+    {
+      "mod_id": "mantle",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Mantle"
+    },
+    {
+      "mod_id": "cofhcore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FishyHard FHCore"
+    },
+    {
+      "mod_id": "redstoneflux",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Redstone Flux",
+      "confirmed": true
+    },
+    {
+      "mod_id": "baubles",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Trinkets and Baubles Reforked"
+    },
+    {
+      "mod_id": "curios",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Curios API"
+    },
+    {
+      "mod_id": "jeiintegration",
+      "type": "client_only",
+      "reason": "用户手动修改: client_required_server_optional → client_only",
+      "mod_name": "JEI Integration",
+      "confirmed": true
+    },
+    {
+      "mod_id": "jeresources",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Just Enough Resources (JER)",
+      "confirmed": true
+    },
+    {
+      "mod_id": "crafttweaker",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "CraftTweaker"
+    },
+    {
+      "mod_id": "modtweaker",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "ModTweaker"
+    },
+    {
+      "mod_id": "forgemultipart",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mcjtylib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "McJtyLib"
+    },
+    {
+      "mod_id": "rftools",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "RFTools Base"
+    },
+    {
+      "mod_id": "rftoolsdim",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "theoneprobe",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "topaddons",
+      "type": "client_and_server_required",
+      "reason": "用户手动修改: server_only → client_and_server_required",
+      "mod_name": "TOP Addons",
+      "confirmed": true
+    },
+    {
+      "mod_id": "inventorytweaks",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "InventoryTweaks StationAPI"
+    },
+    {
+      "mod_id": "mousetweaks",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Mouse Tweaks"
+    },
+    {
+      "mod_id": "controlling",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Controlling"
+    },
+    {
+      "mod_id": "defaultoptions",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Default Options"
+    },
+    {
+      "mod_id": "betterfoliage",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Better Foliage Renewed"
+    },
+    {
+      "mod_id": "dynamiclights",
+      "type": "client_required_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "DynamicLights",
+      "confirmed": true
+    },
+    {
+      "mod_id": "soundfilters",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Dynamic Sound Filters"
+    },
+    {
+      "mod_id": "ambientsounds",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "AmbientSounds"
+    },
+    {
+      "mod_id": "minimap",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Rei's Minimap",
+      "confirmed": true
+    },
+    {
+      "mod_id": "antiqueatlas",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Antique Atlas",
+      "confirmed": true
+    },
+    {
+      "mod_id": "damageindicators",
+      "type": "client_only",
+      "reason": "人工修改：InMain",
+      "mod_name": "Damage Indicators",
+      "confirmed": true
+    },
+    {
+      "mod_id": "neat",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Neat"
+    },
+    {
+      "mod_id": "betterfps",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "Better FPS (Modpack)"
+    },
+    {
+      "mod_id": "fastcraft",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "FastCraft"
+    },
+    {
+      "mod_id": "foamfix",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "FoamFix",
+      "confirmed": true
+    },
+    {
+      "mod_id": "vanillafix",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": "VanillaFix"
+    },
+    {
+      "mod_id": "textformatting",
+      "type": "client_optional_server_optional",
+      "reason": "人工修改：InMain",
+      "mod_name": "Text Formatting Everywhere",
+      "confirmed": true
+    },
+    {
+      "mod_id": "chattweaks",
+      "type": "client_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "simplevoicechat",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Simple Voice Chat",
+      "confirmed": true
+    },
+    {
+      "mod_id": "discordintegration",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": "Discord_Integration"
+    },
+    {
+      "mod_id": "servertabinfo",
+      "type": "server_only",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "morpheus",
+      "type": "client_optional_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Morpheus",
+      "confirmed": true
+    },
+    {
+      "mod_id": "sleepingoverhaul",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Sleeping Overhaul 2",
+      "confirmed": true
+    },
+    {
+      "mod_id": "corpse",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Corpse"
+    },
+    {
+      "mod_id": "corpse",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Corpse"
+    },
+    {
+      "mod_id": "gravestone",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "GraveStone Mod"
+    },
+    {
+      "mod_id": "backpacks",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Backpacks",
+      "confirmed": true
+    },
+    {
+      "mod_id": "ironbackpacks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "sophisticatedbackpacks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Sophisticated Backpacks"
+    },
+    {
+      "mod_id": "travelersbackpack",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Traveler's Backpack"
+    },
+    {
+      "mod_id": "waystones",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Waystones"
+    },
+    {
+      "mod_id": "jmws",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "JourneyMap Waypoint Syncing",
+      "confirmed": true
+    },
+    {
+      "mod_id": "fastleafdecay",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "FastLeafDecay"
+    },
+    {
+      "mod_id": "treecapitator",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "TreeCapitator",
+      "confirmed": true
+    },
+    {
+      "mod_id": "veinminer",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Veinminer"
+    },
+    {
+      "mod_id": "oreexcavation",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Ore Excavation"
+    },
+    {
+      "mod_id": "autoreglib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "AutoRegLib"
+    },
+    {
+      "mod_id": "quark",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Quark"
+    },
+    {
+      "mod_id": "charm",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Charm of Undying"
+    },
+    {
+      "mod_id": "supplementaries",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Supplementaries"
+    },
+    {
+      "mod_id": "decorativeblocks",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Decorative Blocks"
+    },
+    {
+      "mod_id": "mcwfurniture",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Macaw's Furniture",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mcwdoors",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "mcwwindows",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "farmersdelight",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Farmer's Delight"
+    },
+    {
+      "mod_id": "createaddition",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Create Crafts & Additions"
+    },
+    {
+      "mod_id": "createcraftsadditions",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "computercraft",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Computer Craft",
+      "confirmed": true
+    },
+    {
+      "mod_id": "opencomputers",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "OpenComputers"
+    },
+    {
+      "mod_id": "securitycraft",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "SecurityCraft"
+    },
+    {
+      "mod_id": "malisiscore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "tardismod",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "TARDIF Mod"
+    },
+    {
+      "mod_id": "dimdoors",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Dimensional Doors",
+      "confirmed": true
+    },
+    {
+      "mod_id": "compactmachines",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Compact Machines",
+      "confirmed": true
+    },
+    {
+      "mod_id": "littletiles",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "LittleTiles"
+    },
+    {
+      "mod_id": "chiseledme",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Chiseled Me",
+      "confirmed": true
+    },
+    {
+      "mod_id": "animania",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Animania",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mocreatures",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Mo' Creatures",
+      "confirmed": true
+    },
+    {
+      "mod_id": "",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Alex's Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "iceandfire",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "IceAndFire Community Edition"
+    },
+    {
+      "mod_id": "lycanitesmobs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Lycanites Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "primitivemobs",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "PrimitiveMobsRevival"
+    },
+    {
+      "mod_id": "mowziesmobs",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "mod_name": "Mowzie's Mobs",
+      "confirmed": true
+    },
+    {
+      "mod_id": "aquaculture",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Aquaculture Delight"
+    },
+    {
+      "mod_id": "betteranimalsplus",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "natura",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Naturalist"
+    },
+    {
+      "mod_id": "integrateddynamics",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated Dynamics"
+    },
+    {
+      "mod_id": "integratedtunnels",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated Tunnels"
+    },
+    {
+      "mod_id": "integratedterminals",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Integrated Terminals"
+    },
+    {
+      "mod_id": "cyclopscore",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Cyclops Core"
+    },
+    {
+      "mod_id": "commoncapabilities",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Common Capabilities"
+    },
+    {
+      "mod_id": "placebo",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Placebo"
+    },
+    {
+      "mod_id": "bookshelf",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Bookshelf"
+    },
+    {
+      "mod_id": "citadel",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Citadel"
+    },
+    {
+      "mod_id": "geckolib",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "GeckoLib 4"
+    },
+    {
+      "mod_id": "architectury",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Architectury"
+    },
+    {
+      "mod_id": "fabric_api",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forgified Fabric API"
+    },
+    {
+      "mod_id": "forge",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forge Config API Port"
+    },
+    {
+      "mod_id": "kotlinforforge",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": ""
+    },
+    {
+      "mod_id": "forgelin",
+      "type": "client_and_server_required",
+      "reason": "",
+      "mod_name": "Forgelin-Continuous"
+    },
+    {
+      "mod_id": "amendments",
+      "mod_name": "Amendments",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "badpackets",
+      "mod_name": "Bad Packets",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "bits_n_bobs",
+      "mod_name": "Create Bits 'n' Bobs",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "clientsort",
+      "mod_name": "ClientSort",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "cmpackagecouriers",
+      "mod_name": "Create More: Package Couriers",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "aeronautics_bundled",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_enchantment_industry",
+      "mod_name": "Create: Enchantment Industry",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createshufflefilter",
+      "mod_name": "Create Shuffle Filter",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_sa",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_dragons_plus",
+      "mod_name": "Create: Dragons Plus",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createliquidfuel",
+      "mod_name": "Create Liquid Fuel",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createoreexcavation",
+      "mod_name": "Create Ore Excavation",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_bic_bit",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_connected",
+      "mod_name": "Create: Connected",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_easy_structures",
+      "mod_name": "Create: Easy Structures",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_ltab",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_structures_arise",
+      "mod_name": "Create: Structures Arise",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "creeperheal",
+      "mod_name": "CreeperHeal",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "exposure_polaroid",
+      "mod_name": "Exposure Polaroid",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "flatbedrock",
+      "mod_name": "Flat Bedrock",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "ftblibrary",
+      "mod_name": "FTB Library",
+      "type": "client_and_server_required",
+      "reason": "人工修改：InMain",
+      "confirmed": true
+    },
+    {
+      "mod_id": "gpu_tape",
+      "mod_name": "GPUTape",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: GPUTape",
+      "confirmed": true
+    },
+    {
+      "mod_id": "guideme",
+      "mod_name": "GuideME",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "immediatelyfast",
+      "mod_name": "ImmediatelyFast",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "industrial_platform",
+      "mod_name": "Industrial Platform",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "integrated_villages",
+      "mod_name": "Integrated Villages",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "irisflw",
+      "mod_name": "Iris Flywheel Compat",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "ixeris_dummy",
+      "mod_name": "Ixeris",
+      "type": "client_only",
+      "reason": "通过JAR配置自动识别: Ixeris",
+      "confirmed": true
+    },
+    {
+      "mod_id": "mr_katters_structures",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "meme_mobs",
+      "mod_name": "Meme Mobs",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "owo",
+      "mod_name": "oωo",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "pointblank",
+      "mod_name": "Point Blank",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "prickle",
+      "mod_name": "PrickleMC",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "rolling_gate",
+      "mod_name": "RollingGate",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "silicone_dolls",
+      "mod_name": "SiliconeDolls",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "someassemblyrequired",
+      "mod_name": "Some Assembly Required",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "threadtweak",
+      "mod_name": "ThreadTweak",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "wwoo",
+      "mod_name": "William Wythers' Overhauled Overworld",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "zeta",
+      "mod_name": "Zeta",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "ftbteams",
+      "mod_name": "FTB Teams",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "betterendisland",
+      "mod_name": "YUNG's Better End Island",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "frostfire_dragon",
+      "mod_name": "Frostfire Dragon",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "luncheonmeatsdelight",
+      "mod_name": "Luncheon Meat's Delight",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "dungeons_arise",
+      "mod_name": "When Dungeons Arise",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "skyvillages",
+      "mod_name": "Sky Villages",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "muhc",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "untitledduckmod",
+      "mod_name": "Untitled Duck Mod",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "crystcursed_dragon",
+      "mod_name": "Crystcursed Dragon",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_central_kitchen",
+      "mod_name": "Create: Central Kitchen",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_mechanical_spawner",
+      "mod_name": "Create: Mechanical spawner",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_mobile_packages",
+      "mod_name": "Create: Mobile Packages",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createfastschematiccannon",
+      "mod_name": "Create: Fast Schematic Cannon",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createfisheryindustry",
+      "mod_name": "Create: Fishery Industry",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_currency_shops",
+      "mod_name": "Create: Currency Shops",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "create_cyber_goggles",
+      "mod_name": "Create: Cyber Goggles",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "kaleidoscope_cookery",
+      "mod_name": "Kaleidoscope Cookery",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "botanytrees",
+      "mod_name": "BotanyTrees",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "botanypots",
+      "mod_name": "BotanyPots",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "cataclysm",
+      "mod_name": "L_Ender's Cataclysm 1.21.1",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "creeper_firework",
+      "mod_name": "Creeper Firework",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "grindenchantments",
+      "mod_name": "Grind Enchantments",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "netmusic",
+      "mod_name": "Net Music Mod",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "wing_kirin",
+      "mod_name": "Wing Kirin",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "touhou_little_maid",
+      "mod_name": "Touhou Little Maid",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "ftbultimine",
+      "mod_name": "FTB Ultimine",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "farmersdelight_extended",
+      "mod_name": "Farmer's Delight: Extended",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "sodium_extra",
+      "mod_name": "Sodium Extra",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "enchdesc",
+      "mod_name": "",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "automobility",
+      "mod_name": "Automobility",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "brewinandchewin",
+      "mod_name": "Brewin' And Chewin'",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "lambdynlights",
+      "mod_name": "",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "another_furniture",
+      "mod_name": "Another Furniture",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "storagedelight",
+      "mod_name": "Storage Delight",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "placeholder-api",
+      "mod_name": "Placeholder API",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createadditionallogistics",
+      "mod_name": "Create: Additional Logistics",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "createsifter",
+      "mod_name": "Create Sifter",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "modmenu",
+      "mod_name": "Mod Menu",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "immersive_melodies",
+      "mod_name": "Immersive Melodies",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "immersive_paintings",
+      "mod_name": "Immersive Paintings",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "sliceanddice",
+      "mod_name": "Create Slice & Dice",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "bbs",
+      "mod_name": "BBS CML Edition",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "colorwheel",
+      "mod_name": "Colorwheel",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "colorwheel_patcher",
+      "mod_name": "Colorwheel Patcher",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "flashback",
+      "mod_name": "Flashback",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "hold-my-items",
+      "mod_name": "Hold My Items",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "replaymod",
+      "mod_name": "Replay Mod",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "simplebackups",
+      "mod_name": "Simple Backups",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "watermedia",
+      "mod_name": "WaterMedia",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "displaydelight",
+      "mod_name": "Display Delight",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "c2me",
+      "mod_name": "Concurrent Chunk Management Engine",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "customskinloader",
+      "mod_name": "CustomSkinLoader",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "smoothchunk",
+      "mod_name": "Smooth chunk save Mod",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "shulkerboxtooltip",
+      "mod_name": "Shulker Box Tooltip",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "bettermounthud",
+      "mod_name": "Better Mount HUD",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "borderlessmining",
+      "mod_name": "Borderless Mining Updated",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "cape-provider",
+      "mod_name": "Cape Provider",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "cicada",
+      "mod_name": "CICADA",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "cloth-config",
+      "mod_name": "Cloth Config v26.1",
+      "type": "client_optional_server_optional",
+      "reason": ""
+    },
+    {
+      "mod_id": "config_manager",
+      "mod_name": "Config Manager",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "crash_assistant",
+      "mod_name": "Crash Assistant",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "debugify",
+      "mod_name": "Debugify",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "do_a_barrel_roll",
+      "mod_name": "Do a Barrel Roll",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "dynamic_fps",
+      "mod_name": "Dynamic FPS",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "essential-container",
+      "mod_name": "",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "fabric-api",
+      "mod_name": "Fabric API",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "fabric-language-kotlin",
+      "mod_name": "Fabric Language Kotlin",
+      "type": "client_optional_server_optional",
+      "reason": ""
+    },
+    {
+      "mod_id": "forgeconfigapiport",
+      "mod_name": "Forge Config API Port",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "isxander-main-menu-credits",
+      "mod_name": "",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "languagereload",
+      "mod_name": "Language Reload",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "malilib",
+      "mod_name": "MaLiLib",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "moogs_structures",
+      "mod_name": "Moog's Structure Lib",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "mvs",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "morechathistory",
+      "mod_name": "More Chat History",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "moreculling",
+      "mod_name": "More Culling",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "optigui",
+      "mod_name": "OptiGUI",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "puzzle",
+      "mod_name": "Puzzle",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "shogi",
+      "mod_name": "Shogi",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "sodium-extra",
+      "mod_name": "Sodium Extra",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "sspb",
+      "mod_name": "Sodium Shadowy Path Blocks",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "t_and_t",
+      "mod_name": "Towns and Towers",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "terralith",
+      "mod_name": "Terralith",
+      "type": "server_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "trinkets",
+      "mod_name": "Trinkets Continued",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "tweakeroo",
+      "mod_name": "Tweakeroo",
+      "type": "client_only",
+      "reason": ""
+    },
+    {
+      "mod_id": "yet_another_config_lib_v3",
+      "mod_name": "",
+      "type": "client_and_server_required",
+      "reason": ""
+    },
+    {
+      "mod_id": "zoomify",
+      "mod_name": "Zoomify",
+      "type": "client_only",
+      "reason": ""
+    }
+  ],
+  "total": 834,
+  "last_updated": "2026-04-30 18:19:43.344712"
+}

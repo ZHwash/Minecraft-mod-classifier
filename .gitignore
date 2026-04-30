@@ -97,7 +97,6 @@ mod_classifier.log
 
 # 配置文件（包含用户数据，不应版本控制）
 config/mods_data.json
-config/mods_data.json.backup
 config/settings.json
 
 # 输入输出目录（用户数据）

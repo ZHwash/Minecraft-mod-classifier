@@ -8,6 +8,7 @@
 import json
 import os
 from pathlib import Path
+from file_utils import ensure_directory
 
 
 class I18nManager:
@@ -19,7 +20,7 @@ class I18nManager:
             'zh': {
                 # 程序信息
                 'app_name': 'Minecraft Mod 分类器',
-                'app_version': 'v2.0.0',
+                'app_version': 'v0.1.6',
                 'app_description': '自动分类 Minecraft Mod 文件的命令行工具',
                 
                 # 启动信息
@@ -78,11 +79,29 @@ class I18nManager:
                 'english': 'English',
                 'current_language': '当前语言',
                 'language_changed': '语言已切换',
+                'yes': '是',
+                'no': '否',
+                'invalid_choice': '无效选择',
+                
+                # GitHub集成
+                'github_prompt_title': '📤 提交到GitHub',
+                'github_prompt_description': '是否将更新后的mods_data.json提交到GitHub仓库?\n这将帮助社区共享Mod分类数据。',
+                'github_not_git_repo': '当前目录不是Git仓库,无法提交',
+                'github_no_changes': 'mods_data.json没有未提交的更改',
+                'github_ask_submit': '是否提交到GitHub?',
+                'github_ask_message': '请输入提交信息',
+                'github_adding_file': '正在添加文件: {file}',
+                'github_committing': '正在提交...',
+                'github_pushing': '正在推送到远程仓库...',
+                'github_success': '✅ 成功提交到GitHub!',
+                'github_failed': '❌ 提交失败',
+                'github_push_failed_manual': '推送失败,请手动执行 git push',
+                'github_skipped': '已跳过提交',
             },
             'en': {
                 # App info
                 'app_name': 'Minecraft Mod Classifier',
-                'app_version': 'v2.0.0',
+                'app_version': 'v0.1.6',
                 'app_description': 'Command-line tool for automatically classifying Minecraft Mod files',
                 
                 # Startup
@@ -141,6 +160,24 @@ class I18nManager:
                 'english': 'English',
                 'current_language': 'Current language',
                 'language_changed': 'Language changed',
+                'yes': 'Yes',
+                'no': 'No',
+                'invalid_choice': 'Invalid choice',
+                
+                # GitHub Integration
+                'github_prompt_title': '📤 Submit to GitHub',
+                'github_prompt_description': 'Submit the updated mods_data.json to GitHub repository?\nThis helps the community share mod classification data.',
+                'github_not_git_repo': 'Current directory is not a Git repository, cannot commit',
+                'github_no_changes': 'No uncommitted changes in mods_data.json',
+                'github_ask_submit': 'Submit to GitHub?',
+                'github_ask_message': 'Enter commit message',
+                'github_adding_file': 'Adding file: {file}',
+                'github_committing': 'Committing...',
+                'github_pushing': 'Pushing to remote repository...',
+                'github_success': '✅ Successfully committed to GitHub!',
+                'github_failed': '❌ Commit failed',
+                'github_push_failed_manual': 'Push failed, please run git push manually',
+                'github_skipped': 'Skipped submission',
             }
         }
         
@@ -161,7 +198,7 @@ class I18nManager:
     def save_settings(self):
         """保存用户设置"""
         settings_file = Path('config/settings.json')
-        settings_file.parent.mkdir(parents=True, exist_ok=True)
+        ensure_directory(settings_file.parent)
         
         settings = {
             'language': self.current_language

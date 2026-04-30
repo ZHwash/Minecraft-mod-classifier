@@ -11,7 +11,7 @@ from typing import Dict, Optional
 from logger import setup_logger
 from config_manager import ConfigManager
 from jar_parser import JarParser
-from file_utils import clean_mod_name, ensure_directory, get_jar_files
+from file_utils import ensure_directory, get_jar_files
 from i18n import i18n
 
 
@@ -107,6 +107,13 @@ class ModClassifier:
             self.logger.info(f"检测到 {self.stats['auto_detected']} 个新Mod，保存配置...")
             self.config_manager.save_config()
         
+        # 在同步规则之前生成补丁（如果有变更）
+        if self.stats['auto_detected'] > 0:
+            self._generate_patch_before_sync()
+        
+        # 将配置同步至规则数据库（总是执行，以更新reason字段）
+        self._sync_new_mods_to_rules()
+        
         # 输出统计信息
         self._print_statistics()
     
@@ -118,43 +125,82 @@ class ModClassifier:
             jar_path: JAR文件路径
         """
         filename = jar_path.name
-        clean_name = clean_mod_name(filename)
         
         self.logger.info(f"\n处理: {filename}")
-        self.logger.debug(f"清理后的名称: {clean_name}")
         
-        # 1. 在配置中查找（暂不传版本和loader，后续可扩展）
-        mod_config = self.config_manager.find_mod(clean_name)
+        # 1. 解析JAR文件获取modId和类型（三层优先级判断）
+        mod_info = self.jar_parser.parse_jar(jar_path)
+        
+        if not mod_info:
+            # 无法解析JAR，尝试从文件名推断或直接分到Unknown
+            self.logger.warning(f"无法解析 {filename}，尝试使用规则数据库或API")
+            # 使用空mod_id，让后续逻辑处理
+            mod_id = ''
+            mod_name = ''
+            mod_type = 'unknown'
+        else:
+            mod_id = mod_info.get('mod_id', '')
+            mod_name = mod_info.get('mod_name', '')
+            mod_type = mod_info.get('type', 'unknown')
+            
+            if not mod_id:
+                self.logger.warning(f"{filename} 中未找到modId，尝试使用规则数据库或API")
+                mod_type = 'unknown'
+        
+        self.logger.debug(f"Mod ID: {mod_id}, Mod Name: {mod_name}, 推断类型: {mod_type}")
+        
+        # 2. 如果mod_id为空且类型为unknown，直接分到Unknown
+        if not mod_id and mod_type == 'unknown':
+            self.logger.info(f"[!] 无法识别的Mod，分类到: Unknown")
+            self._copy_to_output(jar_path, 'unknown')
+            self.stats['failed'] += 1
+            return
+        
+        # 3. 在配置中查找（仅基于mod_id）
+        mod_config = self.config_manager.find_mod(mod_id)
         
         if mod_config:
             # 配置中存在，直接使用
             mod_type = mod_config['type']
             self.logger.info(f"[OK] 在配置中找到: {mod_type}")
         else:
-            # 2. 配置中不存在，解析JAR文件
-            self.logger.info("配置中未找到，尝试解析JAR文件...")
-            mod_info = self.jar_parser.parse_jar(jar_path)
-            
-            if mod_info:
-                mod_type = mod_info['type']
-                version = mod_info.get('version', '')
-                loader = mod_info.get('loader', '')
-                
-                self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
-                if version:
-                    self.logger.debug(f"  版本: {version}")
-                if loader:
-                    self.logger.debug(f"  Mod端: {loader.upper()}")
-                
-                # 添加到配置中（包含版本和loader信息）
-                if self.config_manager.add_mod(clean_name, mod_type, version, loader):
-                    self.stats['auto_detected'] += 1
+            # 4. 检查 mod_rules.json 中是否有已确认的规则
+            from rule_manager import RuleManager
+            rule_manager = RuleManager()
+            if rule_manager.load_rules():
+                confirmed_rule = rule_manager.find_rule(mod_id)
+                if confirmed_rule and confirmed_rule.get('confirmed', False):
+                    # 使用已确认的规则
+                    mod_type = confirmed_rule['type']
+                    self.logger.info(f"[OK] 使用已确认规则: {mod_type}")
+                    # 添加到 mods_data.json 以便后续快速查询
+                    self.config_manager.add_mod(mod_id, mod_type, mod_name)
+                else:
+                    # 5. 配置和规则中都不存在，使用解析结果中的类型
+                    # 如果类型是unknown，不保存到配置，直接分到Unknown
+                    if mod_type == 'unknown':
+                        self.logger.info(f"[!] 无法确定类型，分类到: Unknown")
+                        self._copy_to_output(jar_path, 'unknown')
+                        self.stats['failed'] += 1
+                        return
+                    
+                    self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
+                    # 添加到配置中（包含mod_id、mod_name和type）
+                    if self.config_manager.add_mod(mod_id, mod_type, mod_name):
+                        self.stats['auto_detected'] += 1
             else:
-                # 3. 解析失败，标记为未知
-                self.logger.warning("[FAIL] 无法解析JAR文件，标记为未知类型")
-                mod_type = 'unknown'
+                # 无法加载规则数据库，使用解析结果
+                if mod_type == 'unknown':
+                    self.logger.info(f"[!] 无法确定类型，分类到: Unknown")
+                    self._copy_to_output(jar_path, 'unknown')
+                    self.stats['failed'] += 1
+                    return
+                    
+                self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
+                if self.config_manager.add_mod(mod_id, mod_type, mod_name):
+                    self.stats['auto_detected'] += 1
         
-        # 4. 复制文件到对应目录
+        # 5. 复制文件到对应目录
         self._copy_to_output(jar_path, mod_type)
     
     def _copy_to_output(self, source_path: Path, mod_type: str):
@@ -170,8 +216,8 @@ class ModClassifier:
         
         # 检查目标文件是否已存在
         if target_path.exists():
-            self.logger.info(f"⊘ 文件已存在（已分类）: {target_dir_name}")
-            self.stats['classified'] += 1  # 计入已分类，而不是跳过
+            self.logger.info(f"⊙ 文件已存在（已分类）: {target_dir_name}")
+            self.stats['classified'] += 1
             return
         
         try:
@@ -194,3 +240,115 @@ class ModClassifier:
         self.logger.info(f"自动检测新Mod: {self.stats['auto_detected']}")
         self.logger.info(f"{i18n.get('total_failed').format(self.stats['failed'])}")
         self.logger.info("=" * 60)
+    
+    def _generate_patch_before_sync(self):
+        """
+        在同步规则之前生成增量补丁
+        此时 mods_data.json 已更新，但 mod_rules.json 还未同步，可以检测到差异
+        """
+        from generate_patch import generate_incremental_patch
+        
+        print("\n" + "="*60)
+        print("🔄 正在生成规则更新补丁...")
+        print("="*60)
+        self.logger.info("\n正在生成规则更新补丁...")
+        
+        try:
+            patch_file = generate_incremental_patch()
+            
+            if patch_file:
+                print(f"\n✅ 增量补丁文件已生成: {patch_file}")
+                print(f"   提交方式：")
+                print(f"   1. 通过GitHub Issue提交补丁内容")
+                print(f"   2. 维护者使用 apply_patch.py 自动合并")
+                self.logger.info(f"✓ 增量补丁文件已生成: {patch_file}")
+                self.logger.info(f"   提交方式：")
+                self.logger.info(f"   1. 通过GitHub Issue提交补丁内容")
+                self.logger.info(f"   2. 维护者使用 apply_patch.py 自动合并")
+            else:
+                print("\nℹ️  规则数据库已是最新，无需生成补丁")
+                self.logger.info("规则数据库已是最新，无需生成补丁")
+        except Exception as e:
+            print(f"\n⚠️  补丁生成失败: {str(e)}")
+            self.logger.error(f"补丁生成失败: {str(e)}", exc_info=True)
+    
+    def _sync_new_mods_to_rules(self):
+        """
+        将新识别的Mod从mods_data.json转正至mod_rules.json
+        如果规则已存在则更新字段，否则新增
+        """
+        from rule_manager import RuleManager
+        
+        # 加载规则数据库
+        rule_manager = RuleManager()
+        if not rule_manager.load_rules():
+            self.logger.warning("无法加载规则数据库，跳过转正")
+            return
+        
+        synced_count = 0
+        updated_count = 0
+        
+        # 遍历所有配置中的Mod
+        for mod_config in self.config_manager.mods_data:
+            mod_id = mod_config.get('mod_id', '')
+            mod_name = mod_config.get('mod_name', '')
+            mod_type = mod_config.get('type', 'unknown')
+            
+            if not mod_id:
+                continue
+            
+            # 跳过unknown类型的mod，不将其同步到规则库
+            if mod_type == 'unknown':
+                self.logger.debug(f"  跳过（unknown类型）: {mod_id}")
+                continue
+            
+            # 检查规则数据库中是否已存在
+            existing_rule = rule_manager.find_rule(mod_id)
+            
+            if not existing_rule:
+                # 新增规则
+                new_rule = {
+                    'mod_id': mod_id,
+                    'mod_name': mod_name,
+                    'type': mod_type,
+                    'reason': f'通过JAR配置自动识别: {mod_name}'
+                }
+                rule_manager.rules.append(new_rule)
+                synced_count += 1
+                self.logger.debug(f"  新增: {mod_id} ({mod_name}) -> {mod_type}")
+            else:
+                # 检查是否为已确认配置，如果是则跳过更新
+                is_confirmed = existing_rule.get('confirmed', False)
+                
+                if is_confirmed:
+                    self.logger.debug(f"  跳过（已确认）: {mod_id}")
+                    continue
+                
+                # 更新现有规则的字段
+                old_type = existing_rule.get('type', '')
+                old_name = existing_rule.get('mod_name', '')
+                
+                # 更新mod_name（如果为空或不同）
+                if mod_name and (not old_name or old_name != mod_name):
+                    existing_rule['mod_name'] = mod_name
+                
+                # 更新type（如果不同）
+                if mod_type and old_type != mod_type:
+                    existing_rule['type'] = mod_type
+                    self.logger.debug(f"  更新类型: {mod_id} {old_type} -> {mod_type}")
+                
+                # 更新reason（如果为空）
+                if not existing_rule.get('reason'):
+                    existing_rule['reason'] = f'通过JAR配置自动识别: {mod_name}'
+                
+                updated_count += 1
+        
+        # 保存规则数据库
+        total_count = synced_count + updated_count
+        if total_count > 0:
+            if rule_manager.save_rules():
+                self.logger.info(f"✓ 成功同步 {total_count} 个Mod至规则数据库 (新增: {synced_count}, 更新: {updated_count})")
+            else:
+                self.logger.error("✗ 保存规则数据库失败")
+        else:
+            self.logger.info("没有需要同步的Mod")
