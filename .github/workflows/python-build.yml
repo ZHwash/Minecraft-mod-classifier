@@ -48,18 +48,36 @@ jobs:
         run: |
           mkdir -p config
           echo '[]' > config/mods_data.json
+          # Copy mod_rules.json if exists
+          if [ -f "config/mod_rules.json" ]; then
+            cp config/mod_rules.json config/mod_rules.json.bak
+          fi
         shell: bash
 
       - name: Build executable (Windows)
         if: matrix.os == 'windows'
         run: |
-          pyinstaller --clean Minecraft-mod-classifier.spec
+          pyinstaller --clean --noconfirm `
+            --name "Minecraft-mod-classifier" `
+            --onedir `
+            --console `
+            --paths src/python `
+            --add-data "config/mods_data.json;config" `
+            --add-data "config/mod_rules.json;config" `
+            src/python/main.py
         shell: pwsh
 
       - name: Build executable (Linux)
         if: matrix.os == 'linux'
         run: |
-          pyinstaller --clean Minecraft-mod-classifier.spec
+          pyinstaller --clean --noconfirm \
+            --name "Minecraft-mod-classifier" \
+            --onedir \
+            --console \
+            --paths src/python \
+            --add-data "config/mods_data.json:config" \
+            --add-data "config/mod_rules.json:config" \
+            src/python/main.py
 
       - name: Prepare release package (Windows)
         if: matrix.os == 'windows'
@@ -69,8 +87,8 @@ jobs:
           Copy-Item "README.md" "release\Minecraft-mod-classifier\"
           Copy-Item "LICENSE" "release\Minecraft-mod-classifier\"
           Copy-Item "docs\QUICKSTART.md" "release\Minecraft-mod-classifier\"
-          Copy-Item "docs\USAGE.md" "release\Minecraft-mod-classifier\"
           Copy-Item "docs\BUILD_GUIDE.md" "release\Minecraft-mod-classifier\"
+          Copy-Item "GITHUB_INTEGRATION.md" "release\Minecraft-mod-classifier\"
           Remove-Item "release\Minecraft-mod-classifier\Input\*" -Recurse -ErrorAction SilentlyContinue
           Remove-Item "release\Minecraft-mod-classifier\Output\*" -Recurse -ErrorAction SilentlyContinue
         shell: pwsh
@@ -83,8 +101,8 @@ jobs:
           cp README.md release/Minecraft-mod-classifier/
           cp LICENSE release/Minecraft-mod-classifier/
           cp docs/QUICKSTART.md release/Minecraft-mod-classifier/
-          cp docs/USAGE.md release/Minecraft-mod-classifier/
           cp docs/BUILD_GUIDE.md release/Minecraft-mod-classifier/
+          cp GITHUB_INTEGRATION.md release/Minecraft-mod-classifier/
           rm -rf release/Minecraft-mod-classifier/Input/*
           rm -rf release/Minecraft-mod-classifier/Output/*
           chmod +x release/Minecraft-mod-classifier/Minecraft-mod-classifier

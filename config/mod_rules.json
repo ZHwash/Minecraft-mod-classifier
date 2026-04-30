@@ -1204,8 +1204,8 @@
     },
     {
       "mod_id": "fancymenu",
-      "type": "client_only",
-      "reason": "根据网上资料修正（重大差异）: client_required_server_optional → client_only",
+      "type": "client_required_server_optional",
+      "reason": "",
       "mod_name": "FancyMenu",
       "confirmed": true
     },
@@ -1358,8 +1358,8 @@
     },
     {
       "mod_id": "sakura",
-      "type": "client_only",
-      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "type": "client_and_server_required",
+      "reason": "",
       "mod_name": "Sakura Mod",
       "confirmed": true
     },
@@ -1530,24 +1530,17 @@
       "mod_name": ""
     },
     {
-      "mod_id": "stg",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "Simple Transparent GUI [STG]",
-      "confirmed": true
-    },
-    {
       "mod_id": "wings",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)",
+      "mod_name": "Wings",
       "confirmed": true
     },
     {
       "mod_id": "xptome",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "",
+      "mod_name": "Xp Tome",
       "confirmed": true
     },
     {
@@ -1621,7 +1614,7 @@
       "mod_id": "endercrop",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "",
+      "mod_name": "Ender Crop",
       "confirmed": true
     },
     {
@@ -1634,7 +1627,7 @@
       "mod_id": "merchants",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "Wandering Merchants",
+      "mod_name": "Merchants",
       "confirmed": true
     },
     {
@@ -1654,13 +1647,6 @@
       "type": "client_and_server_required",
       "reason": "",
       "mod_name": ""
-    },
-    {
-      "mod_id": "bgs",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "Midnighttigger's Better Grass",
-      "confirmed": true
     },
     {
       "mod_id": "somanyenchantments",
@@ -1683,8 +1669,8 @@
     },
     {
       "mod_id": "strayspawn",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "type": "client_optional_server_required",
+      "reason": "",
       "mod_name": "Stray Spawn",
       "confirmed": true
     },
@@ -1734,14 +1720,14 @@
       "mod_id": "morefurnaces",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "More Furnaces (Polymer)",
+      "mod_name": "More Furnaces",
       "confirmed": true
     },
     {
       "mod_id": "cxlibrary",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "Formations (Structure Library)",
+      "mod_name": "CXLibrary",
       "confirmed": true
     },
     {
@@ -1758,8 +1744,8 @@
     },
     {
       "mod_id": "mooshroomspawn",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
+      "type": "client_optional_server_required",
+      "reason": "",
       "mod_name": "Mooshroom Spawn",
       "confirmed": true
     },
@@ -1779,7 +1765,7 @@
       "mod_id": "enhancedarmaments",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "Enhanced Armaments Reload Beams",
+      "mod_name": "Enhanced Armaments",
       "confirmed": true
     },
     {
@@ -1883,8 +1869,8 @@
     },
     {
       "mod_id": "damagenumbers",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
+      "type": "client_only",
+      "reason": "",
       "mod_name": "Damage Numbers",
       "confirmed": true
     },
@@ -1926,16 +1912,16 @@
     },
     {
       "mod_id": "huskspawn",
-      "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "Just Spawn Me There",
+      "type": "client_optional_server_required",
+      "reason": "",
+      "mod_name": "Husk Spawn",
       "confirmed": true
     },
     {
       "mod_id": "sublime",
       "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "",
+      "reason": "",
+      "mod_name": "Sublime",
       "confirmed": true
     },
     {
@@ -1948,14 +1934,14 @@
       "mod_id": "qualitytools",
       "type": "client_and_server_required",
       "reason": "根据网上资料修正（重大差异）: client_only → client_and_server_required",
-      "mod_name": "STONEBORN - Quality Tools",
+      "mod_name": "Quality Tools",
       "confirmed": true
     },
     {
       "mod_id": "llibrary",
       "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "Formations (Structure Library)",
+      "reason": "",
+      "mod_name": "LLibrary",
       "confirmed": true
     },
     {
@@ -2022,15 +2008,15 @@
     {
       "mod_id": "atlas_lib",
       "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "",
+      "reason": "",
+      "mod_name": "Atlas Lib",
       "confirmed": true
     },
     {
       "mod_id": "boatdeletebegone",
       "type": "client_and_server_required",
-      "reason": "根据网上资料修正（重大差异）: server_only → client_and_server_required",
-      "mod_name": "BoatDeleteBegone",
+      "reason": "",
+      "mod_name": "Boat Delete Begone",
       "confirmed": true
     },
     {
@@ -3593,8 +3579,8 @@
     },
     {
       "mod_id": "jade",
-      "type": "client_only",
-      "reason": "根据网上资料修正（重大差异）: client_and_server_required → client_only",
+      "type": "client_optional_server_optional",
+      "reason": "",
       "mod_name": "Jade",
       "confirmed": true
     },

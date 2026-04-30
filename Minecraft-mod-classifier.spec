@@ -3,9 +3,9 @@
 
 a = Analysis(
     ['src\\python\\main.py'],
-    pathex=[],
+    pathex=['src/python'],
     binaries=[],
-    datas=[('config/mods_data.json', 'config')],
+    datas=[('config/mods_data.json', 'config'), ('config/mod_rules.json', 'config')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
