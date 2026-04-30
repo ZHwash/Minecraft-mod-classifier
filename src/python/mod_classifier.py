@@ -107,6 +107,10 @@ class ModClassifier:
             self.logger.info(f"检测到 {self.stats['auto_detected']} 个新Mod，保存配置...")
             self.config_manager.save_config()
         
+        # 在同步规则之前生成补丁（如果有变更）
+        if self.stats['auto_detected'] > 0:
+            self._generate_patch_before_sync()
+        
         # 将配置同步至规则数据库（总是执行，以更新reason字段）
         self._sync_new_mods_to_rules()
         
@@ -199,6 +203,24 @@ class ModClassifier:
         self.logger.info(f"自动检测新Mod: {self.stats['auto_detected']}")
         self.logger.info(f"{i18n.get('total_failed').format(self.stats['failed'])}")
         self.logger.info("=" * 60)
+    
+    def _generate_patch_before_sync(self):
+        """
+        在同步规则之前生成增量补丁
+        此时 mods_data.json 已更新，但 mod_rules.json 还未同步，可以检测到差异
+        """
+        from generate_patch import generate_incremental_patch
+        
+        self.logger.info("\n正在生成规则更新补丁...")
+        patch_file = generate_incremental_patch()
+        
+        if patch_file:
+            self.logger.info(f"✓ 增量补丁文件已生成: {patch_file}")
+            self.logger.info(f"   提交方式：")
+            self.logger.info(f"   1. 通过GitHub Issue提交补丁内容")
+            self.logger.info(f"   2. 维护者使用 apply_patch.py 自动合并")
+        else:
+            self.logger.info("规则数据库已是最新，无需生成补丁")
     
     def _sync_new_mods_to_rules(self):
         """

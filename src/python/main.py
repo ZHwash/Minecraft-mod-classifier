@@ -84,27 +84,6 @@ def main():
             else:
                 print("\n💡 提示: 如果配置了Git远程仓库，可以自动创建GitHub Issue报告新分类的Mod")
         
-        # 提示生成规则更新补丁（更简单的贡献方式）
-        if classifier.stats['auto_detected'] > 0 or True:  # 总是提示，因为可能有更新
-            print("\n" + "="*60)
-            print("🔄 规则数据库更新（推荐）")
-            print("="*60)
-            print("您可以帮助改进分类规则数据库！")
-            print("我们可以生成一个更新补丁文件，您只需将其提交到GitHub即可。")
-            print("无需任何技术知识，小白也能轻松贡献！\n")
-            
-            patch_choice = input("是否生成规则更新补丁文件? (y/n): ").strip().lower()
-            if patch_choice in ['y', 'yes', '是']:
-                from generate_patch import generate_incremental_patch
-                patch_file = generate_incremental_patch()
-                if patch_file:
-                    print(f"\n✅ 增量补丁文件已生成: {patch_file}")
-                    print(f"   提交方式：")
-                    print(f"   1. 通过GitHub Issue提交补丁内容")
-                    print(f"   2. 维护者使用 apply_patch.py 自动合并")
-            else:
-                print("\n已跳过补丁生成")
-        
     except Exception as e:
         logger.error(f"{i18n.get('error')}: {str(e)}", exc_info=True)
         print(f"\n[ERROR] {i18n.get('error')}: {str(e)}")

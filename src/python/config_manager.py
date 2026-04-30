@@ -8,6 +8,7 @@
 - mod_id: Mod的唯一标识符（必需）
 - mod_name: Mod名称（可选）
 - type: Mod类型（必需）
+- reason: 分类原因说明（可选，默认为空字符串）
 - 不再区分版本和加载器（运行位置通常不会改变）
 """
 
@@ -49,13 +50,14 @@ class ConfigManager:
             with open(self.config_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             
-            # 兼容旧版本配置，确保包含mod_name字段
+            # 兼容旧版本配置，确保包含mod_name和reason字段
             self.mods_data = []
             for mod in data:
                 simplified = {
                     'mod_id': mod.get('mod_id', ''),
                     'mod_name': mod.get('mod_name', ''),  # 新增字段，默认为空
-                    'type': mod.get('type', 'unknown')
+                    'type': mod.get('type', 'unknown'),
+                    'reason': mod.get('reason', '')  # 新增字段，默认为空
                 }
                 self.mods_data.append(simplified)
             
@@ -141,7 +143,8 @@ class ConfigManager:
         new_mod = {
             'mod_id': mod_id,
             'mod_name': mod_name,
-            'type': mod_type
+            'type': mod_type,
+            'reason': ''  # 初始化为空字符串，后续可填充
         }
         
         self.mods_data.append(new_mod)
@@ -166,6 +169,9 @@ class ConfigManager:
             target['type'] = mod_type
             if mod_name:
                 target['mod_name'] = mod_name
+            # 确保 reason 字段存在
+            if 'reason' not in target:
+                target['reason'] = ''
             self.logger.info(f"更新Mod配置: {mod_id} ({old_type} -> {mod_type})")
             return True
         
