@@ -132,22 +132,31 @@ class ModClassifier:
         mod_info = self.jar_parser.parse_jar(jar_path)
         
         if not mod_info:
-            self.logger.warning(f"无法解析 {filename}，跳过")
-            self.stats['failed'] += 1
-            return
-        
-        mod_id = mod_info.get('mod_id', '')
-        mod_name = mod_info.get('mod_name', '')
-        mod_type = mod_info.get('type', 'unknown')
-        
-        if not mod_id:
-            self.logger.warning(f"{filename} 中未找到modId，跳过")
-            self.stats['failed'] += 1
-            return
+            # 无法解析JAR，尝试从文件名推断或直接分到Unknown
+            self.logger.warning(f"无法解析 {filename}，尝试使用规则数据库或API")
+            # 使用空mod_id，让后续逻辑处理
+            mod_id = ''
+            mod_name = ''
+            mod_type = 'unknown'
+        else:
+            mod_id = mod_info.get('mod_id', '')
+            mod_name = mod_info.get('mod_name', '')
+            mod_type = mod_info.get('type', 'unknown')
+            
+            if not mod_id:
+                self.logger.warning(f"{filename} 中未找到modId，尝试使用规则数据库或API")
+                mod_type = 'unknown'
         
         self.logger.debug(f"Mod ID: {mod_id}, Mod Name: {mod_name}, 推断类型: {mod_type}")
         
-        # 2. 在配置中查找（仅基于mod_id）
+        # 2. 如果mod_id为空且类型为unknown，直接分到Unknown
+        if not mod_id and mod_type == 'unknown':
+            self.logger.info(f"[!] 无法识别的Mod，分类到: Unknown")
+            self._copy_to_output(jar_path, 'unknown')
+            self.stats['failed'] += 1
+            return
+        
+        # 3. 在配置中查找（仅基于mod_id）
         mod_config = self.config_manager.find_mod(mod_id)
         
         if mod_config:
@@ -155,7 +164,7 @@ class ModClassifier:
             mod_type = mod_config['type']
             self.logger.info(f"[OK] 在配置中找到: {mod_type}")
         else:
-            # 3. 检查 mod_rules.json 中是否有已确认的规则
+            # 4. 检查 mod_rules.json 中是否有已确认的规则
             from rule_manager import RuleManager
             rule_manager = RuleManager()
             if rule_manager.load_rules():
@@ -167,13 +176,26 @@ class ModClassifier:
                     # 添加到 mods_data.json 以便后续快速查询
                     self.config_manager.add_mod(mod_id, mod_type, mod_name)
                 else:
-                    # 4. 配置和规则中都不存在，使用解析结果中的类型
+                    # 5. 配置和规则中都不存在，使用解析结果中的类型
+                    # 如果类型是unknown，不保存到配置，直接分到Unknown
+                    if mod_type == 'unknown':
+                        self.logger.info(f"[!] 无法确定类型，分类到: Unknown")
+                        self._copy_to_output(jar_path, 'unknown')
+                        self.stats['failed'] += 1
+                        return
+                    
                     self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
                     # 添加到配置中（包含mod_id、mod_name和type）
                     if self.config_manager.add_mod(mod_id, mod_type, mod_name):
                         self.stats['auto_detected'] += 1
             else:
                 # 无法加载规则数据库，使用解析结果
+                if mod_type == 'unknown':
+                    self.logger.info(f"[!] 无法确定类型，分类到: Unknown")
+                    self._copy_to_output(jar_path, 'unknown')
+                    self.stats['failed'] += 1
+                    return
+                    
                 self.logger.info(f"[OK] 自动检测到类型: {mod_type}")
                 if self.config_manager.add_mod(mod_id, mod_type, mod_name):
                     self.stats['auto_detected'] += 1

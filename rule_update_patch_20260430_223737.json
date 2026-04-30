@@ -1,0 +1,1405 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-04-30T22:37:37.018536",
+  "description": "Minecraft Mod Classifier 规则数据库增量更新补丁",
+  "summary": {
+    "total_changes": 149,
+    "new_rules": 0,
+    "updated_rules": 149
+  },
+  "new_rules": [],
+  "updated_rules": [
+    {
+      "mod_id": "ftbchunks",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FTB Chunks"
+        }
+      }
+    },
+    {
+      "mod_id": "ftbteams",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FTB Teams"
+        }
+      }
+    },
+    {
+      "mod_id": "ftbquests",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FTB Quests"
+        }
+      }
+    },
+    {
+      "mod_id": "integrated_stronghold",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Integrated Stronghold"
+        }
+      }
+    },
+    {
+      "mod_id": "lambdynlights",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "LambDynamicLights"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: LambDynamicLights"
+        }
+      }
+    },
+    {
+      "mod_id": "betterendisland",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: YUNG's Better End Island"
+        }
+      }
+    },
+    {
+      "mod_id": "waystones",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Waystones"
+        }
+      }
+    },
+    {
+      "mod_id": "storagedrawers",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Storage Drawers"
+        }
+      }
+    },
+    {
+      "mod_id": "farmersdelight",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Farmer's Delight"
+        }
+      }
+    },
+    {
+      "mod_id": "frostfire_dragon",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Frostfire Dragon"
+        }
+      }
+    },
+    {
+      "mod_id": "another_furniture",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Another Furniture"
+        }
+      }
+    },
+    {
+      "mod_id": "dynamiccrosshair",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Dynamic Crosshair"
+        }
+      }
+    },
+    {
+      "mod_id": "luncheonmeatsdelight",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Luncheon Meat's Delight"
+        }
+      }
+    },
+    {
+      "mod_id": "idas",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Integrated Dungeons and Structures"
+        }
+      }
+    },
+    {
+      "mod_id": "dungeons_arise",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: When Dungeons Arise"
+        }
+      }
+    },
+    {
+      "mod_id": "aether",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: The Aether"
+        }
+      }
+    },
+    {
+      "mod_id": "skyvillages",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sky Villages"
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Quark"
+        }
+      }
+    },
+    {
+      "mod_id": "artifacts",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Artifacts"
+        }
+      }
+    },
+    {
+      "mod_id": "muhc",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "MaidUseHandCrank"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: MaidUseHandCrank"
+        }
+      }
+    },
+    {
+      "mod_id": "storagedelight",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Storage Delight"
+        }
+      }
+    },
+    {
+      "mod_id": "entity_model_features",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Entity Model Features"
+        }
+      }
+    },
+    {
+      "mod_id": "entity_texture_features",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Entity Texture Features"
+        }
+      }
+    },
+    {
+      "mod_id": "patchouli",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Patchouli"
+        }
+      }
+    },
+    {
+      "mod_id": "ae2",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Applied Energistics 2"
+        }
+      }
+    },
+    {
+      "mod_id": "exposure",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Exposure"
+        }
+      }
+    },
+    {
+      "mod_id": "placeholder-api",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Placeholder API"
+        }
+      }
+    },
+    {
+      "mod_id": "untitledduckmod",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Untitled Duck Mod"
+        }
+      }
+    },
+    {
+      "mod_id": "crystcursed_dragon",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Crystcursed Dragon"
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: The Twilight Forest"
+        }
+      }
+    },
+    {
+      "mod_id": "create_central_kitchen",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Central Kitchen"
+        }
+      }
+    },
+    {
+      "mod_id": "create_mechanical_spawner",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Mechanical spawner"
+        }
+      }
+    },
+    {
+      "mod_id": "create_mobile_packages",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Mobile Packages"
+        }
+      }
+    },
+    {
+      "mod_id": "createfastschematiccannon",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Fast Schematic Cannon"
+        }
+      }
+    },
+    {
+      "mod_id": "createfisheryindustry",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Fishery Industry"
+        }
+      }
+    },
+    {
+      "mod_id": "createadditionallogistics",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Additional Logistics"
+        }
+      }
+    },
+    {
+      "mod_id": "createsifter",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Sifter"
+        }
+      }
+    },
+    {
+      "mod_id": "create_currency_shops",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Currency Shops"
+        }
+      }
+    },
+    {
+      "mod_id": "create_cyber_goggles",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Cyber Goggles"
+        }
+      }
+    },
+    {
+      "mod_id": "kaleidoscope_cookery",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Kaleidoscope Cookery"
+        }
+      }
+    },
+    {
+      "mod_id": "botanytrees",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: BotanyTrees"
+        }
+      }
+    },
+    {
+      "mod_id": "botanypots",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: BotanyPots"
+        }
+      }
+    },
+    {
+      "mod_id": "modmenu",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Mod Menu"
+        }
+      }
+    },
+    {
+      "mod_id": "toms_storage",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Tom's Simple Storage Mod"
+        }
+      }
+    },
+    {
+      "mod_id": "immersive_melodies",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Immersive Melodies"
+        }
+      }
+    },
+    {
+      "mod_id": "immersive_aircraft",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Immersive Aircraft"
+        }
+      }
+    },
+    {
+      "mod_id": "immersive_paintings",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Immersive Paintings"
+        }
+      }
+    },
+    {
+      "mod_id": "smoothboot",
+      "changes": {
+        "type": {
+          "old": "client_optional_server_optional",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "cataclysm",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: L_Ender's Cataclysm 1.21.1"
+        }
+      }
+    },
+    {
+      "mod_id": "creeper_firework",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Creeper Firework"
+        }
+      }
+    },
+    {
+      "mod_id": "grindenchantments",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Grind Enchantments"
+        }
+      }
+    },
+    {
+      "mod_id": "voicechat",
+      "changes": {
+        "type": {
+          "old": "client_optional_server_required",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "sophisticatedstorage",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sophisticated Storage"
+        }
+      }
+    },
+    {
+      "mod_id": "sophisticatedcore",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sophisticated Core"
+        }
+      }
+    },
+    {
+      "mod_id": "sophisticatedbackpacks",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sophisticated Backpacks"
+        }
+      }
+    },
+    {
+      "mod_id": "netmusic",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Net Music Mod"
+        }
+      }
+    },
+    {
+      "mod_id": "wing_kirin",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Wing Kirin"
+        }
+      }
+    },
+    {
+      "mod_id": "naturescompass",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Nature's Compass"
+        }
+      }
+    },
+    {
+      "mod_id": "touhou_little_maid",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Touhou Little Maid"
+        }
+      }
+    },
+    {
+      "mod_id": "imblocker",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: IMBlocker"
+        }
+      }
+    },
+    {
+      "mod_id": "ftbultimine",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FTB Ultimine"
+        }
+      }
+    },
+    {
+      "mod_id": "farmersdelight_extended",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Farmer's Delight: Extended"
+        }
+      }
+    },
+    {
+      "mod_id": "sodium_extra",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sodium Extra"
+        }
+      }
+    },
+    {
+      "mod_id": "supplementaries",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Supplementaries"
+        }
+      }
+    },
+    {
+      "mod_id": "enchdesc",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "EnchantmentDescriptions"
+        },
+        "type": {
+          "old": "client_only",
+          "new": "client_and_server_required"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: EnchantmentDescriptions"
+        }
+      }
+    },
+    {
+      "mod_id": "prefab",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Prefab"
+        }
+      }
+    },
+    {
+      "mod_id": "sliceanddice",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Slice & Dice"
+        }
+      }
+    },
+    {
+      "mod_id": "automobility",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Automobility"
+        }
+      }
+    },
+    {
+      "mod_id": "brewinandchewin",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Brewin' And Chewin'"
+        }
+      }
+    },
+    {
+      "mod_id": "dragonsurvival",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Dragon Survival"
+        }
+      }
+    },
+    {
+      "mod_id": "amendments",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Amendments"
+        }
+      }
+    },
+    {
+      "mod_id": "architectury",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Architectury"
+        }
+      }
+    },
+    {
+      "mod_id": "badpackets",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Bad Packets"
+        }
+      }
+    },
+    {
+      "mod_id": "balm",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Balm"
+        }
+      }
+    },
+    {
+      "mod_id": "bbs",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: BBS CML Edition"
+        }
+      }
+    },
+    {
+      "mod_id": "bits_n_bobs",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Bits 'n' Bobs"
+        }
+      }
+    },
+    {
+      "mod_id": "bookshelf",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Bookshelf"
+        }
+      }
+    },
+    {
+      "mod_id": "clientsort",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: ClientSort"
+        }
+      }
+    },
+    {
+      "mod_id": "cloth_config",
+      "changes": {
+        "type": {
+          "old": "client_optional_server_optional",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "cmpackagecouriers",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create More: Package Couriers"
+        }
+      }
+    },
+    {
+      "mod_id": "colorwheel",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Colorwheel"
+        }
+      }
+    },
+    {
+      "mod_id": "colorwheel_patcher",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Colorwheel Patcher"
+        }
+      }
+    },
+    {
+      "mod_id": "controlling",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Controlling"
+        }
+      }
+    },
+    {
+      "mod_id": "create",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create"
+        }
+      }
+    },
+    {
+      "mod_id": "aeronautics_bundled",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "Create Aeronautics"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Aeronautics"
+        }
+      }
+    },
+    {
+      "mod_id": "create_dragons_plus",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Dragons Plus"
+        }
+      }
+    },
+    {
+      "mod_id": "create_enchantment_industry",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Enchantment Industry"
+        }
+      }
+    },
+    {
+      "mod_id": "createshufflefilter",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Shuffle Filter"
+        }
+      }
+    },
+    {
+      "mod_id": "create_sa",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "Create Stuff & Additions"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Stuff & Additions"
+        }
+      }
+    },
+    {
+      "mod_id": "create_bic_bit",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "Create: Bitterballen"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Bitterballen"
+        }
+      }
+    },
+    {
+      "mod_id": "create_connected",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Connected"
+        }
+      }
+    },
+    {
+      "mod_id": "create_easy_structures",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Easy Structures"
+        }
+      }
+    },
+    {
+      "mod_id": "create_ltab",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "Create Let The Adventure Begin"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Let The Adventure Begin"
+        }
+      }
+    },
+    {
+      "mod_id": "create_structures_arise",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create: Structures Arise"
+        }
+      }
+    },
+    {
+      "mod_id": "createaddition",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Crafts & Additions"
+        }
+      }
+    },
+    {
+      "mod_id": "createbetterfps",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: CreateBetterFps"
+        }
+      }
+    },
+    {
+      "mod_id": "createliquidfuel",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Liquid Fuel"
+        }
+      }
+    },
+    {
+      "mod_id": "createoreexcavation",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Create Ore Excavation"
+        }
+      }
+    },
+    {
+      "mod_id": "creeperheal",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: CreeperHeal"
+        }
+      }
+    },
+    {
+      "mod_id": "curios",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Curios API"
+        }
+      }
+    },
+    {
+      "mod_id": "distanthorizons",
+      "changes": {
+        "type": {
+          "old": "client_required_server_optional",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "exposure_polaroid",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Exposure Polaroid"
+        }
+      }
+    },
+    {
+      "mod_id": "fastleafdecay",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FastLeafDecay"
+        }
+      }
+    },
+    {
+      "mod_id": "ferritecore",
+      "changes": {
+        "mod_name": {
+          "old": "FerriteCore",
+          "new": "Ferrite Core"
+        },
+        "type": {
+          "old": "client_optional_server_optional",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "flashback",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Flashback"
+        }
+      }
+    },
+    {
+      "mod_id": "flatbedrock",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Flat Bedrock"
+        }
+      }
+    },
+    {
+      "mod_id": "fabric_api",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Forgified Fabric API"
+        }
+      }
+    },
+    {
+      "mod_id": "freecam",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Freecam"
+        }
+      }
+    },
+    {
+      "mod_id": "ftblibrary",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: FTB Library"
+        }
+      }
+    },
+    {
+      "mod_id": "fzzy_config",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Fzzy Config"
+        }
+      }
+    },
+    {
+      "mod_id": "geckolib",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: GeckoLib 4"
+        }
+      }
+    },
+    {
+      "mod_id": "guideme",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: GuideME"
+        }
+      }
+    },
+    {
+      "mod_id": "hold-my-items",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Hold My Items"
+        }
+      }
+    },
+    {
+      "mod_id": "immediatelyfast",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: ImmediatelyFast"
+        }
+      }
+    },
+    {
+      "mod_id": "industrial_platform",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Industrial Platform"
+        }
+      }
+    },
+    {
+      "mod_id": "integrated_api",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Integrated API"
+        }
+      }
+    },
+    {
+      "mod_id": "integrated_villages",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Integrated Villages"
+        }
+      }
+    },
+    {
+      "mod_id": "irisflw",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Iris Flywheel Compat"
+        }
+      }
+    },
+    {
+      "mod_id": "iris",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Iris"
+        }
+      }
+    },
+    {
+      "mod_id": "jadeaddons",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Jade Addons"
+        }
+      }
+    },
+    {
+      "mod_id": "jecharacters",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Just Enough Characters"
+        }
+      }
+    },
+    {
+      "mod_id": "mr_katters_structures",
+      "changes": {
+        "mod_name": {
+          "old": "",
+          "new": "Katters Structures"
+        },
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Katters Structures"
+        }
+      }
+    },
+    {
+      "mod_id": "lionfishapi",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: lionfishapi"
+        }
+      }
+    },
+    {
+      "mod_id": "lithostitched",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Lithostitched"
+        }
+      }
+    },
+    {
+      "mod_id": "mechanicals",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Mechanicals Lib"
+        }
+      }
+    },
+    {
+      "mod_id": "meme_mobs",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Meme Mobs"
+        }
+      }
+    },
+    {
+      "mod_id": "modernfix",
+      "changes": {
+        "type": {
+          "old": "client_optional_server_optional",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "moonlight",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Moonlight Lib"
+        }
+      }
+    },
+    {
+      "mod_id": "mousetweaks",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Mouse Tweaks"
+        }
+      }
+    },
+    {
+      "mod_id": "noisium",
+      "changes": {
+        "type": {
+          "old": "client_optional_server_required",
+          "new": "client_and_server_required"
+        }
+      }
+    },
+    {
+      "mod_id": "owo",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: oωo"
+        }
+      }
+    },
+    {
+      "mod_id": "packetfixer",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Packet Fixer"
+        }
+      }
+    },
+    {
+      "mod_id": "pointblank",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Point Blank"
+        }
+      }
+    },
+    {
+      "mod_id": "prickle",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: PrickleMC"
+        }
+      }
+    },
+    {
+      "mod_id": "replaymod",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Replay Mod"
+        }
+      }
+    },
+    {
+      "mod_id": "rolling_gate",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: RollingGate"
+        }
+      }
+    },
+    {
+      "mod_id": "sable",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sable"
+        }
+      }
+    },
+    {
+      "mod_id": "silicone_dolls",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: SiliconeDolls"
+        }
+      }
+    },
+    {
+      "mod_id": "simplebackups",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Simple Backups"
+        }
+      }
+    },
+    {
+      "mod_id": "smsn",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Save My Shit Network"
+        }
+      }
+    },
+    {
+      "mod_id": "sodium",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Sodium"
+        }
+      }
+    },
+    {
+      "mod_id": "someassemblyrequired",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Some Assembly Required"
+        }
+      }
+    },
+    {
+      "mod_id": "tectonic",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Tectonic"
+        }
+      }
+    },
+    {
+      "mod_id": "threadtweak",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: ThreadTweak"
+        }
+      }
+    },
+    {
+      "mod_id": "watermedia",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: WaterMedia"
+        }
+      }
+    },
+    {
+      "mod_id": "wwoo",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: William Wythers' Overhauled Overworld"
+        }
+      }
+    },
+    {
+      "mod_id": "zeta",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Zeta"
+        }
+      }
+    },
+    {
+      "mod_id": "solcarrot",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Spice of Life: Carrot Edition"
+        }
+      }
+    },
+    {
+      "mod_id": "displaydelight",
+      "changes": {
+        "reason": {
+          "old": "",
+          "new": "通过JAR配置自动识别: Display Delight"
+        }
+      }
+    }
+  ],
+  "merge_instructions": [
+    "如何合并此补丁：",
+    "1. 将补丁文件放到项目根目录",
+    "2. 运行: python src/python/apply_patch.py <补丁文件名>",
+    "3. 检查合并结果",
+    "4. 提交更新后的 config/mod_rules.json",
+    "",
+    "或者手动合并：",
+    "- 新增规则：添加到 config/mod_rules.json 的 rules 数组末尾",
+    "- 更新规则：找到对应的 mod_id，应用 changes 中的变更"
+  ]
+}
