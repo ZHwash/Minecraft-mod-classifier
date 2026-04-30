@@ -87,9 +87,10 @@
     },
     {
       "mod_id": "krypton",
-      "type": "server_only",
+      "type": "client_optional_server_optional",
       "reason": "",
-      "mod_name": "KryptonFoxified"
+      "mod_name": "Krypton",
+      "confirmed": true
     },
     {
       "mod_id": "jei",
