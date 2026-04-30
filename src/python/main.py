@@ -62,8 +62,18 @@ def main():
                 
                 choice = input("是否创建GitHub Issue? (y/n): ").strip().lower()
                 if choice in ['y', 'yes', '是']:
-                    # 获取新分类的Mod列表
-                    new_mods = classifier.config_manager.mods_data[-classifier.stats['auto_detected']:]
+                    # 获取新分类的Mod列表，并过滤掉已在规则数据库中的
+                    from rule_manager import RuleManager
+                    rule_manager = RuleManager()
+                    rule_manager.load_rules()
+                    
+                    new_mods = []
+                    for mod in classifier.config_manager.mods_data[-classifier.stats['auto_detected']:]:
+                        mod_id = mod.get('mod_id', '')
+                        # 只包含不在规则数据库中的Mod
+                        if not rule_manager.find_rule(mod_id):
+                            new_mods.append(mod)
+                    
                     if new_mods:
                         title, body = github.generate_issue_content(new_mods)
                         success = github.create_github_issue(
@@ -78,7 +88,7 @@ def main():
                             if save_choice in ['y', 'yes', '是']:
                                 github.save_issue_to_file(title, body)
                     else:
-                        print("\n没有新分类的Mod，无需创建Issue")
+                        print("\n所有新分类的Mod都已存在于规则数据库中，无需创建Issue")
                 else:
                     print("\n已跳过GitHub Issue创建")
             else:
