@@ -95,11 +95,13 @@ def main():
             
             patch_choice = input("是否生成规则更新补丁文件? (y/n): ").strip().lower()
             if patch_choice in ['y', 'yes', '是']:
-                from generate_update_patch import generate_update_patch
-                patch_file = generate_update_patch()
+                from generate_patch import generate_incremental_patch
+                patch_file = generate_incremental_patch()
                 if patch_file:
-                    print(f"\n✅ 补丁文件已生成: {patch_file}")
-                    print(f"   请打开此文件查看提交说明")
+                    print(f"\n✅ 增量补丁文件已生成: {patch_file}")
+                    print(f"   提交方式：")
+                    print(f"   1. 通过GitHub Issue提交补丁内容")
+                    print(f"   2. 维护者使用 apply_patch.py 自动合并")
             else:
                 print("\n已跳过补丁生成")
         

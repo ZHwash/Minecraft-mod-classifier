@@ -3,97 +3,97 @@
     {
       "mod_id": "lithostitched",
       "type": "server_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Lithostitched",
       "mod_name": "Lithostitched"
     },
     {
       "mod_id": "tectonic",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Tectonic",
       "mod_name": "Tectonic"
     },
     {
       "mod_id": "jadeaddons",
       "type": "client_optional_server_optional",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Jade Addons",
       "mod_name": "Jade Addons"
     },
     {
       "mod_id": "smsn",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Save My Shit Network",
       "mod_name": "Save My Shit Network"
     },
     {
       "mod_id": "dragonsurvival",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Dragon Survival",
       "mod_name": "Dragon Survival"
     },
     {
       "mod_id": "integrated_api",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Integrated API",
       "mod_name": "Integrated API"
     },
     {
       "mod_id": "integrated_stronghold",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Integrated Stronghold",
       "mod_name": "Integrated Stronghold"
     },
     {
       "mod_id": "mechanicals",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Mechanicals Lib",
       "mod_name": "Mechanicals Lib"
     },
     {
       "mod_id": "sable",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Sable",
       "mod_name": "Sable"
     },
     {
       "mod_id": "idas",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Integrated Dungeons and Structures",
       "mod_name": "Integrated Dungeons and Structures"
     },
     {
       "mod_id": "sophisticatedstorage",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Sophisticated Storage",
       "mod_name": "Sophisticated Storage"
     },
     {
       "mod_id": "createbetterfps",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: CreateBetterFps",
       "mod_name": "CreateBetterFps"
     },
     {
       "mod_id": "dynamiccrosshair",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Dynamic Crosshair",
       "mod_name": "Dynamic Crosshair"
     },
     {
       "mod_id": "spark",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: spark",
       "mod_name": "spark"
     },
     {
       "mod_id": "krypton",
       "type": "server_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: KryptonFoxified",
       "mod_name": "KryptonFoxified"
     },
     {
       "mod_id": "jei",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Just Enough Items",
       "mod_name": "Just Enough Items"
     },
     {
@@ -207,7 +207,7 @@
     {
       "mod_id": "distanthorizons",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Distant Horizons",
       "mod_name": "Distant Horizons"
     },
     {
@@ -249,7 +249,7 @@
     {
       "mod_id": "cloth_config",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Cloth Config v15 API",
       "mod_name": "Cloth Config v15 API"
     },
     {
@@ -393,7 +393,7 @@
     {
       "mod_id": "modernfix",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: ModernFix",
       "mod_name": "ModernFix"
     },
     {
@@ -423,7 +423,7 @@
     {
       "mod_id": "ferritecore",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Ferrite Core",
       "mod_name": "Ferrite Core"
     },
     {
@@ -447,7 +447,7 @@
     {
       "mod_id": "smoothboot",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Smooth Boot",
       "mod_name": "Smooth Boot"
     },
     {
@@ -471,7 +471,7 @@
     {
       "mod_id": "noisium",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Noisium",
       "mod_name": "Noisium"
     },
     {
@@ -501,13 +501,13 @@
     {
       "mod_id": "yungsapi",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: YUNG's API",
       "mod_name": "YUNG's API"
     },
     {
       "mod_id": "yungsbridges",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: YUNG's Bridges",
       "mod_name": "YUNG's Bridges"
     },
     {
@@ -753,13 +753,13 @@
     {
       "mod_id": "notenoughanimations",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: NotEnoughAnimations",
       "mod_name": "NotEnoughAnimations"
     },
     {
       "mod_id": "searchables",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Searchables",
       "mod_name": "Searchables"
     },
     {
@@ -825,7 +825,7 @@
     {
       "mod_id": "mafglib",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: MaFgLib",
       "mod_name": "MaFgLib"
     },
     {
@@ -927,7 +927,7 @@
     {
       "mod_id": "gnetum",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Gnetum",
       "mod_name": "Gnetum"
     },
     {
@@ -1011,7 +1011,7 @@
     {
       "mod_id": "tweakerge",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Tweakerge",
       "mod_name": "Tweakerge"
     },
     {
@@ -1023,7 +1023,7 @@
     {
       "mod_id": "skinlayers3d",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: 3d-Skin-Layers",
       "mod_name": "3d-Skin-Layers"
     },
     {
@@ -1053,19 +1053,19 @@
     {
       "mod_id": "imblocker",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: IMBlocker",
       "mod_name": "IMBlocker"
     },
     {
       "mod_id": "jecharacters",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Just Enough Characters",
       "mod_name": "Just Enough Characters"
     },
     {
       "mod_id": "flerovium",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Flerovium",
       "mod_name": "Flerovium"
     },
     {
@@ -1155,7 +1155,7 @@
     {
       "mod_id": "freecam",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Freecam",
       "mod_name": "Freecam"
     },
     {
@@ -1173,13 +1173,13 @@
     {
       "mod_id": "entity_model_features",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Entity Model Features",
       "mod_name": "Entity Model Features"
     },
     {
       "mod_id": "entity_texture_features",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Entity Texture Features",
       "mod_name": "Entity Texture Features"
     },
     {
@@ -1227,7 +1227,7 @@
     {
       "mod_id": "travelerstitles",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Traveler's Titles",
       "mod_name": "Traveler's Titles"
     },
     {
@@ -1317,7 +1317,7 @@
     {
       "mod_id": "ftbchunks",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: FTB Chunks",
       "mod_name": "FTB Chunks"
     },
     {
@@ -1989,7 +1989,7 @@
     {
       "mod_id": "ftbquests",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: FTB Quests",
       "mod_name": "FTB Quests"
     },
     {
@@ -2181,7 +2181,7 @@
     {
       "mod_id": "lionfishapi",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: lionfishapi",
       "mod_name": "lionfishapi"
     },
     {
@@ -2205,7 +2205,7 @@
     {
       "mod_id": "immersive_aircraft",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Immersive Aircraft",
       "mod_name": "Immersive Aircraft"
     },
     {
@@ -2553,7 +2553,7 @@
     {
       "mod_id": "toms_storage",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Tom's Simple Storage Mod",
       "mod_name": "Tom's Simple Storage Mod"
     },
     {
@@ -2619,7 +2619,7 @@
     {
       "mod_id": "solcarrot",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Spice of Life: Carrot Edition",
       "mod_name": "Spice of Life: Carrot Edition"
     },
     {
@@ -2727,7 +2727,7 @@
     {
       "mod_id": "prefab",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Prefab",
       "mod_name": "Prefab"
     },
     {
@@ -2757,7 +2757,7 @@
     {
       "mod_id": "patchouli",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Patchouli",
       "mod_name": "Patchouli"
     },
     {
@@ -2793,13 +2793,13 @@
     {
       "mod_id": "naturescompass",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Nature's Compass",
       "mod_name": "Nature's Compass"
     },
     {
       "mod_id": "moonlight",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Moonlight Lib",
       "mod_name": "Moonlight Lib"
     },
     {
@@ -2895,7 +2895,7 @@
     {
       "mod_id": "fzzy_config",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Fzzy Config",
       "mod_name": "Fzzy Config"
     },
     {
@@ -2919,7 +2919,7 @@
     {
       "mod_id": "exposure",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Exposure",
       "mod_name": "Exposure"
     },
     {
@@ -3105,7 +3105,7 @@
     {
       "mod_id": "artifacts",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Artifacts",
       "mod_name": "Artifacts"
     },
     {
@@ -3285,7 +3285,7 @@
     {
       "mod_id": "sophisticatedcore",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Sophisticated Core",
       "mod_name": "Sophisticated Core"
     },
     {
@@ -3333,7 +3333,7 @@
     {
       "mod_id": "packetfixer",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Packet Fixer",
       "mod_name": "Packet Fixer"
     },
     {
@@ -3357,7 +3357,7 @@
     {
       "mod_id": "balm",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Balm",
       "mod_name": "Balm"
     },
     {
@@ -3381,19 +3381,19 @@
     {
       "mod_id": "create",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Create",
       "mod_name": "Create"
     },
     {
       "mod_id": "appleskin",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: AppleSkin",
       "mod_name": "AppleSkin"
     },
     {
       "mod_id": "voicechat",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Simple Voice Chat",
       "mod_name": "Simple Voice Chat"
     },
     {
@@ -3423,19 +3423,19 @@
     {
       "mod_id": "sodium",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Sodium",
       "mod_name": "Sodium"
     },
     {
       "mod_id": "iris",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Iris",
       "mod_name": "Iris"
     },
     {
       "mod_id": "lithium",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Lithium",
       "mod_name": "Lithium"
     },
     {
@@ -3471,7 +3471,7 @@
     {
       "mod_id": "jade",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Jade",
       "mod_name": "Jade"
     },
     {
@@ -3525,7 +3525,7 @@
     {
       "mod_id": "ae2",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Applied Energistics 2",
       "mod_name": "Applied Energistics 2"
     },
     {
@@ -3561,13 +3561,13 @@
     {
       "mod_id": "twilightforest",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: The Twilight Forest",
       "mod_name": "The Twilight Forest"
     },
     {
       "mod_id": "aether",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: The Aether",
       "mod_name": "The Aether"
     },
     {
@@ -3633,7 +3633,7 @@
     {
       "mod_id": "storagedrawers",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Storage Drawers",
       "mod_name": "Storage Drawers"
     },
     {
@@ -3699,7 +3699,7 @@
     {
       "mod_id": "curios",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Curios API",
       "mod_name": "Curios API"
     },
     {
@@ -3771,13 +3771,13 @@
     {
       "mod_id": "mousetweaks",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Mouse Tweaks",
       "mod_name": "Mouse Tweaks"
     },
     {
       "mod_id": "controlling",
       "type": "client_only",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Controlling",
       "mod_name": "Controlling"
     },
     {
@@ -3819,13 +3819,13 @@
     {
       "mod_id": "xaerominimap",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Xaero's Minimap",
       "mod_name": "Xaero's Minimap"
     },
     {
       "mod_id": "xaeroworldmap",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Xaero's World Map",
       "mod_name": "Xaero's World Map"
     },
     {
@@ -3945,7 +3945,7 @@
     {
       "mod_id": "sophisticatedbackpacks",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Sophisticated Backpacks",
       "mod_name": "Sophisticated Backpacks"
     },
     {
@@ -3957,7 +3957,7 @@
     {
       "mod_id": "waystones",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Waystones",
       "mod_name": "Waystones"
     },
     {
@@ -3969,7 +3969,7 @@
     {
       "mod_id": "fastleafdecay",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: FastLeafDecay",
       "mod_name": "FastLeafDecay"
     },
     {
@@ -3999,7 +3999,7 @@
     {
       "mod_id": "quark",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Quark",
       "mod_name": "Quark"
     },
     {
@@ -4011,7 +4011,7 @@
     {
       "mod_id": "supplementaries",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Supplementaries",
       "mod_name": "Supplementaries"
     },
     {
@@ -4041,13 +4041,13 @@
     {
       "mod_id": "farmersdelight",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Farmer's Delight",
       "mod_name": "Farmer's Delight"
     },
     {
       "mod_id": "createaddition",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Create Crafts & Additions",
       "mod_name": "Create Crafts & Additions"
     },
     {
@@ -4209,7 +4209,7 @@
     {
       "mod_id": "bookshelf",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Bookshelf",
       "mod_name": "Bookshelf"
     },
     {
@@ -4221,20 +4221,20 @@
     {
       "mod_id": "geckolib",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: GeckoLib 4",
       "mod_name": "GeckoLib 4"
     },
     {
       "mod_id": "architectury",
       "type": "client_and_server_required",
-      "reason": "",
+      "reason": "通过JAR配置自动识别: Architectury",
       "mod_name": "Architectury"
     },
     {
       "mod_id": "fabric_api",
       "type": "client_and_server_required",
-      "reason": "",
-      "mod_name": "Project Red Fabrication"
+      "reason": "通过JAR配置自动识别: Forgified Fabric API",
+      "mod_name": "Forgified Fabric API"
     },
     {
       "mod_id": "forge",
@@ -4258,535 +4258,535 @@
       "mod_id": "amendments",
       "mod_name": "Amendments",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Amendments"
     },
     {
       "mod_id": "badpackets",
       "mod_name": "Bad Packets",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Bad Packets"
     },
     {
       "mod_id": "bits_n_bobs",
       "mod_name": "Create Bits 'n' Bobs",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Bits 'n' Bobs"
     },
     {
       "mod_id": "clientsort",
       "mod_name": "ClientSort",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: ClientSort"
     },
     {
       "mod_id": "cmpackagecouriers",
       "mod_name": "Create More: Package Couriers",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create More: Package Couriers"
     },
     {
       "mod_id": "aeronautics_bundled",
       "mod_name": "Create Aeronautics",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Aeronautics"
     },
     {
       "mod_id": "create_enchantment_industry",
       "mod_name": "Create: Enchantment Industry",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Enchantment Industry"
     },
     {
       "mod_id": "createshufflefilter",
       "mod_name": "Create Shuffle Filter",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Shuffle Filter"
     },
     {
       "mod_id": "create_sa",
       "mod_name": "Create Stuff & Additions",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Stuff & Additions"
     },
     {
       "mod_id": "create_dragons_plus",
       "mod_name": "Create: Dragons Plus",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Dragons Plus"
     },
     {
       "mod_id": "createliquidfuel",
       "mod_name": "Create Liquid Fuel",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Liquid Fuel"
     },
     {
       "mod_id": "createoreexcavation",
       "mod_name": "Create Ore Excavation",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Ore Excavation"
     },
     {
       "mod_id": "create_bic_bit",
       "mod_name": "Create: Bitterballen",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Bitterballen"
     },
     {
       "mod_id": "create_connected",
       "mod_name": "Create: Connected",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Connected"
     },
     {
       "mod_id": "create_easy_structures",
       "mod_name": "Create: Easy Structures",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Easy Structures"
     },
     {
       "mod_id": "create_ltab",
       "mod_name": "Create Let The Adventure Begin",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Let The Adventure Begin"
     },
     {
       "mod_id": "create_structures_arise",
       "mod_name": "Create: Structures Arise",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Structures Arise"
     },
     {
       "mod_id": "creeperheal",
       "mod_name": "CreeperHeal",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: CreeperHeal"
     },
     {
       "mod_id": "exposure_polaroid",
       "mod_name": "Exposure Polaroid",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Exposure Polaroid"
     },
     {
       "mod_id": "flatbedrock",
       "mod_name": "Flat Bedrock",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Flat Bedrock"
     },
     {
       "mod_id": "ftblibrary",
       "mod_name": "FTB Library",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: FTB Library"
     },
     {
       "mod_id": "gpu_tape",
       "mod_name": "GPUTape",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: GPUTape"
     },
     {
       "mod_id": "guideme",
       "mod_name": "GuideME",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: GuideME"
     },
     {
       "mod_id": "immediatelyfast",
       "mod_name": "ImmediatelyFast",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: ImmediatelyFast"
     },
     {
       "mod_id": "industrial_platform",
       "mod_name": "Industrial Platform",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Industrial Platform"
     },
     {
       "mod_id": "integrated_villages",
       "mod_name": "Integrated Villages",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Integrated Villages"
     },
     {
       "mod_id": "irisflw",
       "mod_name": "Iris Flywheel Compat",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Iris Flywheel Compat"
     },
     {
       "mod_id": "ixeris_dummy",
       "mod_name": "Ixeris",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Ixeris"
     },
     {
       "mod_id": "mr_katters_structures",
       "mod_name": "Katters Structures",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Katters Structures"
     },
     {
       "mod_id": "meme_mobs",
       "mod_name": "Meme Mobs",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Meme Mobs"
     },
     {
       "mod_id": "owo",
       "mod_name": "oωo",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: oωo"
     },
     {
       "mod_id": "pointblank",
       "mod_name": "Point Blank",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Point Blank"
     },
     {
       "mod_id": "prickle",
       "mod_name": "PrickleMC",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: PrickleMC"
     },
     {
       "mod_id": "rolling_gate",
       "mod_name": "RollingGate",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: RollingGate"
     },
     {
       "mod_id": "silicone_dolls",
       "mod_name": "SiliconeDolls",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: SiliconeDolls"
     },
     {
       "mod_id": "someassemblyrequired",
       "mod_name": "Some Assembly Required",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Some Assembly Required"
     },
     {
       "mod_id": "threadtweak",
       "mod_name": "ThreadTweak",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: ThreadTweak"
     },
     {
       "mod_id": "wwoo",
       "mod_name": "William Wythers' Overhauled Overworld",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: William Wythers' Overhauled Overworld"
     },
     {
       "mod_id": "zeta",
       "mod_name": "Zeta",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Zeta"
     },
     {
       "mod_id": "ftbteams",
       "mod_name": "FTB Teams",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: FTB Teams"
     },
     {
       "mod_id": "betterendisland",
       "mod_name": "YUNG's Better End Island",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: YUNG's Better End Island"
     },
     {
       "mod_id": "frostfire_dragon",
       "mod_name": "Frostfire Dragon",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Frostfire Dragon"
     },
     {
       "mod_id": "luncheonmeatsdelight",
       "mod_name": "Luncheon Meat's Delight",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Luncheon Meat's Delight"
     },
     {
       "mod_id": "dungeons_arise",
       "mod_name": "When Dungeons Arise",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: When Dungeons Arise"
     },
     {
       "mod_id": "skyvillages",
       "mod_name": "Sky Villages",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Sky Villages"
     },
     {
       "mod_id": "muhc",
       "mod_name": "MaidUseHandCrank",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: MaidUseHandCrank"
     },
     {
       "mod_id": "untitledduckmod",
       "mod_name": "Untitled Duck Mod",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Untitled Duck Mod"
     },
     {
       "mod_id": "crystcursed_dragon",
       "mod_name": "Crystcursed Dragon",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Crystcursed Dragon"
     },
     {
       "mod_id": "create_central_kitchen",
       "mod_name": "Create: Central Kitchen",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Central Kitchen"
     },
     {
       "mod_id": "create_mechanical_spawner",
       "mod_name": "Create: Mechanical spawner",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Mechanical spawner"
     },
     {
       "mod_id": "create_mobile_packages",
       "mod_name": "Create: Mobile Packages",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Mobile Packages"
     },
     {
       "mod_id": "createfastschematiccannon",
       "mod_name": "Create: Fast Schematic Cannon",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Fast Schematic Cannon"
     },
     {
       "mod_id": "createfisheryindustry",
       "mod_name": "Create: Fishery Industry",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Fishery Industry"
     },
     {
       "mod_id": "create_currency_shops",
       "mod_name": "Create: Currency Shops",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Currency Shops"
     },
     {
       "mod_id": "create_cyber_goggles",
       "mod_name": "Create: Cyber Goggles",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Cyber Goggles"
     },
     {
       "mod_id": "kaleidoscope_cookery",
       "mod_name": "Kaleidoscope Cookery",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Kaleidoscope Cookery"
     },
     {
       "mod_id": "botanytrees",
       "mod_name": "BotanyTrees",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: BotanyTrees"
     },
     {
       "mod_id": "botanypots",
       "mod_name": "BotanyPots",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: BotanyPots"
     },
     {
       "mod_id": "cataclysm",
       "mod_name": "L_Ender's Cataclysm 1.21.1",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: L_Ender's Cataclysm 1.21.1"
     },
     {
       "mod_id": "creeper_firework",
       "mod_name": "Creeper Firework",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Creeper Firework"
     },
     {
       "mod_id": "grindenchantments",
       "mod_name": "Grind Enchantments",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Grind Enchantments"
     },
     {
       "mod_id": "netmusic",
       "mod_name": "Net Music Mod",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Net Music Mod"
     },
     {
       "mod_id": "wing_kirin",
       "mod_name": "Wing Kirin",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Wing Kirin"
     },
     {
       "mod_id": "touhou_little_maid",
       "mod_name": "Touhou Little Maid",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Touhou Little Maid"
     },
     {
       "mod_id": "ftbultimine",
       "mod_name": "FTB Ultimine",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: FTB Ultimine"
     },
     {
       "mod_id": "farmersdelight_extended",
       "mod_name": "Farmer's Delight: Extended",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Farmer's Delight: Extended"
     },
     {
       "mod_id": "sodium_extra",
       "mod_name": "Sodium Extra",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Sodium Extra"
     },
     {
       "mod_id": "enchdesc",
       "mod_name": "EnchantmentDescriptions",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: EnchantmentDescriptions"
     },
     {
       "mod_id": "automobility",
       "mod_name": "Automobility",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Automobility"
     },
     {
       "mod_id": "brewinandchewin",
       "mod_name": "Brewin' And Chewin'",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Brewin' And Chewin'"
     },
     {
       "mod_id": "lambdynlights",
       "mod_name": "LambDynamicLights",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: LambDynamicLights"
     },
     {
       "mod_id": "another_furniture",
       "mod_name": "Another Furniture",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Another Furniture"
     },
     {
       "mod_id": "storagedelight",
       "mod_name": "Storage Delight",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Storage Delight"
     },
     {
       "mod_id": "placeholder-api",
       "mod_name": "Placeholder API",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Placeholder API"
     },
     {
       "mod_id": "createadditionallogistics",
       "mod_name": "Create: Additional Logistics",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create: Additional Logistics"
     },
     {
       "mod_id": "createsifter",
       "mod_name": "Create Sifter",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Sifter"
     },
     {
       "mod_id": "modmenu",
       "mod_name": "Mod Menu",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Mod Menu"
     },
     {
       "mod_id": "immersive_melodies",
       "mod_name": "Immersive Melodies",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Immersive Melodies"
     },
     {
       "mod_id": "immersive_paintings",
       "mod_name": "Immersive Paintings",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Immersive Paintings"
     },
     {
       "mod_id": "sliceanddice",
       "mod_name": "Create Slice & Dice",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Create Slice & Dice"
     },
     {
       "mod_id": "bbs",
       "mod_name": "BBS CML Edition",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: BBS CML Edition"
     },
     {
       "mod_id": "colorwheel",
       "mod_name": "Colorwheel",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Colorwheel"
     },
     {
       "mod_id": "colorwheel_patcher",
       "mod_name": "Colorwheel Patcher",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Colorwheel Patcher"
     },
     {
       "mod_id": "flashback",
       "mod_name": "Flashback",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Flashback"
     },
     {
       "mod_id": "hold-my-items",
       "mod_name": "Hold My Items",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Hold My Items"
     },
     {
       "mod_id": "replaymod",
       "mod_name": "Replay Mod",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Replay Mod"
     },
     {
       "mod_id": "simplebackups",
       "mod_name": "Simple Backups",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Simple Backups"
     },
     {
       "mod_id": "watermedia",
       "mod_name": "WaterMedia",
       "type": "client_only",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: WaterMedia"
     },
     {
       "mod_id": "displaydelight",
       "mod_name": "Display Delight",
       "type": "client_and_server_required",
-      "reason": ""
+      "reason": "通过JAR配置自动识别: Display Delight"
     }
   ],
   "total": 798,
